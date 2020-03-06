@@ -13293,7 +13293,7 @@ a) $f(x)=x^n \Rightarrow f'(x)=nx^{n-1}$.</p>
 <h2 id="Dem.-">Dem. <a class="anchor-link" href="#Dem.-">&#182;</a></h2><p><BLOCKQUOTE></p>
 <p><h2>
 a) $f'(x) = \displaystyle \lim_{h\rightarrow 0} \frac{(x+h)^n-x^n}{h}$ (faça a mudança de variável $x+h=t$),</p>
-<p>logo, $f'(x) = \displaystyle \lim_{t\rightarrow x} \frac{t^n-x^n}{t-x} = \lim_{t\rightarrow x} (t^{n-1}+t^{n-2}x+t^{n-3}x+\cdots+x^{n-1})$.</p>
+<p>logo, $f'(x) = \displaystyle \lim_{t\rightarrow x} \frac{t^n-x^n}{t-x} = \lim_{t\rightarrow x} (t^{n-1}+t^{n-2}x+t^{n-3}x^2+\cdots+x^{n-1})$.</p>
 <p>Assim, $~~f'(x) =  (x^{n-1}+x^{n-1}\cdots+x^{n-1}) = nx^{n-1}$.</p>
 
 </div>
@@ -13304,7 +13304,7 @@ a) $f'(x) = \displaystyle \lim_{h\rightarrow 0} \frac{(x+h)^n-x^n}{h}$ (faça a 
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="b)-$f'(x)-=-\displaystyle-\lim_{h\rightarrow-0}-\frac{\frac{1}{(x+h)^n}-\frac{1}{x^n}}{h}-=-\lim_{h\rightarrow-0}--\frac{(x+h)^n-x^n}{h}\cdot\frac{1}{(x+h)^nx^n}$.-">b) $f'(x) = \displaystyle \lim_{h\rightarrow 0} \frac{\frac{1}{(x+h)^n}-\frac{1}{x^n}}{h} = \lim_{h\rightarrow 0} -\frac{(x+h)^n-x^n}{h}\cdot\frac{1}{(x+h)^nx^n}$. <a class="anchor-link" href="#b)-$f'(x)-=-\displaystyle-\lim_{h\rightarrow-0}-\frac{\frac{1}{(x+h)^n}-\frac{1}{x^n}}{h}-=-\lim_{h\rightarrow-0}--\frac{(x+h)^n-x^n}{h}\cdot\frac{1}{(x+h)^nx^n}$.-">&#182;</a></h2><p><BLOCKQUOTE></p>
 <p><h2>
-Como $\displaystyle \lim_{h\rightarrow 0} \frac{(x+h)^n-x^n}{h} = xn^{n-1} ~~~~ e ~~~~ \lim_{h\rightarrow 0} \frac{1}{(x+h)^nx^n} = \frac{1}{x^{2n}}$</p>
+Como $\displaystyle \lim_{h\rightarrow 0} \frac{(x+h)^n-x^n}{h} = nx^{n-1} ~~~~ e ~~~~ \lim_{h\rightarrow 0} \frac{1}{(x+h)^nx^n} = \frac{1}{x^{2n}}$</p>
 <p>Temos $f'(x) = -nx^{n-1}\cdot\dfrac{1}{x^{2n}}=-nx^{-n-1}$.</p>
 
 </div>
@@ -13337,7 +13337,7 @@ a) $f'(x)$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="mi">4</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13369,7 +13369,7 @@ a) $f'(x)$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="mi">4</span><span class="p">,</span> <span class="n">x</span><span class="p">)(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13447,7 +13447,7 @@ a) Calcule $f'(x)$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="mi">3</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13479,7 +13479,7 @@ a) Calcule $f'(x)$</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">var</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
@@ -13524,7 +13524,7 @@ a) $f(x)=x^{-3}$.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="p">(</span><span class="o">-</span><span class="mi">3</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13556,7 +13556,7 @@ a) $f(x)=x^{-3}$.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">^</span><span class="mi">5</span><span class="p">,</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13599,7 +13599,7 @@ a) $f'(x)$.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13631,7 +13631,7 @@ a) $f'(x)$.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">x</span><span class="o">^</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">2</span><span class="p">),</span> <span class="n">x</span><span class="p">)(</span><span class="n">x</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13708,7 +13708,7 @@ Determine a equação da reta tangente ao gráfico de $f(x)=\sqrt[3]{x}$ no pont
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">y</span> <span class="o">=</span> <span class="n">var</span><span class="p">(</span><span class="s1">&#39;y&#39;</span><span class="p">)</span>
@@ -13742,7 +13742,7 @@ Determine a equação da reta tangente ao gráfico de $f(x)=\sqrt[3]{x}$ no pont
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="p">(</span><span class="n">y</span> <span class="o">==</span> <span class="n">diff</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x</span><span class="p">)(</span><span class="n">x</span><span class="o">=</span><span class="mi">8</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">x</span><span class="o">-</span><span class="mi">8</span><span class="p">)</span> <span class="o">+</span><span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">8</span><span class="p">))</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -13805,7 +13805,7 @@ a) $f'(x) = \displaystyle \lim_{h\rightarrow 0} \frac{e^{x+h}-e^x}{h} = \lim_{h\
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">limit</span><span class="p">((</span><span class="n">e</span><span class="o">^</span><span class="n">x</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="n">x</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
@@ -13821,7 +13821,7 @@ a) $f'(x) = \displaystyle \lim_{h\rightarrow 0} \frac{e^{x+h}-e^x}{h} = \lim_{h\
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13918,8 +13918,8 @@ b) $g'(x) = \displaystyle \lim_{h\rightarrow 0} \frac{\ln(x+h)-\ln(x)}{h} = \lim
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Exerc&#237;cio-6.-Calcule-$f'(x)$">Exerc&#237;cio 6. Calcule $f'(x)$<a class="anchor-link" href="#Exerc&#237;cio-6.-Calcule-$f'(x)$">&#182;</a></h2><p><BLOCKQUOTE></p>
 <p><h2>
-a) $f(x) = 2^x$</p>
-<p>b) $f(x) = \pi^x$</p>
+a) $f(x) = 2^x$ (ainda não dá para fazer)</p>
+<p>b) $f(x) = \pi^x$ (ainda não dá para fazer)</p>
 <p>c) $f(x) = \log_3x$</p>
 
 </div>
@@ -13972,7 +13972,7 @@ dica:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -14004,7 +14004,7 @@ dica:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">pi</span><span class="o">^</span><span class="n">x</span><span class="p">)</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
@@ -14036,7 +14036,7 @@ dica:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">diff</span><span class="p">(</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
