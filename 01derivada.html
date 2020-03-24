@@ -13226,10 +13226,9 @@ div#notebook {
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2></p>
-<p><BLOCKQUOTE></p>
-<ol>
-<li><a class="nav-link js-scroll-trigger" href="#001">Interpretação geométrica do limite.</a> </li>
-</ol>
+<p><BLOCKQUOTE>
+1 - <a class="nav-link js-scroll-trigger" href="#001">Interpretação geométrica da derivada.</a></p>
+<p>2 - <a class="nav-link js-scroll-trigger" href="#002">Definição da derivada.</a></p>
 
 </div>
 </div>
@@ -13267,10 +13266,8 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2></p>
-<p><section id="001"> </section></p>
-<ol>
-<li>Interpretação geométrica do limite. </li>
-</ol>
+<p><section id="001"> </section>
+1 - Interpretação geométrica da derivada.</p>
 
 </div>
 </div>
@@ -13280,7 +13277,18 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><BLOCKQUOTE></p>
 <p><h2>
-A idéia é tentar definir a reta tangente ao gráfico de uma função $f(x)$ no ponto $(p, f(p))$, tal reta deve passar pelo ponto $(p, f(p))$, assim, a reta fica determinada se soubermos seu coeficiente angular.</p>
+A idéia é tentar definir a reta tangente ao gráfico de uma função $f(x)$ no ponto $(p, f(p))$, tal reta fica determinada se soubermos seu coeficiente angular.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h2>
+Passo 1:</p>
+<p><BLOCKQUOTE><br>
+Antes de definir a reta tangente ao gráfico de uma função $f(x)$ no ponto $(p, f(p))$, vamos escrever a equação da reta $r_x$, que para pelos pontos $(p, f(p))$ e $(x, f(x))$.</p>
 
 </div>
 </div>
@@ -13319,6 +13327,18 @@ A idéia é tentar definir a reta tangente ao gráfico de uma função $f(x)$ no
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h2>
+Coeficiente angular de $r_x$.</p>
+<p><BLOCKQUOTE><br>
+O coeficiente angular da reta $r_x$, que passa pelos pontos $(p, f(p))$ e $(x, f(x))$ é dado por:</p>
+$$ \dfrac{f(x)-f(p)}{x-p} $$<p></p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
@@ -13361,7 +13381,35 @@ A idéia é tentar definir a reta tangente ao gráfico de uma função $f(x)$ no
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Considere-a-reta-$r_x$,-que-passa-nos-pontos-$(p,-f(p))$-e-$(x,-f(x))$.">Considere a reta $r_x$, que passa nos pontos $(p, f(p))$ e $(x, f(x))$.<a class="anchor-link" href="#Considere-a-reta-$r_x$,-que-passa-nos-pontos-$(p,-f(p))$-e-$(x,-f(x))$.">&#182;</a></h2>
+<p><h2>
+Reta $r_x$ passando pelos pontos $(p, f(p))$ e $(x, f(x))$.</p>
+<p><BLOCKQUOTE><br>
+Abaixo, temos o gráfico de $f(x) = x^3-x^2$ junto com a reta passando pelos pontos $(0.9, f(0.9))$ e $(1.3, f(1.3))$.</p>
+<p>O coeficiente angular dessa reta é dado por:   $ \dfrac{f(x)-f(p)}{x-p} $, ou seja $ \dfrac{f(1.3)-f(0.9)}{1.3-0.9}$.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2>
+
+<p><BLOCKQUOTE></p>
+<p><BLOCKQUOTE><br>
+Como a equação da reta, com coeficiente angular $m$, passando pelo ponto $(a, f(a))$ é dada por</p>
+$$ y =  m(x-a) + f(a).$$<p></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h2></p>
+<p><BLOCKQUOTE><br>
+A equação da reta $r_x$ (para $x=1.3$) é dada por:</p>
+$$ y =  \frac{f(1.3)-f(0.9)}{1.3-0.9}(x-0.9) + f(0.9). $$
 </div>
 </div>
 </div>
@@ -13407,7 +13455,9 @@ A idéia é tentar definir a reta tangente ao gráfico de uma função $f(x)$ no
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Acima,-temos-o-gr&#225;fico-de-$f(x)-=-x^3-x^2$-junto-com-a-reta-passando-pelos-pontos-$(0.9,-f(0.9))$-e-$(1.3,-f(1.3))$.">Acima, temos o gr&#225;fico de $f(x) = x^3-x^2$ junto com a reta passando pelos pontos $(0.9, f(0.9))$ e $(1.3, f(1.3))$.<a class="anchor-link" href="#Acima,-temos-o-gr&#225;fico-de-$f(x)-=-x^3-x^2$-junto-com-a-reta-passando-pelos-pontos-$(0.9,-f(0.9))$-e-$(1.3,-f(1.3))$.">&#182;</a></h3><h3 id="O-coeficiente-angular-dessa-reta-&#233;-dado-por:---$-\dfrac{f(x)-f(p)}{x-p}-$,-ou-seja-$-\dfrac{f(1.3)-f(0.9)}{1.3-0.9}-$">O coeficiente angular dessa reta &#233; dado por:   $ \dfrac{f(x)-f(p)}{x-p} $, ou seja $ \dfrac{f(1.3)-f(0.9)}{1.3-0.9} $<a class="anchor-link" href="#O-coeficiente-angular-dessa-reta-&#233;-dado-por:---$-\dfrac{f(x)-f(p)}{x-p}-$,-ou-seja-$-\dfrac{f(1.3)-f(0.9)}{1.3-0.9}-$">&#182;</a></h3><h3 id="Portanto-a-equa&#231;&#227;o-desta-reta-&#233;-dada-por:">Portanto a equa&#231;&#227;o desta reta &#233; dada por:<a class="anchor-link" href="#Portanto-a-equa&#231;&#227;o-desta-reta-&#233;-dada-por:">&#182;</a></h3><h3 id="$$-y-=--\frac{f(1.3)-f(0.9)}{1.3-0.9}(x-0.9)-+-f(0.9).-$$">$$ y =  \frac{f(1.3)-f(0.9)}{1.3-0.9}(x-0.9) + f(0.9). $$<a class="anchor-link" href="#$$-y-=--\frac{f(1.3)-f(0.9)}{1.3-0.9}(x-0.9)-+-f(0.9).-$$">&#182;</a></h3>
+<p><h2>
+Reta $r_x$, para $x=1.1$:</p>
+
 </div>
 </div>
 </div>
@@ -13449,7 +13499,12 @@ A idéia é tentar definir a reta tangente ao gráfico de uma função $f(x)$ no
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Quando-$x$-tende-a-$p$,-a-renta-$r_x$-tende-a-reta-$T_p$,-tangente-ao-gr&#225;fico-de-$f$-no-ponto-$(p,-f(p))$.">Quando $x$ tende a $p$, a renta $r_x$ tende a reta $T_p$, tangente ao gr&#225;fico de $f$ no ponto $(p, f(p))$.<a class="anchor-link" href="#Quando-$x$-tende-a-$p$,-a-renta-$r_x$-tende-a-reta-$T_p$,-tangente-ao-gr&#225;fico-de-$f$-no-ponto-$(p,-f(p))$.">&#182;</a></h2>
+<p><h2>
+Passo 2:</p>
+<BLOCKQUOTE> 
+
+<p>Fazer $x$ tender a $p$. Assim, a renta $r_x$ tende a reta $T_p$, tangente ao gráfico de $f$ no ponto $(p, f(p))$.</p>
+
 </div>
 </div>
 </div>
@@ -13484,6 +13539,16 @@ A idéia é tentar definir a reta tangente ao gráfico de uma função $f(x)$ no
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h2></p>
+<p><section id="002"> </section>
+2 - Definição da derivada.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13605,7 +13670,7 @@ Gráfico da função $f(x) = x^3-x^2$ com a reta tangente ao seu gráfico, no po
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Exemplo-3:-">Exemplo 3: <a class="anchor-link" href="#Exemplo-3:-">&#182;</a></h2><p><BLOCKQUOTE></p>
 <p><h2>
-Gráfico de $f(x) = x^3-x^2$ com a tangente no ponto $(x, f(x)) = (1, f(1))$ (cor vermelha),  junto com o gráfico da função $f'(x)$ (cor preta):</p>
+Gráfico de $f(x) = x^3-x^2$ com a tangente no ponto $(x, f(x)) = (1, f(1))$ (cor vermelha).</p>
 
 </div>
 </div>
@@ -13650,7 +13715,7 @@ Gráfico de $f(x) = x^3-x^2$ com a tangente no ponto $(x, f(x)) = (1, f(1))$ (co
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Exemplo-4:">Exemplo 4:<a class="anchor-link" href="#Exemplo-4:">&#182;</a></h2><p><BLOCKQUOTE></p>
 <p><h2>
-Gráfico da função $f(x) = x^3-x^2$ com uma animação das reta tangente ao seu gráfico, de $x = -0.7$ até $x = 1.4$.</p>
+Gráfico da função $f(x) = x^3-x^2$ com uma animação das retas tangentes ao seu gráfico, de $x = -0.7$ até $x = 1.4$.</p>
 
 </div>
 </div>
@@ -13692,7 +13757,7 @@ Gráfico da função $f(x) = x^3-x^2$ com uma animação das reta tangente ao se
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Exemplo-5:">Exemplo 5:<a class="anchor-link" href="#Exemplo-5:">&#182;</a></h2><p><BLOCKQUOTE></p>
 <p><h2>
-Gráfico da função $f(x) = sen(x)$ com uma animação das reta tangente ao seu gráfico, de $x = 0$ até $x = 2\pi$.</p>
+Gráfico da função $f(x) = sen(x)$ com uma animação das retas tangentes ao seu gráfico, de $x = 0$ até $x = 2\pi$.</p>
 
 </div>
 </div>
