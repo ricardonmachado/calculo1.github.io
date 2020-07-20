@@ -13171,7 +13171,7 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 <p>Referência bibliográfica sobre o SageMath:</p>
 <p>[1] Silva, L., Santos M., Machado, R., <a href="https://sagectu.com.br/"> <i>Elementos de Computação Matemática com SageMath</i></a>, SBM, 2019.</p>
 <p><a href="https://sagectu.com.br/">
-<img class="img-fluid" src="https://sagectu.com.br/img/elementos_de_computacao_matematica_com_sagemath.jpg" alt="" width="200" height="100"></p>
+<img class="img-fluid" src="https://sagectu.com.br/img/elementos_de_computacao_matematica_com_sagemath.jpg" alt="" width="200" height="100"> </a></p>
 
 </div>
 </div>
@@ -13216,11 +13216,8 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 
 <BLOCKQUOTE>
 
-Diferente da Combinação Simples, na Combinação Completa é permitido a presença de elementos repetidos. Notação:
-
-$$ CR_n^{p } $$
-
-Assim, as combinações completas de classe 3 dos objetos $1, 2, 3, 4$ tomados 3 a 3 são:
+<p>Diferente da Combinação Simples, na Combinação Completa é permitido a presença de elementos repetidos. Notação:</p>
+$$ CR_n^{p } $$<p>Assim, as combinações completas de classe 3 dos objetos $1, 2, 3, 4$ tomados 3 a 3 são:
 $$
 [1, 1, 1],
 [1, 1, 2],
@@ -13249,9 +13246,8 @@ $$
 [3, 4, 4],
 [4, 4, 4]
 $$
- e $CR_4^3 = 20.$
+ e $CR_4^3 = 20.$</p>
 
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13334,11 +13330,9 @@ Antes de chegar em uma fórmula para a combinação completa, vamos resolver um 
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2>
 Exemplo</p>
-<BLOCKQUOTE>
-De quantos modos é possível comprar 3 sorvetes em uma loja que oferece 6 sabores?
+<p><BLOCKQUOTE>
+De quantos modos é possível comprar 3 sorvetes em uma loja que oferece 6 sabores?</p>
 
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13347,16 +13341,11 @@ De quantos modos é possível comprar 3 sorvetes em uma loja que oferece 6 sabor
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2>
 Solução</p>
-<BLOCKQUOTE>
-Resolver este problema é o mesmo que encontrar o número de soluções da equação:
+<p><BLOCKQUOTE>
+Resolver este problema é o mesmo que encontrar o número de soluções da equação:</p>
+$$ x_1 + x_2 + x_3 + x_4 + x_5 + x_6  = 3, ~~~ \text{ com }  x_i \geq 0 ~~~~(\clubsuit)$$<p>na qual, cada $x_i$ representa a quantidade de sorvetes do sabor $i$. Claramente, temos a restrição $x_i\geq 0$, pois não podemos pegar uma quantidade negativas de qualquer sabor.</p>
+<p>A equação $(\clubsuit)$ pode ser interpretada de tal forma que, encontrar o número de soluções será o mesmo que calcular o número de permutações com repetições. Vamos explicar esta interpretação:</p>
 
-$$ x_1 + x_2 + x_3 + x_4 + x_5 + x_6  = 3, ~~~ \text{ com }  x_i \geq 0 ~~~~(\clubsuit)$$
-
-na qual, cada $x_i$ representa a quantidade de sorvetes do sabor $i$. Claramente, temos a restrição $x_i\geq 0$, pois não podemos pegar uma quantidade negativas de qualquer sabor. 
-
-A equação $(\clubsuit)$ pode ser interpretada de tal forma que, encontrar o número de soluções será o mesmo que calcular o número de permutações com repetições. Vamos explicar esta interpretação:
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13402,13 +13391,9 @@ Agora, vamos encontrar o número de soluções da Equação $(\clubsuit)$.
 Encontrando o número de soluções da Equação $(\clubsuit)$:</p>
 <BLOCKQUOTE>
 
-Observe que cada permutação dessa representação de traços e bolas é uma solução da Equação $(\clubsuit)$ e que cada solução da Equação $(\clubsuit)$ pode ser representada com traços de bolas. Portanto para encontrar o número de soluções da Equação $(\clubsuit)$, basta calcular 
-
-$$ PR_8^{5, 3} = 40320 $$
-
-
-Pois, temos 5 traços e 3 bolas, então estamos permutando um total de 8 elementos, sendo 5 traços e 3 bolas. 
-</BLOCKQUOTE><div style="text-align: right"> $\blacksquare$ </div>
+<p>Observe que cada permutação dessa representação de traços e bolas é uma solução da Equação $(\clubsuit)$ e que cada solução da Equação $(\clubsuit)$ pode ser representada com traços de bolas. Portanto para encontrar o número de soluções da Equação $(\clubsuit)$, basta calcular</p>
+$$ PR_8^{5, 3} = 40320 $$<p>Pois, temos 5 traços e 3 bolas, então estamos permutando um total de 8 elementos, sendo 5 traços e 3 bolas.</p>
+<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13453,9 +13438,6 @@ Teorema</p>
 <BLOCKQUOTE>
 
 $$ CR_n^p = PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p$$
-
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13466,16 +13448,10 @@ $$ CR_n^p = PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p$$
 Demonstração.</p>
 <BLOCKQUOTE>
 
-Calcular $CR_n^p$ é o mesmo que encontrar o número de soluções da equação:
-
-$$  x_1 + x_2 + x_3 + \ldots + x_n  = p, ~~~ \text{ com }  x_i \geq 0 $$
-
-Usando a ideia da representação de "bolas e traços" vamos ficar com $p$ bolas e $n-1$ traços.
-O cálculo do número de permutações destes $p+n-1$ objetos com $p$ objetos de um tipo e $n-1$ objetos de outro tipo é dado por:
-
-$$ PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p$$
-
-</BLOCKQUOTE><div style="text-align: right"> $\blacksquare$ </div>
+<p>Calcular $CR_n^p$ é o mesmo que encontrar o número de soluções da equação:</p>
+$$  x_1 + x_2 + x_3 + \ldots + x_n  = p, ~~~ \text{ com }  x_i \geq 0 $$<p>Usando a ideia da representação de "bolas e traços" vamos ficar com $p$ bolas e $n-1$ traços.
+O cálculo do número de permutações destes $p+n-1$ objetos com $p$ objetos de um tipo e $n-1$ objetos de outro tipo é dado por:</p>
+$$ PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p$$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13486,9 +13462,8 @@ $$ PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p$$
 Definindo a função CR no SageMath</p>
 <BLOCKQUOTE>
 
-Vamos definir a função $CR(n, p) = CR_n^p$
+<p>Vamos definir a função $CR(n, p) = CR_n^p$</p>
 
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13545,11 +13520,8 @@ Vamos definir a função $CR(n, p) = CR_n^p$
 Exemplo</p>
 <BLOCKQUOTE>
 
-Quantas são as soluções inteiras e não negativas de 
-
+<p>Quantas são as soluções inteiras e não negativas de</p>
 $$  x_1 + x_2 + x_3 + \ldots + x_{10}  = 20?$$
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13561,8 +13533,6 @@ Solução</p>
 <BLOCKQUOTE>
 
 $$ CR_{10}^{20} = 10015005$$
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13606,13 +13576,9 @@ $$ CR_{10}^{20} = 10015005$$
 Exemplo</p>
 <BLOCKQUOTE>
 
-Quantas são as soluções inteiras da equação
+<p>Quantas são as soluções inteiras da equação</p>
+$$  x_1 + x_2 + x_3 = 15$$<p>com $x_1&gt;0$, $x_2\geq 2$ e $x_3 \geq 4$?</p>
 
-$$  x_1 + x_2 + x_3 = 15$$
-
-com $x_1>0$, $x_2\geq 2$ e $x_3 \geq 4$?
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13623,29 +13589,12 @@ com $x_1>0$, $x_2\geq 2$ e $x_3 \geq 4$?
 Solução</p>
 <BLOCKQUOTE>
 
-Defina 
-
-$$ x_1 = x+1, $$
-
-$$ x_2 = y+2 $$
-
-e
-
-$$ x_3 = z+4 $$
-
-Substituindo, temos
-
-$$ (x+1) + (y+2) + (z+4) = 15 $$
-
-ou seja
-
-$$ x + y + z = 8 ~~~~ (\blacklozenge) $$
-
-Desta forma, o número de soluções de ($\blacklozenge$) será a solução do problema, pois, quando $x=0$ teremos $x_1=1$, quando $y=0$ teremos $x_2=2$ e quando $z=0$ teremos $x_3=4$. Portanto a resposta é 
-
+<p>Defina</p>
+$$ x_1 = x+1, $$$$ x_2 = y+2 $$<p>e</p>
+$$ x_3 = z+4 $$<p>Substituindo, temos</p>
+$$ (x+1) + (y+2) + (z+4) = 15 $$<p>ou seja</p>
+$$ x + y + z = 8 ~~~~ (\blacklozenge) $$<p>Desta forma, o número de soluções de ($\blacklozenge$) será a solução do problema, pois, quando $x=0$ teremos $x_1=1$, quando $y=0$ teremos $x_2=2$ e quando $z=0$ teremos $x_3=4$. Portanto a resposta é</p>
 $$ CR_3^{8} = 45. $$
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13689,11 +13638,10 @@ $$ CR_3^{8} = 45. $$
 Exemplo (VESTIBULAR UFPE – UFRPE / 1998 2ª ETAPA)</p>
 <BLOCKQUOTE>
 
-Semelhante ao dominó, mas feito de pedras triangulares equiláteras, o jogo de trominó apresenta na
+<p>Semelhante ao dominó, mas feito de pedras triangulares equiláteras, o jogo de trominó apresenta na
 face triangular superior um certo número de pontos com repetições, escolhidos de 1 a n, dispostos
-ao longo de cada aresta (ver figura).
+ao longo de cada aresta (ver figura).</p>
 
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13739,9 +13687,8 @@ ao longo de cada aresta (ver figura).
 
 <BLOCKQUOTE>
 
-Quantas peças há no trominó, supondo n = 6?
+<p>Quantas peças há no trominó, supondo n = 6?</p>
 
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
@@ -13752,15 +13699,9 @@ Quantas peças há no trominó, supondo n = 6?
 Solução.</p>
 <BLOCKQUOTE>
 
-Temos que escolher os valores de cada um dos 3 lados de cada peça do trominó. Como os valores vão de 1 até 6 e são 3 lados, o número de peças do trominó para $n=6$ é o número de soluções inteiras não negativas da equação:
-
-$$ x_1 + x_2 + x_3 + x_4 + x_ 5 + x_ 6 = 3. $$
-
-Portanto a quantidade de peças é:
-
+<p>Temos que escolher os valores de cada um dos 3 lados de cada peça do trominó. Como os valores vão de 1 até 6 e são 3 lados, o número de peças do trominó para $n=6$ é o número de soluções inteiras não negativas da equação:</p>
+$$ x_1 + x_2 + x_3 + x_4 + x_ 5 + x_ 6 = 3. $$<p>Portanto a quantidade de peças é:</p>
 $$ CR_6^{3} = 56. $$
-
-</BLOCKQUOTE>
 </div>
 </div>
 </div>
