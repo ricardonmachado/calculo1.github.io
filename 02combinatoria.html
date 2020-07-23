@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>02_permutacao_combinacao-Copy1</title>
+<title>02_permutacao_combinacao</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13144,6 +13144,7 @@ div#notebook {
 <p><BLOCKQUOTE>
 1 - <a class="nav-link js-scroll-trigger" href="#001">Permutação Simples</a></p>
 <p>2 - <a class="nav-link js-scroll-trigger" href="#002">Combinação Simples</a></p>
+<p>3 - <a class="nav-link js-scroll-trigger" href="#003">Exercícios</a></p>
 
 </div>
 </div>
@@ -13190,10 +13191,12 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2>
+<h3>
 
-<p><BLOCKQUOTE>
-O número permutações simples é nada mais que o número de maneiras de ordenar uma quantidade finita de objetos distintos. A permutação de $n$ objetos é denotada por $P_n$ ou $P(n)$.</p>
+<BLOCKQUOTE>
+
+<p>O número permutações simples é nada mais que o número de maneiras de ordenar uma quantidade finita de objetos distintos. A permutação de $n$ objetos é denotada por</p>
+$$P_n ~~\text{ ou }~~ P(n).$$<p></p>
 
 </div>
 </div>
@@ -13201,7 +13204,7 @@ O número permutações simples é nada mais que o número de maneiras de ordena
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
 <p><BLOCKQUOTE>
 A seguir veremos todas as permutações da lista de três elementos: [1, 2, 3].</p>
@@ -13245,7 +13248,7 @@ A seguir veremos todas as permutações da lista de três elementos: [1, 2, 3].<
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Teorema.</p>
 <p><BLOCKQUOTE>
 $$ P(n) = n\cdot (n-1) \cdots 1 = n! $$</p>
@@ -13256,7 +13259,7 @@ $$ P(n) = n\cdot (n-1) \cdots 1 = n! $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Demonstração.</p>
 <p><BLOCKQUOTE><br>
 temos $n$ modos de escolher o objeto que ocupará o primeiro lugar, temos $n-1$ modos de escolher o objeto que ocupará o segundo lugar, $\cdots$, temos $1$ modo de escolher o objeto que ocupará o último lugar. Portanto</p>
@@ -13267,7 +13270,7 @@ $$ P(n) = n\cdot (n-1) \cdots 1 = n! $$<div style="text-align: right"> $\blacksq
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Fatorial no SageMath</p>
 <p><BLOCKQUOTE><br>
 No SageMath o fatorial de $n$ pode ser calculado com o comando:</p>
@@ -13293,8 +13296,8 @@ No SageMath o fatorial de $n$ pode ser calculado com o comando:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
-Exemplo (SageMath)</p>
+<p><h3>
+Exemplo</p>
 <p><BLOCKQUOTE><br>
 Quantos são os anagramas da palavra SAGE?</p>
 
@@ -13304,11 +13307,12 @@ Quantos são os anagramas da palavra SAGE?</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução</p>
-<p><BLOCKQUOTE><br>
-A palavra SAGE possui quatro letras distintas, potanto o número de anagramas é</p>
-$$P(4)$$<div style="text-align: right"> $\blacksquare$ </div>
+<BLOCKQUOTE>  
+
+<p>A palavra SAGE possui quatro letras distintas, potanto o número de anagramas é</p>
+$$P(4) = 24$$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13348,10 +13352,11 @@ $$P(4)$$<div style="text-align: right"> $\blacksquare$ </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
-<p><BLOCKQUOTE><br>
-Quantos são os anagramas da palavra XADREZ que começam e terminam por consoante?</p>
+<BLOCKQUOTE>    
+
+<p>Quantos são os anagramas da palavra XADREZ que começam e terminam por consoante?</p>
 
 </div>
 </div>
@@ -13359,11 +13364,12 @@ Quantos são os anagramas da palavra XADREZ que começam e terminam por consoant
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução</p>
-<p><BLOCKQUOTE><br>
-A consoante inicial pode ser escolhida de 4 maneiras e a consoante final de 3 maneiras e as 4 letras restantes podem ser escolhidas de $P(4)$ maneiras. A resposta é</p>
-$$ 4\times 3\times P(4). $$
+<BLOCKQUOTE>
+
+<p>A consoante inicial pode ser escolhida de 4 maneiras e a consoante final de 3 maneiras e as 4 letras restantes podem ser escolhidas de $P(4)$ maneiras. A resposta é</p>
+$$ 4\times 3\times P(4)=288. $$
 </div>
 </div>
 </div>
@@ -13403,7 +13409,7 @@ $$ 4\times 3\times P(4). $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
 <p><BLOCKQUOTE><br>
 De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
@@ -13414,15 +13420,15 @@ De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas ca
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução</p>
-<p><BLOCKQUOTE><br>
-Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é $P(12)$.</p>
-<p>$ $</p>
+<BLOCKQUOTE>
+
+<p>Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é $P(12)$.</p>
 <p>Como a separação em grupos</p>
 $$[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]$$<p>é idêntica a separação</p>
 $$[9, 10, 11, 12], [1, 2, 3, 4], [5, 6, 7, 8]$$<p>A contagem $P(12)$ foi contada como se fossem distintas, precismos dividir pelo número de formas de ordenar os três grupos e precisamos dividir também pelo número de formas de ordenar cada grupo. Portanto a resposta é</p>
-$$ \frac{P(12)}{P(3)\times P(4)\times P(4)\times P(4)} $$
+$$ \frac{P(12)}{P(3)\times P(4)\times P(4)\times P(4)} = 5775.$$
 </div>
 </div>
 </div>
@@ -13472,10 +13478,11 @@ $$ \frac{P(12)}{P(3)\times P(4)\times P(4)\times P(4)} $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2>
+<h3>
 
-<p><BLOCKQUOTE>
-O número de combinações simples pode ser definida como o número de modos de escolher $p$ objetos distintos entre $n$ objetos distintos dados.</p>
+<BLOCKQUOTE>
+
+<p>O número de combinações simples pode ser definida como o número de modos de escolher $p$ objetos distintos entre $n$ objetos distintos dados.</p>
 <p>Ou como o número de subconjuntos com $p$ elementos de um conjunto com $n$ elementos. A notação para combinação simples é dada por</p>
 $$C_n^p ~~\text{ ou }~~ C_{n, p} ~~\text{ ou }~~ C(n, p).$$
 </div>
@@ -13484,10 +13491,11 @@ $$C_n^p ~~\text{ ou }~~ C_{n, p} ~~\text{ ou }~~ C(n, p).$$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
-<p><BLOCKQUOTE>
-As combinações $C(5, 3)$ de $\{1, 2, 3, 4, 5\}$ são:</p>
+<BLOCKQUOTE>
+
+<p>As combinações do conjunto $\{1, 2, 3, 4, 5\}$ três a três são:</p>
 
 </div>
 </div>
@@ -13539,10 +13547,11 @@ As combinações $C(5, 3)$ de $\{1, 2, 3, 4, 5\}$ são:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2>
+<h3>
 
-<p><BLOCKQUOTE>
-O número total de combinações é:</p>
+<BLOCKQUOTE>
+
+<p>O número total de combinações é:</p>
 
 </div>
 </div>
@@ -13583,7 +13592,7 @@ O número total de combinações é:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Teorema.</p>
 <p><BLOCKQUOTE>
 $$ C(n, p) = \frac{n!}{p!\times (n-p)!} $$</p>
@@ -13594,7 +13603,7 @@ $$ C(n, p) = \frac{n!}{p!\times (n-p)!} $$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Demonstração.</p>
 <p><BLOCKQUOTE><br>
 Pelo princípio multiplicativo, temos $n$ modos de escolher o primeiro elemento, $n-1$ modos de escolher o segundo elemento, $\cdots$, até $n-p+1$ modos de escolher o $p$-ésimo elemento.</p>
@@ -13614,10 +13623,11 @@ C(n,p) &amp; = \frac{n(n-1)\cdots(n-p+1)}{p!}\\
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Combinação no SageMath.</p>
-<p><BLOCKQUOTE><br>
-No SageMath $C(n, p)$ pode ser calculado com o comando:</p>
+<BLOCKQUOTE>    
+
+<p>No SageMath $C(n, p)$ pode ser calculado com o comando:</p>
 <p>binomial(n,p)</p>
 <p>Vamos definir a função C(n,p) = binomial(n,p).</p>
 
@@ -13640,10 +13650,11 @@ No SageMath $C(n, p)$ pode ser calculado com o comando:</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
-<p><BLOCKQUOTE><br>
-O número total de combinações $C(5, 3)$ pode ser calculado da seguinte forma:</p>
+<BLOCKQUOTE>    
+
+<p>O número total de combinações $C(5, 3)$ pode ser calculado da seguinte forma:</p>
 
 </div>
 </div>
@@ -13684,10 +13695,11 @@ O número total de combinações $C(5, 3)$ pode ser calculado da seguinte forma:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
-<p><BLOCKQUOTE><br>
-Quantas saladas contendo exatamente 7 frutas podemos formar se dispomos de 12 frutas diferentes?</p>
+<BLOCKQUOTE>    
+
+<p>Quantas saladas contendo exatamente 7 frutas podemos formar se dispomos de 12 frutas diferentes?</p>
 
 </div>
 </div>
@@ -13695,12 +13707,12 @@ Quantas saladas contendo exatamente 7 frutas podemos formar se dispomos de 12 fr
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução</p>
-<p><BLOCKQUOTE><br>
-Basta escolher 7 frutas das 12 disponíveis, o que pode ser feito de</p>
-<p>$ $</p>
-$$C(12, 7)$$<p>maneiras.</p>
+<BLOCKQUOTE>
+
+<p>Basta escolher 7 frutas das 12 disponíveis, o que pode ser feito de</p>
+$$C(12, 7) = 792$$<p>maneiras.</p>
 
 </div>
 </div>
@@ -13741,10 +13753,11 @@ $$C(12, 7)$$<p>maneiras.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
-<p><BLOCKQUOTE><br>
-Sobre uma reta, marcam-se 10 pontos e sobre outra reta paralela a primeira marcam-se 15 pontos. Quantos triângulos podemos obter unindo 3 desses 25 pontos?</p>
+<BLOCKQUOTE>
+
+<p>Sobre uma reta, marcam-se 10 pontos e sobre outra reta paralela a primeira marcam-se 15 pontos. Quantos triângulos podemos obter unindo 3 desses 25 pontos?</p>
 
 </div>
 </div>
@@ -13752,15 +13765,15 @@ Sobre uma reta, marcam-se 10 pontos e sobre outra reta paralela a primeira marca
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução</p>
-<p><BLOCKQUOTE><br>
-Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
-<p>$ $</p>
+<BLOCKQUOTE>    
+
+<p>Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
 <p>O número de formas de escolher dois vértices na primeira reta é $C(10, 2)$ uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é:</p>
 $$ 15\times C(10, 2). $$<p>Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é</p>
 $$ 10\times C(15, 2). $$<p>Portanto, pelo princípio aditivo, o número total de soluções é:</p>
-$$ 15\times C(10, 2) + 10\times C(15, 2). $$
+$$ 15\times C(10, 2) + 10\times C(15, 2)=1725. $$
 </div>
 </div>
 </div>
@@ -13800,11 +13813,11 @@ $$ 15\times C(10, 2) + 10\times C(15, 2). $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
-<p><BLOCKQUOTE><br>
-Um Juiz dispõe de 11 pessoas, das quais somente 4 são advogados.</p>
-<p>$ $</p>
+<BLOCKQUOTE>
+
+<p>Um Juiz dispõe de 11 pessoas, das quais somente 4 são advogados.</p>
 <p>a) Para formar um único júri com 9 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
 <p>b) Para formar um único júri com 6 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
 
@@ -13814,11 +13827,12 @@ Um Juiz dispõe de 11 pessoas, das quais somente 4 são advogados.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução a)</p>
-<p><BLOCKQUOTE><br>
-Basta escolher 9 jurados, pois escolhendo 9 pessoas, pelo menos duas serão advogados. O que pode ser feito de</p>
-$$ C(11,9) $$
+<BLOCKQUOTE>    
+
+<p>Basta escolher 9 jurados, pois escolhendo 9 pessoas, pelo menos duas serão advogados. O que pode ser feito de</p>
+$$ C(11,9)=55. $$
 </div>
 </div>
 </div>
@@ -13858,13 +13872,13 @@ $$ C(11,9) $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução b)</p>
-<p><BLOCKQUOTE><br>
-Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, podemos não escolher pelo menos dois advogados. Precisamos contornar este problema.</p>
-<p>$  $</p>
+<BLOCKQUOTE>    
+
+<p>Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, podemos não escolher pelo menos dois advogados. Precisamos contornar este problema.</p>
 <p>Precisamos escolher 2 advogados e 4 pessoas no conjunto complementar, depois 3 advogados e 3 pessoas no conjunto complementar e por último, precisamos escolher 4 advogados e 2 pessoas no conjunto complementar. O que pode ser feito de</p>
-$$ C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2) $$<p>maneiras.</p>
+$$ C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2)=371 $$<p>maneiras.</p>
 
 </div>
 </div>
@@ -13905,12 +13919,12 @@ $$ C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2) $$<p>manei
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Outra solução b)</p>
-<p><BLOCKQUOTE><br>
-Podemos calcular o total de soluções sem se preocupar se tem os dois advogados ou não e depois subtraímos o total de maneiras de escolher as 6 pessoas sem ter advogado e o total de maneiras de escolher 6 pessoas com no máximo 1 advogado. Isto pode ser feito de</p>
-<p>$ $</p>
-$$ C(11, 6) - C(7, 6) - 4\times C(7, 5) $$<p>maneiras.</p>
+<BLOCKQUOTE>    
+
+<p>Podemos calcular o total de soluções sem se preocupar se tem os dois advogados ou não e depois subtraímos o total de maneiras de escolher as 6 pessoas sem ter advogado e o total de maneiras de escolher 6 pessoas com no máximo 1 advogado. Isto pode ser feito de</p>
+$$ C(11, 6) - C(7, 6) - 4\times C(7, 5)=371 $$<p>maneiras.</p>
 
 </div>
 </div>
@@ -13951,10 +13965,11 @@ $$ C(11, 6) - C(7, 6) - 4\times C(7, 5) $$<p>maneiras.</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
-<p><BLOCKQUOTE><br>
-De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
+<BLOCKQUOTE>
+
+<p>De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
 
 </div>
 </div>
@@ -13962,16 +13977,16 @@ De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas ca
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução</p>
-<p><BLOCKQUOTE><br>
-Para o primeiro grupo, temos um total de</p>
-<p>$ $</p>
+<BLOCKQUOTE>    
+
+<p>Para o primeiro grupo, temos um total de</p>
 $$ C(12, 4) $$<p>maneiras de selecionar as 4 pessoas. Para o segundo grupo temos um total de</p>
 $$ C(8, 4) $$<p>maneiras de selecionar as 4 pessoas. Para o terceiro grupo temos um total de</p>
 $$ C(4,4) $$<p>maneiras de selecionar as 4 pessoas. Como a ordem dos grupos não importa, precisamos dividir por $3!$</p>
 <p>Portanto a resposta é</p>
-$$ \frac{C(12, 4)\times C(8, 4)\times C(4, 4)}{3!}$$
+$$ \frac{C(12, 4)\times C(8, 4)\times C(4, 4)}{3!} = 5775.$$
 </div>
 </div>
 </div>
@@ -14008,18 +14023,45 @@ $$ \frac{C(12, 4)\times C(8, 4)\times C(4, 4)}{3!}$$
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="003"> </section></p>
+<p><h3>
+3 - Exercícios</p>
+<BLOCKQUOTE>
 
-    </div>
+<ol>
+  <li> Quantos são os anagramas da palavra SOBERANO: </li>
+    $$ $$
+    <ol>
+        <li style="list-style-type:lower-alpha" > Que começam por consoante e terminam por vogal?</li>
+        <li style="list-style-type:lower-alpha" > Que têm as letras S,O,B juntas em qualquer ordem?</li>
+        <li style="list-style-type:lower-alpha" > Que têm as vogais e as consoantes intercaladas?</li>
+    </ol>
+  $$ $$     
+
+  <li> De quantos modos é possível sentar 12 pessoas em cadeiras em fila de modo que duas determinadas pessoas dessas 12 não fiquem juntas? </li>
+  $$ $$     
+  <li> Quantas são as permutações dos números $(1, 2, 3, \ldots, 20)$ nas quais os números $3, 15, 8$ e $11$ aparecem nesta ordem, embora não necessáriamente em lugares consecutivos? </li>
+  $$ $$     
+  <li> Quantos dados diferentes podemos formar gravando números de 1 a 6 sobre as faces indistinguíveis de um cubo? </li>
+  $$ $$     
+  <li> Quantos dados diferentes podemos formar gravando números de 1 a 12 sobre as faces indistinguíveis de um dodecaedro regular? </li>
+  $$ $$     
+  <li> Quantas diagonais possuem um polígono de $n$ lados? </li>
+  $$ $$     
+  <li> Em uma fila de cadeiras no cinema possui 30 poltronas. De quantos modos 8 casais podem se sentar nessas poltronas de modo que nenhum casal se sente separado? </li>
+  $$ $$     
+  <li> Formam-se as combinações simples de classe 8 dos elementos $a_1, a_2, \ldots, a_{18}$, as quais são escritas com os elementos em ordem crescentes de índices. Quantas são as combinações nas quais o elemento $a_{11}$ ocupa o $4º$ lugar? </li>
+  $$ $$     
+  <li> De quantos modos 20 jogados podem ser divididos em 4 times de futsal de 5 jogadores cada, denomidados Sport, Náutico, Santa Cruz e Salgueiro? </li>
+  $$ $$     
+  <li> Quantos são os jogos de um campeonato disputado por 40 clubes, no qual todos se enfrentam uma única vez? </li>
+
+</ol>
 </div>
 </div>
-
 </div>
     </div>
   </div>

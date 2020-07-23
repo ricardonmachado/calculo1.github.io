@@ -13144,6 +13144,7 @@ div#notebook {
 <p><BLOCKQUOTE>
 1 - <a class="nav-link js-scroll-trigger" href="#001">Princípio Aditivo</a></p>
 <p>2 - <a class="nav-link js-scroll-trigger" href="#002">Princípio Multiplicativo</a></p>
+<p>3 - <a class="nav-link js-scroll-trigger" href="#003">Exercícios</a></p>
 
 </div>
 </div>
@@ -13190,19 +13191,8 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
-Princípio Aditivo 1ª versão</p>
-<p><BLOCKQUOTE><br>
-Se uma tarefa puder ser feita de $n_1$ maneiras e uma segunda tarefa de $n_2$ maneiras e se essas tarefas não puderem ser feitas ao mesmo tempo, então existem $n_1+n_2$ maneiras de fazer ambas as tarefas.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
-Princípio Aditivo 2ª versão</p>
+<p><h3>
+Princípio Aditivo</p>
 <p><BLOCKQUOTE><br>
 Sejam $A$ e $B$ conjuntos finitos e disjuntos, então</p>
 <p>$$\#(A\cup B)=\#A+ \#B.$$</p>
@@ -13213,22 +13203,10 @@ Sejam $A$ e $B$ conjuntos finitos e disjuntos, então</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
-Demonstração.</p>
-<p><BLOCKQUOTE>
-Vamos usar o Princípio Aditivo 1ª versão para mostrar o Princípio Aditivo 2ª versão. Sejam $T_a$ e $T_b$ as tarefas de escolher um elemento em $A$ e em $B$, respectivamente. Existem $\#A$ maneiras de escolher um elemento em $A$ e $\#B$ maneiras de escolher um elemento em $B$. Pelo Princípio Aditivo 1ª versão, como as tarefas não podem ser feitas ao mesmo tempo, o número de maneiras de escolher um elemento em cada um dos conjuntos é</p>
-<p>$$\#(A\cup B)=\#A+ \#B.$$</p>
-<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo</p>
 <p><BLOCKQUOTE>
-Suponha que na disciplina de análise combinatória existem três listas de exercício. A 1ª contém 15 exercícios, a segunda contém 18 exercícios e a terceira contém 14 exercícios. De quantas maneiras um estudante pode escolher um exercício destas listas para resolver no quadro?</p>
+Suponha que na disciplina de análise combinatória existem três listas de exercício. A 1ª contém 15 exercícios, a segunda contém 18 exercícios e a terceira contém 14 exercícios. De quantas maneiras um estudante pode escolher um exercício para resolver?</p>
 
 </div>
 </div>
@@ -13236,10 +13214,13 @@ Suponha que na disciplina de análise combinatória existem três listas de exer
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução.</p>
-<p><BLOCKQUOTE>
-O estudante têm 15 opções para escolher um exercício da primeira lista, 18 opções para escolher um exercício da segunda lista e 14 opções para escolher um exercício da terceira lista. Portanto o estudante têm $15+18+14$ maneiras de escolher um exercício.</p>
+<BLOCKQUOTE>
+
+<p>O estudante têm 15 opções para escolher um exercício da primeira lista, 18 opções para escolher um exercício da segunda lista e 14 opções para escolher um exercício da terceira lista. Portanto o estudante têm</p>
+$$15+18+14 = 47$$<p></p>
+<p>maneiras de escolher um exercício.</p>
 <div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
@@ -13277,19 +13258,6 @@ O estudante têm 15 opções para escolher um exercício da primeira lista, 18 o
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13303,10 +13271,10 @@ O estudante têm 15 opções para escolher um exercício da primeira lista, 18 o
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
-Princípio Multiplicativo 1ª versão</p>
+<p><h3>
+Princípio Multiplicativo</p>
 <p><BLOCKQUOTE><br>
-Suponha que um procedimento pode ser quebrado em duas tarefas. Se existem $n_1$ maneiras de fazer a primeira tarefa e $n_2$ maneiras de fazer a segunda tarefa, depois que a primeira tarefa estiver feita, então existem $n_1\cdot n_2$ maneiras de fazer o procedimento.</p>
+Suponha que um procedimento pode ser quebrado em duas tarefas. Se existem $n_1$ maneiras de fazer a primeira tarefa e $n_2$ maneiras de fazer a segunda tarefa, depois que a primeira tarefa estiver feita, então existem $n_1\times n_2$ maneiras de fazer o procedimento.</p>
 
 </div>
 </div>
@@ -13314,29 +13282,7 @@ Suponha que um procedimento pode ser quebrado em duas tarefas. Se existem $n_1$ 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
-Princípio Multiplicativo 2ª versão</p>
-<p><BLOCKQUOTE><br>
-Sejam $A$ e $B$ conjuntos finitos, então</p>
-$$ \#(A\times B) = \#A\cdot \#B.$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
-Demonstração.</p>
-<p><BLOCKQUOTE>
-Vamos usar o Princípio Multiplicativo 1ª versão para mostrar o Princípio Multiplicativo 2ª versão. Note que a tarefa de escolher um elemento no produto cartesiano $A\times B$ pode ser feita escolhendo um elemento em $A$ e um elemento em $B$, do Princípio Multiplicativo 1ª versão temos</p>
-$$ \#(A\times B) = \#A\cdot \#B.$$<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo.</p>
 <p><BLOCKQUOTE>
 Quantos números naturais de três algarismos distintos (na base 10) existem?</p>
@@ -13347,7 +13293,7 @@ Quantos números naturais de três algarismos distintos (na base 10) existem?</p
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução.</p>
 <p><BLOCKQUOTE>
 O procedimento de escolher um número satisfazendo estas hipóteses pode ser quebrado em três tarefas.</p>
@@ -13355,7 +13301,7 @@ O procedimento de escolher um número satisfazendo estas hipóteses pode ser que
 <p>A 1ª tarefa é escolher o primeiro dígito, (da esquerda para a direita) que pode ser feito de 9 maneiras, já que o zero não pode ser escolhido.</p>
 <p>A 2ª tarefa é escolher o segundo dígito, que pode ser feito de 9 maneiras, pois não pode ser igual a escolha do primeiro dígito.</p>
 <p>A 3ª tarefa é escolher o terceiro dígito, que pode ser feito de 8 maneiras, pois não pode ser igual aos dois primeiros dígitos.</p>
-<p>A resposta é $9\cdot 9\cdot 8$.</p>
+<p>A resposta é $9\times 9\times 8 = 648$.</p>
 <div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
@@ -13396,7 +13342,7 @@ O procedimento de escolher um número satisfazendo estas hipóteses pode ser que
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo.</p>
 <p><BLOCKQUOTE>
 A placa dos automóveis eram formadas por 3 letras (K, Y e W inclusive) seguidas por quatro algarismos. Quantas placas podiam ser formadas?</p>
@@ -13407,13 +13353,12 @@ A placa dos automóveis eram formadas por 3 letras (K, Y e W inclusive) seguidas
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução.</p>
 <p><BLOCKQUOTE>
 Cada letra pode ser escolhida de 26 modos e cada algarismo de 10 modos distintos.</p>
 <p>A resposta é</p>
-$$ 26\times26\times26\times 10\times10\times10\times10 = 26^3\times10^4$$<p>&lt;/BLOCKQUOTE&gt;</p>
-<div style="text-align: right"> $\blacksquare$ </div>
+$$ 26\times26\times26\times 10\times10\times10\times10 = 26^3\times10^4 = 175760000$$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13453,7 +13398,7 @@ $$ 26\times26\times26\times 10\times10\times10\times10 = 26^3\times10^4$$<p>&lt;
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo.</p>
 <BLOCKQUOTE>
 Sejam $A$ e $B$ dois conjuntos com $\#A=m$ e $\#B=n$.
@@ -13468,7 +13413,7 @@ b) Quantas são as funções injetoras $f:A\rightarrow B?$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução.</p>
 <p><BLOCKQUOTE>
 a) Devemos escolher a imagem de cada elemento de $A$. Existem $n$ modos de escolher a imagem do "primeiro" elemento de $A$, $n$ modos de escolher a imagem do "segundo" elemento de $A$ $\ldots$ até $n$ modos de escolher a imagem do "m-ésimo" elemento de $A$. Pelo princípio multiplicativo, temos</p>
@@ -13480,7 +13425,7 @@ $$ n\times(n-1)\times(n-2)\times \cdots \times(n-m+1)  $$<div style="text-align:
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Exemplo.</p>
 <p><BLOCKQUOTE>
 Quantos são os números naturais pares que se escrevem (na base 10) com três algarismos distintos?</p>
@@ -13491,16 +13436,18 @@ Quantos são os números naturais pares que se escrevem (na base 10) com três a
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h2>
+<p><h3>
 Solução.</p>
 <p><BLOCKQUOTE>
 Neste caso temos duas dificuldades para superar.</p>
 <p>Se começarmos nossa escolha da esquerda para a direita, podemos eliminar o zero e o primeiro algarismo pode ser escolhido de 9 formas, o segundo de 9, e as possibilidades que sobram para o terceiro algarismo (que precisa ser par) vai depender dos que já foram escolhidos.</p>
 <p>Se começarmos nossa escolha da direita para a esquerda, podemos escolher o último algarismo de 5 modos (0, 2, 4, 6 ou 8). A quantidade de formas que temos para escolher o primeiro algarismo vai depender se o zero já foi escolhido ou não.</p>
 <p>Vamos começar uma nova estratégia.</p>
-<p>Já sabemos que o número total de números naturais com três algarismos distintos é $9\times 9\times 8 = 648$. Podemos contar dentre estes, os que são ímpares, a diferença será a resposta deste problema.</p>
+<p>Já sabemos que o número total de números naturais com três algarismos distintos é</p>
+$$9\times 9\times 8 = 648.$$<p></p>
+<p>Podemos contar dentre estes, os que são ímpares, a diferença será a resposta deste problema.</p>
 <p>O último algarismo pode ser escolhido de 5 maneiras (1, 3, 5, 7 ou 9). O primeiro algarismo pode ser escolhido de 8 maneiras (não pode ser o zero, nem o que foi escolhido para o último algarismo) e o segundo algarismo pode ser escolhido de 8 maneiras (nem pode ser igual ao primeiro nem ao último). Poranto a resposta é</p>
-$$ 648 - 5\times 8\times 8. $$<div style="text-align: right"> $\blacksquare$ </div>
+$$ 648 - 5\times 8\times 8=328. $$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13536,6 +13483,37 @@ $$ 648 - 5\times 8\times 8. $$<div style="text-align: right"> $\blacksquare$ </d
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="003"> </section></p>
+<p><h3>
+3 - Exercícios</p>
+<BLOCKQUOTE>
+
+<ol>
+  <li>Quantas palavras contendo 5 letras diferentes podem ser formadas com um alfabeto de 26 letras?</li>
+  $$ $$     
+  <li>Quantos são os gabaritos possíveis de um teste de 25 questões de múltipla-escolha, com cinco alternativas por questão?</li>
+  $$ $$
+  <li>De quantos modos 4 pessoas podem sentar-se em 10 cadeiras em fila?</li>
+  $$ $$
+  <li>Quantos divisores naturais possui o número 600?</li>
+  $$ $$
+  <li>Quantos são os números naturais de 6 dígitos que possuem pelo menos dois dígitos iguais?</li>
+  $$ $$
+  <li>Em uma banca há 7 exemplares iguais da revista A, 4 exemplares iguais da revista B e 15 exemplares igauis da revista C. Quantas coleções não vazias de revistas dessa banca é possível formar?</li>
+  $$ $$
+  <li> Um vagão de trem tem 20 bancos individuais, sendo 10 de frente e 10 de costas. De 20 passageiros 6 passageiros preferem sentar de frente, 7 preferem sentar de costas e os demais não têm preferência. De quantos modos os passageiros podem se sentar, respeitando-se as preferências? </li>
+  $$ $$
+  <li> Quantos números inteiros entre 1000 e 9999 são ímpares e possuem três dígitos distintos? </li>
+  $$ $$
+  <li> Escrevem-se números de cinco dígitos (inclusive os começando por zero) em cartões. Como 0, 1 e 8 não se alteram de cabeça para baixo e como 6 de cabeça para baixo se transforma em 9, um só cartão pode representar dois números (por exemplo 06198 e 86190). Qual é o número de cartões para representar todos os números de cinco dígitos? </li>
+
+</ol>
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
