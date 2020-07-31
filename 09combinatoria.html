@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>10_binom_newton</title>
+<title>09_trian_pascal</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13132,7 +13132,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2>
 <a href="https://sagectu.com.br/calculo1.github.io/combinatoria.html">Índice de Aulas</a></p>
-<p>Aula 10</p>
+<p>Aula 9</p>
 
 </div>
 </div>
@@ -13142,9 +13142,8 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2></p>
 <p><BLOCKQUOTE>
-1 - <a class="nav-link js-scroll-trigger" href="#001">O Binômio de Newton</a></p>
-<p>2 - <a class="nav-link js-scroll-trigger" href="#002">O Polinômio de Leibniz</a></p>
-<p>3 - <a class="nav-link js-scroll-trigger" href="#003">Exercícios</a></p>
+1 - <a class="nav-link js-scroll-trigger" href="#001">O Triângulo de Pascal</a></p>
+<p>2 - <a class="nav-link js-scroll-trigger" href="#002">Exercícios</a></p>
 
 </div>
 </div>
@@ -13159,6 +13158,7 @@ div#notebook {
 <p>[1] Morgado, A. C. O., et al, <i>Análise Combinatória e Probabilidade</i>, SBM. 6ª ed.</p>
 <p>[2] Rosen, K. H., <i>Discrete Mathematics and Its Applications</i>, McGraw-Hill.</p>
 <p>[3] Santana Neto, L. M., <i>Análise Combinatória: Lemas De Kaplansky, Permutações Caóticas E O Princípio Das Casas Dos Pombos E Suas Aplicações Na Matemática Do Ensino Médio</i>, Dissertação do ProfMat</p>
+<p>[4] Machado Junior, R. N., <a href="http://ematematicaoxente.com.br/wp-content/uploads/2018/12/jornal_9ed.pdf"><i>O Princípio da Casa dos Pombos</i></a>, É Matematica Oxente, Nº 9.</p>
 
 </div>
 </div>
@@ -13181,7 +13181,7 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">load</span> <span class="p">(</span><span class="s1">&#39;/home/ricardo/sage-9.0-Debian_GNU_Linux_9-x86_64/SageMath/Sage_Sync/Combinatoria/codigos.sage&#39;</span><span class="p">)</span>
@@ -13219,7 +13219,40 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h2></p>
 <p><section id="001"> </section>
-1 - O Binômio de Newton</p>
+1 - O Triângulo de Pascal</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3>
+
+<p>Chamamos de Triângulo de Pascal o triângulo:</p>
+\begin{equation*} 
+\begin{split}
+ C_0^0 \\
+ C_1^0 &amp; ~C_1^1\\
+ C_2^0 &amp; ~C_2^1 &amp;~ C_2^2\\
+ C_3^0 &amp; ~C_3^1 &amp;~ C_3^2 &amp;~ C_3^3\\
+ C_4^0 &amp; ~C_4^1 &amp;~ C_4^2 &amp;~ C_4^3 &amp; ~ C_4^4\\
+ C_5^0 &amp; ~C_5^1 &amp;~ C_5^2 &amp;~ C_5^3 &amp; ~ C_5^4 &amp; ~C_5^5\\
+ \vdots
+\end{split}
+\end{equation*}<p></p>
+<p>Ou o triângulo formado pelos valores $C_i^j$:</p>
+\begin{equation*} 
+\begin{split}
+ 1 \\
+ 1 &amp; ~~ 1\\
+ 1 &amp; ~~ 2 &amp;~~ 1\\
+ 1 &amp; ~~ 3 &amp;~~ 3 &amp;~~ 1\\
+ 1 &amp; ~~ 4 &amp;~~ 6 &amp;~~ 4 &amp;~~ 1\\
+ 1 &amp; ~~ 5 &amp;~~ 10 &amp;~~ 10 &amp;~~ 5 &amp;~~ 1\\
+ \vdots
+\end{split}
+\end{equation*}<p></p>
 
 </div>
 </div>
@@ -13228,16 +13261,10 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Teorema 1 (Binômio de Newton)</p>
+Teorema 1 (Relação de Stifel)</p>
 <BLOCKQUOTE>
 
-<p>Se $x$ e $a$ são número reais e $n$ é um inteiro positivo,</p>
-\begin{equation} 
-\begin{split}
-(x+a)^n  &amp; = \sum_{k=0}^n C_n^k x^ka^{n-k}\\
-\end{split}
-\end{equation}<p></p>
-
+$$ C_n^p + C_n^{p+1} = C_{n+1}^{p+1}. $$
 </div>
 </div>
 </div>
@@ -13248,16 +13275,16 @@ Teorema 1 (Binômio de Newton)</p>
 Demonstração</p>
 <BLOCKQUOTE>
 
-<p>Temos 
-$$ (x+a)^n  = \overbrace{(x+a)(x+a)\cdots(x+a)}^{n \text{ parcelas}}$$</p>
-<p>Cada termo, do desenvolvimento, é obtido escolhendo-se em cada parênteses um, $x$ ou um $a$ e multiplicando-se os escolhidos.</p>
-<p>Para cada valor de $k, 0\leq k \leq n$, se escolhermos $a$ em $k$ dos parênteses, $x$ será escolhido em $n-k$ dos parênteses e o produto será igual a $a^kx^{n-k}$. Isto pode ser feito de $C_n^k$ modos.</p>
-<p>Então $(x-a)^n$ é uma soma onde há, para cada $k\in\{0, 1, \ldots, n\}$, $C_n^k$ parcelas iguais a $a^kx^{n-k}$. Portanto</p>
-\begin{equation} 
+\begin{equation*} 
 \begin{split}
-(x+a)^n  &amp; = \sum_{k=0}^n C_n^k a^kx^{n-k}\\
+C_n^p + C_n^{p+1}=&amp;~\frac{n!}{p!\times (n-p)!} + \frac{n!}{(p+1)!\times (n-p-1)!} \\
+=&amp;~ \frac{(p+1)\times n!}{(p+1)\times p!\times (n-p)!} + \frac{(n-p)\times n!}{(n-p)\times(p+1)!\times (n-p-1)!} \\
+=&amp;~ \frac{n!\times((p+1)+(n-p)) }{(n-p)!\times(p+1)!}  \\
+=&amp;~ \frac{n!\times(n+1) }{(n-p)!\times(p+1)!} \\
+=&amp;~ \frac{(n+1)!}{(p+1)!\times (n-p)!}  \\
+= &amp;~ C_{n+1}^{p+1}
 \end{split}
-\end{equation}<p></p>
+\end{equation*}<p></p>
 <div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
@@ -13266,25 +13293,10 @@ $$ (x+a)^n  = \overbrace{(x+a)(x+a)\cdots(x+a)}^{n \text{ parcelas}}$$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Observação</p>
+Teorema 2 (Relação das Combinações Complementares)</p>
 <BLOCKQUOTE>
 
-<p>1)
-\begin{equation} 
-\begin{split}
-(x+a)^n  &amp; = \underbrace{C_n^0x^0a^{n-0}}_{\text{1º termo: } T_1} + \underbrace{C_n^1x^1a^{n-1}}_{\text{2º termo: } T_2} + \underbrace{C_n^2x^2a^{n-2}}_{\text{3º termo: } T_3} + \cdots + \underbrace{C_n^nx^na^{n-n}}_{\text{(n+1)º termo: } T_{n+1}}.\\
-  &amp; = C_n^0x^0a^n+C_n^1x^1a^{n-1}+ C_n^2x^2a^{n-2}+\cdots + C_n^nx^na^0.
-\end{split}
-\end{equation}</p>
-<p>2) O $k$-ésimo termo $(k=1, \ldots, n+1)$ do desenvolvimento é dado por:</p>
-$$ T_{k} = C_n^{k-1}x^{k-1}a^{n-k+1}. $$<p>3) Observe também que:</p>
-$$(x+a)^n = (a+x)^n$$<p>Portanto</p>
-\begin{equation} 
-\begin{split}
-(x+a)^n  &amp; =  C_n^0a^0x^n+C_n^1a^1x^{n-1}+ C_n^2a^2x^{n-2}+\cdots + C_n^na^nx^0.
-\end{split}
-\end{equation}<p></p>
-
+$$ C_n^p = C_n^{n-p}. $$
 </div>
 </div>
 </div>
@@ -13292,15 +13304,10 @@ $$(x+a)^n = (a+x)^n$$<p>Portanto</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Exemplo 1</p>
+Demonstração</p>
 <BLOCKQUOTE>
 
-<p>Considere o binômio de Newton</p>
-$$\left(x^4-\frac{1}{x^2}\right)^{11}.$$<p>Determine os coeficientes de</p>
-<p>a) $x^2$ no desenvolvimento do binômio;</p>
-<p>b) $x^5$ no desenvolvimento do binômio;</p>
-<p>c) $x^8$ no desenvolvimento do binômio.</p>
-
+$$ C_n^p= \frac{n!}{p!\times (n-p)!} = \frac{n!}{(n-p)!\times p!} = C_n^{n-p}$$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13308,18 +13315,10 @@ $$\left(x^4-\frac{1}{x^2}\right)^{11}.$$<p>Determine os coeficientes de</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Solução</p>
+Teorema 3 (Teorema das Linhas)</p>
 <BLOCKQUOTE>
 
-<p>O $k$-ésimo termo do desenvolvimento é</p>
-\begin{equation} 
-\begin{split}
-T_k  &amp; = C_{11}^{k-1}(x^4)^{k-1}\left(-\frac{1}{x^2}\right)^{11-k+1}\\
-  &amp; = (-1)^{12-k}C_{11}^{k-1}x^{4(k-1)}x^{-2(12-k)}\\
-  &amp; = (-1)^{12-k}C_{11}^{k-1}x^{6k-28}\\
-\end{split}
-\end{equation}<p></p>
-
+$$ C_n^0 + C_n^1 +C_n^2 + \cdots + C_n^n = 2^n.  $$
 </div>
 </div>
 </div>
@@ -13327,12 +13326,13 @@ T_k  &amp; = C_{11}^{k-1}(x^4)^{k-1}\left(-\frac{1}{x^2}\right)^{11-k+1}\\
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-a)</p>
+Demonstração</p>
 <BLOCKQUOTE>
 
-<p>Para que $6k-28 = 2$, temos $k=5$, logo estamos procurando o 5º termo:</p>
-$$T_5 = (-1)^{7}C_{11}^4x^2$$<p>E portanto o coeficiente é $(-1)^{7}C_{11}^4 = -330$.</p>
-
+$$ C_n^0 \text{ é número de subconjuntos com 0 elementos, de } \{1, 2, \ldots, n\} $$$$ C_n^1 \text{ é número de subconjuntos com 1 elementos, de } \{1, 2, \ldots, n\} $$$$ C_n^2 \text{ é número de subconjuntos com 2 elementos, de } \{1, 2, \ldots, n\} $$$$ \vdots $$$$ C_n^n \text{ é número de subconjuntos com n elementos, de } \{1, 2, \ldots, n\} $$<p>Ou seja, a soma</p>
+$$C_n^0 + C_n^1 +C_n^2 + \cdots + C_n^n$$<p>conta o número de subconjuntos com qualquer contidade de elementos, de um conjunto com n elementos.</p>
+<p>Essa quantidade é $2^n$, pois para formar um subconjunto, deve-se decidir, para cada elemento do conjunto, se ele pertencerá ou não ao subconjunto. Há dois modos de decidir o que fazer com o primeiro elemento do conjunto, 2 modos com o segundo, $\ldots$ O total é</p>
+$$ 2^n. $$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13340,94 +13340,25 @@ $$T_5 = (-1)^{7}C_{11}^4x^2$$<p>E portanto o coeficiente é $(-1)^{7}C_{11}^4 = 
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-b)</p>
+Exemplo 1 (no SageMath)</p>
 <BLOCKQUOTE>
 
-<p>$6k-28 = 5$ não possui solução em $\mathbb{Z}$, portanto o coeficiente de $x^5$ é zero.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-c)</p>
-<BLOCKQUOTE>
-
-<p>Para que $6k-28 = 8$, temos $k=6$, logo estamos procurando o 6º termo:</p>
-$$T_6 = (-1)^{6}C_{11}^5x^8$$<p>E portanto o coeficiente é $(-1)^{6}C_{11}^5 = 462$.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Obtendo a expansão do Binômio no SageMath:</p>
-<BLOCKQUOTE>
-
-<p>Podemos obter a expansão do polinômio $p(x)$ no SageMath com o comando:</p>
-<p><code>p(x).expand()</code></p>
-<p>E podemos obter os coeficientes da expansão de $p(x)$ com o comando:</p>
-<p><code>p(x).coefficients()</code></p>
-<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Exemplo 2</p>
-<BLOCKQUOTE>
-
-<p>Obtendo a expansão e os coeficientes de</p>
-$$\left(x^4-\frac{1}{x^2}\right)^{11}$$<p>no Sage.</p>
+<p>Imprima a soma de cada uma das linhas do triângulo de Pascal, da linha zero até a linha 9.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">((</span><span class="n">x</span><span class="o">^</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span><span class="o">^</span><span class="mi">11</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[2]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>x^44 - 11*x^38 + 55*x^32 - 165*x^26 + 330*x^20 - 462*x^14 + 462*x^8 - 330*x^2 + 165/x^4 - 55/x^10 + 11/x^16 - 1/x^22</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">show</span><span class="p">(((</span><span class="n">x</span><span class="o">^</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span><span class="o">^</span><span class="mi">11</span><span class="p">)</span><span class="o">.</span><span class="n">expand</span><span class="p">())</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">l</span> <span class="o">=</span> <span class="p">[[</span><span class="n">binomial</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)]</span> <span class="k">for</span> <span class="n">n</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">l</span><span class="p">:</span>
+    <span class="n">temp</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">i</span><span class="p">:</span>
+        <span class="n">temp</span> <span class="o">=</span> <span class="n">temp</span> <span class="o">+</span> <span class="n">j</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">temp</span><span class="p">)</span> 
 </pre></div>
 
     </div>
@@ -13443,23 +13374,110 @@ $$\left(x^4-\frac{1}{x^2}\right)^{11}$$<p>no Sage.</p>
     <div class="prompt"></div>
 
 
-
-<div class="output_html rendered_html output_subarea ">
-<html><script type="math/tex; mode=display">\newcommand{\Bold}[1]{\mathbf{#1}}x^{44} - 11 \, x^{38} + 55 \, x^{32} - 165 \, x^{26} + 330 \, x^{20} - 462 \, x^{14} + 462 \, x^{8} - 330 \, x^{2} + \frac{165}{x^{4}} - \frac{55}{x^{10}} + \frac{11}{x^{16}} - \frac{1}{x^{22}}</script></html>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>1
+2
+4
+8
+16
+32
+64
+128
+256
+512
+</pre>
+</div>
 </div>
 
 </div>
+</div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Exemplo 2</p>
+<BLOCKQUOTE>
+
+<p>Qual o valor da soma</p>
+$$ S = \frac{1}{2}C_n^1 + \frac{1}{3}C_n^2 + \cdots + \frac{1}{n+1}C_n^n? $$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Solução</p>
+<BLOCKQUOTE>
+
+
+
+\begin{equation*} 
+\begin{split}
+S = &amp; \sum_{k=1}^n \frac{1}{k+1}C_n^k \\
+  = &amp; \sum_{k=1}^n \frac{1}{k+1}\cdot \frac{n!}{k!(n-k)!} \\
+  = &amp; \sum_{k=1}^n \frac{1}{k+1}\cdot \frac{n!}{k!(n-k)!}\cdot \frac{n+1}{n+1} \\
+  = &amp; \frac{1}{n+1}\sum_{k=1}^n \frac{(n+1)!}{(k+1)!(n-k)!}\cdot  \\
+  = &amp; \frac{1}{n+1}\sum_{k=1}^n C_{n+1}^{k+1}  \\
+  = &amp; \frac{1}{n+1}\left( -C_{n+1}^0 - C_{n+1}^1 +\underbrace{C_{n+1}^0 + C_{n+1}^1 + \cdots+C_{n+1}^{n+1}}_{=2^{n+1}} \right) \\
+  = &amp; \frac{1}{n+1}\left( 2^{n+1} - n -2 \right). \\
+\end{split}
+\end{equation*}<p></p>
+<div style="text-align: right"> $\blacksquare$ </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Exemplo 3 (no SageMath)</p>
+<BLOCKQUOTE>
+
+<p>Calculando o valor da soma do Exemplo 2, de duas formas, para algus valores de n.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+1ª forma</p>
+<BLOCKQUOTE>
+
+<p>Somando todos os termos:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">soma_ex_2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    
+    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">k</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="n">C</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">k</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">s</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">((</span><span class="n">x</span><span class="o">^</span><span class="mi">4</span> <span class="o">-</span> <span class="mi">1</span><span class="o">/</span><span class="n">x</span><span class="o">^</span><span class="mi">2</span><span class="p">)</span><span class="o">^</span><span class="mi">11</span><span class="p">)</span><span class="o">.</span><span class="n">coefficients</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soma_ex_2</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13472,24 +13490,13 @@ $$\left(x^4-\frac{1}{x^2}\right)^{11}$$<p>no Sage.</p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[4]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[-1, -22],
- [11, -16],
- [-55, -10],
- [165, -4],
- [-330, 2],
- [462, 8],
- [-462, 14],
- [330, 20],
- [-165, 26],
- [55, 32],
- [-11, 38],
- [1, 44]]</pre>
+<pre>19/2</pre>
 </div>
 
 </div>
@@ -13502,11 +13509,138 @@ $$\left(x^4-\frac{1}{x^2}\right)^{11}$$<p>no Sage.</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Exemplo 3</p>
+2ª forma</p>
 <BLOCKQUOTE>
 
-<p>Determine o termo máximo do desenvolvimento de</p>
-$$\left(1 + \frac{1}{4}\right)^{10}.$$
+<p>Usando a fórmula:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">formula_soma_ex_2</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    
+    <span class="n">s</span> <span class="o">=</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="p">(</span><span class="mi">2</span><span class="o">^</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">-</span><span class="n">n</span><span class="o">-</span><span class="mi">2</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">s</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">formula_soma_ex_2</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>19/2</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soma_ex_2</span><span class="p">(</span><span class="mi">12</span><span class="p">),</span> <span class="n">formula_soma_ex_2</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(8178/13, 8178/13)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soma_ex_2</span><span class="p">(</span><span class="mi">50</span><span class="p">),</span> <span class="n">formula_soma_ex_2</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(2251799813685196/51, 2251799813685196/51)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Teorema 4 (Teorema das Colunas)</p>
+<BLOCKQUOTE>
+
+$$ C_p^p + C_{p+1}^p + C_{p+2}^p + \cdots + C_{p+n}^p = C_{p+n+1}^{p+1}   $$
 </div>
 </div>
 </div>
@@ -13514,12 +13648,23 @@ $$\left(1 + \frac{1}{4}\right)^{10}.$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Solução</p>
+Demonstração</p>
 <BLOCKQUOTE>
 
-<p>Como</p>
-$$\left(1 + \frac{1}{4}\right)^{10} = \frac{1}{1024} + \frac{5}{256} + \frac{5}{32} + \frac{5}{8} + \frac{5}{4}+ 1.$$<p>O termo máximo é</p>
-$$\frac{5}{4}.$$<div style="text-align: right"> $\blacksquare$ </div>
+<p>Vamos aplicar a relação de Stifel aos elementos da coluna $p+1$:</p>
+\begin{equation*} 
+\begin{split}
+C_{p+1}^{p+1} =&amp;~ C_p^{p+1} + C_p^p \\
+C_{p+2}^{p+1} =&amp;~ C_{p+1}^{p+1} + C_{p+1}^p \\
+C_{p+3}^{p+1} =&amp;~ C_{p+2}^{p+1} + C_{p+2}^p \\
+\vdots\\
+C_{p+n}^{p+1} =&amp;~ C_{p+n-1}^{p+1} + C_{p+n-1}^p \\
+C_{p+n+1}^{p+1} =&amp;~ C_{p+n}^{p+1} + C_{p+n}^p \\
+\end{split}
+\end{equation*}<p></p>
+<p>Somando tudo, ficamos com</p>
+$$ C_{p+n+1}^{p+1} = C_p^{p+1} + C_p^p + C_{p+1}^p + C_{p+2}^p +\cdots + C_{p+n-1}^p + C_{p+n}^p.$$<p>Como $C_p^{p+1} = 0$, obtemos o resultado:</p>
+$$ C_{p+n+1}^{p+1} = C_p^p + C_{p+1}^p + C_{p+2}^p +\cdots + C_{p+n-1}^p + C_{p+n}^p.$$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13530,8 +13675,8 @@ $$\frac{5}{4}.$$<div style="text-align: right"> $\blacksquare$ </div>
 Exemplo 4</p>
 <BLOCKQUOTE>
 
-<p>Determine o termo máximo do desenvolvimento de</p>
-$$\left(1 + \frac{1}{4}\right)^{70}.$$
+<p>Qual o valor da soma</p>
+$$ S = 1^2\cdot2 + 2^2\cdot3+  3^2\cdot4+\cdots+n^2\cdot(n+1)? $$
 </div>
 </div>
 </div>
@@ -13542,272 +13687,41 @@ $$\left(1 + \frac{1}{4}\right)^{70}.$$
 Solução</p>
 <BLOCKQUOTE>
 
-<p>O $k$-ésimo termo é</p>
-$$ T_{k} = C_{70}^{k-1}1^{k-1}\left(\frac{1}{4}\right)^{71-k} = C_{70}^{k-1}\cdot\frac{1}{4^{71-k}}$$<p>$T_{k+1}&gt; T_{k}$ se</p>
-$$ C_{70}^{k}\cdot\frac{1}{4^{70-k}} &gt; C_{70}^{k-1}\cdot\frac{1}{4^{71-k}} $$<p>Isto é</p>
-$$ \frac{70!}{k!(70-k)!}\cdot\frac{1}{4^{70-k}} &gt; \frac{70!}{(k-1)!(71-k)!}\cdot\frac{1}{4^{71-k}} $$<p>ou seja,</p>
-$$ \frac{(71-k)!}{(70-k)!} &gt; \frac{k!}{(k-1)!}\cdot\frac{4^{70-k}}{4^{71-k}} $$<p>e simplificando temos</p>
-$$ \frac{(71-k)}{1} &gt; \frac{k}{1}\cdot\frac{1}{4} $$<p>Ou seja, $ 71-k &gt; k/4 $ e portanto $k&lt;56, 8$.</p>
-<p>Assim, temos  $T_{k} &lt; T_{k+1}$ para $k = 1, 2, \ldots, 56$ e portanto o maior termo é $T_{57}$:</p>
-$$ T_{57} = C_{70}^{56}\cdot\frac{1}{4^{14}} = \frac{24156719613645}{33554432}.$$<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">C</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span> <span class="mi">56</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="o">^</span><span class="p">(</span><span class="mi">14</span><span class="p">))</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[5]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>24156719613645/33554432</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">termo_max_binomio</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="mi">70</span><span class="p">)</span> <span class="c1">#função que calcula o termo max do binomio (1+1/4)^70</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[6]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>&#39;O termo máximo é T_57 = C(70,56)*(1)^56*(1/4)^(70-56) = 24156719613645/33554432&#39;</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">C</span><span class="p">(</span><span class="mi">70</span><span class="p">,</span><span class="mi">56</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="o">^</span><span class="mi">56</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">)</span><span class="o">^</span><span class="p">(</span><span class="mi">70</span><span class="o">-</span><span class="mi">56</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[78]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>24156719613645/33554432</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[73]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">termos_binomio</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="o">/</span><span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="c1">#função que calcula os termos do binomio (1+1/4)^5</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[73]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[1/1024, 5/256, 5/32, 5/8, 5/4, 1]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Exemplo 5</p>
-<BLOCKQUOTE>
-
-<p>Qual é a soma dos coeficientes do desenvolvimento de</p>
-$$ (5x^{11} - 6x^{4})^{25} $$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Solução</p>
-<BLOCKQUOTE>
-
-<p>Seja $p(x) = a_0 + a_1x + a_2x^2 + \cdots + a_nx^n$, a soma dos coeficientes de $p(x)$ é igual a $p(1)$.</p>
-<p>Portando a soma dos coeficientes do desenvolvimento de $q(x) = (5x^{11} - 6x^{4})^{25}$ é</p>
-$$ q(1) = (5 - 6)^{25} = -1 $$<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">=</span> <span class="p">(</span><span class="mi">5</span><span class="o">*</span><span class="n">x</span><span class="o">^</span><span class="mi">11</span> <span class="o">-</span> <span class="mi">6</span><span class="o">*</span><span class="n">x</span><span class="o">^</span><span class="mi">4</span><span class="p">)</span><span class="o">^</span><span class="mi">25</span>
-<span class="n">p</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[7]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>-1</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Teorema 2</p>
-<BLOCKQUOTE>
-
-$$T_{k+1} = \frac{n-k+1}{k}\cdot\frac{x}{a}\cdot T_k$$
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Demonstração</p>
-<BLOCKQUOTE>
-
-$$ T_{k+1} = C_n^kx^ka^{n-k} = \frac{n-k+1}{k}C_n^{k-1}x^ka^{n-k} $$<p>e</p>
-$$ T_{k} = C_n^{k-1}x^{k-1}a^{n-k+1}. $$<p>Portanto,</p>
-$$T_{k+1} = \frac{n-k+1}{k}\cdot\frac{x}{a}\cdot T_k .$$<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h2></p>
-<p><section id="002"> </section>
-2 - O Polinômio de Leibniz</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Teorema 3 (Polinômio de Leibniz)</p>
-<BLOCKQUOTE>
-
-\begin{equation} 
+<p>Note que</p>
+$$  $$\begin{equation*} 
 \begin{split}
-(x_1+x_2+\cdots + x_p)^n  &amp; = \sum_{\alpha_1 + \alpha_2 +\cdots + \alpha_p = n} \frac{n!}{\alpha_1!\alpha_2!\cdots\alpha_p!}x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}\\
+S = &amp; \sum_{k=1}^{n} k^2\cdot (k+1) \\
+  = &amp; \sum_{k=1}^{n} k^3+k^2 \\
 \end{split}
-\end{equation}<p></p>
-<p>Na qual, para cada $i\in\{1, 2, \ldots, p\}$, $\alpha_i\in \{j ~|~ j\in \mathbb{Z}\geq 0\}$, ou seja $\alpha_i$ é um inteiro não negativo.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Demonstração</p>
-<BLOCKQUOTE>
-
-<p>Temos</p>
-$$ (x_1+x_2+\cdots + x_p)^n  = (x_1+\cdots + x_p)(x_1+\cdots + x_p)\cdots(x_1+\cdots + x_p)$$<p>Um termo genérico do produto é obtido escolhendo um $x_i$ em cada parênteses e multiplicando os escolhidos.</p>
-<p>Se em $\alpha_1$ dos parênteses escolhermos $x_1$, em $\alpha_2$ dos parênteses escolhermos $x_2$, $\ldots$, obteremos</p>
-$$x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}, \text{ satisfazendo } \alpha_1 + \alpha_2 +\cdots + \alpha_p = n. $$<p>Agora falta responder quantas vezes o termo $x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}$ aparece no desenvolvimento.</p>
-<p>O termo $x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}$ aparece tantas vezes, quantas são as formas de escolher, nos $n$ parênteses, $\alpha_1$ deles para escolher o $x_1$, $\alpha_2$ deles para escolher o $x_2$, $\ldots$. Isto pode ser feito de</p>
-$$ C_n^{\alpha_1}\cdot C_{n-\alpha_1}^{\alpha_2}\cdots C_{n-\alpha_1-\alpha_2-\cdots -\alpha_{p-1}}^{\alpha_p} = \frac{n!}{\alpha_1!\alpha_2!\cdots\alpha_p!} $$<p>maneiras, o que mostra o resultado.</p>
+\end{equation*}<p></p>
+<p>Para usarmos o Teorema das Colunas, precisamos que no somatório apareca um produto de números consecutivos, pois</p>
+$$ k\cdot(k+1)\cdot(k+2) = 3!\frac{(k+2)!}{3!(k-1)!} = 3!\cdot C_{k+2}^{3}.$$<p>Então, vamos procurar valores para $A, B, C$ e $D$, para os quais, vale a igualdade</p>
+\begin{equation*} 
+\begin{split}
+k^3+k^2 = &amp;~ Ak(k+1)(k+2) + Bk(k+1) + Ck +D \\
+  = &amp;~ k^3(A) + k^2(3A+B) + k(2A+B+C) +D \\
+\end{split}
+\end{equation*}<p></p>
+<p>igualando os coeficientes, obtemos</p>
+\begin{cases} 
+\begin{equation*} 
+\begin{split}
+A = &amp;~ 1 \\
+3A+B  = &amp;~ 1 \\
+2A+B+C  = &amp;~ 0 \\
+D = &amp;~ 0 \\
+\end{split}
+\end{equation*} 
+\end{cases}$$ \Rightarrow A= 1  ~~\text{ e } ~~ B = -2. $$<p>E podemos terminar o cálculo da soma</p>
+\begin{equation*} 
+\begin{split}
+S = &amp;~ \sum_{k=1}^{n} k^3+k^2  \\
+  = &amp;~ \sum_{k=1}^{n} k(k+1)(k+2) - 2 \sum_{k=1}^{n} k(k+1) \\
+  = &amp;~ 3!\sum_{k=1}^{n} C_{k+2}^3 - 2\cdot 2! \sum_{k=1}^{n} C_{k+1}^2 \\
+  = &amp;~ 6C_{n+3}^4 - 4C_{n+2}^3\\
+  = &amp;~ \frac{3n^4+10n^3+9n^2+2n}{12}
+\end{split}
+\end{equation*}<p></p>
 <div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
@@ -13816,13 +13730,10 @@ $$ C_n^{\alpha_1}\cdot C_{n-\alpha_1}^{\alpha_2}\cdots C_{n-\alpha_1-\alpha_2-\c
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Exemplo 6</p>
+Exemplo 5 (no SageMath)</p>
 <BLOCKQUOTE>
 
-<p>Considere o polinômio:</p>
-$$ (x^3-x+5)^8 $$<p>Determine os coeficientes de</p>
-<p>a) $x^2$ no desenvolvimento;</p>
-<p>b) $x^4$ no desenvolvimento.</p>
+<p>Calculando o valor da soma do Exemplo 4, de duas formas, para algus valores de n.</p>
 
 </div>
 </div>
@@ -13831,58 +13742,39 @@ $$ (x^3-x+5)^8 $$<p>Determine os coeficientes de</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Solução</p>
+1ª forma</p>
 <BLOCKQUOTE>
 
-\begin{equation} 
-\begin{split}
-(x^3-x+5)^8  &amp; = \sum_{\alpha_1 + \alpha_2 + \alpha_3 = 8} \frac{8!}{\alpha_1!\alpha_2!\alpha_3!}(x^3)^{\alpha_1}(-x)^{\alpha_2}5^{\alpha_3}\\
-\end{split}
-\end{equation}<p></p>
+<p>Somando todos os termos:</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-a)</p>
-<BLOCKQUOTE>
-
-<p>Para que o expoente de $x$ seja 2, devemos ter $x^{3\alpha_1}x^{\alpha_2} = x^2$, juntando com a condição $\alpha_1+\alpha_2+\alpha_3 = 8$, temos</p>
-$$\begin{cases} 
-      \alpha_1 + \alpha_2 +\alpha_3   &amp; = &amp; 8 \\
-      ~~~~ ~~~ 3\alpha_1 + \alpha_2 &amp; = &amp; 2 \end{cases}$$<p>Assim, $\alpha_1 = 0, \alpha_2 = 2$ e $\alpha_3 = 6.$</p>
-<p>E a soma dos termos que possuem $x^2$ é:</p>
-$$ \frac{8!}{0!\times 2! \times 6!} 5^6x^2 = 437500x^2$$<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-b)</p>
-<BLOCKQUOTE>
-
-<p>Para que o expoente de $x$ seja 4, devemos ter $x^{3\alpha_1}x^{\alpha_2} = x^4$, juntando com a condição $\alpha_1+\alpha_2+\alpha_3 = 8$, temos</p>
-$$\begin{cases} 
-      \alpha_1 + \alpha_2 +\alpha_3   &amp; = &amp; 8 \\
-      ~~~~ ~~~ 3\alpha_1 + \alpha_2 &amp; = &amp; 4 \end{cases}$$<p>Temos duas soluções:</p>
-$$\begin{cases} 
-      \alpha_1 = 0, \alpha_2 = 4 \text{ e }\alpha_3 = 4 \\
-      \alpha_1 = 1, \alpha_2 = 1 \text{ e } \alpha_3 = 6 \end{cases}$$<p>E a soma dos termos que possuem $x^4$ é:</p>
-$$ \frac{8!}{0!\times 4! \times 4!} 5^4x^2 - \frac{8!}{1!\times 1! \times 6!} 5^6x^2 = -831250x^2$$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="p">((</span><span class="n">x</span><span class="o">^</span><span class="mi">3</span><span class="o">-</span><span class="n">x</span> <span class="o">+</span><span class="mi">5</span><span class="p">)</span><span class="o">^</span><span class="mi">8</span><span class="p">)</span><span class="o">.</span><span class="n">coefficients</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">soma_ex_4</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    
+    <span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="n">s</span> <span class="o">+</span> <span class="n">k</span><span class="o">^</span><span class="mi">3</span> <span class="o">+</span> <span class="n">k</span><span class="o">^</span><span class="mi">2</span>
+    
+    <span class="k">return</span> <span class="n">s</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soma_ex_4</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13895,36 +13787,13 @@ $$ \frac{8!}{0!\times 4! \times 4!} 5^4x^2 - \frac{8!}{1!\times 1! \times 6!} 5^
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>[[390625, 0],
- [-625000, 1],
- [437500, 2],
- [450000, 3],
- [-831250, 4],
- [518000, 5],
- [263200, 6],
- [-490040, 7],
- [258301, 8],
- [105280, 9],
- [-164508, 10],
- [69160, 11],
- [29778, 12],
- [-33600, 13],
- [10444, 14],
- [5600, 15],
- [-4130, 16],
- [840, 17],
- [644, 18],
- [-280, 19],
- [28, 20],
- [40, 21],
- [-8, 22],
- [1, 24]]</pre>
+<pre>280</pre>
 </div>
 
 </div>
@@ -13936,62 +13805,234 @@ $$ \frac{8!}{0!\times 4! \times 4!} 5^4x^2 - \frac{8!}{1!\times 1! \times 6!} 5^
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><h3></p>
-<p><section id="003"> </section>
-3 - Exercícios</p>
+<p><h3>
+2ª forma</p>
 <BLOCKQUOTE>
 
-<ol>
-  <li> Determine o coeficiente de $x^5$ no desenvolvimento de 
+<p>Usando a fórmula:</p>
 
-$$ \left( x^3 - \frac{1}{x^2} \right)^{15}. $$  </li>
-    $$ $$ 
-<li> Determine o coeficiente de $x^{50}$ no desenvolvimento de 
-
-$$ (x^2+3)^{10}(x^3-3)^{11}. $$  </li>
-    $$ $$ 
-<li> Calcule o termo máximo e o termo mínimo do desenvolvimento de 
-$$ $$
-$$ \left(1+\frac{1}{5}\right)^{50}. $$ </li>
-    $$ $$     
-
-<li>  Calcule a soma dos coeficientes dos termos de ordem par do desenvolvimento de 
-$$ $$
-$$ (3x^2 - 5y)^{2020}. $$ 
-
-</li>
-    $$ $$ 
-<li>  Qual é o maior dos números 
-
-$$ $$
-$$ a = 151^{60} \text{ e } b = 150^{60} + 149^{60}? $$</li>
-    $$ $$     
-<li> Determine o coeficiente de $x^{12}$ no desenvolvimento de 
-
-$$ \left( 1+x^4+x^8 \right)^{12}. $$  </li>
-    $$ $$   
-
-<li> Quantos termos possui o desenvolvimento de
-
-$$ \left( x_1 +x_2 +x_3 +x_4 +x_5 +x_6 +x_7 \right)^{30}? $$  </li>
-    $$ $$       
-
-</ol>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">formula_soma_ex_4</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+    
+    <span class="n">s</span> <span class="o">=</span>  <span class="mi">6</span><span class="o">*</span><span class="p">((</span><span class="n">n</span><span class="o">+</span><span class="mi">3</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="n">P</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span> <span class="o">-</span> <span class="mi">4</span><span class="o">*</span><span class="p">(((</span><span class="n">n</span><span class="o">+</span><span class="mi">2</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">n</span><span class="p">)</span><span class="o">/</span><span class="n">P</span><span class="p">(</span><span class="mi">3</span><span class="p">))</span>
+    
+    <span class="k">return</span> <span class="n">s</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">formula_soma_ex_4</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[21]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>280</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soma_ex_4</span><span class="p">(</span><span class="mi">15</span><span class="p">),</span> <span class="n">formula_soma_ex_4</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[22]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(15640, 15640)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">soma_ex_4</span><span class="p">(</span><span class="mi">70</span><span class="p">),</span> <span class="n">formula_soma_ex_4</span><span class="p">(</span><span class="mi">70</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>(6292020, 6292020)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Teorema 5 (Teorema das Diagonais)</p>
+<BLOCKQUOTE>
+
+$$ C_n^0 + C_{n+1}^1 + C_{n+2}^2 + \cdots + C_{n+p}^p = C_{n+p+1}^p   $$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Demonstração</p>
+<BLOCKQUOTE>
+
+<p>Aplicando o Teorema 2 (Relação das Combinações Complementares), em cada $C_{n+i}^i$ obtemos</p>
+$$ C_n^0 + C_{n+1}^1 + C_{n+2}^2 + \cdots + C_{n+p}^p = \underbrace{C_{n}^n+C_{n+1}^n+C_{n+2}^n+\cdots+C_{n+p}^n}_{(*)}. $$<p>Aplicando o Teorema 4 (Teorema das Colunas), no lado direito da igualdade anterior, obtemos</p>
+$$ \overbrace{C_{n}^n+C_{n+1}^n+C_{n+2}^n+\cdots+C_{n+p}^n}^{(*)} = \underbrace{C_{n+p+1}^{n+1}}_{(**)}.$$<p>Aplicando novamente o Teorema 2, obtemos</p>
+$$ \overbrace{C_{n+p+1}^{n+1}}^{(**)} =  C_{n+p+1}^{p}. $$<p>O que mostra o resultado.</p>
+<div style="text-align: right"> $\blacksquare$ </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Teorema 6</p>
+<BLOCKQUOTE>
+
+$$ \text{a) Se } p&lt; \frac{n-1}{2}, \text{ então }  C_n^p&lt;C_n^{p+1}. $$$$ \text{b) Se } p&gt; \frac{n-1}{2}, \text{ então }  C_n^p&gt;C_n^{p+1}. $$<p>Ou seja:</p>
+\begin{equation*} 
+\begin{split}
+ C_0^0 \\
+ C_1^0 &amp; &amp; ~C_1^1\\
+ C_2^0 &amp; &lt; &amp;~C_2^1 &amp; &gt; &amp;~ C_2^2\\
+ C_3^0 &amp; &lt; &amp; ~C_3^1 &amp; &amp;~ C_3^2 &amp; &gt; &amp;~ C_3^3\\
+ C_4^0 &amp; &lt; &amp; ~C_4^1 &amp; &lt; &amp;~ C_4^2 &amp;&gt; &amp;~ C_4^3 &amp;&gt;&amp; ~ C_4^4\\
+ C_5^0 &amp; &lt; &amp; ~C_5^1 &amp; &lt; &amp;~ C_5^2 &amp; &amp;~ C_5^3 &amp;&gt; &amp; ~ C_5^4 &amp;&gt;&amp; ~C_5^5\\
+ \vdots
+\end{split}
+\end{equation*}<p></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Demonstração</p>
+<BLOCKQUOTE>
+
+<p>Vamos analisar a diferença $C_n^{p+1}-C_n^p$:</p>
+\begin{equation*} 
+\begin{split}
+ C_n^{p+1}-C_n^p = &amp; ~ \frac{n!}{(p+1)!(n-p-1)!} - \frac{n!}{p!(n-p)!}\\
+                 = &amp; ~ \frac{n!}{(p+1) p!(n-p-1)!} - \frac{n!}{p!(n-p)(n-p-1)!}\\
+                 =  &amp; ~ \frac{n!(n-p) - n!(p+1)}{(p+1)!(n-p)!}\\
+                 =  &amp; ~ \frac{n!(n-2p-1))}{(p+1)! (n-p)!}\\
+\end{split}
+\end{equation*}<p></p>
+<p>Oberve que $n!, (p+1)!$ e $(n-p)!$ são positivos, portanto o sinal de $C_n^{p+1}-C_n^p$, será determinado pelo sinal de</p>
+$$n-2p-1.$$<p>Logo,</p>
+$$ \text{Se } n-2p-1&gt;0, \text{ então } p&lt;\frac{n-1}{2} \Rightarrow C_n^{p+1}-C_n^{p}&gt;0 \Rightarrow C_n^{p}&lt;C_n^{p+1}.   $$$$ \text{Se } n-2p-1&lt;0, \text{ então } p&gt;\frac{n-1}{2} \Rightarrow C_n^{p+1}-C_n^{p}&lt;0 \Rightarrow C_n^{p}&gt;C_n^{p+1}.   $$<div style="text-align: right"> $\blacksquare$ </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3></p>
+<p><section id="002"> </section>
+2 - Exercícios</p>
+<BLOCKQUOTE>
+
+<ol>
+  <li> Tem-se $n$ comprimidos de substâncias distintas, solúveis em água e incapazes de reagir entre si. Quantas soluções distintas podem ser obtidas dissolven-se um ou mais desses comprimidos em um copo com água? </li>
+    $$ $$ 
+  <li> Calcule o valor da soma
+
+$$ S = 20\cdot21 + 21\cdot 22 +\cdots + 130\cdot 131. $$
+</li>
+    $$ $$ 
+  <li> Calcule o valor de  
+
+$$ S = \sum_{k=1}^{n}k(3k+1).  $$
+</li>
+    $$ $$ 
+  <li> Calcule
+
+$$ CR_n^0 + CR_n^1+\cdots+ CR_n^p. $$
+</li>
+    $$ $$ 
+  <li> Resolva a equação $ C_{41}^p = C_{41}^{2p-1} $. </li>
+
+
+</ol>
+</div>
+</div>
 </div>
     </div>
   </div>
