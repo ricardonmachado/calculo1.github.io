@@ -13145,6 +13145,8 @@ div#notebook {
 1 - <a class="nav-link js-scroll-trigger" href="#001">Permutação Circular</a></p>
 <p>2 - <a class="nav-link js-scroll-trigger" href="#002">Permutação com Repetição</a></p>
 <p>3 - <a class="nav-link js-scroll-trigger" href="#003">Exercícios</a></p>
+<p>4 - <a class="nav-link js-scroll-trigger" href="#004">Atividade</a></p>
+<p>5 - <a class="nav-link js-scroll-trigger" href="#005">Resposta dos Exercícios</a></p>
 
 </div>
 </div>
@@ -13158,6 +13160,7 @@ div#notebook {
 
 <p>[1] Morgado, A. C. O., et al, <i>Análise Combinatória e Probabilidade</i>, SBM. 6ª ed.</p>
 <p>[2] Rosen, K. H., <i>Discrete Mathematics and Its Applications</i>, McGraw-Hill.</p>
+<p>[3] Bezerra, N., <i>Análise Combinatória e Probabilidade</i>, editAedi.</p>
 
 </div>
 </div>
@@ -13180,7 +13183,7 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">load</span> <span class="p">(</span><span class="s1">&#39;/home/ricardo/sage-9.0-Debian_GNU_Linux_9-x86_64/SageMath/Sage_Sync/Combinatoria/codigos.sage&#39;</span><span class="p">)</span>
@@ -13230,7 +13233,7 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 Definição 1</p>
 <p><BLOCKQUOTE>
 O número de <em>permutações circulares</em> de $n$ elementos, é o número de maneiras de organizar $n$ objetos distintos ao longo de um círculo fixo (isto é, não pode ser retirado do plano e virado). Notação:</p>
-$$ PC(n) $$
+$$ PC_n ~~\text{ ou }~~ PC(n). $$
 </div>
 </div>
 </div>
@@ -13561,19 +13564,6 @@ $$ PC(8)-PC(7)\times2 = 3600. $$<div style="text-align: right"> $\blacksquare$ <
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Definição 2</p>
-<BLOCKQUOTE>
-
-<p>Quando temos um conjunto de $n$ objetos, que possui elementos repetidos, o número de <em>permutações com repetições</em> é denotado por:</p>
-$$ PR_n^{r_1, r_2, \ldots, r_m}. $$<p>Na qual, $r_i$ é o número de repetições do i-ésimo objeto.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
 Exemplo 5</p>
 <BLOCKQUOTE>
 
@@ -13592,7 +13582,8 @@ Solução</p>
 <p>Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez.</p>
 <p>Podemos imaginar, por enquanto, que a palavra é assim</p>
 $$SA_1GEMA_2TH$$<p>Com $A_1\neq A_2$, nesse caso teríamos um total de</p>
-$$ P(8) = 8! $$<p>permutações. Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, podemos dividir o total de permutações pela quantidade de rearranjar os A's. Dessa forma a resposta é</p>
+$$ P(8) = 8! $$<p>permutações. Agora vamos resolver o problema das repetições.</p>
+<p>Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir o total de permutações pela quantidade de reordenar os A's. Dessa forma a resposta é</p>
 $$\frac{P(8)}{P(2)}=20160.$$
 </div>
 </div>
@@ -13634,6 +13625,56 @@ $$\frac{P(8)}{P(2)}=20160.$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
+Definição 2</p>
+<BLOCKQUOTE>
+
+<p>Quando temos um conjunto de $n$ objetos, que possui elementos repetidos, o número de <em>permutações com repetições</em> é denotado por:</p>
+$$ PR_n^{r_1, r_2, \ldots, r_k}. $$<p>Na qual, $r_i$ é o número de repetições do i-ésimo objeto.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Teorema 2</p>
+<BLOCKQUOTE>
+
+$$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Demonstração</p>
+<BLOCKQUOTE>
+
+<p>Considere os $n$ objetos da seguinte forma:</p>
+$$ \underbrace{A_1A_1\ldots A_1}_{r_1  \text{ vezes}} \underbrace{A_2A_2\ldots A_2}_{r_2  \text{ vezes}}\ldots\underbrace{A_kA_k\ldots A_k}_{r_k  \text{ vezes}} $$<p>observe que $r_1+r_2+\cdots+ r_k = n.$</p>
+<p>Para encontrar o número de formar de permutar esses elementos, vamos quebrar em $k$ etapas.</p>
+<p>Na primeira etapa, vamos escolher $r_1$ posições, dentre $n$, para colocar $A_1$: $C_n^{r_1}$.</p>
+<p>Na segunda etapa, vamos escolher $r_2$ posições, dentre $n-r_1$, para colocar $A_2$: $C_{n-r_1}^{r_2}$.</p>
+<p>$\vdots$</p>
+<p>Na $k$-ésima etapa, vamos escolher $r_k$ posições, dentre $n-r_1-r_2-\cdots-r_{k-1}=r_k$, para colocar $A_k$: $C_{r_k}^{r_k}$.</p>
+<p>Portanto,</p>
+\begin{equation*} 
+\begin{split}
+PR_n^{r_1, r_2, \ldots, r_k} &amp;=~ C_n^{r_1}\times C_{n-r_1}^{r_2} \times \cdots \times C_{r_k}^{r_k} \\
+                             &amp;=~ \frac{n!}{r_1!\underbrace{(n-r_1)!}_{x_1}}\cdot\frac{\overbrace{(n-r_1)!}^{x_1}}{r_2!\underbrace{(n-r_1-r_2)!}_{x_2}}\cdot \frac{\overbrace{(n-r_1-r_2)!}^{x_2}}{r_3!\underbrace{(n-r_1-r_2-r_3)!}_{x_3}}\cdots\frac{\overbrace{n_k!}^{x_k}}{n_k!\underbrace{(n_k-n_k)!}_{=1}} \\
+                             &amp;=~ \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}.
+\end{split}
+\end{equation*}<p></p>
+<div style="text-align: right"> $\blacksquare$ </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
 Número de Permutações com Repetições no SageMath</p>
 <BLOCKQUOTE>    
 
@@ -13644,7 +13685,7 @@ Número de Permutações com Repetições no SageMath</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">PR</span><span class="p">(</span><span class="o">*</span><span class="n">lista</span><span class="p">):</span>
@@ -13789,36 +13830,68 @@ $$ PR_9^{2, 2, 2} + 2\times PR_9^{3, 2, 2} = 75600. $$
 <ol>
   <li> De quantos modos $7$ meninos e $7$ meninas podem formar uma roda de ciranda de modo que pessoas de mesmo sexo não fiquem juntas? </li>
     $$ $$ 
-  <li> De quantos modos $22$ crianças podem formar uma roda de ciranda de modo que $5$ dessas crianças permaneçam juntas? </li>
-    $$ $$ 
   <li> De quantos modos $18$ casais podem formar uma roda de ciranda de modo que cada homem permaneça ao lado de sua mulher? </li>
     $$ $$ 
-  <li> De quantos modos $25$ casais podem formar uma roda de ciranda de modo que cada homem permaneça ao lado de sua mulher e que pessoas de mesmo sexo não fiquem juntas? </li>
+  <li> Quantos números de $8$ dígitos, maiores que $50.000.000$, podem ser formados usando apenas os algarismos $1, 2, 5, 5, 5, 7, 7, 7$ ?</li>
     $$ $$ 
-  <li> Quantos números de $8$ dígitos, maiores que $50.000.000$, podem ser formados usando apenas os algarismos $1, 2, 4, 5, 5, 7, 7, 7$ ?</li>
+  <li> De quantos modos podemos colocar em fila 6 letras A, 6 letras B, 5 letras C e 4 letras D, de modo que não haja duas letras C juntas? </li>
     $$ $$ 
-  <li> De quantos modos podemos colocar em fila 4 letras A, 6 letras B, 3 letras C e 8 letras D, de modo que não haja nem duas letras B juntas, nem duas letras D juntas? </li>
-    $$ $$ 
-  <li> Uma fábrica produz 12 tipos de chocolates que são vendidos em caixas de 40 chocolates (de um mesmo tipo ou sortidos). Quantas caixas diferentes podem ser formadas? </li>
-    $$ $$ 
-  <li> De quantos modos podem ser pentados 15 objetos iguais usando 6 cores diferentes? </li>
+  <li> De quantos modos podem ser pintados 15 objetos iguais usando 6 cores diferentes? </li>
 
 </ol>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="004"> </section></p>
+<p><h3>
+4 - Atividade</p>
+$$ $$<p>Desta seção será sorteada uma questão para cada aluno. Tentaremos fazer o sorteio ao-vivo no dia ?? no horário da aula. O link para acessar a aula ficará disponível no AVA. O aluno deve enviar a solução para o e-mail: ricardo.machadojunior@ufrpe.br. Esta primeira atividade tem a data limite para envio: ??</p>
+<BLOCKQUOTE>
 
-    </div>
+<ol>
+  <li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+
+
+</ol>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="005"> </section></p>
+<p><h3>
+5 - Respostas dos Exercícios</p>
+<BLOCKQUOTE>
 
+<ol>
+  <li> $6!\times 7! = 3628800.$ </li>
+  $$ $$
+  <li> $17!\times 2^{18} = 93241325150797824000.$ </li>
+  $$ $$
+  <li> $2\times PR_{7}^{3, 2}=840.$ </li>
+  $$ $$
+  <li> $PR_{16}^{6,6,4}\times C_{17}^5 = 10406235840.$ </li>
+  $$ $$
+  <li> $PR_{20}^{15, 5} = 15504.$ </li>
+  $$ $$
+
+
+</ol>
+</div>
+</div>
 </div>
     </div>
   </div>
