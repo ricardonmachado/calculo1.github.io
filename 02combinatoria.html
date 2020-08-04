@@ -13145,6 +13145,8 @@ div#notebook {
 1 - <a class="nav-link js-scroll-trigger" href="#001">Permutação Simples</a></p>
 <p>2 - <a class="nav-link js-scroll-trigger" href="#002">Combinação Simples</a></p>
 <p>3 - <a class="nav-link js-scroll-trigger" href="#003">Exercícios</a></p>
+<p>4 - <a class="nav-link js-scroll-trigger" href="#004">Atividade</a></p>
+<p>5 - <a class="nav-link js-scroll-trigger" href="#005">Resposta dos Exercícios</a></p>
 
 </div>
 </div>
@@ -13195,7 +13197,7 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 
 <BLOCKQUOTE>
 
-<p>O número permutações simples é nada mais que o número de maneiras de ordenar uma quantidade finita de objetos distintos. A permutação de $n$ objetos é denotada por</p>
+<p>O número permutações simples é o número de maneiras de ordenar uma quantidade finita de objetos distintos. A permutação de $n$ objetos é denotada por</p>
 $$P_n ~~\text{ ou }~~ P(n).$$<p></p>
 
 </div>
@@ -13205,7 +13207,7 @@ $$P_n ~~\text{ ou }~~ P(n).$$<p></p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Exemplo 1</p>
+Exemplo 1 (Obtendo as permutações no SageMath)</p>
 <p><BLOCKQUOTE>
 A seguir veremos todas as permutações da lista de três elementos: [1, 2, 3].</p>
 
@@ -13261,8 +13263,9 @@ $$ P(n) = n\cdot (n-1) \cdots 1 = n! $$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
 Demonstração.</p>
-<p><BLOCKQUOTE><br>
-temos $n$ modos de escolher o objeto que ocupará o primeiro lugar, temos $n-1$ modos de escolher o objeto que ocupará o segundo lugar, $\cdots$, temos $1$ modo de escolher o objeto que ocupará o último lugar. Portanto</p>
+<BLOCKQUOTE>    
+
+<p>Pelo princípio multiplicativo, temos $n$ modos de escolher o elemento que ocupará o primeiro lugar, uma vez tomada essa decisão, teremos $n-1$ modos de se escolher o segundo, e assim por diante, até que haja apenas um único modo de se escolher o último elemento. Portanto</p>
 $$ P(n) = n\cdot (n-1) \cdots 1 = n! $$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
@@ -13282,7 +13285,7 @@ No SageMath o fatorial de $n$ pode ser calculado com o comando:</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">P</span><span class="p">(</span><span class="n">n</span><span class="p">)</span><span class="o">=</span><span class="n">factorial</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
@@ -13492,7 +13495,7 @@ $$C_n^p ~~\text{ ou }~~ C_{n, p} ~~\text{ ou }~~ C(n, p).$$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Exemplo 5</p>
+Exemplo 5 (Obtendo as combinações no SageMath)</p>
 <BLOCKQUOTE>
 
 <p>As combinações do conjunto $\{1, 2, 3, 4, 5\}$ três a três são:</p>
@@ -13605,10 +13608,11 @@ $$ C(n, p) = \frac{n!}{p!\times (n-p)!} $$</p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
 Demonstração.</p>
-<p><BLOCKQUOTE><br>
-Pelo princípio multiplicativo, temos $n$ modos de escolher o primeiro elemento, $n-1$ modos de escolher o segundo elemento, $\cdots$, até $n-p+1$ modos de escolher o $p$-ésimo elemento.</p>
-<p>Observe que contamos muito mais do que deveríamos, pois para conjuntos, a ordem não importa.</p>
-<p>Precisamos dividir pelo número de formas de ordenar estes $p$ elementos que escolhemos de forma ordenada. Observe que este número que procuramos é $p!$. Logo</p>
+<BLOCKQUOTE>    
+
+<p>Temos $n$ modos de escolher o primeiro elemento, $n-1$ modos de escolher o segundo elemento, e assim sucessivamente, até $n-p+1$ modos de escolher o $p$-ésimo elemento.</p>
+<p>Agora observe que contamos muito mais agrupamentos do que deveríamos, pois para conjuntos, a ordem não importa, portanto precisamos dividir pelo número de formas de ordenar estes $p$ elementos que escolhemos de forma ordenada, ou seja, por $p!$. 
+Assim:</p>
 \begin{equation} 
 \begin{split}
 C(n,p) &amp; = \frac{n(n-1)\cdots(n-p+1)}{p!}\\
@@ -13636,7 +13640,7 @@ Combinação no SageMath.</p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">C</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">p</span><span class="p">)</span> <span class="o">=</span> <span class="n">binomial</span><span class="p">(</span><span class="n">n</span><span class="p">,</span><span class="n">p</span><span class="p">)</span>
@@ -13831,7 +13835,7 @@ Exemplo 9</p>
 Solução a)</p>
 <BLOCKQUOTE>    
 
-<p>Basta escolher 9 jurados, pois escolhendo 9 pessoas, pelo menos duas serão advogados. O que pode ser feito de</p>
+<p>Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de</p>
 $$ C(11,9)=55. $$
 </div>
 </div>
@@ -13876,8 +13880,8 @@ $$ C(11,9)=55. $$
 Solução b)</p>
 <BLOCKQUOTE>    
 
-<p>Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, podemos não escolher pelo menos dois advogados. Precisamos contornar este problema.</p>
-<p>Precisamos escolher 2 advogados e 4 pessoas no conjunto complementar, depois 3 advogados e 3 pessoas no conjunto complementar e por último, precisamos escolher 4 advogados e 2 pessoas no conjunto complementar. O que pode ser feito de</p>
+<p>Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, pode aconteder de não termos pelo menos dois advogados. Precisamos contornar este problema.</p>
+<p>Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de</p>
 $$ C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2)=371 $$<p>maneiras.</p>
 
 </div>
@@ -13923,7 +13927,7 @@ $$ C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2)=371 $$<p>m
 Outra solução b)</p>
 <BLOCKQUOTE>    
 
-<p>Podemos calcular o total de soluções sem se preocupar se tem os dois advogados ou não e depois subtraímos o total de maneiras de escolher as 6 pessoas sem ter advogado e o total de maneiras de escolher 6 pessoas com no máximo 1 advogado. Isto pode ser feito de</p>
+<p>Podemos calcular o total de soluções sem se preocupar se temos os dois advogados ou não e depois subtraímos o total de maneiras de escolher as 6 pessoas na categoria não advogados e o total de maneiras de escolher 6 pessoas com no máximo 1 advogado. Isto pode ser feito de</p>
 $$ C(11, 6) - C(7, 6) - 4\times C(7, 5)=371 $$<p>maneiras.</p>
 
 </div>
@@ -14032,32 +14036,80 @@ $$ \frac{C(12, 4)\times C(8, 4)\times C(4, 4)}{3!} = 5775.$$
 <BLOCKQUOTE>
 
 <ol>
-  <li> Quantos são os anagramas da palavra SOBERANO: </li>
+  <li> Quantos são os anagramas da palavra SINGULAR: </li>
     $$ $$
     <ol>
         <li style="list-style-type:lower-alpha" > Que começam por consoante e terminam por vogal?</li>
-        <li style="list-style-type:lower-alpha" > Que têm as letras S,O,B juntas em qualquer ordem?</li>
+        <li style="list-style-type:lower-alpha" > Que têm as letras S,I,N juntas em qualquer ordem?</li>
         <li style="list-style-type:lower-alpha" > Que têm as vogais e as consoantes intercaladas?</li>
     </ol>
   $$ $$     
 
-  <li> De quantos modos é possível sentar 12 pessoas em cadeiras em fila de modo que duas determinadas pessoas dessas 12 não fiquem juntas? </li>
-  $$ $$     
-  <li> Quantas são as permutações dos números $(1, 2, 3, \ldots, 20)$ nas quais os números $3, 15, 8$ e $11$ aparecem nesta ordem, embora não necessáriamente em lugares consecutivos? </li>
+  <li> De quantos modos é possível sentar 12 pessoas em cadeiras em fila de modo que três determinadas pessoas dessas 12 não fiquem juntas? </li>
   $$ $$     
   <li> Quantos dados diferentes podemos formar gravando números de 1 a 6 sobre as faces indistinguíveis de um cubo? </li>
   $$ $$     
-  <li> Quantos dados diferentes podemos formar gravando números de 1 a 12 sobre as faces indistinguíveis de um dodecaedro regular? </li>
-  $$ $$     
   <li> Quantas diagonais possuem um polígono de $n$ lados? </li>
-  $$ $$     
-  <li> Em uma fila de cadeiras no cinema possui 30 poltronas. De quantos modos 8 casais podem se sentar nessas poltronas de modo que nenhum casal se sente separado? </li>
-  $$ $$     
-  <li> Formam-se as combinações simples de classe 8 dos elementos $a_1, a_2, \ldots, a_{18}$, as quais são escritas com os elementos em ordem crescentes de índices. Quantas são as combinações nas quais o elemento $a_{11}$ ocupa o $4º$ lugar? </li>
   $$ $$     
   <li> De quantos modos 20 jogados podem ser divididos em 4 times de futsal de 5 jogadores cada, denomidados Sport, Náutico, Santa Cruz e Salgueiro? </li>
   $$ $$     
-  <li> Quantos são os jogos de um campeonato disputado por 40 clubes, no qual todos se enfrentam uma única vez? </li>
+
+</ol>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="004"> </section></p>
+<p><h3>
+4 - Atividade</p>
+$$ $$<p>Desta seção será sorteada uma questão para cada aluno. Tentaremos fazer o sorteio ao-vivo no dia ?? no horário da aula. O link para acessar a aula ficará disponível no AVA. O aluno deve enviar a solução para o e-mail: ricardo.machadojunior@ufrpe.br. Esta primeira atividade tem a data limite para envio: ??</p>
+<BLOCKQUOTE>
+
+<ol>
+  <li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+
+
+</ol>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="005"> </section></p>
+<p><h3>
+5 - Respostas dos Exercícios</p>
+<BLOCKQUOTE>
+
+<ol>
+  <li>  </li>
+      $$ $$
+    <ol>
+        <li style="list-style-type:lower-alpha" > $5\times 3\times 6! = 10800$. </li>
+        <li style="list-style-type:lower-alpha" > $6!=720$. </li>
+        <li style="list-style-type:lower-alpha" > $0$. </li>
+    </ol>
+  $$ $$   
+  <li> $12! -3!\times10!$. </li>
+  $$ $$
+  <li> $\dfrac{6!}{6\times 4}=30$. </li>
+  $$ $$
+  <li> $ \dfrac{n(n-3)}{2}. $ </li>
+  $$ $$
+  <li> $C_{20}^5\times C_{15}^5\times C_{10}^5\times 1 = 11732745024$ </li>
+  $$ $$
+
 
 </ol>
 </div>
