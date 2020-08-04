@@ -13144,6 +13144,8 @@ div#notebook {
 <p><BLOCKQUOTE>
 1 - <a class="nav-link js-scroll-trigger" href="#001">Combinações Completas</a></p>
 <p>2 - <a class="nav-link js-scroll-trigger" href="#002">Exercícios</a></p>
+<p>3 - <a class="nav-link js-scroll-trigger" href="#004">Atividade</a></p>
+<p>4 - <a class="nav-link js-scroll-trigger" href="#005">Resposta dos Exercícios</a></p>
 
 </div>
 </div>
@@ -13157,6 +13159,7 @@ div#notebook {
 
 <p>[1] Morgado, A. C. O., et al, <i>Análise Combinatória e Probabilidade</i>, SBM. 6ª ed.</p>
 <p>[2] Rosen, K. H., <i>Discrete Mathematics and Its Applications</i>, McGraw-Hill.</p>
+<p>[3] Bezerra, N., <a href="https://educapes.capes.gov.br/bitstream/capes/206367/2/Livro_analise_combinatoria.pdf"><i>Análise Combinatória e Probabilidade</i></a>, editAedi.</p>
 
 </div>
 </div>
@@ -13225,12 +13228,130 @@ Nota de aula produzida usando o software <a href="http://www.sagemath.org/">Sage
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h3>
+
+<p>Vamos começar com um exemplo que ilustra bem a noção de <em> Combinação Completa</em>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Exemplo 1</p>
+<p><BLOCKQUOTE>
+De quantos modos é possível comprar 3 sorvetes em uma loja que oferece 6 sabores? 
+$ $</p>
+<p>Obs. Supondo que de cada sabor estejam disponíveis pelo menos 3 unidades.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Solução</p>
+<BLOCKQUOTE>
+
+<p>Resolver este problema é o mesmo que encontrar o número de soluções da equação:</p>
+$$ x_1 + x_2 + x_3 + x_4 + x_5 + x_6  = 3, ~~~ \text{ com }  x_i \geq 0 ~~~~(*)$$<p>na qual, cada $x_i$ representa a quantidade de sorvetes do sabor $i$. Claramente, temos a restrição $x_i\geq 0$, pois não podemos pegar uma quantidade negativas de qualquer sabor.</p>
+<p>A equação $(*)$ pode ser interpretada de tal forma que, encontrar o número de soluções será o mesmo que calcular o número de permutações com repetições. Vamos explicar esta interpretação:</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Interpretação da equação $(*)$:</p>
+<BLOCKQUOTE>
+
+Coloque um traço separando uma incógnita da outra. Para representar a quantidade de sorvetes de um tipo $i$, coloque a quantidade de bolas entre os traços que representam o sabor $i$:
+
+\begin{equation}
+\begin{split}
+x_1 ~~ & & ~~ x_2 ~~ & & ~~ x_3 ~~ & & ~~ x_4 ~~ & & ~~ x_ 5 ~~ & & ~~ x_ 6\\
+1 ~~ & & ~~ 0 ~~ & & ~~ 0 ~~ & & ~~ 0 ~~ & & ~~ 2 ~~ & & ~~ 0\\
+\bullet ~~ &|& ~~  ~~ &|& ~~  ~~ &|& ~~  ~~ &|& ~~ \bullet \bullet ~~ &|& ~~ \\
+\end{split} 
+\end{equation}  
+
+Essa representação de traços e bolas, significa que foi escolhido um sorvete do sabor 1 e 2 sorvetes do sabor 5, completando assim a escolha dos 3 sorvetes.
+
+\begin{equation}
+\begin{split}
+x_1 ~~ & & ~~ x_2 ~~ & & ~~ x_3 ~~ & & ~~ x_4 ~~ & & ~~ x_ 5 ~~ & & ~~ x_ 6\\
+1 ~~ & & ~~ 0 ~~ & & ~~ 1 ~~ & & ~~ 1 ~~ & & ~~ 0 ~~ & & ~~ 0\\
+\bullet ~~ &|& ~~  ~~ &|& ~~ \bullet ~~ &|& ~~ \bullet ~~ &|& ~~  ~~ &|& ~~ \\
+\end{split} 
+\end{equation}  
+
+Essa representação de traços e bolas, significa que foi escolhido um sorvete do sabor 1, 1 sorvete do sabor 3 e 1 sorvete do sabor 4, completando assim a escolha dos 3 sorvetes.
+
+Agora, vamos encontrar o número de soluções da Equação $(*)$.
+
+</BLOCKQUOTE>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Encontrando o número de soluções da Equação $(*)$:</p>
+<BLOCKQUOTE>
+
+<p>Observe que cada permutação dessa representação de traços e bolas é uma solução da Equação $(*)$ e que cada solução da Equação $(*)$ pode ser representada com traços de bolas (Existe uma bijeção entre as duas coisas). Portanto para encontrar o número de soluções da Equação $(*)$, basta calcular</p>
+$$ PR_8^{5, 3} = 56 $$<p>Pois, temos 5 traços e 3 bolas, então estamos permutando um total de 8 elementos, sendo 5 traços e 3 bolas.</p>
+<div style="text-align: right"> $\blacksquare$ </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">PR</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[3]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>56</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
 Definição 1</p>
 <BLOCKQUOTE>
 
 <p>Diferente da Combinação Simples, na Combinação Completa é permitido a presença de elementos repetidos. O número de combinações completas é denotado por:</p>
-$$ CR_n^{p } $$<p>Assim, as combinações completas de classe 3 dos objetos $1, 2, 3, 4$ tomados 3 a 3 são:</p>
+$$ CR_n^{p } $$<p>Assim, as combinações completas com 3 elementos dos objetos $1, 2, 3, 4$ tomados 3 a 3 são:</p>
 $$
 [1, 1, 1],
 [1, 1, 2],
@@ -13256,7 +13377,7 @@ $$$$
 [3, 4, 4],
 [4, 4, 4]
 $$<p>e $CR_4^3 = 20.$</p>
-
+<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13264,7 +13385,7 @@ $$<p>e $CR_4^3 = 20.$</p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Exemplo 1 (SageMath)</p>
+Exemplo 2 (SageMath)</p>
 <BLOCKQUOTE>
 
 <p>A lista com todas as combinações completas foi gerada no SageMath com o comando:</p>
@@ -13327,122 +13448,6 @@ Exemplo 1 (SageMath)</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3>
-
-<p>Antes de chegar em uma fórmula para a combinação completa, vamos resolver um caso particular para ajudar no raciocínio da fórmula geral.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Exemplo 2</p>
-<p><BLOCKQUOTE>
-De quantos modos é possível comprar 3 sorvetes em uma loja que oferece 6 sabores?</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Solução</p>
-<BLOCKQUOTE>
-
-<p>Resolver este problema é o mesmo que encontrar o número de soluções da equação:</p>
-$$ x_1 + x_2 + x_3 + x_4 + x_5 + x_6  = 3, ~~~ \text{ com }  x_i \geq 0 ~~~~(*)$$<p>na qual, cada $x_i$ representa a quantidade de sorvetes do sabor $i$. Claramente, temos a restrição $x_i\geq 0$, pois não podemos pegar uma quantidade negativas de qualquer sabor.</p>
-<p>A equação $(*)$ pode ser interpretada de tal forma que, encontrar o número de soluções será o mesmo que calcular o número de permutações com repetições. Vamos explicar esta interpretação:</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Interpretação da equação $(*)$:</p>
-<BLOCKQUOTE>
-
-Coloque um traço separando uma incógnita da outra. Para representar a quantidade de sorvetes de um tipo $i$, coloque esta quantidade de bolas entre os traços que representam o sabor $i$:
-
-\begin{equation}
-\begin{split}
-x_1 ~~ & & ~~ x_2 ~~ & & ~~ x_3 ~~ & & ~~ x_4 ~~ & & ~~ x_ 5 ~~ & & ~~ x_ 6\\
-1 ~~ & & ~~ 0 ~~ & & ~~ 0 ~~ & & ~~ 0 ~~ & & ~~ 2 ~~ & & ~~ 0\\
-\bullet ~~ &|& ~~  ~~ &|& ~~  ~~ &|& ~~  ~~ &|& ~~ \bullet \bullet ~~ &|& ~~ \\
-\end{split} 
-\end{equation}  
-
-Essa representação de traços e bolas, significa que foi escolhido um sorvete do sabor 1 e 2 sorvetes do sabor 5, completando assim a escolha dos 3 sorvetes.
-
-\begin{equation}
-\begin{split}
-x_1 ~~ & & ~~ x_2 ~~ & & ~~ x_3 ~~ & & ~~ x_4 ~~ & & ~~ x_ 5 ~~ & & ~~ x_ 6\\
-1 ~~ & & ~~ 0 ~~ & & ~~ 1 ~~ & & ~~ 1 ~~ & & ~~ 0 ~~ & & ~~ 0\\
-\bullet ~~ &|& ~~  ~~ &|& ~~ \bullet ~~ &|& ~~ \bullet ~~ &|& ~~  ~~ &|& ~~ \\
-\end{split} 
-\end{equation}  
-
-Essa representação de traços e bolas, significa que foi escolhido um sorvete do sabor 1, 1 sorvete do sabor 3 e 1 sorvete do sabor 4, completando assim a escolha dos 3 sorvetes.
-
-Agora, vamos encontrar o número de soluções da Equação $(*)$.
-
-</BLOCKQUOTE>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Encontrando o número de soluções da Equação $(*)$:</p>
-<BLOCKQUOTE>
-
-<p>Observe que cada permutação dessa representação de traços e bolas é uma solução da Equação $(*)$ e que cada solução da Equação $(*)$ pode ser representada com traços de bolas. Portanto para encontrar o número de soluções da Equação $(*)$, basta calcular</p>
-$$ PR_8^{5, 3} = 40320 $$<p>Pois, temos 5 traços e 3 bolas, então estamos permutando um total de 8 elementos, sendo 5 traços e 3 bolas.</p>
-<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">P</span><span class="p">(</span><span class="mi">8</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[4]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>40320</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
 Teorema 1</p>
 <BLOCKQUOTE>
@@ -13492,7 +13497,7 @@ Definindo a função para calcular o número de combinações com repetições n
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">CR</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
@@ -13508,7 +13513,7 @@ Definindo a função para calcular o número de combinações com repetições n
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[3]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13542,7 +13547,7 @@ $$  x_1 + x_2 + x_3 + \ldots + x_{10}  = 20?$$
 Solução</p>
 <BLOCKQUOTE>
 
-$$ CR_{10}^{20} = 10015005$$
+$$ CR_{10}^{20} = 10015005$$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13600,17 +13605,16 @@ Solução</p>
 <BLOCKQUOTE>
 
 <p>Defina</p>
-$$ x_1 = x+1, $$$$ x_2 = y+2 $$<p>e</p>
-$$ x_3 = z+4 $$<p>Substituindo, temos</p>
+$$ x_1 = x+1, $$$$ x_2 = y+2 $$$$ x_3 = z+4 $$<p>Substituindo, temos</p>
 $$ (x+1) + (y+2) + (z+4) = 15 $$<p>ou seja</p>
 $$ x + y + z = 8 ~~~~ (\blacklozenge) $$<p>Desta forma, o número de soluções de ($\blacklozenge$) será a solução do problema, pois, quando $x=0$ teremos $x_1=1$, quando $y=0$ teremos $x_2=2$ e quando $z=0$ teremos $x_3=4$. Portanto a resposta é</p>
-$$ CR_3^{8} = 45. $$
+$$ CR_3^{8} = 45. $$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">CR</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">8</span><span class="p">)</span>
@@ -13626,7 +13630,7 @@ $$ CR_3^{8} = 45. $$
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[8]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13711,7 +13715,7 @@ Solução.</p>
 
 <p>Temos que escolher os valores de cada um dos 3 lados de cada peça do trominó. Como os valores vão de 1 até 6 e são 3 lados, o número de peças do trominó para $n=6$ é o número de soluções inteiras não negativas da equação:</p>
 $$ x_1 + x_2 + x_3 + x_4 + x_ 5 + x_ 6 = 3. $$<p>Portanto a quantidade de peças é:</p>
-$$ CR_6^{3} = 56. $$
+$$ CR_6^{3} = 56. $$<div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
 </div>
@@ -13759,11 +13763,9 @@ $$ CR_6^{3} = 56. $$
 <ol>
   <li> Quantas são as soluções inteiras positivas de $x+y+z+w = 15$?    </li>
     $$ $$ 
-  <li> Quantas são as soluções inteiras positivas de $x+y+z+w < 15$? </li>
+  <li> Quantas são as peças de um dominó comum? </li>
     $$ $$ 
-  <li> Os números inteiros compreendidos entre $100.000.000$ e $999.999.999$ são divididos em classes de modo que dois números diferentes estão na mesma classe se e só se eles têm os mesmos algarismos, diferindo apenas na ordem. Quantas classes são assim formadas? </li>
-    $$ $$ 
-  <li> Quantas são as soluções inteiras não-negativas de $x+y+z+w = 30$ nas quais $x>w$? </li>
+  <li> Quantas são as soluções inteiras não-negativas de $x_1+x_2+x_3+x_4+x_5 = 22$ nas quais $x_1>x_2$? </li>
     $$ $$ 
   <li> Quantos inteiros entre $1$ e $100.000.000$, inclusive, possui a propriedade: "cada dígito é menor ou igual ao seu sucessor"?</li>
     $$ $$ 
@@ -13773,18 +13775,56 @@ $$ CR_6^{3} = 56. $$
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="004"> </section></p>
+<p><h3>
+3 - Atividade</p>
+$$ $$<p>Desta seção será sorteada uma questão para cada aluno. Tentaremos fazer o sorteio ao-vivo no dia ?? no horário da aula. O link para acessar a aula ficará disponível no AVA. O aluno deve enviar a solução para o e-mail: ricardo.machadojunior@ufrpe.br. Esta primeira atividade tem a data limite para envio: ??</p>
+<BLOCKQUOTE>
 
-    </div>
+<ol>
+  <li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+
+
+</ol>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="005"> </section></p>
+<p><h3>
+4 - Respostas dos Exercícios</p>
+<BLOCKQUOTE>
 
+<ol>
+  <li> $CR_4^{15} = 816$. </li>
+  $$ $$
+  <li> $CR_7^{2} = 28$. </li>
+  $$ $$
+  <li> $200$. </li>
+  $$ $$
+  <li> $CR_{10}^8 -1 = 24309$. </li>
+  $$ $$
+  <li> $CR_{8}^{10}\cdot 10! = 70572902400$. </li>
+  $$ $$
+
+
+</ol>
+</div>
+</div>
 </div>
     </div>
   </div>
