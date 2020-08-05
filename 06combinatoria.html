@@ -13145,6 +13145,8 @@ div#notebook {
 1 - <a class="nav-link js-scroll-trigger" href="#001">Permutação Caótica</a></p>
 <p>2 - <a class="nav-link js-scroll-trigger" href="#002">Parte Extra, obtendo permutações caóticas no SageMath</a></p>
 <p>3 - <a class="nav-link js-scroll-trigger" href="#003">Exercícios</a></p>
+<p>4 - <a class="nav-link js-scroll-trigger" href="#004">Atividade</a></p>
+<p>5 - <a class="nav-link js-scroll-trigger" href="#005">Resposta dos Exercícios</a></p>
 
 </div>
 </div>
@@ -13159,6 +13161,7 @@ div#notebook {
 <p>[1] Morgado, A. C. O., et al, <i>Análise Combinatória e Probabilidade</i>, SBM. 6ª ed.</p>
 <p>[2] Rosen, K. H., <i>Discrete Mathematics and Its Applications</i>, McGraw-Hill.</p>
 <p>[3] Santana Neto, L. M., <i>Análise Combinatória: Lemas De Kaplansky, Permutações Caóticas E O Princípio Das Casas Dos Pombos E Suas Aplicações Na Matemática Do Ensino Médio</i>, Dissertação do ProfMat</p>
+<p>[4] Bezerra, N., <a href="https://educapes.capes.gov.br/bitstream/capes/206367/2/Livro_analise_combinatoria.pdf"><i>Análise Combinatória e Probabilidade</i></a>, editAedi.</p>
 
 </div>
 </div>
@@ -13241,6 +13244,73 @@ O material dessa nota de aula foi baseado na referência [3].
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
+Exemplo 1</p>
+<blockquote>
+
+<p>Determine o número de permutações simples dos elementos $a_1, a_2, . . . , a_n,$ nas quais $a_2$ está na segunda posição ou $a_3$ está em terceira posição.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Solução</p>
+<blockquote>
+
+<p>Definindo $A_2$ como sendo o conjunto das permutações em que $a_2$ está em segunda posição e $A_3$ o conjunto das permutações em que $a_3$ está em terceira posição.</p>
+<p>É fácil ver que $\#(A_{2})=\#(A_{3})=(n-1)!$ e que $\#(A_{2}\cap A_{3})=(n-2)!$.</p>
+<p>Assim o número procurado nada mais é do que $\#(A_{2} \cup A_{3})$ que é igual a:</p>
+\begin{equation*} 
+\begin{split}
+\#(A_2\cup A_3) = &amp; ~\#(A_2) + \#(A_3) - \#(A_2\cap A_3)\\
+ = &amp;~ (n-1)! + (n-1)!-(n-2)!\\
+ = &amp;~  2\cdot(n-1)! - (n-2)!\\
+ = &amp;~ 2\cdot(n - 1)\cdot(n - 2)! - (n - 2)!\\
+ = &amp;~ (n-2)!\cdot(2n-2-1)\\
+ = &amp;~ (2n-3)\cdot(n-2)!
+\end{split}
+\end{equation*}<p></p>
+<div style="text-align: right"> $\blacksquare$ </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Exemplo 2</p>
+<blockquote>
+
+<p>Dentre as permutações simples dos $n$ elementos $a_1, a_2, . . . , a_n$ determine o número daquelas em que $a_2$ não está na segunda posição, $a_3$ não está na terceira posição e nem $a_4$ está na quarta posição.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
+Solução</p>
+<blockquote>
+
+<p>Definimos $A_i$, para $i = 1, 2, 3$, como o conjunto das permutações em que $a_i$, para $i = 1, 2, 3$, está no $i$-ésima posição.</p>
+<p>Devemos encontrar o número de elementos no complementar da união de $A_2, A_3$ e $A_4$.</p>
+<p>Como:</p>
+<p>1) $\#(A_2) = \#(A_3) = \#(A_4) = (n-1)!$;</p>
+<p>2) $\#(A_2\cap A_3) = \#(A_2\cap A_4) = \#(A_3\cap A_4) = (n-2)!$;</p>
+<p>3) $\#(A_2\cap A_3\cap A_4) = (n-3)!$.</p>
+<p>Sabendo que o número de permutações total é determinada por $n!$, a solução para o questionamento será</p>
+$$ n!-\#(A_2)-\#(A_3)-\#(A_4)+\#(A_2\cap A_3) +\#(A_2\cap A_4)+\#(A_3\cap A_4) -\#(A_2\cap A_3\cap A_4) $$<p>Que é igual a:</p>
+$$n!-3\cdot (n-1)!+3 \cdot (n-2)!-(n-3)!$$<div style="text-align: right"> $\blacksquare$ </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><h3>
 Definição 1</p>
 <BLOCKQUOTE>
 
@@ -13253,7 +13323,7 @@ $$ D_n \text{ ou } D(n) $$
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><h3>
-Exemplo 1</p>
+Exemplo 3</p>
 <blockquote>
 
 <p>Determine todas as permutações caóticas da lista $(1, 2, 3, 4)$.</p>
@@ -13301,73 +13371,6 @@ Exemplo 1</p>
 </div>
 </div>
 
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Exemplo 2</p>
-<blockquote>
-
-<p>Determine o número de permutações simples dos elementos $a_1, a_2, . . . , a_n,$ nas quais $a_2$ está na segunda posição ou $a_3$ está em terceira posição.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Solução</p>
-<blockquote>
-
-<p>Definindo $A_2$ como sendo o conjunto das permutações em que $a_2$ está em segunda posição e $A_3$ o conjunto das permutações em que $a_3$ está em terceira posição.</p>
-<p>É fácil ver que $\#(A_{2})=\#(A_{3})=(n-1)!$ e que $\#(A_{2}\cap A_{3})=(n-2)!$.</p>
-<p>Assim o número procurado nada mais é do que $\#(A_{2} \cup A_{3})$ que é igual a:</p>
-\begin{equation*} 
-\begin{split}
-\#(A_2\cup A_3) = &amp; ~\#(A_2) + \#(A_3) - \#(A_2\cap A_3)\\
- = &amp;~ (n-1)! + (n-1)!-(n-2)!\\
- = &amp;~  2\cdot(n-1)! - (n-2)!\\
- = &amp;~ 2\cdot(n - 1)\cdot(n - 2)! - (n - 2)!\\
- = &amp;~ (n-2)!\cdot(2n-2-1)\\
- = &amp;~ (2n-3)\cdot(n-2)!
-\end{split}
-\end{equation*}<p></p>
-<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Exemplo 3</p>
-<blockquote>
-
-<p>Dentre as permutações simples dos $n$ elementos $a_1, a_2, . . . , a_n$ determine o número daquelas em que $a_2$ não está na segunda posição, $a_3$ não está na terceira posição e nem $a_4$ está na quarta posição.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><h3>
-Solução</p>
-<blockquote>
-
-<p>Definimos $A_i$, para $i = 1, 2, 3$, como o conjunto das permutações em que $a_i$, para $i = 1, 2, 3$, está no $i$-ésima posição.</p>
-<p>Devemos encontrar o número de elementos no complementar da união de $A_2, A_3$ e $A_4$.</p>
-<p>Como:</p>
-<p>1) $\#(A_2) = \#(A_3) = \#(A_4) = (n-1)!$;</p>
-<p>2) $\#(A_2\cap A_3) = \#(A_2\cap A_4) = \#(A_3\cap A_4) = (n-2)!$;</p>
-<p>3) $\#(A_2\cap A_3\cap A_4) = (n-3)!$.</p>
-<p>Sabendo que o número de permutações total é determinada por $n!$, a solução para o questionamento será</p>
-$$ n!-\#(A_2)-\#(A_3)-\#(A_4)+\#(A_2\cap A_3) +\#(A_2\cap A_4)+\#(A_3\cap A_4) -\#(A_2\cap A_3\cap A_4) $$<p>Que é igual a:</p>
-$$n!-3\cdot (n-1)!+3 \cdot (n-2)!-(n-3)!$$<div style="text-align: right"> $\blacksquare$ </div>
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -13901,7 +13904,9 @@ Definindo a função D(n) no SageMath (Usando o Teorema anterior):</p>
 <li> Quantas são as permutações de $(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)$ que têm exatamente $5$ elementos no seu lugar primitivo? </li>
     $$ $$ 
 <li> Determine o número de permutações caóticas de $(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12)$ nas quais os números $1, 2, 3, 4, 5$ ocupam, em alguma ordem, os cinco primeiro lugares. </li>
-
+    $$ $$ 
+<li> Uma empresa tem sete estagiárias. Cada uma delas deve cumprir três horas de trabalho semanais, sendo duas horas no turno da manhã e uma no turno da tarde. De quantas maneiras o Recursos Humanos pode montar a agenda de trabalho semanal (segunda a domingo) desses estagiárias, de modo que todas
+cumpram as três horas semanais, trabalhando diariamente apenas em um turno?</li>
 
 
 
@@ -13909,18 +13914,54 @@ Definindo a função D(n) no SageMath (Usando o Teorema anterior):</p>
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="004"> </section></p>
+<p><h3>
+4 - Atividade</p>
+$$ $$<p>Desta seção será sorteada uma questão para cada aluno. Tentaremos fazer o sorteio ao-vivo no dia ?? no horário da aula. O link para acessar a aula ficará disponível no AVA. O aluno deve enviar a solução para o e-mail: ricardo.machadojunior@ufrpe.br. Esta primeira atividade tem a data limite para envio: ??</p>
+<BLOCKQUOTE>
 
-    </div>
+<ol>
+  <li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+<li> </li>
+  $$ $$     
+<li> </li>
+  $$ $$       
+
+
+</ol>
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><section id="005"> </section></p>
+<p><h3>
+5 - Respostas dos Exercícios</p>
+<BLOCKQUOTE>
 
+<ol>
+  <li> a) $(n-1)^n$, b) $D_n$. </li>
+  $$ $$
+  <li> $1468368$. </li>
+  $$ $$
+  <li> $222480$. </li>
+  $$ $$
+  <li> $9344160$. </li>
+  $$ $$
+
+
+</ol>
+</div>
+</div>
 </div>
     </div>
   </div>
