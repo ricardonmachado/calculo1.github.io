@@ -13465,14 +13465,14 @@ Teorema 3</p>
 
 Sejam $A_1,A_2,\cdots,A_n$ conjuntos finitos. A cardinalidade de 
 \begin{equation}
-\bigcup_{i=1}^{n}A_i =  A_1 \cup A_2 \cup \cdots \cup A_n ~~~~ (*)
+\bigcup_{i=1}^{n}A_i =  A_1 \cup A_2 \cup \cdots \cup A_n ~~~~ (\blacklozenge)
 \end{equation}
 é dada por:
 
 \begin{equation} 
 \begin{split}
 \#\bigcup_{i=1}^{n}A_i = &  \sum_{i=1}^{n}\#A_i-\sum_{0<i<j\leq n}\#(A_i\cap A_j)+\cdots \\
- & \cdots  +(-1)^{n-1}\#(A_1\cap A_2\cap \cdots\cap A_n).~~~~ (**)
+ & \cdots  +(-1)^{n-1}\#(A_1\cap A_2\cap \cdots\cap A_n).~~~~ (\bigstar)
 \end{split}
 \end{equation}  
 
@@ -13488,11 +13488,11 @@ Sejam $A_1,A_2,\cdots,A_n$ conjuntos finitos. A cardinalidade de
 Demonstração</p>
 <BLOCKQUOTE>
 
-<p>Vamos verificar que a fórmula é verdadeira mostrando que um elemento da união $(*)$ é contada exatamente uma vez pelo lado direito da Equação $(**)$. Suponha que $a$ pertence a exatamente $r$ ($1\leq r\leq n$) dos conjuntos $A_1, A_2, \ldots, A_n$.</p>
+<p>Vamos verificar que a fórmula é verdadeira mostrando que um elemento da união $(\blacklozenge)$ é contada exatamente uma vez pelo lado direito da Equação $(\bigstar)$. Suponha que $a$ pertence a exatamente $r$ ($1\leq r\leq n$) dos conjuntos $A_1, A_2, \ldots, A_n$.</p>
 <p>Este elemento é contado $C_r^1$ vezes por $\sum_{i=1}^{n}\#A_i$, $C_r^2$ vezes por $\sum_{0&lt;i&lt;j\leq n}\#(A_i\cap A_j)$, e de forma geral $C_r^m$ por pela soma envolvendo $m$ dos conjuntos $A_i$. Assim, este elemento será contado exatamente</p>
-$$C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r$$<p>vezes pelo lado direito de $(**)$. Usando a Expansão do Binômio de Newton, temos</p>
+$$C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r$$<p>vezes pelo lado direito de $(\bigstar)$. Usando a Expansão do Binômio de Newton, temos</p>
 $$0 = (1-1)^p = C_r^0 -(C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r).$$<p>Portanto</p>
-$$C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r = C_r^0 = 1.$$<p>Isto mostra que o elemento $a$ é contado exatamente uma vez pelo lado direito de $(**)$.</p>
+$$C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r = C_r^0 = 1.$$<p>Isto mostra que o elemento $a$ é contado exatamente uma vez pelo lado direito de $(\bigstar)$.</p>
 <div style="text-align: right"> $\blacksquare$ </div>
 </div>
 </div>
