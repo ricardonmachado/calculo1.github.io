@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AATA Princípios de Contagem</title>
+<title>AATA Combinações Simples</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -88,10 +88,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="part-basics.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-basics.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-note-on-proofs.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-permutacoes-simples.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="sets.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="references-1.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="part-basics.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-basics.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-note-on-proofs.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-permutacoes-simples.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="sets.html" title="Up">Up</a><a class="next-button button toolbar-item" href="references-1.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -103,11 +103,11 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link part"><a href="part-basics.html" data-scroll="part-basics"><span class="codenumber">I</span> <span class="title">Análise Combinatória</span></a></li>
-<li class="link active">
+<li class="link">
 <a href="sets.html" data-scroll="sets"><span class="codenumber">1</span> <span class="title">Princípios de Contagem</span></a><ul>
 <li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Princípio Aditivo e Princípio Multiplicativo</a></li>
 <li><a href="section-permutacoes-simples.html" data-scroll="section-permutacoes-simples">Permutações Simples</a></li>
-<li><a href="section-combinacoes-simples.html" data-scroll="section-combinacoes-simples">Combinações Simples</a></li>
+<li><a href="section-combinacoes-simples.html" data-scroll="section-combinacoes-simples" class="active">Combinações Simples</a></li>
 <li><a href="references-1.html" data-scroll="references-1">Referências</a></li>
 </ul>
 </li>
@@ -145,15 +145,61 @@ MathJax.Hub.Config({
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="sets"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">1</span> <span class="title">Princípios de Contagem</span>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-combinacoes-simples"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.3</span> <span class="title">Combinações Simples</span>
 </h2>
-<section class="introduction" id="introduction-1"><p id="p-6">Neste Capítulo vamos ver os Princípios Aditivo e Multiplicativo. Em seguida veremos como calcular o número de Permutações e Combinações, dos tipos simples, e tambem com elementos repetidos ou em disposição circular.</p></section><nav class="summary-links"><ul>
-<li><a href="section-note-on-proofs.html"><span class="codenumber">1.1</span> <span class="title">Princípio Aditivo e Princípio Multiplicativo</span></a></li>
-<li><a href="section-permutacoes-simples.html"><span class="codenumber">1.2</span> <span class="title">Permutações Simples</span></a></li>
-<li><a href="section-combinacoes-simples.html"><span class="codenumber">1.3</span> <span class="title">Combinações Simples</span></a></li>
-<li><a href="references-1.html"><span class="codenumber">1.4</span> <span class="title">Referências</span></a></li>
-</ul></nav></section></div></main>
+<p id="p-36"><dfn class="terminology">Exemplo</dfn> Quantas saladas contendo exatamente 7 frutas podemos formar se dispomos de 12 frutas diferentes?</p>
+<p id="p-37"><dfn class="terminology">Solução</dfn> Para a 1ª fruta, temos 12 opções de escolha, para a 2ª fruta, temos 11 opções de escolha, \(\dots\) para a 7ª fruta temos, 6 opções de escolha. Como a ordem não importa, precisamos dividir pelo número de maneiras de ordenar estas frutas. Portanto a resposta é</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{12\times 11\times 10\times \cdots \times 6}{P(7)}.
+\end{equation*}
+</div>
+<div class="sagecell-sage" id="sage-4"><script type="text/x-sage">(12*11*10*9*8*7*6)/factorial(7)
+</script></div>
+<p id="p-38"><dfn class="terminology">Definição</dfn> O número de <em class="emphasis">combinações simples</em> de \(n\) objetos, tomados \(p\) a \(p\) é o número de modos de escolher \(p\) objetos distintos entre \(n\) objetos distintos dados.</p>
+<p id="p-39">Outra forma de definir <em class="emphasis">combinações simples</em> de \(n\text{,}\) \(p\) a \(p\) é como o número de subconjuntos com \(p\) elementos de um conjunto com \(n\) elementos. A notação para combinação simples é dada por $$C_n^p, C_{n, p} ~~\text{ ou }~~ C(n, p).$$</p>
+<article class="theorem theorem-like" id="theorem-2"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.3.1</span><span class="period">.</span>
+</h6>O número de combinações de \(n\) objetos distintos, tomados \(p \) a \(p \) é<div class="displaymath">
+\begin{equation*}
+C_n^p = \frac{n!}{p!\times(n-p)!}. 
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-2"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-2"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-2"><article class="hiddenproof"><p id="p-40">Temos \(n\) modos de escolher o primeiro elemento, \(n-1\) modos de escolher o segundo elemento, e assim sucessivamente, até \(n-p+1\) modos de escolher o \(p\)-ésimo elemento.</p>
+<p id="p-41">Agora observe que contamos muito mais agrupamentos do que deveríamos, pois para conjuntos, a ordem não importa, portanto precisamos dividir pelo número de formas de ordenar estes \(p\) elementos que escolhemos de forma ordenada, ou seja, por \(p!\text{.}\) Assim:</p>
+<p id="p-42">$$C(n,p)  = \frac{n(n-1)\cdots(n-p+1)}{p!} = \frac{n(n-1)\cdots(n-p+1)}{p!} \cdot \frac{(n-p)!}{(n-p)!}$$</p>
+<p id="p-43">Fazendo as contas concluímos que $$  C(n,p) = \frac{n!}{p!(n-p)!}.$$</p></article></div>
+<p id="p-44">No Sage, podemos obter uma lista com todos os subconjuntos de {1, 2, 3, 4, 5}, tomados 3 a 3. Basta usar o seguinte código:</p>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">A = set([1, 2, 3, 4, 5])
+B = Combinations(A, 3)
+B.list()
+</script></div>
+<p id="p-45">Para obter o número de <em class="emphasis">combinações simples</em> de \(n\text{,}\) tomados \(p\) a \(p\text{,}\)usamos o código binomial(n, p). Teste o código abaixo, para o caso \(n=8\text{,}\) \(p=3\text{.}\)</p>
+<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">binomial(8,3)
+</script></div>
+<p id="p-46"><dfn class="terminology">Exemplo</dfn> Sobre uma reta, marcam-se 10 pontos e sobre outra reta paralela a primeira marcam-se 15 pontos. Quantos triângulos podemos obter unindo 3 desses 25 pontos?</p>
+<p id="p-47"><dfn class="terminology">Solução</dfn> Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
+<p id="p-48">O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é: $$ 15\times C(10, 2). $$</p>
+<p id="p-49">Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é $$ 10\times C(15, 2). $$</p>
+<p id="p-50">Portanto, pelo princípio aditivo, o número total de soluções é: $$ 15\times C(10, 2) + 10\times C(15, 2). $$</p>
+<div class="sagecell-sage" id="sage-7"><script type="text/x-sage">C(n, p) = binomial(n, p)
+15*C(10, 2) + 10*C(15, 2)
+</script></div>
+<p id="p-51"><dfn class="terminology">Exemplo</dfn> Um Juiz dispõe de 11 pessoas, das quais somente 4 são advogados.</p>
+<p id="p-52">a) Para formar um único júri com 9 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
+<p id="p-53">b) Para formar um único júri com 6 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
+<p id="p-54"><dfn class="terminology">Solução item a)</dfn> Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de $$ C(11,9)=55. $$</p>
+<p id="p-55"><dfn class="terminology">Solução item b)</dfn> Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, pode aconteder de não termos pelo menos dois advogados. Precisamos contornar este problema.</p>
+<p id="p-56">Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de $$ C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2). $$ maneiras.</p>
+<div class="sagecell-sage" id="sage-8"><script type="text/x-sage">C(n, p) = binomial(n, p)
+C(4,2)*C(7, 4) + C(4,3)*C(7, 3) + C(4,4)*C(7, 2)
+</script></div>
+<p id="p-57"><dfn class="terminology">Exemplo</dfn> De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
+<p id="p-58"><dfn class="terminology">Solução</dfn> Para o primeiro grupo, temos um total de $$ C(12, 4) $$ maneiras de selecionar as 4 pessoas. Para o segundo grupo temos um total de $$ C(8, 4) $$ maneiras de selecionar as 4 pessoas. Para o terceiro grupo temos um total de $$ C(4,4) $$ maneiras de selecionar as 4 pessoas. Como a ordem dos grupos não importa, precisamos dividir por \(3!\) Portanto a resposta é $$ \frac{C(12, 4)\times C(8, 4)\times C(4, 4)}{3!}.$$</p>
+<div class="sagecell-sage" id="sage-9"><script type="text/x-sage">C(n, p) = binomial(n, p)
+P(n) = factorial(n)
+C(12, 4)*C(8,4)*C(4, 4)/P(3)
+</script></div></section></div></main>
 </div>
 </body>
 </html>

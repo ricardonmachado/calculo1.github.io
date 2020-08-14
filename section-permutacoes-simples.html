@@ -11,7 +11,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>AATA Princípios de Contagem</title>
+<title>AATA Permutações Simples</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -88,10 +88,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="part-basics.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-basics.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-note-on-proofs.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-note-on-proofs.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="sets.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="section-combinacoes-simples.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="part-basics.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-basics.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-note-on-proofs.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="section-note-on-proofs.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="sets.html" title="Up">Up</a><a class="next-button button toolbar-item" href="section-combinacoes-simples.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -103,10 +103,10 @@ MathJax.Hub.Config({
 </ul>
 </li>
 <li class="link part"><a href="part-basics.html" data-scroll="part-basics"><span class="codenumber">I</span> <span class="title">Análise Combinatória</span></a></li>
-<li class="link active">
+<li class="link">
 <a href="sets.html" data-scroll="sets"><span class="codenumber">1</span> <span class="title">Princípios de Contagem</span></a><ul>
 <li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Princípio Aditivo e Princípio Multiplicativo</a></li>
-<li><a href="section-permutacoes-simples.html" data-scroll="section-permutacoes-simples">Permutações Simples</a></li>
+<li><a href="section-permutacoes-simples.html" data-scroll="section-permutacoes-simples" class="active">Permutações Simples</a></li>
 <li><a href="section-combinacoes-simples.html" data-scroll="section-combinacoes-simples">Combinações Simples</a></li>
 <li><a href="references-1.html" data-scroll="references-1">Referências</a></li>
 </ul>
@@ -145,15 +145,42 @@ MathJax.Hub.Config({
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="sets"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">1</span> <span class="title">Princípios de Contagem</span>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-permutacoes-simples"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">1.2</span> <span class="title">Permutações Simples</span>
 </h2>
-<section class="introduction" id="introduction-1"><p id="p-6">Neste Capítulo vamos ver os Princípios Aditivo e Multiplicativo. Em seguida veremos como calcular o número de Permutações e Combinações, dos tipos simples, e tambem com elementos repetidos ou em disposição circular.</p></section><nav class="summary-links"><ul>
-<li><a href="section-note-on-proofs.html"><span class="codenumber">1.1</span> <span class="title">Princípio Aditivo e Princípio Multiplicativo</span></a></li>
-<li><a href="section-permutacoes-simples.html"><span class="codenumber">1.2</span> <span class="title">Permutações Simples</span></a></li>
-<li><a href="section-combinacoes-simples.html"><span class="codenumber">1.3</span> <span class="title">Combinações Simples</span></a></li>
-<li><a href="references-1.html"><span class="codenumber">1.4</span> <span class="title">Referências</span></a></li>
-</ul></nav></section></div></main>
+<section class="subsection" id="subsection-3"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">1.2.1</span> <span class="title">Permutações</span>
+</h3>
+<p id="p-24">Permutar uma lista de objetos é mudar a ordem em que os objetos da lista aparecem originalmente.</p>
+<p id="p-25">Abaixo, temos uma lista com todas as permutações dos elementos: 1, 2, 3.</p>
+<p id="p-26">[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]</p>
+<p id="p-27">Abaixo, clique em "Evaluate (Sage)" para obter a lista com todas as permutações dos elementos: 1, 2, 3, 4.</p>
+<div class="sagecell-sage" id="sage-1"><script type="text/x-sage">Permutations([1, 2, 3, 4]).list()
+</script></div>
+<p id="p-28">Para descrever o <em class="emphasis">número de permutações</em> de \(n\) objetos distintos usamos a notação: \(P_n\) ou \(P(n)\text{.}\)</p>
+<article class="theorem theorem-like" id="theorem-1"><h6 class="heading">
+<span class="type">Theorem</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
+</h6>O número de permutações de \(n \) objetos distintos é<div class="displaymath">
+\begin{equation*}
+P_n = P(n) = n\times (n-1) \times (n-2)\times \cdots \times 1. 
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-1"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-1"><h6 class="heading"><span class="type">Proof<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-1"><article class="hiddenproof"><p id="p-29">Pelo princípio multiplicativo, temos \(n\) modos de escolher o elemento que ocupará o primeiro lugar, uma vez tomada essa decisão, teremos \(n-1\) modos de se escolher o segundo, e assim por diante, até que haja apenas um único modo de se escolher o último elemento. Portanto $$ P(n) = n\times (n-1) \times \cdots \times 1. $$</p></article></div>
+<p id="p-30"><dfn class="terminology">Exemplo</dfn> Quantos são os anagramas da palavra SAGE?</p>
+<p id="p-31"><dfn class="terminology">Solução</dfn> A palavra SAGE possui quatro letras distintas, potanto o número de anagramas é</p>
+<div class="displaymath">
+\begin{equation*}
+P(4) = 24. 
+\end{equation*}
+</div>
+<p id="p-32"><dfn class="terminology">Exemplo</dfn> Quantos são os anagramas da palavra XADREZ que começam e terminam por consoante?</p>
+<p id="p-33"><dfn class="terminology">Solução</dfn> A consoante inicial pode ser escolhida de 4 maneiras e a consoante final de 3 maneiras e as 4 letras restantes podem ser escolhidas de \(P(4)\) maneiras. A resposta é $$ 4\times 3\times P(4). $$</p>
+<div class="sagecell-sage" id="sage-2"><script type="text/x-sage">4*3*factorial(4)
+</script></div>
+<p id="p-34"><dfn class="terminology">Exemplo</dfn> De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
+<p id="p-35"><dfn class="terminology">Solução</dfn> Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é P(12). Como a separação em grupos $$[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]$$ é idêntica a separação $$[9, 10, 11, 12], [1, 2, 3, 4], [5, 6, 7, 8]$$ A contagem P(12) foi contada como se fossem distintas, precismos dividir pelo número de formas de ordenar os três grupos e precisamos dividir também pelo número de formas de ordenar cada grupo. Portanto a resposta é $$ \frac{P(12)}{P(3)\times P(4)\times P(4)\times P(4)}.$$</p>
+<div class="sagecell-sage" id="sage-3"><script type="text/x-sage">P(n) = factorial(n)
+P(12)/(P(3)*P(4)*P(4)*P(4))
+</script></div></section></section></div></main>
 </div>
 </body>
 </html>
