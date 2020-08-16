@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-08-16T17:57:44-03:00       *-->
+<!--*       on 2020-08-16T17:57:45-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="pt-BR">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>UFRPE-DM Análise Combinatória</title>
+<title>UFRPE-DM Permutações com Repetições</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -88,10 +88,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="preface.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="sample-book.html" title="Acima">Acima</a><a id="nextbutton" class="next-button button toolbar-item" href="sets.html" title="Próximo">Próximo</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-permutacoes-circulares.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="sets.html" title="Acima">Acima</a><a id="nextbutton" class="next-button button toolbar-item" href="section-combinacoes-completas.html" title="Próximo">Próximo</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><a class="previous-button toolbar-item button" href="preface.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="sample-book.html" title="Acima">Acima</a><a class="next-button button toolbar-item" href="sets.html" title="Próximo">Próximo</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><a class="previous-button toolbar-item button" href="section-permutacoes-circulares.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="sets.html" title="Acima">Acima</a><a class="next-button button toolbar-item" href="section-combinacoes-completas.html" title="Próximo">Próximo</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -102,7 +102,7 @@ MathJax.Hub.Config({
 <li><a href="preface.html" data-scroll="preface">Prefácio</a></li>
 </ul>
 </li>
-<li class="link part active"><a href="part-basics.html" data-scroll="part-basics"><span class="codenumber">I</span> <span class="title">Análise Combinatória</span></a></li>
+<li class="link part"><a href="part-basics.html" data-scroll="part-basics"><span class="codenumber">I</span> <span class="title">Análise Combinatória</span></a></li>
 <li class="link">
 <a href="sets.html" data-scroll="sets"><span class="codenumber">1</span> <span class="title">Princípios de Contagem</span></a><ul>
 <li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Princípio Aditivo e Princípio Multiplicativo</a></li>
@@ -110,7 +110,7 @@ MathJax.Hub.Config({
 <li><a href="section-combinacoes-simples.html" data-scroll="section-combinacoes-simples">Combinações Simples</a></li>
 <li><a href="exercicios-lista1.html" data-scroll="exercicios-lista1">Exercícios</a></li>
 <li><a href="section-permutacoes-circulares.html" data-scroll="section-permutacoes-circulares">Permutações Circulares</a></li>
-<li><a href="section-permutacoes-com-repeticoes.html" data-scroll="section-permutacoes-com-repeticoes">Permutações com Repetições</a></li>
+<li><a href="section-permutacoes-com-repeticoes.html" data-scroll="section-permutacoes-com-repeticoes" class="active">Permutações com Repetições</a></li>
 <li><a href="section-combinacoes-completas.html" data-scroll="section-combinacoes-completas">Combinações Completas</a></li>
 <li><a href="exercicios-lista2.html" data-scroll="exercicios-lista2">Exercícios</a></li>
 <li><a href="references-1.html" data-scroll="references-1">Referências</a></li>
@@ -159,14 +159,56 @@ MathJax.Hub.Config({
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Feito com PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="part" id="part-basics"><h2 class="heading hide-type">
-<span class="type">Parte</span> <span class="codenumber">I</span> <span class="title">Análise Combinatória</span>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-permutacoes-com-repeticoes"><h2 class="heading hide-type">
+<span class="type">Seção</span> <span class="codenumber">1.6</span> <span class="title">Permutações com Repetições</span>
 </h2>
-<nav class="summary-links"><ul>
-<li><a href="sets.html"><span class="codenumber">1</span> <span class="title">Princípios de Contagem</span></a></li>
-<li><a href="contagem2.html"><span class="codenumber">2</span> <span class="title">Outros Métodos de Contagem</span></a></li>
-<li><a href="integers.html"><span class="codenumber">3</span> <span class="title">Números Binomiais</span></a></li>
-</ul></nav></section></div></main>
+<article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
+<ol class="decimal">
+<li id="li-24">Definir permutação com repetição.</li>
+<li id="li-25">Mostrar como obter a lista com todas as permutações com repetições de \(n\) elementos.</li>
+<li id="li-26">Mostrar como calcular o número de permutações com repetições de \(n\) elementos.</li>
+<li id="li-27">Resolver exemplos.</li>
+</ol></article><article class="fact theorem-like" id="fact-16"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span>
+</h6>
+<p id="p-99">Quantos são os anagramas da palavra SAGEMATH?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like">
+<p id="p-100">Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez. Podemos imaginar, por enquanto, que a palavra é assim $$SA_1GEMA_2TH$$ com \(A_1\neq A_2\text{,}\) nesse caso teríamos um total de $$ P(8) = 8! $$ permutações.</p>
+<p id="p-101">Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir do total de permutações a quantidade de reordenar os A's. Dessa forma a resposta é $$\frac{P(8)}{P(2)}=20160.$$</p>
+</div></div></article><p id="p-102">Quando permutamos uma lista de objetos, na qual, nem todos os elementos são distintos, precisamos considerar que permutar dois elementos idênticos não gera uma nova permutação. Este tipo de permutação é chamado de <em class="emphasis">permutação com repetição</em>.</p>
+<article class="remark remark-like" id="remark-5"><h6 class="heading">
+<span class="type">Observação</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span>
+</h6>Obtendo a lista com todas as permutações com repetições dos elementos \(1, 1, 1, 2, 2\text{:}\) <div class="sagecell-sage" id="sage-14"><script type="text/x-sage">Permutations([1, 1, 1, 2, 2]).list()
+</script></div></article><article class="definition definition-like" id="definition-5"><h6 class="heading">
+<span class="type">Definição</span><span class="space"> </span><span class="codenumber">1.6.3</span><span class="period">.</span>
+</h6>O número de permutações de \(n\) objetos, com um objeto repetido \(r_1\) vezes, outro objeto repetido \(r_2\) vezes, até o "último" objeto repetido \(r_k\) vezes, com<div class="displaymath">
+\begin{equation*}
+r_1+r_2+\cdots+r_k=n
+\end{equation*}
+</div>é denotado por: $$ PR_n^{r_1, r_2, \ldots, r_k}. $$</article><article class="theorem theorem-like" id="theorem-4"><h6 class="heading">
+<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">1.6.4</span><span class="period">.</span>
+</h6>
+<p id="p-103">$$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</p></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof">Considere os \(n\) objetos da seguinte forma: $$ \underbrace{A_1A_1\ldots A_1}_{r_1  \text{ vezes}} \underbrace{A_2A_2\ldots A_2}_{r_2  \text{ vezes}}\ldots\underbrace{A_kA_k\ldots A_k}_{r_k  \text{ vezes}} $$ observe que \(r_1+r_2+\cdots+ r_k = n.\) Para encontrar o número de formas de permutar esses elementos, vamos quebrar em \(k\) etapas. Na primeira etapa, vamos escolher \(r_1\) posições, dentre \(n\text{,}\) para colocar \(A_1: C_n^{r_1}\text{.}\) Na segunda etapa, vamos escolher \(r_2\) posições, dentre \(n-r_1\text{,}\) para colocar \(A_2: C_{n-r_1}^{r_2}\text{.}\) \(\ldots\) Na \(k\)-ésima etapa, vamos escolher \(r_k\) posições, dentre \(n-r_1-r_2-\cdots-r_{k-1}=r_k\text{,}\) para colocar \(A_k: C_{r_k}^{r_k}\text{.}\) Portanto, $$ PR_n^{r_1, r_2, \ldots, r_k} =~ C_n^{r_1}\times C_{n-r_1}^{r_2} \times \cdots \times C_{r_k}^{r_k} \\ $$ Calculando cada \(C_x^y\) $$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\underbrace{(n-r_1)!}_{x_1}}\cdot\frac{\overbrace{(n-r_1)!}^{x_1}}{r_2!\underbrace{(n-r_1-r_2)!}_{x_2}}\cdots\frac{\overbrace{n_k!}^{x_k}}{n_k!\underbrace{(n_k-n_k)!}_{=1}} $$ E cancelando os \(x_i's\text{,}\) obtemos $$ PR_n^{r_1, r_2, \ldots, r_k}= \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</article></div>
+<article class="remark remark-like" id="remark-6"><h6 class="heading">
+<span class="type">Observação</span><span class="space"> </span><span class="codenumber">1.6.5</span><span class="period">.</span>
+</h6>Obtendo o número de permutações com repetições no Sage, para \(n=10, r_1 = 3, r_2=2, r_3=2, r_4=1, r_5=1\) e \(r_6=1\text{:}\) <div class="sagecell-sage" id="sage-15"><script type="text/x-sage">def PR(*lista):
+    p = factorial(lista[0])
+    for i in lista[1:]:
+        p = p/factorial(i)
+    return p
+PR(10, 3, 2, 2)
+</script></div></article><article class="fact theorem-like" id="fact-17"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.6</span><span class="period">.</span>
+</h6>
+<p id="p-104">Quantos são os anagramas da palavra MATEMATICA?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-105">Temos uma palavra com 10 letras. Das 10 letras, temos 3 A's, 2 M's e 2 T's e as outras aparecem uma única vez, portanto o número de anagramas desta palavra é $$ PR_{10}^{3, 2, 2} = 151200. $$</p></div></div></article><article class="fact theorem-like" id="fact-18"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span>
+</h6>
+<p id="p-106">Quantos são os anagramas da palavra MATEMATICA que começam por vogal?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
+<p id="p-107">Se o anagrama começa por vogal, temos as possibilidades, A ou E ou I.</p>
+<p id="p-108">Começando com A, temos um total de \(PR_9^{2, 2, 2}\text{,}\) começando com E, temos um total de \(PR_9^{3, 2, 2}\) e começando com I, temos um total de \(PR_9^{3, 2, 2}\) Portanto a resposta é $$ PR_9^{2, 2, 2} + 2\times PR_9^{3, 2, 2} = 75600. $$</p>
+</div></div></article></section></div></main>
 </div>
 </body>
 </html>
