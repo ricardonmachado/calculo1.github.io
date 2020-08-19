@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-08-16T17:57:45-03:00       *-->
+<!--*       on 2020-08-19T11:09:20-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -119,9 +119,10 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="contagem2.html" data-scroll="contagem2"><span class="codenumber">2</span> <span class="title">Outros Métodos de Contagem</span></a><ul>
 <li><a href="section-inclusao-exclusao.html" data-scroll="section-inclusao-exclusao">Princípio da Inclusão-Exclusão</a></li>
-<li><a href="section-permutacao-caotica.html" data-scroll="section-permutacao-caotica">Permutação Caótica</a></li>
+<li><a href="section-permutacao-caotica.html" data-scroll="section-permutacao-caotica">Permutações Caóticas</a></li>
 <li><a href="section-lemas-kaplansky.html" data-scroll="section-lemas-kaplansky">Os Lemas de Kaplansky</a></li>
 <li><a href="section-casa-pombos.html" data-scroll="section-casa-pombos">Princípio da Casa dos Pombos</a></li>
+<li><a href="exercicios-lista3.html" data-scroll="exercicios-lista3">Exercícios</a></li>
 <li><a href="references-2.html" data-scroll="references-2">Referências</a></li>
 </ul>
 </li>
@@ -140,19 +141,19 @@ MathJax.Hub.Config({
 <li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgroups</a></li>
 <li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
 <li><a href="exercises-groups.html" data-scroll="exercises-groups">Exercises</a></li>
-<li><a href="exercises-4.html" data-scroll="exercises-4">Additional Exercises: Detecting Errors</a></li>
+<li><a href="exercises-5.html" data-scroll="exercises-5">Additional Exercises: Detecting Errors</a></li>
 <li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Sage Exercises</a></li>
 <li><a href="references-4.html" data-scroll="references-4">References and Suggested Readings</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">5</span> <span class="title">Probabilidades Condicionais e Distribuição Binomial</span></a><ul>
-<li><a href="section-20.html" data-scroll="section-20">Cyclic groups</a></li>
-<li><a href="section-21.html" data-scroll="section-21">Subgroups of a Cyclic Group</a></li>
-<li><a href="section-22.html" data-scroll="section-22">Cyclic Groups of Complex Numbers</a></li>
-<li><a href="section-23.html" data-scroll="section-23">Large Powers of Integers</a></li>
+<li><a href="section-27.html" data-scroll="section-27">Cyclic groups</a></li>
+<li><a href="section-28.html" data-scroll="section-28">Subgroups of a Cyclic Group</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Cyclic Groups of Complex Numbers</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Large Powers of Integers</a></li>
 <li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Exercises</a></li>
-<li><a href="exercises-7.html" data-scroll="exercises-7">Programming Exercises</a></li>
+<li><a href="exercises-8.html" data-scroll="exercises-8">Programming Exercises</a></li>
 <li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Sage Exercises</a></li>
 <li><a href="references-5.html" data-scroll="references-5">References and Suggested Readings</a></li>
 </ul>
@@ -164,18 +165,18 @@ MathJax.Hub.Config({
 </h2>
 <article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
 <ol class="decimal">
-<li id="li-24">Definir permutação com repetição.</li>
-<li id="li-25">Mostrar como obter a lista com todas as permutações com repetições de \(n\) elementos.</li>
-<li id="li-26">Mostrar como calcular o número de permutações com repetições de \(n\) elementos.</li>
-<li id="li-27">Resolver exemplos.</li>
+<li id="li-36">Definir permutação com repetição.</li>
+<li id="li-37">Mostrar como obter a lista com todas as permutações com repetições de \(n\) elementos.</li>
+<li id="li-38">Mostrar como calcular o número de permutações com repetições de \(n\) elementos.</li>
+<li id="li-39">Resolver exemplos.</li>
 </ol></article><article class="fact theorem-like" id="fact-16"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span>
 </h6>
-<p id="p-99">Quantos são os anagramas da palavra SAGEMATH?</p>
+<p id="p-112">Quantos são os anagramas da palavra SAGEMATH?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like">
-<p id="p-100">Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez. Podemos imaginar, por enquanto, que a palavra é assim $$SA_1GEMA_2TH$$ com \(A_1\neq A_2\text{,}\) nesse caso teríamos um total de $$ P(8) = 8! $$ permutações.</p>
-<p id="p-101">Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir do total de permutações a quantidade de reordenar os A's. Dessa forma a resposta é $$\frac{P(8)}{P(2)}=20160.$$</p>
-</div></div></article><p id="p-102">Quando permutamos uma lista de objetos, na qual, nem todos os elementos são distintos, precisamos considerar que permutar dois elementos idênticos não gera uma nova permutação. Este tipo de permutação é chamado de <em class="emphasis">permutação com repetição</em>.</p>
+<p id="p-113">Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez. Podemos imaginar, por enquanto, que a palavra é assim $$SA_1GEMA_2TH$$ com \(A_1\neq A_2\text{,}\) nesse caso teríamos um total de $$ P(8) = 8! $$ permutações.</p>
+<p id="p-114">Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir do total de permutações a quantidade de reordenar os A's. Dessa forma a resposta é $$\frac{P(8)}{P(2)}=20160.$$</p>
+</div></div></article><p id="p-115">Quando permutamos uma lista de objetos, na qual, nem todos os elementos são distintos, precisamos considerar que permutar dois elementos idênticos não gera uma nova permutação. Este tipo de permutação é chamado de <em class="emphasis">permutação com repetição</em>.</p>
 <article class="remark remark-like" id="remark-5"><h6 class="heading">
 <span class="type">Observação</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span>
 </h6>Obtendo a lista com todas as permutações com repetições dos elementos \(1, 1, 1, 2, 2\text{:}\) <div class="sagecell-sage" id="sage-14"><script type="text/x-sage">Permutations([1, 1, 1, 2, 2]).list()
@@ -188,7 +189,7 @@ r_1+r_2+\cdots+r_k=n
 </div>é denotado por: $$ PR_n^{r_1, r_2, \ldots, r_k}. $$</article><article class="theorem theorem-like" id="theorem-4"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">1.6.4</span><span class="period">.</span>
 </h6>
-<p id="p-103">$$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</p></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof">Considere os \(n\) objetos da seguinte forma: $$ \underbrace{A_1A_1\ldots A_1}_{r_1  \text{ vezes}} \underbrace{A_2A_2\ldots A_2}_{r_2  \text{ vezes}}\ldots\underbrace{A_kA_k\ldots A_k}_{r_k  \text{ vezes}} $$ observe que \(r_1+r_2+\cdots+ r_k = n.\) Para encontrar o número de formas de permutar esses elementos, vamos quebrar em \(k\) etapas. Na primeira etapa, vamos escolher \(r_1\) posições, dentre \(n\text{,}\) para colocar \(A_1: C_n^{r_1}\text{.}\) Na segunda etapa, vamos escolher \(r_2\) posições, dentre \(n-r_1\text{,}\) para colocar \(A_2: C_{n-r_1}^{r_2}\text{.}\) \(\ldots\) Na \(k\)-ésima etapa, vamos escolher \(r_k\) posições, dentre \(n-r_1-r_2-\cdots-r_{k-1}=r_k\text{,}\) para colocar \(A_k: C_{r_k}^{r_k}\text{.}\) Portanto, $$ PR_n^{r_1, r_2, \ldots, r_k} =~ C_n^{r_1}\times C_{n-r_1}^{r_2} \times \cdots \times C_{r_k}^{r_k} \\ $$ Calculando cada \(C_x^y\) $$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\underbrace{(n-r_1)!}_{x_1}}\cdot\frac{\overbrace{(n-r_1)!}^{x_1}}{r_2!\underbrace{(n-r_1-r_2)!}_{x_2}}\cdots\frac{\overbrace{n_k!}^{x_k}}{n_k!\underbrace{(n_k-n_k)!}_{=1}} $$ E cancelando os \(x_i's\text{,}\) obtemos $$ PR_n^{r_1, r_2, \ldots, r_k}= \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</article></div>
+<p id="p-116">$$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</p></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof">Considere os \(n\) objetos da seguinte forma: $$ \underbrace{A_1A_1\ldots A_1}_{r_1  \text{ vezes}} \underbrace{A_2A_2\ldots A_2}_{r_2  \text{ vezes}}\ldots\underbrace{A_kA_k\ldots A_k}_{r_k  \text{ vezes}} $$ observe que \(r_1+r_2+\cdots+ r_k = n.\) Para encontrar o número de formas de permutar esses elementos, vamos quebrar em \(k\) etapas. Na primeira etapa, vamos escolher \(r_1\) posições, dentre \(n\text{,}\) para colocar \(A_1: C_n^{r_1}\text{.}\) Na segunda etapa, vamos escolher \(r_2\) posições, dentre \(n-r_1\text{,}\) para colocar \(A_2: C_{n-r_1}^{r_2}\text{.}\) \(\ldots\) Na \(k\)-ésima etapa, vamos escolher \(r_k\) posições, dentre \(n-r_1-r_2-\cdots-r_{k-1}=r_k\text{,}\) para colocar \(A_k: C_{r_k}^{r_k}\text{.}\) Portanto, $$ PR_n^{r_1, r_2, \ldots, r_k} =~ C_n^{r_1}\times C_{n-r_1}^{r_2} \times \cdots \times C_{r_k}^{r_k} \\ $$ Calculando cada \(C_x^y\) $$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\underbrace{(n-r_1)!}_{x_1}}\cdot\frac{\overbrace{(n-r_1)!}^{x_1}}{r_2!\underbrace{(n-r_1-r_2)!}_{x_2}}\cdots\frac{\overbrace{n_k!}^{x_k}}{n_k!\underbrace{(n_k-n_k)!}_{=1}} $$ E cancelando os \(x_i's\text{,}\) obtemos $$ PR_n^{r_1, r_2, \ldots, r_k}= \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</article></div>
 <article class="remark remark-like" id="remark-6"><h6 class="heading">
 <span class="type">Observação</span><span class="space"> </span><span class="codenumber">1.6.5</span><span class="period">.</span>
 </h6>Obtendo o número de permutações com repetições no Sage, para \(n=10, r_1 = 3, r_2=2, r_3=2, r_4=1, r_5=1\) e \(r_6=1\text{:}\) <div class="sagecell-sage" id="sage-15"><script type="text/x-sage">def PR(*lista):
@@ -200,14 +201,14 @@ PR(10, 3, 2, 2)
 </script></div></article><article class="fact theorem-like" id="fact-17"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.6</span><span class="period">.</span>
 </h6>
-<p id="p-104">Quantos são os anagramas da palavra MATEMATICA?</p>
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-105">Temos uma palavra com 10 letras. Das 10 letras, temos 3 A's, 2 M's e 2 T's e as outras aparecem uma única vez, portanto o número de anagramas desta palavra é $$ PR_{10}^{3, 2, 2} = 151200. $$</p></div></div></article><article class="fact theorem-like" id="fact-18"><h6 class="heading">
+<p id="p-117">Quantos são os anagramas da palavra MATEMATICA?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-118">Temos uma palavra com 10 letras. Das 10 letras, temos 3 A's, 2 M's e 2 T's e as outras aparecem uma única vez, portanto o número de anagramas desta palavra é $$ PR_{10}^{3, 2, 2} = 151200. $$</p></div></div></article><article class="fact theorem-like" id="fact-18"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span>
 </h6>
-<p id="p-106">Quantos são os anagramas da palavra MATEMATICA que começam por vogal?</p>
+<p id="p-119">Quantos são os anagramas da palavra MATEMATICA que começam por vogal?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
-<p id="p-107">Se o anagrama começa por vogal, temos as possibilidades, A ou E ou I.</p>
-<p id="p-108">Começando com A, temos um total de \(PR_9^{2, 2, 2}\text{,}\) começando com E, temos um total de \(PR_9^{3, 2, 2}\) e começando com I, temos um total de \(PR_9^{3, 2, 2}\) Portanto a resposta é $$ PR_9^{2, 2, 2} + 2\times PR_9^{3, 2, 2} = 75600. $$</p>
+<p id="p-120">Se o anagrama começa por vogal, temos as possibilidades, A ou E ou I.</p>
+<p id="p-121">Começando com A, temos um total de \(PR_9^{2, 2, 2}\text{,}\) começando com E, temos um total de \(PR_9^{3, 2, 2}\) e começando com I, temos um total de \(PR_9^{3, 2, 2}\) Portanto a resposta é $$ PR_9^{2, 2, 2} + 2\times PR_9^{3, 2, 2} = 75600. $$</p>
 </div></div></article></section></div></main>
 </div>
 </body>

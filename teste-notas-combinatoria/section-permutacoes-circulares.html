@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-08-16T17:57:45-03:00       *-->
+<!--*       on 2020-08-19T11:09:20-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -119,9 +119,10 @@ MathJax.Hub.Config({
 <li class="link">
 <a href="contagem2.html" data-scroll="contagem2"><span class="codenumber">2</span> <span class="title">Outros Métodos de Contagem</span></a><ul>
 <li><a href="section-inclusao-exclusao.html" data-scroll="section-inclusao-exclusao">Princípio da Inclusão-Exclusão</a></li>
-<li><a href="section-permutacao-caotica.html" data-scroll="section-permutacao-caotica">Permutação Caótica</a></li>
+<li><a href="section-permutacao-caotica.html" data-scroll="section-permutacao-caotica">Permutações Caóticas</a></li>
 <li><a href="section-lemas-kaplansky.html" data-scroll="section-lemas-kaplansky">Os Lemas de Kaplansky</a></li>
 <li><a href="section-casa-pombos.html" data-scroll="section-casa-pombos">Princípio da Casa dos Pombos</a></li>
+<li><a href="exercicios-lista3.html" data-scroll="exercicios-lista3">Exercícios</a></li>
 <li><a href="references-2.html" data-scroll="references-2">Referências</a></li>
 </ul>
 </li>
@@ -140,19 +141,19 @@ MathJax.Hub.Config({
 <li><a href="section-subgroups.html" data-scroll="section-subgroups">Subgroups</a></li>
 <li><a href="groups-sage.html" data-scroll="groups-sage">Sage</a></li>
 <li><a href="exercises-groups.html" data-scroll="exercises-groups">Exercises</a></li>
-<li><a href="exercises-4.html" data-scroll="exercises-4">Additional Exercises: Detecting Errors</a></li>
+<li><a href="exercises-5.html" data-scroll="exercises-5">Additional Exercises: Detecting Errors</a></li>
 <li><a href="groups-sage-exercises.html" data-scroll="groups-sage-exercises">Sage Exercises</a></li>
 <li><a href="references-4.html" data-scroll="references-4">References and Suggested Readings</a></li>
 </ul>
 </li>
 <li class="link">
 <a href="cyclic.html" data-scroll="cyclic"><span class="codenumber">5</span> <span class="title">Probabilidades Condicionais e Distribuição Binomial</span></a><ul>
-<li><a href="section-20.html" data-scroll="section-20">Cyclic groups</a></li>
-<li><a href="section-21.html" data-scroll="section-21">Subgroups of a Cyclic Group</a></li>
-<li><a href="section-22.html" data-scroll="section-22">Cyclic Groups of Complex Numbers</a></li>
-<li><a href="section-23.html" data-scroll="section-23">Large Powers of Integers</a></li>
+<li><a href="section-27.html" data-scroll="section-27">Cyclic groups</a></li>
+<li><a href="section-28.html" data-scroll="section-28">Subgroups of a Cyclic Group</a></li>
+<li><a href="section-29.html" data-scroll="section-29">Cyclic Groups of Complex Numbers</a></li>
+<li><a href="section-30.html" data-scroll="section-30">Large Powers of Integers</a></li>
 <li><a href="exercises-cyclic.html" data-scroll="exercises-cyclic">Exercises</a></li>
-<li><a href="exercises-7.html" data-scroll="exercises-7">Programming Exercises</a></li>
+<li><a href="exercises-8.html" data-scroll="exercises-8">Programming Exercises</a></li>
 <li><a href="cyclic-sage-exercises.html" data-scroll="cyclic-sage-exercises">Sage Exercises</a></li>
 <li><a href="references-5.html" data-scroll="references-5">References and Suggested Readings</a></li>
 </ul>
@@ -164,57 +165,57 @@ MathJax.Hub.Config({
 </h2>
 <article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
 <ol class="decimal">
-<li id="li-20">Definir permutação circular.</li>
-<li id="li-21">Mostrar como obter a lista com todas as permutações circulares de \(n\) elementos distintos.</li>
-<li id="li-22">Mostrar como calcular o número de permutações circulares de \(n\) elementos distintos.</li>
-<li id="li-23">Resolver exemplos.</li>
+<li id="li-32">Definir permutação circular.</li>
+<li id="li-33">Mostrar como obter a lista com todas as permutações circulares de \(n\) elementos distintos.</li>
+<li id="li-34">Mostrar como calcular o número de permutações circulares de \(n\) elementos distintos.</li>
+<li id="li-35">Resolver exemplos.</li>
 </ol></article><article class="definition definition-like" id="definition-4"><h6 class="heading">
 <span class="type">Definição</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
 </h6>
-<p id="p-85">O número de <em class="emphasis">permutações circulares</em> de \(n\) elementos, é o número de maneiras de organizar \(n\) objetos distintos ao longo de um círculo fixo (isto é, não pode ser retirado do plano e virado). Notação: $$ PC_n ~~\text{ ou }~~ PC(n). $$</p></article><article class="remark remark-like" id="remark-4"><h6 class="heading">
+<p id="p-98">O número de <em class="emphasis">permutações circulares</em> de \(n\) elementos, é o número de maneiras de organizar \(n\) objetos distintos ao longo de um círculo fixo (isto é, não pode ser retirado do plano e virado). Notação: $$ PC_n ~~\text{ ou }~~ PC(n). $$</p></article><article class="remark remark-like" id="remark-4"><h6 class="heading">
 <span class="type">Observação</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
 </h6>
-<p id="p-86">Observe que os três circulos da  (<a class="xref" data-knowl="./knowl/circ-equiv.html" title="Figura 1.5.3">Figura 1.5.3</a>) são equivalentes, ou seja, representam a mesma permutação circular, pois o segundo círculo pode ser obtido a partir do primeiro por uma rotação de \(-\frac{2\pi}{3}\) e o terceiro círculo pode ser obtido a partir do primeiro por uma rotação de \(-2\times\frac{2\pi}{3}\text{.}\)</p>
-<figure class="figure figure-like" id="circ-equiv"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/circ-equiv.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-99">Observe que os três circulos da  (<a class="xref" data-knowl="./knowl/circ-equiv.html" title="Figura 1.5.3">Figura 1.5.3</a>) são equivalentes, ou seja, representam a mesma permutação circular, pois o segundo círculo pode ser obtido a partir do primeiro por uma rotação de \(-\frac{2\pi}{3}\) e o terceiro círculo pode ser obtido a partir do primeiro por uma rotação de \(-2\times\frac{2\pi}{3}\text{.}\)</p>
+<figure class="figure figure-like" id="circ-equiv"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/circequiv.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.5.3<span class="period">.</span></span><span class="space"> </span>Três circulos que representam a mesma permutação circular.</figcaption></figure></article><article class="claim theorem-like" id="claim-1"><h6 class="heading">
 <span class="type">Afirmação</span><span class="space"> </span><span class="codenumber">1.5.4</span><span class="period">.</span>
 </h6>
-<p id="p-87">O número total de permutações circulares com 3 elementos distintos é 2.</p></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-88">Observe que as permutações simples (1, 2, 3), (3, 1, 2) e (2, 3 ,1) podem ser identificadas com os círculos da (<a class="xref" data-knowl="./knowl/circ-equiv.html" title="Figura 1.5.3">Figura 1.5.3</a>), colocando o primeiro elemento na parte mais alta do círculo, o segundo elemento do lado direito e o terceiro elemento do lado esquerdo. Portanto essas três permutações simples, correspondem a apenas uma permutação circular.</p>
-<p id="p-89">Observe que as permutações simples (1, 3, 2), (2, 1, 3) e (3, 2 ,1) podem ser identificadas com os círculos da (<a class="xref" data-knowl="./knowl/circ-equiv2.html" title="Figura 1.5.5">Figura 1.5.5</a>), da mesma forma que foi feito no caso anterior. Portanto essas três permutações simples, correspondem a apenas uma permutação circular.</p>
-<figure class="figure figure-like" id="circ-equiv2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/circ-equiv2.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<p id="p-100">O número total de permutações circulares com 3 elementos distintos é 2.</p></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-101">Observe que as permutações simples (1, 2, 3), (3, 1, 2) e (2, 3 ,1) podem ser identificadas com os círculos da (<a class="xref" data-knowl="./knowl/circ-equiv.html" title="Figura 1.5.3">Figura 1.5.3</a>), colocando o primeiro elemento na parte mais alta do círculo, o segundo elemento do lado direito e o terceiro elemento do lado esquerdo. Portanto essas três permutações simples, correspondem a apenas uma permutação circular.</p>
+<p id="p-102">Observe que as permutações simples (1, 3, 2), (2, 1, 3) e (3, 2 ,1) podem ser identificadas com os círculos da (<a class="xref" data-knowl="./knowl/circ-equiv2.html" title="Figura 1.5.5">Figura 1.5.5</a>), da mesma forma que foi feito no caso anterior. Portanto essas três permutações simples, correspondem a apenas uma permutação circular.</p>
+<figure class="figure figure-like" id="circ-equiv2"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/circequiv2.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
 <figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.5.5<span class="period">.</span></span><span class="space"> </span>Três circulos que representam a mesma permutação circular.</figcaption></figure> Como não temos mais casos, o número total de permutações circulares com três elementos é 2.</article></div>
 <article class="theorem theorem-like" id="theorem-3"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">1.5.6</span><span class="period">.</span>
 </h6>
-<p id="p-90">O número de permutações circulares com \(n\) elementos distintos é</p>
+<p id="p-103">O número de permutações circulares com \(n\) elementos distintos é</p>
 <div class="displaymath">
 \begin{equation*}
 PC_n = (n-1)! 
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-91">Se não considerássemos equivalentes disposições que possam coincidir por rotação, teríamos \(n!\) disposições.</p>
-<p id="p-92">Como para cada disposição, temos \(n\) disposições equivalentes, dividindo o total de permutações por \(n\text{,}\) obtemos $$ PC(n) = \frac{n!}{n} = (n-1)! $$</p></article></div>
+</div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-104">Se não considerássemos equivalentes disposições que possam coincidir por rotação, teríamos \(n!\) disposições.</p>
+<p id="p-105">Como para cada disposição, temos \(n\) disposições equivalentes, dividindo o total de permutações por \(n\text{,}\) obtemos $$ PC(n) = \frac{n!}{n} = (n-1)! $$</p></article></div>
 <article class="fact theorem-like" id="fact-13"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span>
 </h6>
-<p id="p-93">A lista com todas as permutações circulares, pode ser obtida com o seguinte comando: <div class="sagecell-sage" id="sage-10"><script type="text/x-sage">CyclicPermutations([1, 2, 3, 4]).list()
+<p id="p-106">A lista com todas as permutações circulares, pode ser obtida com o seguinte comando: <div class="sagecell-sage" id="sage-10"><script type="text/x-sage">CyclicPermutations([1, 2, 3, 4]).list()
 </script></div></p>
-<p id="p-94">O número de permutações circulares com 10 elementos pode ser calculado da seguinte forma: <div class="sagecell-sage" id="sage-11"><script type="text/x-sage">PC(n) = factorial(n-1)
+<p id="p-107">O número de permutações circulares com 10 elementos pode ser calculado da seguinte forma: <div class="sagecell-sage" id="sage-11"><script type="text/x-sage">PC(n) = factorial(n-1)
 PC(10)
 </script></div></p></article><article class="fact theorem-like" id="fact-14"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
 </h6>
-<p id="p-95">Quantas rodas de ciranda podem ser formadas com 8 pessoas?</p>
+<p id="p-108">Quantas rodas de ciranda podem ser formadas com 8 pessoas?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like">Basta calcular o número de permutações circulares de 8 elementos. $$ PC(8). $$ <div class="hidden-sagecell-sage" id="sage-12"><script type="text/x-sage">PC(n) = factorial(n-1)
 PC(8)
 </script></div>
 </div></div></article><article class="fact theorem-like" id="fact-15"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.5.9</span><span class="period">.</span>
 </h6>
-<p id="p-96">Quantas rodas de ciranda podem ser formadas com 8 pessoas, se duas determinadas pessoas não podem ficar juntas?</p>
+<p id="p-109">Quantas rodas de ciranda podem ser formadas com 8 pessoas, se duas determinadas pessoas não podem ficar juntas?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like">
-<p id="p-97">Calculamos o número de permutações circulares com 8 elementos, \(PC(8)\text{.}\) Agora, subtraimos desse total, o número de permutações de 8 elementos, na qual, dois deles estão juntos.</p>
-<figure class="figure figure-like" id="circ-equiv3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/circ-equiv3.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.5.10<span class="period">.</span></span><span class="space"> </span>Duas formas de organizar os elementos 1 e 2.</figcaption></figure><p id="p-98">O que dá um total de \(PC(7)\times 2\) permutações circulares, pois temos duas formas de permutar os dois elementos que estão juntos, depois disso, olhamos para a roda de ciranda como se tivesse apenas 7 elementos. Portanto a resposta é $$ PC(8)-PC(7)\times2. $$</p>
+<p id="p-110">Calculamos o número de permutações circulares com 8 elementos, \(PC(8)\text{.}\) Agora, subtraimos desse total, o número de permutações de 8 elementos, na qual, dois deles estão juntos.</p>
+<figure class="figure figure-like" id="circequiv3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/circ-equiv3.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.5.10<span class="period">.</span></span><span class="space"> </span>Duas formas de organizar os elementos 1 e 2.</figcaption></figure><p id="p-111">O que dá um total de \(PC(7)\times 2\) permutações circulares, pois temos duas formas de permutar os dois elementos que estão juntos, depois disso, olhamos para a roda de ciranda como se tivesse apenas 7 elementos. Portanto a resposta é $$ PC(8)-PC(7)\times2. $$</p>
 <div class="hidden-sagecell-sage" id="sage-13"><script type="text/x-sage">PC(n) = factorial(n-1)
 PC(8)-PC(7)*2
 </script></div>
