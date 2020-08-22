@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-08-22T14:48:08-03:00       *-->
+<!--*       on 2020-08-22T14:54:37-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="pt-BR">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>UFRPE-DM Análise Combinatória e Probabilidade</title>
+<title>UFRPE-DM Polinômio de Leibniz</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -88,10 +88,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Anterior</span><span id="upbutton" class="up-button button disabled toolbar-item">Acima</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter.html" title="Próximo">Próximo</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-binomio-newton.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="binomial.html" title="Acima">Acima</a><a id="nextbutton" class="next-button button toolbar-item" href="exercicios-lista4.html" title="Próximo">Próximo</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><span class="previous-button button toolbar-item disabled">Anterior</span><span class="up-button button disabled toolbar-item">Acima</span><a class="next-button button toolbar-item" href="frontmatter.html" title="Próximo">Próximo</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><a class="previous-button toolbar-item button" href="section-binomio-newton.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="binomial.html" title="Acima">Acima</a><a class="next-button button toolbar-item" href="exercicios-lista4.html" title="Próximo">Próximo</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -130,7 +130,7 @@ MathJax.Hub.Config({
 <a href="binomial.html" data-scroll="binomial"><span class="codenumber">3</span> <span class="title">Números Binomiais</span></a><ul>
 <li><a href="section-triangulo-pascal.html" data-scroll="section-triangulo-pascal">Triângulo de Pascal</a></li>
 <li><a href="section-binomio-newton.html" data-scroll="section-binomio-newton">Binômio de Newton</a></li>
-<li><a href="section-polinomio-leibniz.html" data-scroll="section-polinomio-leibniz">Polinômio de Leibniz</a></li>
+<li><a href="section-polinomio-leibniz.html" data-scroll="section-polinomio-leibniz" class="active">Polinômio de Leibniz</a></li>
 <li><a href="exercicios-lista4.html" data-scroll="exercicios-lista4">Exercícios</a></li>
 <li><a href="references-3.html" data-scroll="references-3">Referências</a></li>
 </ul>
@@ -147,10 +147,103 @@ MathJax.Hub.Config({
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Feito com PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="book" id="sample-book"><nav class="summary-links"><ul>
-<li><a href="frontmatter.html"><span class="title">Pré-textual</span></a></li>
-<li><a href="part-basics.html"><span class="codenumber">I</span> <span class="title">Análise Combinatória e Probabilidade</span></a></li>
-</ul></nav></section></div></main>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-polinomio-leibniz"><h2 class="heading hide-type">
+<span class="type">Seção</span> <span class="codenumber">3.3</span> <span class="title">Polinômio de Leibniz</span>
+</h2>
+<article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
+<ol class="decimal">
+<li id="li-69">Enunciar e demonstrar o Teorema do Polinômio de Leibniz</li>
+<li id="li-70">Resolver exemplos.</li>
+<li id="li-71">Resolver um exemplo no Sage.</li>
+</ol></article><article class="theorem theorem-like" id="theorem-22"><h6 class="heading">
+<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">3.3.1</span><span class="period">.</span>
+</h6>
+<div class="displaymath" id="p-329">
+\begin{equation*}
+(x_1+x_2+\cdots + x_p)^n   = \sum_{\alpha_1 + \alpha_2 +\cdots + \alpha_p = n} \frac{n!}{\alpha_1!\alpha_2!\cdots\alpha_p!}x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}\\
+\end{equation*}
+</div>
+<p data-braille="continuation">Na qual, para cada \(i\in\{1, 2, \ldots, p\}\text{,}\) \(\alpha_i\in \{j ~|~ j\in \mathbb{Z}\geq 0\}\text{,}\) ou seja \(\alpha_i\) é um inteiro não negativo.</p></article><article class="hiddenproof" id="proof-23"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-23"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-23"><article class="hiddenproof"><p id="p-330">Temos</p>
+<div class="displaymath">
+\begin{equation*}
+(x_1+x_2+\cdots + x_p)^n  = (x_1+x_2++\cdots + x_p)\cdots(x_1+x_2++\cdots + x_p)
+\end{equation*}
+</div>
+<p data-braille="continuation">Um termo genérico do produto é obtido escolhendo um \(x_i\) em cada parênteses e multiplicando os escolhidos. Se em \(\alpha_1\) dos parênteses escolhermos \(x_1\text{,}\) em \(\alpha_2\) dos parênteses escolhermos \(x_2\text{,}\) \(\ldots\text{,}\) obteremos</p>
+<div class="displaymath">
+\begin{equation*}
+x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}, \text{ satisfazendo } \alpha_1 + \alpha_2 +\cdots + \alpha_p = n. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Agora falta responder quantas vezes o termo \(x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}\) aparece no desenvolvimento.</p>
+<p id="p-331">O termo \(x_1^{\alpha_1}x_2^{\alpha_2}\cdots x_p^{\alpha_p}\) aparece tantas vezes, quantas são as formas de escolher, nos \(n\) parênteses, \(\alpha_1\) deles para escolher o \(x_1\text{,}\) \(\alpha_2\) deles para escolher o \(x_2\text{,}\) \(\ldots\text{.}\) Isto pode ser feito de</p>
+<div class="displaymath">
+\begin{equation*}
+C_n^{\alpha_1}\cdot C_{n-\alpha_1}^{\alpha_2}\cdots C_{n-\alpha_1-\alpha_2-\cdots -\alpha_{p-1}}^{\alpha_p} = \frac{n!}{\alpha_1!\alpha_2!\cdots\alpha_p!} 
+\end{equation*}
+</div>
+<p data-braille="continuation">maneiras, o que mostra o resultado.</p></article></div>
+<article class="fact theorem-like" id="fact-46"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">3.3.2</span><span class="period">.</span>
+</h6>
+<p id="p-332">Considere o polinômio:</p>
+<div class="displaymath">
+\begin{equation*}
+(x^3-x+5)^8 
+\end{equation*}
+</div>
+<p data-braille="continuation">Determine os coeficientes de <p id="p-333">a) \(x^2\) no desenvolvimento;</p> <p id="p-334">b) \(x^4\) no desenvolvimento.</p></p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-45" id="solution-45"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like">
+<div class="displaymath" id="p-335">
+\begin{equation*}
+(x^3-x+5)^8   = \sum_{\alpha_1 + \alpha_2 + \alpha_3 = 8} \frac{8!}{\alpha_1!\alpha_2!\alpha_3!}(x^3)^{\alpha_1}(-x)^{\alpha_2}5^{\alpha_3}\\
+\end{equation*}
+</div>
+<p id="p-336"><dfn class="terminology">item a)</dfn> Para que o expoente de \(x\) seja 2, devemos ter \(x^{3\alpha_1}x^{\alpha_2} = x^2\text{,}\) juntando com a condição \(\alpha_1+\alpha_2+\alpha_3 = 8\text{,}\) temos</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{cases} 
+\alpha_1 + \alpha_2 +\alpha_3    =  8 \\
+~~~~ ~~~~ 3\alpha_1 + \alpha_2  =  2 \end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">Assim, \(\alpha_1 = 0, \alpha_2 = 2\) e \(\alpha_3 = 6.\) E a soma dos termos que possuem \(x^2\) é:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{8!}{0!\times 2! \times 6!} 5^6x^2 = 437500x^2.
+\end{equation*}
+</div>
+<p id="p-337"><dfn class="terminology">item b)</dfn> Para que o expoente de \(x\) seja 4, devemos ter \(x^{3\alpha_1}x^{\alpha_2} = x^4\text{,}\) juntando com a condição \(\alpha_1+\alpha_2+\alpha_3 = 8\text{,}\) temos</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{cases} 
+\alpha_1 + \alpha_2 +\alpha_3    =  8 \\
+~~~~ ~~~~ 3\alpha_1 + \alpha_2  =  4 \end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">Temos duas soluções:</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{cases} 
+\alpha_1 = 0, \alpha_2 = 4 \text{ e }\alpha_3 = 4 \\
+\alpha_1 = 1, \alpha_2 = 1 \text{ e } \alpha_3 = 6 \end{cases}
+\end{equation*}
+</div>
+<p data-braille="continuation">E a soma dos termos que possuem \(x^4\) é:</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{8!}{0!\times 4! \times 4!} 5^4x^2 - \frac{8!}{1!\times 1! \times 6!} 5^6x^2 = -831250x^2.
+\end{equation*}
+</div>
+</div></div></article><article class="technology computation-like" id="technology-6"><h6 class="heading">
+<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">3.3.3</span><span class="period">.</span>
+</h6>
+<p id="p-338">No Sage, podemos obter a expanção do polinômio da seguinte forma:</p>
+<div class="sagecell-sage" id="sage-24"><script type="text/x-sage">((x^3-x+5)^8).expand()
+</script></div>
+<p id="p-339">Os coeficientes do polinômio, podem ser obtidos da seguinte forma:</p>
+<div class="sagecell-sage" id="sage-25"><script type="text/x-sage">((x^3-x+5)^8).coefficients()
+</script></div></article></section></div></main>
 </div>
 </body>
 </html>

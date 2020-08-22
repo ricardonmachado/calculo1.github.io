@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-08-22T14:48:08-03:00       *-->
+<!--*       on 2020-08-22T14:54:37-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="pt-BR">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>UFRPE-DM Análise Combinatória e Probabilidade</title>
+<title>UFRPE-DM Eventos Independentes</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -43,15 +43,7 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
-    // Make *any* div with class 'sagecell-sage' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
-                           linked: true,
-                           languages: ['sage'],
-                           evalButtonText: 'Evaluate (Sage)'});
-});
-</script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
 </script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
@@ -88,10 +80,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Anterior</span><span id="upbutton" class="up-button button disabled toolbar-item">Acima</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter.html" title="Próximo">Próximo</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-probabilidade-condicional.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="probabilidade.html" title="Acima">Acima</a><a id="nextbutton" class="next-button button toolbar-item" href="section-distribuicao-binomial.html" title="Próximo">Próximo</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><span class="previous-button button toolbar-item disabled">Anterior</span><span class="up-button button disabled toolbar-item">Acima</span><a class="next-button button toolbar-item" href="frontmatter.html" title="Próximo">Próximo</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><a class="previous-button toolbar-item button" href="section-probabilidade-condicional.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="probabilidade.html" title="Acima">Acima</a><a class="next-button button toolbar-item" href="section-distribuicao-binomial.html" title="Próximo">Próximo</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -139,7 +131,7 @@ MathJax.Hub.Config({
 <a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
-<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
+<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes" class="active">Eventos Independentes</a></li>
 <li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 <li><a href="references-4.html" data-scroll="references-4">Referências</a></li>
@@ -147,10 +139,45 @@ MathJax.Hub.Config({
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Feito com PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="book" id="sample-book"><nav class="summary-links"><ul>
-<li><a href="frontmatter.html"><span class="title">Pré-textual</span></a></li>
-<li><a href="part-basics.html"><span class="codenumber">I</span> <span class="title">Análise Combinatória e Probabilidade</span></a></li>
-</ul></nav></section></div></main>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-eventos-independentes"><h2 class="heading hide-type">
+<span class="type">Seção</span> <span class="codenumber">4.3</span> <span class="title">Eventos Independentes</span>
+</h2>
+<article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
+<ol class="decimal">
+<li id="li-80">Definir Eventos Independentes.</li>
+<li id="li-81">Resolver um exemplo.</li>
+</ol></article><article class="definition definition-like" id="definition-12"><h6 class="heading">
+<span class="type">Definição</span><span class="space"> </span><span class="codenumber">4.3.1</span><span class="period">.</span>
+</h6>
+<p id="p-433">Sejam \(A_1, A_2, \ldots, A_n\) eventos.  \(A_1, A_2, \ldots, A_n\) são <em class="emphasis">independentes</em> se, para todo \(k\text{,}\) e para todo \(i_1, i_2, \ldots, i_k\text{,}\) tem-se</p>
+<div class="displaymath">
+\begin{equation*}
+P(A_{i_1}\cap A_{i_2}\cap \cdots \cap A_{i_k}) = P(A_{i_1})\cdot P(A_{i_2})\cdots P(A_{i_k}). 
+\end{equation*}
+</div></article><article class="fact theorem-like" id="fact-58"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.3.2</span><span class="period">.</span>
+</h6>
+<p id="p-434">Em um experimento aleatório é retirado sucessivamente, com reposição, três bolas de uma caixa que comtém 8 bolas pretas e 6 bolas brancas. Qual a probabilidade de que sejam três bolas brancas?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-55" id="solution-55"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-55"><div class="solution solution-like">
+<p id="p-435">Considere os eventos:</p>
+<div class="displaymath">
+\begin{equation*}
+A_1: \text{ a primeira bola é branca;}\\
+A_2: \text{ a segunda bola é branca;}\\
+A_3: \text{ a terceira bola é branca;}\\
+\end{equation*}
+</div>
+<p data-braille="continuation">Observe que os eventos são independentes, portanto a probabilidade é</p>
+<div class="displaymath">
+\begin{align*}
+P(A_1\cap A_2\cap A_3) = \amp ~ P(A_1)\cdot P(A_2)\cdot P(A_3) \\
+= \amp ~ \frac{6}{14}\cdot \frac{6}{14}\cdot \frac{6}{14} \\
+= \amp ~\frac{27}{343} \\
+= \amp ~ 0.07871 \\
+\approx \amp ~ 7,9\%. 
+\end{align*}
+</div>
+</div></div></article></section></div></main>
 </div>
 </body>
 </html>

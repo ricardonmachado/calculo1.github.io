@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*       on 2020-08-22T14:54:37-03:00       *-->
+<!--*   A recent stable commit (2020-08-09):   *-->
+<!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>UFRPE-DM Espaços de Probabilidade</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [['\\(','\\)']]
+    },
+    asciimath2jax: {
+        ignoreClass: ".*",
+        processClass: "has_am"
+    },
+    jax: ["input/AsciiMath"],
+    extensions: ["asciimath2jax.js"],
+    TeX: {
+        extensions: ["extpfeil.js", "autobold.js", "https://pretextbook.org/js/lib/mathjaxknowl.js", "AMScd.js", ],
+        // scrolling to fragment identifiers is controlled by other Javascript
+        positionToHash: false,
+        equationNumbers: { autoNumber: "none", useLabelIds: true, },
+        TagSide: "right",
+        TagIndent: ".8em",
+    },
+    // HTML-CSS output Jax to be dropped for MathJax 3.0
+    "HTML-CSS": {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+    CommonHTML: {
+        scale: 88,
+        mtextFontInherit: true,
+    },
+});
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="mathbook-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">[skip-to-content]</a><div xmlns:svg="http://www.w3.org/2000/svg" class="hidden-content" style="display:none">\(\newcommand{\identity}{\mathrm{id}}
+\newcommand{\notdivide}{{\not{\mid}}}
+\newcommand{\notsubset}{\not\subset}
+\newcommand{\lcm}{\operatorname{lcm}}
+\newcommand{\gf}{\operatorname{GF}}
+\newcommand{\inn}{\operatorname{Inn}}
+\newcommand{\aut}{\operatorname{Aut}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\newcommand{\cis}{\operatorname{cis}}
+\newcommand{\chr}{\operatorname{char}}
+\newcommand{\Null}{\operatorname{Null}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="sample-book.html"><span class="title">Análise Combinatória e Probabilidade:</span> <span class="subtitle">Com Aplicações no SageMath</span></a></h1>
+<p class="byline">Ricardo Nunes Machado Junior</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="probabilidade.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="probabilidade.html" title="Acima">Acima</a><a id="nextbutton" class="next-button button toolbar-item" href="section-probabilidade-condicional.html" title="Próximo">Próximo</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><a class="previous-button toolbar-item button" href="probabilidade.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="probabilidade.html" title="Acima">Acima</a><a class="next-button button toolbar-item" href="section-probabilidade-condicional.html" title="Próximo">Próximo</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Pré-textual</span></a><ul>
+<li><a href="prof-ricardo-machado.html" data-scroll="prof-ricardo-machado">Sobre Ricardo Nunes Machado Junior</a></li>
+<li><a href="preface.html" data-scroll="preface">Prefácio</a></li>
+</ul>
+</li>
+<li class="link part"><a href="part-basics.html" data-scroll="part-basics"><span class="codenumber">I</span> <span class="title">Análise Combinatória e Probabilidade</span></a></li>
+<li class="link">
+<a href="sets.html" data-scroll="sets"><span class="codenumber">1</span> <span class="title">Princípios de Contagem</span></a><ul>
+<li><a href="section-note-on-proofs.html" data-scroll="section-note-on-proofs">Princípio Aditivo e Princípio Multiplicativo</a></li>
+<li><a href="section-permutacoes-simples.html" data-scroll="section-permutacoes-simples">Permutações Simples</a></li>
+<li><a href="section-combinacoes-simples.html" data-scroll="section-combinacoes-simples">Combinações Simples</a></li>
+<li><a href="exercicios-lista1.html" data-scroll="exercicios-lista1">Exercícios</a></li>
+<li><a href="section-permutacoes-circulares.html" data-scroll="section-permutacoes-circulares">Permutações Circulares</a></li>
+<li><a href="section-permutacoes-com-repeticoes.html" data-scroll="section-permutacoes-com-repeticoes">Permutações com Repetições</a></li>
+<li><a href="section-combinacoes-completas.html" data-scroll="section-combinacoes-completas">Combinações Completas</a></li>
+<li><a href="exercicios-lista2.html" data-scroll="exercicios-lista2">Exercícios</a></li>
+<li><a href="references-1.html" data-scroll="references-1">Referências</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="contagem2.html" data-scroll="contagem2"><span class="codenumber">2</span> <span class="title">Outros Métodos de Contagem</span></a><ul>
+<li><a href="section-inclusao-exclusao.html" data-scroll="section-inclusao-exclusao">Princípio da Inclusão-Exclusão</a></li>
+<li><a href="section-permutacao-caotica.html" data-scroll="section-permutacao-caotica">Permutações Caóticas</a></li>
+<li><a href="section-lemas-kaplansky.html" data-scroll="section-lemas-kaplansky">Os Lemas de Kaplansky</a></li>
+<li><a href="section-casa-pombos.html" data-scroll="section-casa-pombos">Princípio da Casa dos Pombos</a></li>
+<li><a href="exercicios-lista3.html" data-scroll="exercicios-lista3">Exercícios</a></li>
+<li><a href="references-2.html" data-scroll="references-2">Referências</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="binomial.html" data-scroll="binomial"><span class="codenumber">3</span> <span class="title">Números Binomiais</span></a><ul>
+<li><a href="section-triangulo-pascal.html" data-scroll="section-triangulo-pascal">Triângulo de Pascal</a></li>
+<li><a href="section-binomio-newton.html" data-scroll="section-binomio-newton">Binômio de Newton</a></li>
+<li><a href="section-polinomio-leibniz.html" data-scroll="section-polinomio-leibniz">Polinômio de Leibniz</a></li>
+<li><a href="exercicios-lista4.html" data-scroll="exercicios-lista4">Exercícios</a></li>
+<li><a href="references-3.html" data-scroll="references-3">Referências</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
+<li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade" class="active">Espaços de Probabilidade</a></li>
+<li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
+<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
+<li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
+<li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
+<li><a href="references-4.html" data-scroll="references-4">Referências</a></li>
+</ul>
+</li>
+</ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Feito com PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-espacos-probabilidade"><h2 class="heading hide-type">
+<span class="type">Seção</span> <span class="codenumber">4.1</span> <span class="title">Espaços de Probabilidade</span>
+</h2>
+<article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
+<ol class="decimal">
+<li id="li-72">Definir Espaço Amostral e Evento.</li>
+<li id="li-73">Definir Probabilidade.</li>
+<li id="li-74">Demonstrar um teorema com propriedades de probabilidade.</li>
+<li id="li-75">Resolver exemplos.</li>
+</ol></article><article class="definition definition-like" id="definition-9"><h6 class="heading">
+<span class="type">Definição</span><span class="space"> </span><span class="codenumber">4.1.1</span><span class="period">.</span>
+</h6>
+<p id="p-361">Chamaremos de <em class="emphasis">espaço amostral</em> o conjunto de todos os resultados possíveis de uma experiência aleatória. Denotaremos o espaço amostral por \(\Omega\) e só vamos considerar o caso de \(\Omega\) ser finito.</p>
+<p id="p-362">Os subconjuntos de \(\Omega\) serão chamados de <em class="emphasis">eventos</em>. Diremos que um evento ocorre quando o resultado da experiência pertence ao evento.</p></article><article class="definition definition-like" id="definition-10"><h6 class="heading">
+<span class="type">Definição</span><span class="space"> </span><span class="codenumber">4.1.2</span><span class="period">.</span>
+</h6>
+<p id="p-363">Seja \(\Omega\) um espaço amostral. Uma probabilidade sobre \(\Omega\) é uma função que associa a cada evento \(A\subset\Omega\) um número \(P(A)\) de forma que:</p>
+<div class="displaymath">
+\begin{align*}
+a) \amp ~ \text{Para todo evento }A ,~~ 0\leq P(A)\leq 1;  \\
+b) \amp ~ P(\Omega)=1;  \\
+c) \amp ~ \text{Se } A\cap B = \emptyset \text{ então } P(A\cup B) = P(A) + P(B).  
+\end{align*}
+</div></article><article class="fact theorem-like" id="fact-47"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.1.3</span><span class="period">.</span>
+</h6>
+<p id="p-364">Ao lançar uma moeda observe a face que cai voltada para cima.</p>
+<p id="p-365">O espaço amostral é \(\Omega = \{\text{Cara}, \text{Coroa}\},\) os eventos são</p>
+<div class="displaymath">
+\begin{equation*}
+\emptyset, ~~ A = \{\text{Cara}\}, ~~B = \{\text{Coroa}\} ~~\text{ e }~~ \Omega. 
+\end{equation*}
+</div>
+<p data-braille="continuation">a) Vamos definir uma probabilidade para \(\Omega\text{,}\) que chamaremos de \(P_1\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+P_1(\emptyset)=0, ~~ P_1(A) = \frac{1}{2}, ~~P_1(B) = \frac{1}{2} ~~\text{ e }~~ P_1(\Omega)=1.
+\end{equation*}
+</div>
+<p data-braille="continuation">b) Vamos definir outra probabilidade para \(\Omega\text{,}\) que chamaremos de \(P_2\text{:}\)</p>
+<div class="displaymath">
+\begin{equation*}
+P_2(\emptyset)=0, ~~ P_2(A) = \frac{1}{10}, ~~P_2(B) = \frac{9}{10} ~~\text{ e }~~ P_2(\Omega)=1.
+\end{equation*}
+</div>
+<p data-braille="continuation">Observe que \(P_1\) e \(P_2\) satisfazem a definição de probabilidade.</p></article><article class="fact theorem-like" id="fact-48"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.1.4</span><span class="period">.</span>
+</h6>
+<p id="p-366">Um modelo de probabilidade muito utilizado é o equiprobabilístico, que é o caso de \(P_1\) do exemplo anterior.</p>
+<p id="p-367">O caso geral deste modelo, ou seja para \(\#\Omega = n\text{,}\) atribuímos a cada evento unitário a probabilidade</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{1}{n}. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Pois, se \(\Omega = \{e_1, e_2, \ldots, e_n\}\) e \(P(\{e_1\}) = P(\{e_2\}) = \cdots = P(\{e_n\})= k\text{.}\) Pelo <dfn class="terminology">item c) da definição de Probabilidade</dfn>, temos</p>
+<div class="displaymath">
+\begin{align*}
+1 = \amp ~P(\Omega) = P(\{e_1, e_2, \ldots, e_n\}) = P(\{e_1\} \cup \{e_2\}\cup \ldots\cup \{e_n\})   \\
+= \amp ~P(\{e_1\}) \cup P(\{e_2\})\cup \ldots\cup P(\{e_n\}) \\
+= \amp ~ \underbrace{k+k+\cdots+k}_{\text{n termos}} = nk  
+\end{align*}
+</div>
+<p data-braille="continuation">Portanto,</p>
+<div class="displaymath">
+\begin{equation*}
+k = \frac{1}{n}. 
+\end{equation*}
+</div></article><article class="fact theorem-like" id="fact-49"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.1.5</span><span class="period">.</span>
+</h6>
+<p id="p-368">Quatro moedas (não viciadas) são jogadas simultâneamente.</p>
+<p id="p-369">a) Qual é a probabilidade de obter 3 caras?</p>
+<p id="p-370">b) Qual é a probabilidade de obter pelo menos 3 caras?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-46" id="solution-46"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-46"><div class="solution solution-like">
+<p id="p-371">Para simplificar a notação, indicaremos 0 para cara e 1 para coroa. O espaço amostral é</p>
+<div class="displaymath">
+\begin{align*}
+\Omega = \amp ~\{ [0, 0, 0, 0],[0, 0, 0, 1],[0, 0, 1, 0],[0, 0, 1, 1], \\
+\amp ~~~~[0, 1, 0, 0],[0, 1, 0, 1],[0, 1, 1, 0],[0, 1, 1, 1], \\
+\amp ~~~~[1, 0, 0, 0],[1, 0, 0, 1],[1, 0, 1, 0],[1, 0, 1, 1],  \\
+\amp ~~~~[1, 1, 0, 0],[1, 1, 0, 1],[1, 1, 1, 0],[1, 1, 1, 1]\}  
+\end{align*}
+</div>
+<p data-braille="continuation"><dfn class="terminology">item a)</dfn> Observe que dentre as 16 possibilidades, o subconjunto abaixo:</p>
+<div class="displaymath">
+\begin{equation*}
+\{  [1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1] \} 
+\end{equation*}
+</div>
+<p data-braille="continuation">possui todos os casos favoráveis. Portanto a probabilidade de obter 3 caras é</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{4}{16} = \frac{1}{4}. 
+\end{equation*}
+</div>
+<p id="p-372"><dfn class="terminology">item b)</dfn> Observe que dentre as 16 possibilidades, o subconjunto abaixo:</p>
+<div class="displaymath">
+\begin{equation*}
+\{ [0, 0, 0, 0], [0, 0, 0, 1], [0, 0, 1, 0], [0, 1, 0, 0], [1, 0, 0, 0] \} 
+\end{equation*}
+</div>
+<p data-braille="continuation">possui todos os casos favoráveis. Portanto a probabilidade de obter pelo menos 3 caras é</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{5}{16}. 
+\end{equation*}
+</div>
+</div></div></article><article class="remark remark-like" id="remark-14"><h6 class="heading">
+<span class="type">Observação</span><span class="space"> </span><span class="codenumber">4.1.6</span><span class="period">.</span>
+</h6>
+<p id="p-373">Sejam \(\Omega = \{1, 2, 3, 4, 5 \}, A = \{1, 3, 5\}\) e \(B = \{1, 2, 3\}\text{.}\)</p>
+<p id="p-374">O conjunto complementar de \(A\) é denotado por</p>
+<div class="displaymath">
+\begin{equation*}
+A^c = \{x\in\Omega~|~ x\notin A\}. \text{ Ex. }  A^c = \{2, 4\}.
+\end{equation*}
+</div>
+<p id="p-375">O conjunto \(A\) menos o conjunto \(B\) é denotado por</p>
+<div class="displaymath">
+\begin{equation*}
+A\setminus B = \{a\in A ~|~ a\notin B\}. \text{ Ex. } A\setminus B = \{5\}.
+\end{equation*}
+</div></article><article class="theorem theorem-like" id="teo-probabilidade"><h6 class="heading">
+<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">4.1.7</span><span class="period">.</span>
+</h6>
+<p id="p-376">Sejam \(A\) e \(B\) eventos, então:</p>
+<div class="displaymath">
+\begin{align*}
+a) \amp ~  P(A^c) = 1 - P(A); \\
+b) \amp ~ P(\emptyset)=0; \\
+c) \amp ~ P(A\setminus B) = P(A) - P(A\cap B);  \\
+d) \amp ~ P(A\cup B) = P(A)+P(B) - P(A\cap B);  \\
+e) \amp ~ \text{Se } A\supset B \text{ então } P(A) \geq P(B).  
+\end{align*}
+</div></article><article class="hiddenproof" id="proof-24"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-24"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-24"><article class="hiddenproof"><p id="p-377"><dfn class="terminology">item a)</dfn></p>
+<div class="displaymath">
+\begin{equation*}
+1 = P(\Omega) = P(A\cup A^c) = P(A) + P(A^c), \text{ logo } P(A^c) = 1-P(A).
+\end{equation*}
+</div>
+<p id="p-378"><dfn class="terminology">item b)</dfn> Como \(\Omega\cap \emptyset = \emptyset\text{,}\) temos \(P(\Omega\cup \emptyset) = P(\Omega) + P(\emptyset)\text{.}\) Portanto</p>
+<div class="displaymath">
+\begin{equation*}
+1 = P(\Omega) = P(\Omega\cup \emptyset) = \underbrace{P(\Omega)}_{=1} + P(\emptyset)\Rightarrow P(\emptyset) = 0. 
+\end{equation*}
+</div>
+<p id="p-379"><dfn class="terminology">item c)</dfn> Escrevendo \(A\) como a união disjunta:</p>
+<div class="displaymath">
+\begin{equation*}
+A = (A\setminus B) \cup (A\cap B)
+\end{equation*}
+</div>
+<p data-braille="continuation">temos</p>
+<div class="displaymath">
+\begin{equation*}
+P(A) =  P(A\setminus B) + P(A\cap B)~~ \Rightarrow ~~ P(A\setminus B) = P(A) - P(A\cap B). 
+\end{equation*}
+</div>
+<p id="p-380"><dfn class="terminology">item d)</dfn> Escrevendo \(A\cup B\) como a união disjunta:</p>
+<div class="displaymath">
+\begin{equation*}
+A\cup B = (A\setminus B)\cup B, 
+\end{equation*}
+</div>
+<p data-braille="continuation">temos</p>
+<div class="displaymath">
+\begin{equation*}
+P(A\cup B) = \underbrace{P(A\setminus B)}_{\underset{\text{pelo item c)}}{= P(A) - P(A\cap B)}} + P(B) = P(A) - P(A\cap B) + P(B). 
+\end{equation*}
+</div>
+<p id="p-381"><dfn class="terminology">item e)</dfn> Pelo item c) temos</p>
+<div class="displaymath">
+\begin{equation*}
+P(A\setminus B) = P(A) - P(A\cap B)
+\end{equation*}
+</div>
+<p data-braille="continuation">se \(A\supset B\text{,}\) ficamos com</p>
+<div class="displaymath">
+\begin{equation*}
+P(A\setminus B) = P(A) - P(B)\Rightarrow P(A) \geq P(B),
+\end{equation*}
+</div>
+<p data-braille="continuation">pois \(P(A\setminus B)\geq 0\text{.}\)</p></article></div>
+<article class="fact theorem-like" id="fact-50"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.1.8</span><span class="period">.</span>
+</h6>
+<p id="p-382">Uma caixa de chocolate contém 40 chocolates, 30 são do tipo <em class="emphasis">ao leite</em> e 10 são do tipo <em class="emphasis">amargo</em>. Ao pegar 8 chocolates aleatoriamente, qual a probabilidade de que ao menos um chocolate seja do tipo <em class="emphasis">amargo</em>?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-47" id="solution-47"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-47"><div class="solution solution-like">
+<p id="p-383">Primeiro, vamos calcular a probabilidade de que todos os chocolates sejam do tipo <em class="emphasis">ao leite</em>. Em seguida, vamos usar o item a) do (<a class="xref" data-knowl="./knowl/teo-probabilidade.html" title="Teorema 4.1.7">Teorema 4.1.7</a>) para chegar na resposta deste problema.</p>
+<p id="p-384">cardinalidade do espaço amostral é dada pelo número de maneiras de pegar 8 chocolates dentre 40 disponívies, portanto</p>
+<div class="displaymath">
+\begin{equation*}
+\#\Omega = C_{40}^{8}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Agora queremos contar quantas são as formas de pegar 8 chocolates do tipo <em class="emphasis">ao leite</em>. Como existem 30 disponíveis a resposta é:</p>
+<div class="displaymath">
+\begin{equation*}
+C_{30}^{8}. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Usando o item a) do (<a class="xref" data-knowl="./knowl/teo-probabilidade.html" title="Teorema 4.1.7">Teorema 4.1.7</a>), a probabilidade de que ao menos um seja do tipo <em class="emphasis">amargo</em> é</p>
+<div class="displaymath">
+\begin{equation*}
+1 - \frac{C_{30}^{8}}{C_{40}^{8}} \approx 0.923893778382943 \approx 92,4\% 
+\end{equation*}
+</div>
+</div></div></article><article class="fact theorem-like" id="fact-51"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.1.9</span><span class="period">.</span>
+</h6>
+<p id="p-385">Em um grupo de 45 pessoas, qual é a probabilidade de que pelo menos duas pessoas façam aniversário no mesmo dia?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-48" id="solution-48"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-48"><div class="solution solution-like">
+<p id="p-386">Mais uma vez, usaremos o item a) do (<a class="xref" data-knowl="./knowl/teo-probabilidade.html" title="Teorema 4.1.7">Teorema 4.1.7</a>).</p>
+<p id="p-387">Vamos, inicialmente, calcular a probabilidade de que todas as 45 pessoas façam aniversários em dias diferentes. O número de casos possíveis para os aniversários das 45 pessoas é \(365^{45}\text{.}\) O número de casos em que todas as 45 pessoas fazem aniversários em dias diferentes é</p>
+<div class="displaymath">
+\begin{equation*}
+365\times 364\times 363\times \cdots \times321. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Então, a probabilidade de que todas as 45 pessoas façam aniversário em dias diferentes é</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{365\times 364\times 363\times \cdots \times321}{365^{45}}= 0.0590241005342251 \approx 6\%. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Usando o item a) do (<a class="xref" data-knowl="./knowl/teo-probabilidade.html" title="Teorema 4.1.7">Teorema 4.1.7</a>), a probabilidade de que pelo menos duas pessoas façam aniversário no mesmo dia é</p>
+<div class="displaymath">
+\begin{equation*}
+1 - \frac{365\times 364\times 363\times \cdots \times321}{365^{45}}= 1-0.0590241005342251 \approx 94\%. 
+\end{equation*}
+</div>
+</div></div></article><article class="technology computation-like" id="technology-7"><h6 class="heading">
+<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">4.1.10</span><span class="period">.</span><span class="space"> </span><span class="title">Faça você mesmo.</span>
+</h6>
+<figure class="figure figure-like" id="interactive-aniversario"><p id="p-388">Escolha a quantidade \(n\) de pessoas para calcular a probabilidade de que, pelo menos duas fazem aniversário no mesmo dia.</p>
+<iframe id="interactive-probabilidade" width="600" height="180" src="interactive-probabilidade-if.html"></iframe><figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">4.1.11<span class="period">.</span></span><span class="space"> </span>Probabilidade de duas pessoas fazerem aniversário no mesmo dia.</figcaption></figure></article><article class="fact theorem-like" id="fact-52"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.1.12</span><span class="period">.</span>
+</h6>
+<p id="p-389">23 pessoas foram fazer uma prova e precisaram deixar seus celulares com o fiscal. Neste concurso, todos os participantes precisavam entregar suas provas no mesmo horário, para em seguida pegarem seus celulares. No horário previsto de entrega houve uma emergência e todos precisaram entregar suas provas e pegar seus celulares com pressa. Qual a probabilidade de que todos peguem os celulares errados?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-49" id="solution-49"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-49"><div class="solution solution-like"><p id="p-390">O espaço amostral \(\Omega\) é constituido por todas as formas de ordenar os 23 celulares. Os casos favoráveis é constituído por todas as permutações caóticas com os 23 celulares. Portanto a resposta é $$P = \frac{D_{23}}{P_{23}} \approx 0.367879441171442 \approx 36,8\%$$</p></div></div></article><article class="fact theorem-like" id="fact-53"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.1.13</span><span class="period">.</span>
+</h6>
+<p id="p-391">8 bolas de ping-pong são colocadas aleatóriamente em 8 caixas. Qual a probabilidade de que exatamente uma caixa fique vazia?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-50" id="solution-50"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-50"><div class="solution solution-like">
+<p id="p-392">A cardinalidade do espaço amostral é dado pelo número de formas de colocar as 8 bolas de ping-pong nas 8 caixas</p>
+<div class="displaymath">
+\begin{equation*}
+\#\Omega = 8^8, 
+\end{equation*}
+</div>
+<p data-braille="continuation">pois, temos 8 possibilidades para a primeira bola, 8 para a segunda, etc.</p>
+<p id="p-393">Agora vamos calcular o número de casos favoráveis. Para que, exatamente uma caixa fique vazia, exatamente uma ficará com duas bolas. Logo, precisamos escolher qual caixa fica vazia e qual caixa recebe duas bolas. O número de formas de escolher qual deve ficar vazia é 8. O número de formas de escolher qual caixa recebe duas bolas é 7.</p>
+<p id="p-394">A quantidade de maneiras de escolher duas bolas para a caixa que recebe as duas bolas é \(C_8^2\text{.}\) A quantidade de formas de arrumar o restante das bolas é \((8-2)!\text{.}\)</p>
+<p id="p-395">Portanto o número de casos favoráveis é \(8\cdot 7 \cdot C_8^2\cdot 6! = 8!C_8^2\text{.}\) A resposta do problema é</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{8!C_8^2}{8^8} \approx 0.0672912597656250 \approx 6,7\%. 
+\end{equation*}
+</div>
+</div></div></article></section></div></main>
+</div>
+</body>
+</html>

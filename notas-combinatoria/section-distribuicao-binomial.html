@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-08-22T14:48:08-03:00       *-->
+<!--*       on 2020-08-22T14:54:37-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -11,7 +11,7 @@
 <html lang="pt-BR">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>UFRPE-DM Análise Combinatória e Probabilidade</title>
+<title>UFRPE-DM Distribuição Binomial</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script src="https://sagecell.sagemath.org/embedded_sagecell.js"></script><script type="text/x-mathjax-config">
@@ -43,15 +43,7 @@ MathJax.Hub.Config({
         mtextFontInherit: true,
     },
 });
-</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script>$(function () {
-    // Make *any* div with class 'sagecell-sage' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
-                           linked: true,
-                           languages: ['sage'],
-                           evalButtonText: 'Evaluate (Sage)'});
-});
-</script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-AMS_CHTML-full"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
 </script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
 <link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
@@ -88,10 +80,10 @@ MathJax.Hub.Config({
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Anterior</span><span id="upbutton" class="up-button button disabled toolbar-item">Acima</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter.html" title="Próximo">Próximo</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Sumário</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="section-eventos-independentes.html" title="Anterior">Anterior</a><a id="upbutton" class="up-button button toolbar-item" href="probabilidade.html" title="Acima">Acima</a><a id="nextbutton" class="next-button button toolbar-item" href="exercicios-lista5.html" title="Próximo">Próximo</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><span class="previous-button button toolbar-item disabled">Anterior</span><span class="up-button button disabled toolbar-item">Acima</span><a class="next-button button toolbar-item" href="frontmatter.html" title="Próximo">Próximo</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Sumário</button><a class="previous-button toolbar-item button" href="section-eventos-independentes.html" title="Anterior">Anterior</a><a class="up-button button toolbar-item" href="probabilidade.html" title="Acima">Acima</a><a class="next-button button toolbar-item" href="exercicios-lista5.html" title="Próximo">Próximo</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -140,17 +132,69 @@ MathJax.Hub.Config({
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
 <li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
-<li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
+<li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial" class="active">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 <li><a href="references-4.html" data-scroll="references-4">Referências</a></li>
 </ul>
 </li>
 </ul></nav><div class="extras"><nav><a class="mathbook-link" href="https://pretextbook.org">Feito com PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="book" id="sample-book"><nav class="summary-links"><ul>
-<li><a href="frontmatter.html"><span class="title">Pré-textual</span></a></li>
-<li><a href="part-basics.html"><span class="codenumber">I</span> <span class="title">Análise Combinatória e Probabilidade</span></a></li>
-</ul></nav></section></div></main>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="section" id="section-distribuicao-binomial"><h2 class="heading hide-type">
+<span class="type">Seção</span> <span class="codenumber">4.4</span> <span class="title">Distribuição Binomial</span>
+</h2>
+<article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
+<ol class="decimal">
+<li id="li-82">Enunciar e demonstrar o Teorema da Distribuição Binomial.</li>
+<li id="li-83">Resolver um exemplo.</li>
+</ol></article><article class="fact theorem-like" id="fact-59"><h6 class="heading">
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">4.4.1</span><span class="period">.</span>
+</h6>
+<p id="p-436">Jogando uma moeda não viciada 15 vezes. Qual é a probabilidade de obtermos exatamente 5 caras?</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-56" id="solution-56"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-56"><div class="solution solution-like">
+<p id="p-437">E como os eventos são independentes e a probabilidade, ao jogar uma moeda para cima, de que o resultado seja cara é \(p=\frac{1}{2}\text{.}\) Queremos achar a probabilidade de obtermos 7 caras em 15 lançamentos. Vamos, inicialmente, fixar que queremos os 7 primeiros resultados iguais a cara, assim estamos impondo que os 8 resultados seguintes serão coroa. Desta forma, a probabilidade de que os 5 primeiros resultados são cara é</p>
+<div class="displaymath">
+\begin{equation*}
+\left(\frac{1}{2}\right)^7 ~~ \text{ e }~~ \left(1-\frac{1}{2}\right)^{8},
+\end{equation*}
+</div>
+<p data-braille="continuation">de que os 8 resultados seguntes são coroa. Portanto a resposta para a condição de que os 7 primeiros resultados são cara e os 8 resultados seguintes são coroa é</p>
+<div class="displaymath">
+\begin{equation*}
+\left(\frac{1}{2}\right)^7 \cdot \left(\frac{1}{2}\right)^{8},
+\end{equation*}
+</div>
+<p data-braille="continuation">mas a pergunta do problema não doi esta, pois a ordem em que apareceram as caras e as coroas não importa. Observe que o número de formas de ordenar 7 caras e 8 coroas é</p>
+<div class="displaymath">
+\begin{equation*}
+C_{15}^{7}. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Portanto a resposta para nosso problema é</p>
+<div class="displaymath">
+\begin{equation*}
+C_{15}^{7}\cdot \left(\frac{1}{2}\right)^7 \cdot \left(\frac{1}{2}\right)^{8}=0.1963 \approx 20\%. 
+\end{equation*}
+</div>
+</div></div></article><article class="theorem theorem-like" id="theorem-27"><h6 class="heading">
+<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">4.4.2</span><span class="period">.</span>
+</h6>
+<p id="p-438">Considere um experimento com apenas dois resultados possíveis, chamados de <em class="emphasis">sucesso</em> e <em class="emphasis">fracasso</em>. Denotaremos por \(p\) a probabilidade de sucesso e por \(q=1-p\) a probabilidade de fracasso. A probabilidade de ocorrerem exatamente \(k\) sucessos em uma sequeência de \(n\) provas independentes, na qual a probabilidade de sucesso em cada etapa é \(p\text{,}\) é igual a</p>
+<div class="displaymath">
+\begin{equation*}
+C_n^k p^k(1-p)^{n-k}. 
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-29"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-29"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-29"><article class="hiddenproof"><p id="p-439">A probabilidade de nessas \(n\) provas obtermos \(k\) sucessos e, consequentemente \(n-k\) fracassos em uma ordem fixada é</p>
+<div class="displaymath">
+\begin{equation*}
+\underbrace{p\cdot p \cdots p}_{k\text{ fatores}}\underbrace{\cdot (1-p)\cdots(1-p)}_{(n-k)\text{ fatores}} = p^k(1-p)^{n-k}, 
+\end{equation*}
+</div>
+<p data-braille="continuation">pois as provas são independentes. É claro que em outra ordem, a probabilidade seria a mesma, pois apenas a ordem dos fatores se altera. E o número de formas de arterar esta ordem é \(C_n^k\text{.}\) Assim a probabilidade de obtermos \(k\) sucessos, em \(n\) provas é</p>
+<div class="displaymath">
+\begin{equation*}
+C_n^k p^k(1-p)^{n-k}. 
+\end{equation*}
+</div></article></div></section></div></main>
 </div>
 </body>
 </html>
