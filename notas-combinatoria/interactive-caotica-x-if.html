@@ -57,12 +57,13 @@ MathJax.Hub.Config({
 </script><link xmlns:svg="http://www.w3.org/2000/svg" rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
 </head>
 <body class="pretext-content"><div style="width:600px; height:360px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div xmlns:svg="http://www.w3.org/2000/svg" class="sage-interact"><script type="text/x-sage">@interact
-def _(n=input_box(4 , width=10,  label="n:")):
+def _(lista=input_box(['A', 'M', 'O', 'R'] , width=40,  label="lista:")):
 
-        pl = Permutations(n).list()
-        for i in Permutations(n):
-            for j in i:
-                if i.index(j) == j-1:
+        px = Permutations(lista)
+        pl = px.list()
+        for i in px:
+            for j in range(len(lista)):
+                if i[j] == lista[j]:
                     pl.remove(i)
                     break
         print('o número de permutações caóticas é:', len(pl))
