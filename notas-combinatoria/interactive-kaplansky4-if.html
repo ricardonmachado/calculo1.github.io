@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-08-19T11:09:21-03:00       *-->
+<!--*       on 2020-09-15T08:53:45-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -56,7 +56,7 @@ MathJax.Hub.Config({
 });
 </script><link xmlns:svg="http://www.w3.org/2000/svg" rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
 </head>
-<body class="pretext-content"><div style="width:600px; height:330px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div xmlns:svg="http://www.w3.org/2000/svg" class="sage-interact"><script type="text/x-sage">@interact
+<body class="pretext-content"><div style="width:600px; height:360px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div xmlns:svg="http://www.w3.org/2000/svg" class="sage-interact"><script type="text/x-sage">@interact
 def _(lista=input_box(['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'] , width=40,  label="lista:"), p=input_box(3 , width=10,  
         label="p:"), ):
         
@@ -84,7 +84,9 @@ def _(lista=input_box(['Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sab'] , width=
         for j in i:
             laux.append(SR(lista[j-1]))
         k2.append(laux)
-
-    print(matrix(k2))
+    print('o número de soluções é:', len(k2))
+    print('As soluções são:')
+    for i in k2:
+        print(i)
 </script></div></div></body>
 </html>
