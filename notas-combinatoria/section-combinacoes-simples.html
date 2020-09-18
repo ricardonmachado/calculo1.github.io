@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-09-15T08:53:45-03:00       *-->
+<!--*       on 2020-09-18T10:59:26-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -136,7 +136,6 @@ MathJax.Hub.Config({
 <a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
-<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
 <li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 </ul>
@@ -173,7 +172,12 @@ MathJax.Hub.Config({
 <span class="type">Definição</span><span class="space"> </span><span class="codenumber">1.3.2</span><span class="period">.</span>
 </h6>
 <p id="p-54">O número de <em class="emphasis">combinações simples</em> de \(n\) objetos, tomados \(p\) a \(p\) é o número de modos de escolher \(p\) objetos distintos entre \(n\) objetos distintos dados.</p>
-<p id="p-55">Outra forma de definir <em class="emphasis">combinações simples</em> de \(n\text{,}\) \(p\) a \(p\) é como o número de subconjuntos com \(p\) elementos de um conjunto com \(n\) elementos. A notação para combinação simples é dada por $$C_n^p, C_{n, p} ~~\text{ ou }~~ C(n, p).$$</p></article><article class="technology computation-like" id="technology-4"><h6 class="heading">
+<p id="p-55">Outra forma de definir <em class="emphasis">combinações simples</em> de \(n\text{,}\) \(p\) a \(p\) é como o número de subconjuntos com \(p\) elementos de um conjunto com \(n\) elementos. A notação para combinação simples é dada por</p>
+<div class="displaymath">
+\begin{equation*}
+C_n^p, C_{n, p} ~~\text{ ou }~~ C(n, p).
+\end{equation*}
+</div></article><article class="technology computation-like" id="technology-4"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">1.3.3</span><span class="period">.</span>
 </h6>
 <p id="p-56">No Sage, podemos obter uma lista com todos os subconjuntos de {1, 2, 3, 4, 5}, tomados 3 a 3. Basta usar o seguinte código:</p>
@@ -188,8 +192,17 @@ C_n^p = \frac{n!}{p!\times(n-p)!}.
 \end{equation*}
 </div></article><article class="hiddenproof" id="proof-4"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-4"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-4"><article class="hiddenproof"><p id="p-57">Temos \(n\) modos de escolher o primeiro elemento, \(n-1\) modos de escolher o segundo elemento, e assim sucessivamente, até \(n-p+1\) modos de escolher o \(p\)-ésimo elemento.</p>
 <p id="p-58">Agora observe que contamos muito mais agrupamentos do que deveríamos, pois para conjuntos, a ordem não importa, portanto precisamos dividir pelo número de formas de ordenar estes \(p\) elementos que escolhemos de forma ordenada, ou seja, por \(p!\text{.}\) Assim:</p>
-<p id="p-59">$$C(n,p)  = \frac{n(n-1)\cdots(n-p+1)}{p!} = \frac{n(n-1)\cdots(n-p+1)}{p!} \cdot \frac{(n-p)!}{(n-p)!}$$</p>
-<p id="p-60">Fazendo as contas concluímos que $$  C(n,p) = \frac{n!}{p!(n-p)!}.$$</p></article></div>
+<div class="displaymath" id="p-59">
+\begin{equation*}
+C(n,p)  = \frac{n(n-1)\cdots(n-p+1)}{p!} = \frac{n(n-1)\cdots(n-p+1)}{p!} \cdot \frac{(n-p)!}{(n-p)!}
+\end{equation*}
+</div>
+<p id="p-60">Fazendo as contas concluímos que</p>
+<div class="displaymath">
+\begin{equation*}
+C(n,p) = \frac{n!}{p!(n-p)!}.
+\end{equation*}
+</div></article></div>
 <article class="technology computation-like" id="technology-5"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">1.3.5</span><span class="period">.</span>
 </h6>
@@ -201,9 +214,24 @@ C_n^p = \frac{n!}{p!\times(n-p)!}.
 <p id="p-62">Sobre uma reta, marcam-se 10 pontos e sobre outra reta paralela a primeira marcam-se 15 pontos. Quantos triângulos podemos obter unindo 3 desses 25 pontos?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like">
 <p id="p-63">Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
-<p id="p-64">O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é: $$ 15\times C(10, 2). $$</p>
-<p id="p-65">Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é $$ 10\times C(15, 2). $$</p>
-<p id="p-66">Portanto, pelo princípio aditivo, o número total de soluções é: $$ 15\times C(10, 2) + 10\times C(15, 2). $$</p>
+<p id="p-64">O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é:</p>
+<div class="displaymath">
+\begin{equation*}
+15\times C(10, 2). 
+\end{equation*}
+</div>
+<p id="p-65">Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é</p>
+<div class="displaymath">
+\begin{equation*}
+10\times C(15, 2). 
+\end{equation*}
+</div>
+<p id="p-66">Portanto, pelo princípio aditivo, o número total de soluções é:</p>
+<div class="displaymath">
+\begin{equation*}
+15\times C(10, 2) + 10\times C(15, 2). 
+\end{equation*}
+</div>
 <div class="hidden-sagecell-sage" id="sage-9"><script type="text/x-sage">C(n, p) = binomial(n, p)
 15*C(10, 2) + 10*C(15, 2)
 </script></div>
@@ -214,9 +242,20 @@ C_n^p = \frac{n!}{p!\times(n-p)!}.
 <p id="p-68">a) Para formar um único júri com 9 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
 <p id="p-69">b) Para formar um único júri com 6 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like">
-<p id="p-70"><dfn class="terminology">a)</dfn> Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de $$ C(11,9)=55. $$</p>
+<p id="p-70"><dfn class="terminology">a)</dfn> Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de</p>
+<div class="displaymath">
+\begin{equation*}
+C(11,9)=55. 
+\end{equation*}
+</div>
 <p id="p-71"><dfn class="terminology">b)</dfn> Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, pode aconteder de não termos pelo menos dois advogados. Precisamos contornar este problema.</p>
-<p id="p-72">Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de $$ C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2). $$ maneiras.</p>
+<p id="p-72">Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de</p>
+<div class="displaymath">
+\begin{equation*}
+C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2). 
+\end{equation*}
+</div>
+<p data-braille="continuation">maneiras.</p>
 <div class="hidden-sagecell-sage" id="sage-10"><script type="text/x-sage">C(n, p) = binomial(n, p)
 C(4,2)*C(7, 4) + C(4,3)*C(7, 3) + C(4,4)*C(7, 2)
 </script></div>
@@ -225,7 +264,30 @@ C(4,2)*C(7, 4) + C(4,3)*C(7, 3) + C(4,4)*C(7, 2)
 </h6>
 <p id="p-73">De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like">
-<p id="p-74">Para o primeiro grupo, temos um total de $$ C(12, 4) $$ maneiras de selecionar as 4 pessoas. Para o segundo grupo temos um total de $$ C(8, 4) $$ maneiras de selecionar as 4 pessoas. Para o terceiro grupo temos um total de $$ C(4,4) $$ maneiras de selecionar as 4 pessoas. Como a ordem dos grupos não importa, precisamos dividir por \(3!\) Portanto a resposta é $$ \frac{C(12, 4)\times C(8, 4)\times C(4, 4)}{3!}.$$</p>
+<p id="p-74">Para o primeiro grupo, temos um total de</p>
+<div class="displaymath">
+\begin{equation*}
+C(12, 4) 
+\end{equation*}
+</div>
+<p data-braille="continuation">maneiras de selecionar as 4 pessoas. Para o segundo grupo temos um total de</p>
+<div class="displaymath">
+\begin{equation*}
+C(8, 4) 
+\end{equation*}
+</div>
+<p data-braille="continuation">maneiras de selecionar as 4 pessoas. Para o terceiro grupo temos um total de</p>
+<div class="displaymath">
+\begin{equation*}
+C(4,4) 
+\end{equation*}
+</div>
+<p data-braille="continuation">maneiras de selecionar as 4 pessoas. Como a ordem dos grupos não importa, precisamos dividir por \(3!\) Portanto a resposta é</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{C(12, 4)\times C(8, 4)\times C(4, 4)}{3!}.
+\end{equation*}
+</div>
 <div class="hidden-sagecell-sage" id="sage-11"><script type="text/x-sage">C(n, p) = binomial(n, p)
 P(n) = factorial(n)
 C(12, 4)*C(8,4)*C(4, 4)/P(3)

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-09-15T08:53:45-03:00       *-->
+<!--*       on 2020-09-18T10:59:27-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -136,7 +136,6 @@ MathJax.Hub.Config({
 <a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
-<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
 <li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 </ul>
@@ -158,8 +157,25 @@ MathJax.Hub.Config({
 </h6>
 <p id="p-130">Quantos são os anagramas da palavra SAGEMATH?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like">
-<p id="p-131">Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez. Podemos imaginar, por enquanto, que a palavra é assim $$SA_1GEMA_2TH$$ com \(A_1\neq A_2\text{,}\) nesse caso teríamos um total de $$ P(8) = 8! $$ permutações.</p>
-<p id="p-132">Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir do total de permutações a quantidade de reordenar os A's. Dessa forma a resposta é $$\frac{P(8)}{P(2)}=20160.$$</p>
+<p id="p-131">Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez. Podemos imaginar, por enquanto, que a palavra é assim</p>
+<div class="displaymath">
+\begin{equation*}
+SA_1GEMA_2TH
+\end{equation*}
+</div>
+<p data-braille="continuation">com \(A_1\neq A_2\text{,}\) nesse caso teríamos um total de</p>
+<div class="displaymath">
+\begin{equation*}
+P(8) = 8! 
+\end{equation*}
+</div>
+<p data-braille="continuation">permutações.</p>
+<p id="p-132">Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir do total de permutações a quantidade de reordenar os A's. Dessa forma a resposta é</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{P(8)}{P(2)}=20160.
+\end{equation*}
+</div>
 </div></div></article><article class="definition definition-like" id="definition-5"><h6 class="heading">
 <span class="type">Definição</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span>
 </h6>
@@ -172,10 +188,34 @@ MathJax.Hub.Config({
 \begin{equation*}
 r_1+r_2+\cdots+r_k=n
 \end{equation*}
-</div>é denotado por: $$ PR_n^{r_1, r_2, \ldots, r_k}. $$</article><article class="theorem theorem-like" id="theorem-6"><h6 class="heading">
+</div>é denotado por:<div class="displaymath">
+\begin{equation*}
+PR_n^{r_1, r_2, \ldots, r_k}. 
+\end{equation*}
+</div></article><article class="theorem theorem-like" id="theorem-6"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">1.6.5</span><span class="period">.</span>
 </h6>
-<p id="p-134">$$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</p></article><article class="hiddenproof" id="proof-7"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-7"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof">Considere os \(n\) objetos da seguinte forma: $$ \underbrace{A_1A_1\ldots A_1}_{r_1  \text{ vezes}} \underbrace{A_2A_2\ldots A_2}_{r_2  \text{ vezes}}\ldots\underbrace{A_kA_k\ldots A_k}_{r_k  \text{ vezes}} $$ observe que \(r_1+r_2+\cdots+ r_k = n.\) Para encontrar o número de formas de permutar esses elementos, vamos quebrar em \(k\) etapas. Na primeira etapa, vamos escolher \(r_1\) posições, dentre \(n\text{,}\) para colocar \(A_1: C_n^{r_1}\text{.}\) Na segunda etapa, vamos escolher \(r_2\) posições, dentre \(n-r_1\text{,}\) para colocar \(A_2: C_{n-r_1}^{r_2}\text{.}\) \(\ldots\) Na \(k\)-ésima etapa, vamos escolher \(r_k\) posições, dentre \(n-r_1-r_2-\cdots-r_{k-1}=r_k\text{,}\) para colocar \(A_k: C_{r_k}^{r_k}\text{.}\) Portanto, $$ PR_n^{r_1, r_2, \ldots, r_k} =~ C_n^{r_1}\times C_{n-r_1}^{r_2} \times \cdots \times C_{r_k}^{r_k} \\ $$ Calculando cada \(C_x^y\) $$ PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\underbrace{(n-r_1)!}_{x_1}}\cdot\frac{\overbrace{(n-r_1)!}^{x_1}}{r_2!\underbrace{(n-r_1-r_2)!}_{x_2}}\cdots\frac{\overbrace{n_k!}^{x_k}}{n_k!\underbrace{(n_k-n_k)!}_{=1}} $$ E cancelando os \(x_i's\text{,}\) obtemos $$ PR_n^{r_1, r_2, \ldots, r_k}= \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. $$</article></div>
+<div class="displaymath" id="p-134">
+\begin{equation*}
+PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. 
+\end{equation*}
+</div></article><article class="hiddenproof" id="proof-7"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-7"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-7"><article class="hiddenproof">Considere os \(n\) objetos da seguinte forma:<div class="displaymath">
+\begin{equation*}
+\underbrace{A_1A_1\ldots A_1}_{r_1  \text{ vezes}} \underbrace{A_2A_2\ldots A_2}_{r_2  \text{ vezes}}\ldots\underbrace{A_kA_k\ldots A_k}_{r_k  \text{ vezes}} 
+\end{equation*}
+</div>observe que \(r_1+r_2+\cdots+ r_k = n.\) Para encontrar o número de formas de permutar esses elementos, vamos quebrar em \(k\) etapas. Na primeira etapa, vamos escolher \(r_1\) posições, dentre \(n\text{,}\) para colocar \(A_1: C_n^{r_1}\text{.}\) Na segunda etapa, vamos escolher \(r_2\) posições, dentre \(n-r_1\text{,}\) para colocar \(A_2: C_{n-r_1}^{r_2}\text{.}\) \(\ldots\) Na \(k\)-ésima etapa, vamos escolher \(r_k\) posições, dentre \(n-r_1-r_2-\cdots-r_{k-1}=r_k\text{,}\) para colocar \(A_k: C_{r_k}^{r_k}\text{.}\) Portanto,<div class="displaymath">
+\begin{equation*}
+PR_n^{r_1, r_2, \ldots, r_k} =~ C_n^{r_1}\times C_{n-r_1}^{r_2} \times \cdots \times C_{r_k}^{r_k} \\
+\end{equation*}
+</div>Calculando cada \(C_x^y\)<div class="displaymath">
+\begin{equation*}
+PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\underbrace{(n-r_1)!}_{x_1}}\cdot\frac{\overbrace{(n-r_1)!}^{x_1}}{r_2!\underbrace{(n-r_1-r_2)!}_{x_2}}\cdots\frac{\overbrace{n_k!}^{x_k}}{n_k!\underbrace{(n_k-n_k)!}_{=1}}
+\end{equation*}
+</div>E cancelando os \(x_i's\text{,}\) obtemos<div class="displaymath">
+\begin{equation*}
+PR_n^{r_1, r_2, \ldots, r_k}= \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}.
+\end{equation*}
+</div></article></div>
 <article class="technology computation-like" id="technology-8"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">1.6.6</span><span class="period">.</span>
 </h6>Obtendo o número de permutações com repetições no Sage, para \(n=10, r_1 = 3, r_2=2, r_3=2, r_4=1, r_5=1\) e \(r_6=1\text{:}\) <div class="sagecell-sage" id="sage-17"><script type="text/x-sage">def PR(*lista):
@@ -188,13 +228,25 @@ PR(10, 3, 2, 2)
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span>
 </h6>
 <p id="p-135">Quantos são os anagramas da palavra MATEMATICA?</p>
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-136">Temos uma palavra com 10 letras. Das 10 letras, temos 3 A's, 2 M's e 2 T's e as outras aparecem uma única vez, portanto o número de anagramas desta palavra é $$ PR_{10}^{3, 2, 2} = 151200. $$</p></div></div></article><article class="fact theorem-like" id="fact-17"><h6 class="heading">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like">
+<p id="p-136">Temos uma palavra com 10 letras. Das 10 letras, temos 3 A's, 2 M's e 2 T's e as outras aparecem uma única vez, portanto o número de anagramas desta palavra é</p>
+<div class="displaymath">
+\begin{equation*}
+PR_{10}^{3, 2, 2} = 151200. 
+\end{equation*}
+</div>
+</div></div></article><article class="fact theorem-like" id="fact-17"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.8</span><span class="period">.</span>
 </h6>
 <p id="p-137">Quantos são os anagramas da palavra MATEMATICA que começam por vogal?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
 <p id="p-138">Se o anagrama começa por vogal, temos as possibilidades, A ou E ou I.</p>
-<p id="p-139">Começando com A, temos um total de \(PR_9^{2, 2, 2}\text{,}\) começando com E, temos um total de \(PR_9^{3, 2, 2}\) e começando com I, temos um total de \(PR_9^{3, 2, 2}\) Portanto a resposta é $$ PR_9^{2, 2, 2} + 2\times PR_9^{3, 2, 2} = 75600. $$</p>
+<p id="p-139">Começando com A, temos um total de \(PR_9^{2, 2, 2}\text{,}\) começando com E, temos um total de \(PR_9^{3, 2, 2}\) e começando com I, temos um total de \(PR_9^{3, 2, 2}\) Portanto a resposta é</p>
+<div class="displaymath">
+\begin{equation*}
+PR_9^{2, 2, 2} + 2\times PR_9^{3, 2, 2} = 75600. 
+\end{equation*}
+</div>
 </div></div></article></section></div></main>
 </div>
 </body>

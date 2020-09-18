@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-09-15T08:53:44-03:00       *-->
+<!--*       on 2020-09-18T10:59:26-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -136,7 +136,6 @@ MathJax.Hub.Config({
 <a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
-<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
 <li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 </ul>
@@ -254,11 +253,37 @@ MathJax.Hub.Config({
 <li id="li-7">Quantas são as funções \(f:A\rightarrow B?\)</li>
 <li id="li-8">Quantas são as funções injetoras \(f:A\rightarrow B?\)</li>
 </ol>
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><p id="p-35"><dfn class="terminology">Solução</dfn> 1. Devemos escolher a imagem de cada elemento de \(A\text{.}\) Existem \(n\) modos de escolher a imagem do "primeiro" elemento de \(A\text{,}\) \(n\) modos de escolher a imagem do "segundo" elemento de \(A\) \(\ldots\) até \(n\) modos de escolher a imagem do "m-ésimo" elemento de \(A\text{.}\) Pelo princípio multiplicativo, temos $$ \overbrace{n\times n \times n \cdots \times n}^{m \text{ termos}} = n^m. $$ 2. Primeiramente, para existir solução precisamos que \(n\geq m\text{,}\) pois a função precisa ser injetora. Neste caso, existem \(n\) modos de escolher a imagem do "primeiro" elemento de \(A\text{,}\) \(n-1\) modos de escolher a imagem do "segundo" elemento de \(A\) \(\ldots\) até \(n-m+1\) modos de escolher a imagem do "m-ésimo" elemento de \(A\text{.}\) A resposta é $$ (n-0)\times(n-1)\times(n-2)\times \cdots \times(n-(m-1))  $$</p></div></div></article><article class="fact theorem-like" id="fact-5"><h6 class="heading">
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like">
+<p id="p-35"><dfn class="terminology">Solução</dfn> 1. Devemos escolher a imagem de cada elemento de \(A\text{.}\) Existem \(n\) modos de escolher a imagem do "primeiro" elemento de \(A\text{,}\) \(n\) modos de escolher a imagem do "segundo" elemento de \(A\) \(\ldots\) até \(n\) modos de escolher a imagem do "m-ésimo" elemento de \(A\text{.}\) Pelo princípio multiplicativo, temos</p>
+<div class="displaymath">
+\begin{equation*}
+\overbrace{n\times n \times n \cdots \times n}^{m \text{ termos}} = n^m. 
+\end{equation*}
+</div>
+<p data-braille="continuation">2. Primeiramente, para existir solução precisamos que \(n\geq m\text{,}\) pois a função precisa ser injetora. Neste caso, existem \(n\) modos de escolher a imagem do "primeiro" elemento de \(A\text{,}\) \(n-1\) modos de escolher a imagem do "segundo" elemento de \(A\) \(\ldots\) até \(n-m+1\) modos de escolher a imagem do "m-ésimo" elemento de \(A\text{.}\) A resposta é</p>
+<div class="displaymath">
+\begin{equation*}
+(n-0)\times(n-1)\times(n-2)\times \cdots \times(n-(m-1))  
+\end{equation*}
+</div>
+</div></div></article><article class="fact theorem-like" id="fact-5"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.1.12</span><span class="period">.</span>
 </h6>
 <p id="p-36">Quantos são os números naturais pares que se escrevem (na base 10) com três algarismos distintos?</p>
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like"><p id="p-37">Já sabemos que o número total de números naturais com três algarismos distintos é $$9\times 9\times 8 = 648.$$ Podemos contar dentre estes, os que são ímpares, a diferença será a resposta deste problema. <p id="p-38">O último algarismo pode ser escolhido de 5 maneiras (1, 3, 5, 7 ou 9). O primeiro algarismo pode ser escolhido de 8 maneiras (não pode ser o zero, nem o que foi escolhido para o último algarismo) e o segundo algarismo pode ser escolhido de 8 maneiras (nem pode ser igual ao primeiro nem ao último). Portanto a resposta é</p> $$ 648 - 5\times 8\times 8=328. $$</p></div></div></article></section></section></div></main>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like">
+<p id="p-37">Já sabemos que o número total de números naturais com três algarismos distintos é</p>
+<div class="displaymath">
+\begin{equation*}
+9\times 9\times 8 = 648. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Podemos contar dentre estes, os que são ímpares, a diferença será a resposta deste problema. <p id="p-38">O último algarismo pode ser escolhido de 5 maneiras (1, 3, 5, 7 ou 9). O primeiro algarismo pode ser escolhido de 8 maneiras (não pode ser o zero, nem o que foi escolhido para o último algarismo) e o segundo algarismo pode ser escolhido de 8 maneiras (nem pode ser igual ao primeiro nem ao último). Portanto a resposta é</p></p>
+<div class="displaymath">
+\begin{equation*}
+648 - 5\times 8\times 8=328. 
+\end{equation*}
+</div>
+</div></div></article></section></section></div></main>
 </div>
 </body>
 </html>

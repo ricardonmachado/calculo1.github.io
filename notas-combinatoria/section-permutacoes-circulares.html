@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-09-15T08:53:45-03:00       *-->
+<!--*       on 2020-09-18T10:59:27-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -136,7 +136,6 @@ MathJax.Hub.Config({
 <a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
-<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
 <li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 </ul>
@@ -156,7 +155,12 @@ MathJax.Hub.Config({
 </ol></article><article class="definition definition-like" id="definition-4"><h6 class="heading">
 <span class="type">Definição</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="period">.</span>
 </h6>
-<p id="p-116">O número de <em class="emphasis">permutações circulares</em> de \(n\) elementos, é o número de maneiras de organizar \(n\) objetos distintos ao longo de um círculo fixo (isto é, não pode ser retirado do plano e virado). Notação: $$ PC_n ~~\text{ ou }~~ PC(n). $$</p></article><article class="remark remark-like" id="remark-2"><h6 class="heading">
+<p id="p-116">O número de <em class="emphasis">permutações circulares</em> de \(n\) elementos, é o número de maneiras de organizar \(n\) objetos distintos ao longo de um círculo fixo (isto é, não pode ser retirado do plano e virado). Notação:</p>
+<div class="displaymath">
+\begin{equation*}
+PC_n ~~\text{ ou }~~ PC(n). 
+\end{equation*}
+</div></article><article class="remark remark-like" id="remark-2"><h6 class="heading">
 <span class="type">Observação</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
 </h6>
 <p id="p-117">Observe que os três circulos da  (<a class="xref" data-knowl="./knowl/circ-equiv.html" title="Figura 1.5.3">Figura 1.5.3</a>) são equivalentes, ou seja, representam a mesma permutação circular, pois o segundo círculo pode ser obtido a partir do primeiro por uma rotação de \(-\frac{2\pi}{3}\) e o terceiro círculo pode ser obtido a partir do primeiro por uma rotação de \(-2\times\frac{2\pi}{3}\text{.}\)</p>
@@ -177,7 +181,12 @@ MathJax.Hub.Config({
 PC_n = (n-1)! 
 \end{equation*}
 </div></article><article class="hiddenproof" id="proof-6"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-6"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-122">Se não considerássemos equivalentes disposições que possam coincidir por rotação, teríamos \(n!\) disposições.</p>
-<p id="p-123">Como para cada disposição, temos \(n\) disposições equivalentes, dividindo o total de permutações por \(n\text{,}\) obtemos $$ PC(n) = \frac{n!}{n} = (n-1)! $$</p></article></div>
+<p id="p-123">Como para cada disposição, temos \(n\) disposições equivalentes, dividindo o total de permutações por \(n\text{,}\) obtemos</p>
+<div class="displaymath">
+\begin{equation*}
+PC(n) = \frac{n!}{n} = (n-1)! 
+\end{equation*}
+</div></article></div>
 <article class="technology computation-like" id="technology-6"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">1.5.7</span><span class="period">.</span>
 </h6>
@@ -189,7 +198,12 @@ PC(10)
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.5.8</span><span class="period">.</span>
 </h6>
 <p id="p-126">Quantas rodas de ciranda podem ser formadas com 8 pessoas?</p>
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like">Basta calcular o número de permutações circulares de 8 elementos. $$ PC(8). $$ <div class="hidden-sagecell-sage" id="sage-14"><script type="text/x-sage">PC(n) = factorial(n-1)
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like">Basta calcular o número de permutações circulares de 8 elementos.<div class="displaymath">
+\begin{equation*}
+PC(8). 
+\end{equation*}
+</div>
+<div class="hidden-sagecell-sage" id="sage-14"><script type="text/x-sage">PC(n) = factorial(n-1)
 PC(8)
 </script></div>
 </div></div></article><article class="fact theorem-like" id="fact-14"><h6 class="heading">
@@ -199,7 +213,12 @@ PC(8)
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like">
 <p id="p-128">Calculamos o número de permutações circulares com 8 elementos, \(PC(8)\text{.}\) Agora, subtraimos desse total, o número de permutações de 8 elementos, na qual, dois deles estão juntos.</p>
 <figure class="figure figure-like" id="circequiv3"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/circ-equiv3.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.5.10<span class="period">.</span></span><span class="space"> </span>Duas formas de organizar os elementos 1 e 2.</figcaption></figure><p id="p-129">O que dá um total de \(PC(7)\times 2\) permutações circulares, pois temos duas formas de permutar os dois elementos que estão juntos, depois disso, olhamos para a roda de ciranda como se tivesse apenas 7 elementos. Portanto a resposta é $$ PC(8)-PC(7)\times2. $$</p>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.5.10<span class="period">.</span></span><span class="space"> </span>Duas formas de organizar os elementos 1 e 2.</figcaption></figure><p id="p-129">O que dá um total de \(PC(7)\times 2\) permutações circulares, pois temos duas formas de permutar os dois elementos que estão juntos, depois disso, olhamos para a roda de ciranda como se tivesse apenas 7 elementos. Portanto a resposta é</p>
+<div class="displaymath">
+\begin{equation*}
+PC(8)-PC(7)\times2. 
+\end{equation*}
+</div>
 <div class="hidden-sagecell-sage" id="sage-15"><script type="text/x-sage">PC(n) = factorial(n-1)
 PC(8)-PC(7)*2
 </script></div>

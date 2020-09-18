@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-09-15T08:53:45-03:00       *-->
+<!--*       on 2020-09-18T10:59:27-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -136,7 +136,6 @@ MathJax.Hub.Config({
 <a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
-<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
 <li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 </ul>
@@ -174,8 +173,41 @@ A=\{a,b,c,d,e,f,g,h\},
 </div>
 <p data-braille="continuation">de modo que não possuam duas letras que ocupem posições consecutivas no alfabeto?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-30" id="solution-30"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-30"><div class="solution solution-like">
-<p id="p-235">Esse problema será resolvido criando uma forma alternativa de representar os subconjuntos onde marcaremos com o sinal \((+)\) os elementos pertencente ao subconjunto e com o sinal \((-)\) os elementos que não pertencentes ao subconjunto. $$\{a,c,e,h\} \text{ será representado  por } +-+-+--+$$ $$\{b,d,f,h\} \text{ será representado  por } -+-+-+-+$$ $$\{b,e,g,h\} \text{ será representado  por } -+--+-++$$ O terceiro caso não satisfaz as condições do enunciado, pois 2 \((+)\) juntos significa que teremos letras consecutivas (do alfabeto).</p>
-<p id="p-236">Assim, compreendendo o problema observa-se que para soluciona-lo devemos calcular o número de formas distintas de permutar 8 símbolos, onde \(4\) são \((-)\) e 4 são \((+)\) de modo que não tenha 2 símbolos \((+)\) juntos. $$\LARGE \bigcirc-\bigcirc-\bigcirc-\bigcirc-\bigcirc$$ Veja que de acordo com  o esquema, de círculos e traços, podem-se colocar 4 símbolos \((+)\) em quaisquer dos cinco lugares, ou seja, é possível escolher 4 dos 5 lugares disponíveis (representados pelas circunferências) para por os símbolos \((+)\) o que pode ser realizado de $$C_5^4=5 \text{ modos distintos}.$$ Dessa forma 5 subconjuntos podem ser formados, os quais estão listados abaixo: $$ \{ a, c, e, g \}, \{ a, c, e, h \}, \{ a, c, f, h \}, \{ a, d, f, h \}, \{ b, d, f, h \} $$</p>
+<p id="p-235">Esse problema será resolvido criando uma forma alternativa de representar os subconjuntos onde marcaremos com o sinal \((+)\) os elementos pertencente ao subconjunto e com o sinal \((-)\) os elementos que não pertencentes ao subconjunto.</p>
+<div class="displaymath">
+\begin{equation*}
+\{a,c,e,h\} \text{ será representado  por } +-+-+--+
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+\{b,d,f,h\} \text{ será representado  por } -+-+-+-+
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+\{b,e,g,h\} \text{ será representado  por } -+--+-++
+\end{equation*}
+</div>
+<p data-braille="continuation">O terceiro caso não satisfaz as condições do enunciado, pois 2 \((+)\) juntos significa que teremos letras consecutivas (do alfabeto).</p>
+<p id="p-236">Assim, compreendendo o problema observa-se que para soluciona-lo devemos calcular o número de formas distintas de permutar 8 símbolos, onde \(4\) são \((-)\) e 4 são \((+)\) de modo que não tenha 2 símbolos \((+)\) juntos.</p>
+<div class="displaymath">
+\begin{equation*}
+\LARGE \bigcirc-\bigcirc-\bigcirc-\bigcirc-\bigcirc
+\end{equation*}
+</div>
+<p data-braille="continuation">Veja que de acordo com  o esquema, de círculos e traços, podem-se colocar 4 símbolos \((+)\) em quaisquer dos cinco lugares, ou seja, é possível escolher 4 dos 5 lugares disponíveis (representados pelas circunferências) para por os símbolos \((+)\) o que pode ser realizado de</p>
+<div class="displaymath">
+\begin{equation*}
+C_5^4=5 \text{ modos distintos}.
+\end{equation*}
+</div>
+<p data-braille="continuation">Dessa forma 5 subconjuntos podem ser formados, os quais estão listados abaixo:</p>
+<div class="displaymath">
+\begin{equation*}
+\{ a, c, e, g \}, \{ a, c, e, h \}, \{ a, c, f, h \}, \{ a, d, f, h \}, \{ b, d, f, h \} 
+\end{equation*}
+</div>
 </div></div></article><article class="theorem theorem-like" id="theorem-12"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
 </h6>

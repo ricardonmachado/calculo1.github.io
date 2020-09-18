@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-09-15T08:53:45-03:00       *-->
+<!--*       on 2020-09-18T10:59:27-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -136,7 +136,6 @@ MathJax.Hub.Config({
 <a href="probabilidade.html" data-scroll="probabilidade"><span class="codenumber">4</span> <span class="title">Probabilidade</span></a><ul>
 <li><a href="section-espacos-probabilidade.html" data-scroll="section-espacos-probabilidade">Espaços de Probabilidade</a></li>
 <li><a href="section-probabilidade-condicional.html" data-scroll="section-probabilidade-condicional">Probabilidade Condicional</a></li>
-<li><a href="section-eventos-independentes.html" data-scroll="section-eventos-independentes">Eventos Independentes</a></li>
 <li><a href="section-distribuicao-binomial.html" data-scroll="section-distribuicao-binomial">Distribuição Binomial</a></li>
 <li><a href="exercicios-lista5.html" data-scroll="exercicios-lista5">Exercícios</a></li>
 </ul>
@@ -210,7 +209,13 @@ MathJax.Hub.Config({
 = \amp ~ \#A+\#B-\#(A\cap B)+\#C-\#[(A\cup B)\cap C]. 
 \end{align*}
 </div>
-<p data-braille="continuation">Usando a igualdade: $$ (A\cup B)\cap C = (A\cap C)\cup (B\cap C), $$ temos</p>
+<p data-braille="continuation">Usando a igualdade:</p>
+<div class="displaymath">
+\begin{equation*}
+(A\cup B)\cap C = (A\cap C)\cup (B\cap C), 
+\end{equation*}
+</div>
+<p data-braille="continuation">temos</p>
 <div class="displaymath">
 \begin{equation*}
 \#[A\cup B\cup C] = \#A+\#B-\#(A\cap B)+\#C-\#[(A\cap C)\cup (B\cap C)]. 
@@ -229,7 +234,13 @@ MathJax.Hub.Config({
 <article class="theorem theorem-like" id="teo-inclusao-exclusao-n"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">2.1.6</span><span class="period">.</span>
 </h6>
-<p id="p-192">Sejam \(A_1,A_2,\cdots,A_n\) conjuntos finitos. A cardinalidade de $$ \bigcup_{i=1}^{n}A_i =  A_1 \cup A_2 \cup \cdots \cup A_n ~~~~ (\blacklozenge) $$ é dada por:</p>
+<p id="p-192">Sejam \(A_1,A_2,\cdots,A_n\) conjuntos finitos. A cardinalidade de</p>
+<div class="displaymath">
+\begin{equation*}
+\bigcup_{i=1}^{n}A_i =  A_1 \cup A_2 \cup \cdots \cup A_n ~~~~ (\blacklozenge)
+\end{equation*}
+</div>
+<p data-braille="continuation">é dada por:</p>
 <div class="displaymath">
 \begin{equation*}
 (\bigstar)  \begin{cases} \displaystyle\#\bigcup_{i=1}^{n}A_i \amp \displaystyle=  \sum_{i=1}^{n}\#A_i-\sum_{0 \lt  i \lt j   \leq n}\#(A_i\cap A_j)+\cdots\\
@@ -237,7 +248,25 @@ MathJax.Hub.Config({
 \end{equation*}
 </div></article><article class="hiddenproof" id="proof-11"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-11"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-11"><article class="hiddenproof"><p id="p-193">Vamos verificar que a fórmula é verdadeira mostrando que um elemento da união \((\blacklozenge)\) é contada exatamente uma vez pelo lado direito da Expressão \((\bigstar)\text{.}\)</p>
 <p id="p-194">Suponha que o elemento \(a\) pertence a exatamente \(r\) (\(1\leq r\leq n\)) dos conjuntos \(A_1, A_2, \ldots, A_n\text{.}\)</p>
-<p id="p-195">O elemento \(a\) é contado \(C_r^1\) vezes por \(\sum_{i=1}^{n}\#A_i, C_r^2\) vezes por \(\sum_{0\lt i \lt j\leq n}\#(A_i\cap A_j)\text{,}\) e de forma geral \(C_r^m\) vezes, pelo somatório envolvendo \(m\) dos conjuntos \(A_i\text{.}\) Assim, este elemento será contado exatamente $$C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r$$ vezes pelo lado direito de \((\bigstar)\text{.}\) Usando a Expansão do Binômio de Newton, temos $$0 = (1-1)^p = C_r^0 -(C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r).$$ Portanto $$C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r = C_r^0 = 1.$$ Isto mostra que o elemento \(a\) é contado exatamente uma vez pelo lado direito de \((\bigstar)\text{.}\)</p></article></div>
+<p id="p-195">O elemento \(a\) é contado \(C_r^1\) vezes por \(\sum_{i=1}^{n}\#A_i, C_r^2\) vezes por \(\sum_{0\lt i \lt j\leq n}\#(A_i\cap A_j)\text{,}\) e de forma geral \(C_r^m\) vezes, pelo somatório envolvendo \(m\) dos conjuntos \(A_i\text{.}\) Assim, este elemento será contado exatamente</p>
+<div class="displaymath">
+\begin{equation*}
+C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r
+\end{equation*}
+</div>
+<p data-braille="continuation">vezes pelo lado direito de \((\bigstar)\text{.}\) Usando a Expansão do Binômio de Newton, temos</p>
+<div class="displaymath">
+\begin{equation*}
+0 = (1-1)^p = C_r^0 -(C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r). 
+\end{equation*}
+</div>
+<p data-braille="continuation">Portanto</p>
+<div class="displaymath">
+\begin{equation*}
+C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r = C_r^0 = 1. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Isto mostra que o elemento \(a\) é contado exatamente uma vez pelo lado direito de \((\bigstar)\text{.}\)</p></article></div>
 <article class="fact theorem-like" id="fact-23"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.1.7</span><span class="period">.</span>
 </h6>
@@ -322,7 +351,29 @@ B = \{ b\in \mathbb{N}~|~ b \text{ é múltiplo de } 2, 3, 5, 7, 11, 13, 17 \tex
 \end{equation*}
 </div>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-24" id="solution-24"><span class="type">Solução</span><span class="space"> </span><span class="codenumber">1</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-24"><div class="solution solution-like">
-<p id="p-204"><dfn class="terminology">item a)</dfn> Sejam $$\bullet A_2=\{n\in\mathbb{N}~|~ 1\leq n\leq 10000 \text{ e } n \text{ é múltiplo de 2}\}$$ $$\bullet A_3=\{n\in\mathbb{N}~|~ 1\leq n\leq 10000 \text{ e } n \text{ é múltiplo de 3}\}$$ $$\bullet A_5=\{n\in\mathbb{N}~|~ 1\leq n\leq 10000 \text{ e } n \text{ é múltiplo de 5}\}$$ A resposta do item a) é a cardinalidade do conjunto: $$ A_2\cup A_3\cup A_5. $$ Pelo Princípio da Inclusão-Exclusão (<a class="xref" data-knowl="./knowl/teo-inclusao-exclusao-n.html" title="Teorema 2.1.6">Teorema 2.1.6</a>):</p>
+<p id="p-204"><dfn class="terminology">item a)</dfn> Sejam</p>
+<div class="displaymath">
+\begin{equation*}
+\bullet A_2=\{n\in\mathbb{N}~|~ 1\leq n\leq 10000 \text{ e } n \text{ é múltiplo de 2}\}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+\bullet A_3=\{n\in\mathbb{N}~|~ 1\leq n\leq 10000 \text{ e } n \text{ é múltiplo de 3}\}
+\end{equation*}
+</div>
+<div class="displaymath">
+\begin{equation*}
+\bullet A_5=\{n\in\mathbb{N}~|~ 1\leq n\leq 10000 \text{ e } n \text{ é múltiplo de 5}\}
+\end{equation*}
+</div>
+<p data-braille="continuation">A resposta do item a) é a cardinalidade do conjunto:</p>
+<div class="displaymath">
+\begin{equation*}
+A_2\cup A_3\cup A_5. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Pelo Princípio da Inclusão-Exclusão (<a class="xref" data-knowl="./knowl/teo-inclusao-exclusao-n.html" title="Teorema 2.1.6">Teorema 2.1.6</a>):</p>
 <div class="displaymath">
 \begin{align*}
 \#(A_2\cup A_3\cup A_5) = \amp ~  \#A_2+\#A_3+\#A_5 \\
