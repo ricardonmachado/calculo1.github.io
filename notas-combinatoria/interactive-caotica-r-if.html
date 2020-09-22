@@ -56,18 +56,62 @@ MathJax.Hub.Config({
 });
 </script><link xmlns:svg="http://www.w3.org/2000/svg" rel="stylesheet" type="text/css" href="https://sagecell.sagemath.org/static/sagecell_embed.css">
 </head>
-<body class="pretext-content"><div style="width:600px; height:360px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div xmlns:svg="http://www.w3.org/2000/svg" class="sage-interact"><script type="text/x-sage">@interact
-def _(n=input_box(4 , width=10,  label="n:")):
+<body class="pretext-content"><div style="width:600px; height:180px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div xmlns:svg="http://www.w3.org/2000/svg" class="sage-interact"><script type="text/x-sage">    @interact
+def _(lista=input_box(['M', 'A', 'T', 'E', 'M', 'A', 'T', 'I', 'C', 'A'] , width=50,  label="lista:")):    
 
-        pl = Permutations(n).list()
-        for i in Permutations(n):
-            for j in i:
-                if i.index(j) == j-1:
-                    pl.remove(i)
-                    break
-        print('o número de permutações caóticas é:', len(pl))
-        print('As permutações caóticas são:')
-        for i in pl:
-            print(i)
+    
+    
+
+    def pt(n): #Polinômio de Torre
+        
+        s = 0
+        for k in range(n+1):
+            s = s + binomial(n, k)^2*factorial(k)*x^k
+        
+        return s
+
+    def ptf(*lista): #Polinômio de Torre Full
+        
+        p = 1
+        for i in lista:
+            p = p*pt(i)
+        
+        p = p.expand()
+        return p    
+    
+    def dr(*lista):  #Derangement with Repetition
+        
+        p = ptf(*lista)
+        c = p.coefficients()
+        total = sum(lista)
+        
+        s = 0
+        for i in c:
+            if i[1] > 0:
+                #print(i[0]*factorial(total-i[1])*(-1)^i[1])
+                s = s + i[0]*factorial(total-i[1])*(-1)^i[1]
+        d = 1
+        for k in lista:
+            d = d*factorial(k)
+            
+        resp = (factorial(total) + s)/d
+        
+        return resp
+
+    lista = list(lista)
+    lista.sort()
+    
+    l=[]
+    anterior = []
+    
+    for i in lista:
+        c = lista.count(i)
+        if i != anterior:
+            l.append(c)
+            anterior = i
+        
+    num = dr(*l)
+    
+    print('O número de permutações caóticas é:', num)
 </script></div></div></body>
 </html>
