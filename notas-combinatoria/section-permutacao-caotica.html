@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-04T13:39:04-03:00       *-->
+<!--*       on 2020-10-04T15:24:30-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -226,22 +226,25 @@ n!-3\times (n-1)!+3 \times (n-2)!-(n-3)!
 D_n \text{ ou } D(n) 
 \end{equation*}
 </div></article><article class="technology computation-like" id="technology-10"><h6 class="heading">
-<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span><span class="space"> </span><span class="title">Faça você mesmo.</span>
+<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
+</h6>As permutações caóticas dos elementos \(1, 2, 3, 4\) podem ser geradas no Sage, com o seguinte comando: <div class="sagecell-sage" id="sage-22"><script type="text/x-sage">Derangements(4).list()
+</script></div></article><article class="technology computation-like" id="tec-caotica-r-sage"><h6 class="heading">
+<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
 </h6>
-<figure class="figure figure-like" id="interactive-caotica"><p id="p-222">Escolha o valor para \(n\) para obter as permutações caóticas de \(\{1,2,3,\cdots,n\}\text{.}\)</p>
-<iframe id="interactive-caotica" width="600" height="360" src="interactive-caotica-if.html"></iframe><figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">2.2.6<span class="period">.</span></span><span class="space"> </span>Todas as permutações caóticas de \(\{1,2,3,\cdots,n\}\text{.}\)</figcaption></figure></article><article class="technology computation-like" id="tec-caotica-r-lenta"><h6 class="heading">
-<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span><span class="space"> </span><span class="title">Faça você mesmo.</span>
+<p id="p-222">Todos os anagramas de AMOR, de forma que nenhuma letra fique na posição original. Troque as informações da lista para obter o número de permutações caóticas e as permutações caóticas da sua lista.</p>
+<div class="sagecell-sage" id="sage-23"><script type="text/x-sage">D = Derangements(['A', 'M', 'O', 'R'])
+print('número de permutações caóticas:', len(D))
+print('todas as permutações caóticas:')
+D.list()
+</script></div></article><article class="theorem theorem-like" id="theorem-11"><h6 class="heading">
+<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">2.2.7</span><span class="period">.</span>
 </h6>
-<figure class="figure figure-like" id="interactive-caotica-x"><p id="p-223">Todos os anagramas de AMOR, de forma que nenhuma letra fique na posição original. Troque as informações da lista para obter o número de permutações caóticas e as permutações caóticas da sua lista.</p>
-<iframe id="interactive-caotica-x" width="600" height="360" src="interactive-caotica-x-if.html"></iframe><figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">2.2.8<span class="period">.</span></span><span class="space"> </span>Todos os anagramas de AMOR, de forma que nenhuma letra fique na posição original.</figcaption></figure></article><article class="theorem theorem-like" id="theorem-11"><h6 class="heading">
-<span class="type">Teorema</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
-</h6>
-<p id="p-224">A quantidade de permutações caóticas de um conjunto com \(n\) elementos distintos, pode ser calculada da seguinte maneira:</p>
+<p id="p-223">A quantidade de permutações caóticas de um conjunto com \(n\) elementos distintos, pode ser calculada da seguinte maneira:</p>
 <div class="displaymath">
 \begin{equation*}
 D_n=n!\cdot\sum_{i=0}^{n}\dfrac{(-1)^i}{i!}.
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><p id="p-225">Considere todas as permutações dos elementos \(a_1 , a_2 , \ldots , a_n\text{.}\) Indicando por \(A_i\) todas as permutações formadas pelos elementos \(a_1 , a_2 , \ldots , a_n\) com \(a_i\) no \(i\)-ésimo lugar, calcularemos \(D_n\text{,}\) usando a ideia do exemplo (<a class="xref" data-knowl="./knowl/exem-antes-permut-cao.html" title="Exemplo 2.2.3">Exemplo 2.2.3</a>):</p>
+</div></article><article class="hiddenproof" id="proof-12"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-12"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-12"><article class="hiddenproof"><p id="p-224">Considere todas as permutações dos elementos \(a_1 , a_2 , \ldots , a_n\text{.}\) Indicando por \(A_i\) todas as permutações formadas pelos elementos \(a_1 , a_2 , \ldots , a_n\) com \(a_i\) no \(i\)-ésimo lugar, calcularemos \(D_n\text{,}\) usando a ideia do exemplo (<a class="xref" data-knowl="./knowl/exem-antes-permut-cao.html" title="Exemplo 2.2.3">Exemplo 2.2.3</a>):</p>
 <div class="displaymath">
 \begin{align*}
 D_n = \amp ~  n! - \sum_{i=1}^{n}\#A_i + \sum_{0\lt i\lt j\leq n}\#(A_i\cap A_j)+\cdots \\
@@ -274,19 +277,19 @@ D_n \amp = ~ n!\cdot\left(1-\dfrac{1}{1!}+\dfrac{1}{2!}-\dfrac{1}{3!}+\cdots+(-1
 \end{align*}
 </div></article></div>
 <article class="remark remark-like" id="remark-4"><h6 class="heading">
-<span class="type">Observação</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
-</h6>Calculando o número de permutações caóticas no Sage: <div class="sagecell-sage" id="sage-22"><script type="text/x-sage">def D(n):
+<span class="type">Observação</span><span class="space"> </span><span class="codenumber">2.2.8</span><span class="period">.</span>
+</h6>Calculando o número de permutações caóticas no Sage: <div class="sagecell-sage" id="sage-24"><script type="text/x-sage">def D(n):
     d = 0
     for i in range(n+1):
         d = d + (-1)^(i)*(factorial(n)/factorial(i))
     return d
 D(8)
 </script></div></article><article class="fact theorem-like" id="fact-27"><h6 class="heading">
-<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span>
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.9</span><span class="period">.</span>
 </h6>
-<p id="p-226">Luiz, Cláudia, Paulo, Rodrigo e Ana brincam entre si de amigo-secreto (ou amigo-oculto). O nome de cada um é escrito em um pedaço de papel, que é colocado em uma urna. Em seguida, cada participante da brincadeira retira da urna um dos pedaços de papel, ao acaso. De quantas formas pode ocorrer a distribuição dos papéis de modo que nenhum dos participantes retire seu próprio nome?</p>
+<p id="p-225">Luiz, Cláudia, Paulo, Rodrigo e Ana brincam entre si de amigo-secreto (ou amigo-oculto). O nome de cada um é escrito em um pedaço de papel, que é colocado em uma urna. Em seguida, cada participante da brincadeira retira da urna um dos pedaços de papel, ao acaso. De quantas formas pode ocorrer a distribuição dos papéis de modo que nenhum dos participantes retire seu próprio nome?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-28" id="solution-28"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-28"><div class="solution solution-like">
-<p id="p-227">Uma clássica questão de permutação caótica, visto que durante a distribuição dos papéis nenhum dos participantes poderá retirar seu próprio nome. Assim o número de maneiras de ocorrer tal evento, é dado por:</p>
+<p id="p-226">Uma clássica questão de permutação caótica, visto que durante a distribuição dos papéis nenhum dos participantes poderá retirar seu próprio nome. Assim o número de maneiras de ocorrer tal evento, é dado por:</p>
 <div class="displaymath">
 \begin{align*}
 D_5 \amp = ~5!\cdot\left(1-\frac{1}{1!}+\frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}-\frac{1}{5!}\right) \\
@@ -297,12 +300,12 @@ D_5 \amp = ~5!\cdot\left(1-\frac{1}{1!}+\frac{1}{2!}-\frac{1}{3!}+\frac{1}{4!}-\
 \end{align*}
 </div>
 </div></div></article><article class="fact theorem-like" id="fact-28"><h6 class="heading">
-<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.12</span><span class="period">.</span>
+<span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.10</span><span class="period">.</span>
 </h6>
-<p id="p-228">Quantas são as permutações de \((1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\) que têm exatamente 4 elementos no seu lugar primitivo?</p>
+<p id="p-227">Quantas são as permutações de \((1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\) que têm exatamente 4 elementos no seu lugar primitivo?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-29" id="solution-29"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-29"><div class="solution solution-like">
-<p id="p-229">O número de modos de escolher os quatro elementos que ocuparão o seu lugar primitivo é \(C_{10}^4\text{.}\)</p>
-<p id="p-230">Com estes elementos em seus lugares, os outros seis elementos devem ser arrumados de forma caótica. o que pode ser feito de \(D_6\) formas. A resposta é</p>
+<p id="p-228">O número de modos de escolher os quatro elementos que ocuparão o seu lugar primitivo é \(C_{10}^4\text{.}\)</p>
+<p id="p-229">Com estes elementos em seus lugares, os outros seis elementos devem ser arrumados de forma caótica. o que pode ser feito de \(D_6\) formas. A resposta é</p>
 <div class="displaymath">
 \begin{equation*}
 C_{10}^4\times D_6 = 55650.
@@ -311,12 +314,13 @@ C_{10}^4\times D_6 = 55650.
 </div></div></article></section><section class="subsection" id="subsection-10"><h3 class="heading hide-type">
 <span class="type">Subseção</span> <span class="codenumber">2.2.4</span> <span class="title">Permutações Caóticas com Repetições</span>
 </h3>
-<p id="p-231">Está seção ainda não está pronta, mas a <a class="xref" data-knowl="./knowl/tec-caotica-r.html" title="Tecnologia 2.2.13: Faça você mesmo">Tecnologia 2.2.13</a> já está funcionando. Observe que a <a class="xref" data-knowl="./knowl/tec-caotica-r-lenta.html" title="Tecnologia 2.2.7: Faça você mesmo">Tecnologia 2.2.7</a> também faz esse cálculo, mas usa um algoritmo lento, pois ele precisa listar todas as possibilidades. Dependendo da quantidade de permutações a <a class="xref" data-knowl="./knowl/tec-caotica-r-lenta.html" title="Tecnologia 2.2.7: Faça você mesmo">Tecnologia 2.2.7</a> não termina o cálculo.</p>
+<p id="p-230">Observe que a <a class="xref" data-knowl="./knowl/tec-caotica-r-sage.html" title="Tecnologia 2.2.6">Tecnologia 2.2.6</a> também faz o cálculo no caso de existirem elementos  repetidos, mas precisa listar todas as possibilidades, dependendo da quantidade de permutações o cálculo pode demorar.</p>
+<p id="p-231">Esta seção ainda não está pronta, mas a <a class="xref" data-knowl="./knowl/tec-caotica-r.html" title="Tecnologia 2.2.11: Faça você mesmo">Tecnologia 2.2.11</a> já está funcionando e usa um algoritmo eficiente, fazendo o cálculo via polinômios de torre.</p>
 <article class="technology computation-like" id="tec-caotica-r"><h6 class="heading">
-<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.2.13</span><span class="period">.</span><span class="space"> </span><span class="title">Faça você mesmo.</span>
+<span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.2.11</span><span class="period">.</span><span class="space"> </span><span class="title">Faça você mesmo.</span>
 </h6>
 <figure class="figure figure-like" id="interactive-caotica-r"><p id="p-232">O número de anagramas da palavra MATEMATICA, de forma que nenhuma letra fique na posição original, ou seja, o número de permutações caóticas. Troque as informações da lista para obter o número de permutações caóticas da sua lista.</p>
-<iframe id="interactive-caotica-r" width="600" height="180" src="interactive-caotica-r-if.html"></iframe><figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">2.2.14<span class="period">.</span></span><span class="space"> </span>Número de Permutações Caóticas podendo ter elementos repetidos.</figcaption></figure></article></section></section></div></main>
+<iframe id="interactive-caotica-r" width="600" height="300" src="interactive-caotica-r-if.html"></iframe><figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">2.2.12<span class="period">.</span></span><span class="space"> </span>Número de Permutações Caóticas podendo ter elementos repetidos.</figcaption></figure></article></section></section></div></main>
 </div>
 </body>
 </html>
