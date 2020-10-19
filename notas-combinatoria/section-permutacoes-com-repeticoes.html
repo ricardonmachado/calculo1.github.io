@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-04T15:24:30-03:00       *-->
+<!--*       on 2020-10-19T16:57:40-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -148,16 +148,16 @@ MathJax.Hub.Config({
 </h2>
 <article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
 <ol class="decimal">
-<li id="li-36">Definir permutação com repetição.</li>
-<li id="li-37">Mostrar como obter a lista com todas as permutações com repetições de \(n\) elementos.</li>
-<li id="li-38">Mostrar como calcular o número de permutações com repetições de \(n\) elementos.</li>
-<li id="li-39">Resolver exemplos.</li>
+<li id="li-37">Definir permutação com repetição.</li>
+<li id="li-38">Mostrar como obter a lista com todas as permutações com repetições de \(n\) elementos.</li>
+<li id="li-39">Mostrar como calcular o número de permutações com repetições de \(n\) elementos.</li>
+<li id="li-40">Resolver exemplos.</li>
 </ol></article><article class="fact theorem-like" id="fact-15"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.1</span><span class="period">.</span>
 </h6>
-<p id="p-130">Quantos são os anagramas da palavra SAGEMATH?</p>
+<p id="p-133">Quantos são os anagramas da palavra SAGEMATH?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like">
-<p id="p-131">Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez. Podemos imaginar, por enquanto, que a palavra é assim</p>
+<p id="p-134">Observe que a palavra SAGEMATH possui 8 letras, mas a letra A aparece duas vezes, o restante aparece apenas uma vez. Podemos imaginar, por enquanto, que a palavra é assim</p>
 <div class="displaymath">
 \begin{equation*}
 SA_1GEMA_2TH
@@ -170,7 +170,7 @@ P(8) = 8!
 \end{equation*}
 </div>
 <p data-braille="continuation">permutações.</p>
-<p id="p-132">Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir do total de permutações a quantidade de reordenar os A's. Dessa forma a resposta é</p>
+<p id="p-135">Agora vamos resolver o problema das repetições. Observe que para cada permutação, trocar os A's de lugar não muda o anagrama, portanto, precisamos dividir do total de permutações a quantidade de reordenar os A's. Dessa forma a resposta é</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{P(8)}{P(2)}=20160.
@@ -179,7 +179,7 @@ P(8) = 8!
 </div></div></article><article class="definition definition-like" id="definition-5"><h6 class="heading">
 <span class="type">Definição</span><span class="space"> </span><span class="codenumber">1.6.2</span><span class="period">.</span>
 </h6>
-<p id="p-133">Quando permutamos uma lista de objetos, na qual, nem todos os elementos são distintos, precisamos considerar que permutar dois elementos idênticos não gera uma nova permutação. Este tipo de permutação é chamado de <em class="emphasis">permutação com repetição</em>.</p></article><article class="technology computation-like" id="technology-7"><h6 class="heading">
+<p id="p-136">Quando permutamos uma lista de objetos, na qual, nem todos os elementos são distintos, precisamos considerar que permutar dois elementos idênticos não gera uma nova permutação. Este tipo de permutação é chamado de <em class="emphasis">permutação com repetição</em>.</p></article><article class="technology computation-like" id="technology-7"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">1.6.3</span><span class="period">.</span>
 </h6>Obtendo a lista com todas as permutações com repetições dos elementos \(1, 1, 1, 2, 2\text{:}\) <div class="sagecell-sage" id="sage-16"><script type="text/x-sage">Permutations([1, 1, 1, 2, 2]).list()
 </script></div></article><article class="definition definition-like" id="definition-6"><h6 class="heading">
@@ -195,7 +195,7 @@ PR_n^{r_1, r_2, \ldots, r_k}.
 </div></article><article class="theorem theorem-like" id="theorem-6"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">1.6.5</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-134">
+<div class="displaymath" id="p-137">
 \begin{equation*}
 PR_n^{r_1, r_2, \ldots, r_k} = \frac{n!}{r_1!\times r_2!\times\cdots\times r_k!}. 
 \end{equation*}
@@ -227,9 +227,9 @@ PR(10, 3, 2, 2)
 </script></div></article><article class="fact theorem-like" id="fact-16"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.7</span><span class="period">.</span>
 </h6>
-<p id="p-135">Quantos são os anagramas da palavra MATEMATICA?</p>
+<p id="p-138">Quantos são os anagramas da palavra MATEMATICA?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like">
-<p id="p-136">Temos uma palavra com 10 letras. Das 10 letras, temos 3 A's, 2 M's e 2 T's e as outras aparecem uma única vez, portanto o número de anagramas desta palavra é</p>
+<p id="p-139">Temos uma palavra com 10 letras. Das 10 letras, temos 3 A's, 2 M's e 2 T's e as outras aparecem uma única vez, portanto o número de anagramas desta palavra é</p>
 <div class="displaymath">
 \begin{equation*}
 PR_{10}^{3, 2, 2} = 151200. 
@@ -238,10 +238,10 @@ PR_{10}^{3, 2, 2} = 151200.
 </div></div></article><article class="fact theorem-like" id="fact-17"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.6.8</span><span class="period">.</span>
 </h6>
-<p id="p-137">Quantos são os anagramas da palavra MATEMATICA que começam por vogal?</p>
+<p id="p-140">Quantos são os anagramas da palavra MATEMATICA que começam por vogal?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like">
-<p id="p-138">Se o anagrama começa por vogal, temos as possibilidades, A ou E ou I.</p>
-<p id="p-139">Começando com A, temos um total de \(PR_9^{2, 2, 2}\text{,}\) começando com E, temos um total de \(PR_9^{3, 2, 2}\) e começando com I, temos um total de \(PR_9^{3, 2, 2}\) Portanto a resposta é</p>
+<p id="p-141">Se o anagrama começa por vogal, temos as possibilidades, A ou E ou I.</p>
+<p id="p-142">Começando com A, temos um total de \(PR_9^{2, 2, 2}\text{,}\) começando com E, temos um total de \(PR_9^{3, 2, 2}\) e começando com I, temos um total de \(PR_9^{3, 2, 2}\) Portanto a resposta é</p>
 <div class="displaymath">
 \begin{equation*}
 PR_9^{2, 2, 2} + 2\times PR_9^{3, 2, 2} = 75600. 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-04T15:24:29-03:00       *-->
+<!--*       on 2020-10-19T16:57:40-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -148,30 +148,37 @@ MathJax.Hub.Config({
 </h2>
 <article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
 <ol class="decimal">
-<li id="li-9">Definir permutação.</li>
-<li id="li-10">Mostrar como obter a lista com todas as permutações de \(n\) elementos distintos.</li>
-<li id="li-11">Mostrar como calcular o número de permutações com \(n\) elementos distintos.</li>
-<li id="li-12">Resolver exemplos.</li>
+<li id="li-9">Nota Histórica.</li>
+<li id="li-10">Definir permutação.</li>
+<li id="li-11">Mostrar como obter a lista com todas as permutações de \(n\) elementos distintos.</li>
+<li id="li-12">Mostrar como calcular o número de permutações com \(n\) elementos distintos.</li>
+<li id="li-13">Exemplificar.</li>
 </ol></article><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
-<span class="type">Subseção</span> <span class="codenumber">1.2.1</span> <span class="title">Permutações</span>
+<span class="type">Subseção</span> <span class="codenumber">1.2.1</span> <span class="title">Nota Histórica</span>
 </h3>
-<p id="p-39">Permutar uma lista de objetos é mudar a ordem em que os objetos da lista aparecem originalmente.</p>
-<p id="p-40">Abaixo, temos uma lista com todas as permutações dos elementos: 1, 2, 3.</p>
-<p id="p-41">[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]</p>
+<p id="p-39">Al-Khalil (717-786), um matemático e criptógrafo árabe, escreveu o Livro de Mensagens Criptográficas. Ele contém o primeiro uso de permutações e combinações, para listar todas as palavras árabes possíveis com e sem vogais.</p>
+<p id="p-40">A regra para determinar o número de permutações de \(n\) objetos era conhecida na cultura indiana por volta de 1150. O Lilavati, do matemático indiano Bhaskara II, contém uma passagem que se traduz em:</p>
+<blockquote class="blockquote" id="blockquote-1"><em class="emphasis">O produto da multiplicação da série aritmética começando e aumentando pela unidade e continuando até o número de casas, serão as variações do número com algarismos específicos.</em></blockquote>
+<p id="p-41">Fonte: <a class="external" href="https://en.wikipedia.org/wiki/Permutation" target="_blank"><dfn class="terminology">en.wikipedia.org/wiki/Permutation</dfn></a>.</p></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<span class="type">Subseção</span> <span class="codenumber">1.2.2</span> <span class="title">Permutações</span>
+</h3>
+<p id="p-42">Permutar uma lista de objetos é mudar a ordem em que os objetos da lista aparecem originalmente.</p>
+<p id="p-43">Abaixo, temos uma lista com todas as permutações dos elementos: 1, 2, 3.</p>
+<p id="p-44">[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]</p>
 <article class="technology computation-like" id="technology-3"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">1.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-42">Abaixo, clique em "Evaluate (Sage)" para obter a lista com todas as permutações dos elementos: 1, 2, 3, 4.</p>
+<p id="p-45">Abaixo, clique em "Evaluate (Sage)" para obter a lista com todas as permutações dos elementos: 1, 2, 3, 4.</p>
 <div class="sagecell-sage" id="sage-3"><script type="text/x-sage">Permutations([1, 2, 3, 4]).list()
 </script></div>
-<p id="p-43">Os números podem ser alterados, ao executar o código, a lista das permutações será atualizada.</p></article><p id="p-44">Para descrever o <em class="emphasis">número de permutações</em> de \(n\) objetos distintos usamos a notação: \(P_n\) ou \(P(n)\text{.}\)</p>
+<p id="p-46">Os números podem ser alterados, ao executar o código, a lista das permutações será atualizada.</p></article><p id="p-47">Para descrever o <em class="emphasis">número de permutações</em> de \(n\) objetos distintos usamos a notação: \(P_n\) ou \(P(n)\text{.}\)</p>
 <article class="theorem theorem-like" id="theorem-3"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">1.2.2</span><span class="period">.</span>
 </h6>O número de permutações de \(n \) objetos distintos é<div class="displaymath">
 \begin{equation*}
 P_n = P(n) = n\times (n-1) \times (n-2)\times \cdots \times 1. 
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-45">Pelo princípio multiplicativo, temos \(n\) modos de escolher o elemento que ocupará o primeiro lugar, uma vez tomada essa decisão, teremos \(n-1\) modos de se escolher o segundo, e assim por diante, até que haja apenas um único modo de se escolher o último elemento. Portanto</p>
+</div></article><article class="hiddenproof" id="proof-3"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-3"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-3"><article class="hiddenproof"><p id="p-48">Pelo princípio multiplicativo, temos \(n\) modos de escolher o elemento que ocupará o primeiro lugar, uma vez tomada essa decisão, teremos \(n-1\) modos de se escolher o segundo, e assim por diante, até que haja apenas um único modo de se escolher o último elemento. Portanto</p>
 <div class="displaymath">
 \begin{equation*}
 P(n) = n\times (n-1) \times \cdots \times 1. 
@@ -180,9 +187,9 @@ P(n) = n\times (n-1) \times \cdots \times 1.
 <article class="fact theorem-like" id="fact-6"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.2.3</span><span class="period">.</span>
 </h6>
-<p id="p-46">Quantos são os anagramas da palavra SAGE?</p>
+<p id="p-49">Quantos são os anagramas da palavra SAGE?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like">
-<p id="p-47">A palavra SAGE possui quatro letras distintas, potanto o número de anagramas é</p>
+<p id="p-50">A palavra SAGE possui quatro letras distintas, potanto o número de anagramas é</p>
 <div class="displaymath">
 \begin{equation*}
 P(4) = 24. 
@@ -191,9 +198,9 @@ P(4) = 24.
 </div></div></article><article class="fact theorem-like" id="fact-7"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.2.4</span><span class="period">.</span>
 </h6>
-<p id="p-48">Quantos são os anagramas da palavra XADREZ que começam e terminam por consoante?</p>
+<p id="p-51">Quantos são os anagramas da palavra XADREZ que começam e terminam por consoante?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like">
-<p id="p-49">A consoante inicial pode ser escolhida de 4 maneiras e a consoante final de 3 maneiras e as 4 letras restantes podem ser escolhidas de \(P(4)\) maneiras. A resposta é</p>
+<p id="p-52">A consoante inicial pode ser escolhida de 4 maneiras e a consoante final de 3 maneiras e as 4 letras restantes podem ser escolhidas de \(P(4)\) maneiras. A resposta é</p>
 <div class="displaymath">
 \begin{equation*}
 4\times 3\times P(4). 
@@ -204,9 +211,9 @@ P(4) = 24.
 </div></div></article><article class="fact theorem-like" id="fact-8"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.2.5</span><span class="period">.</span>
 </h6>
-<p id="p-50">De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
+<p id="p-53">De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like">
-<p id="p-51">Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é P(12). Como a separação em grupos</p>
+<p id="p-54">Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é P(12). Como a separação em grupos</p>
 <div class="displaymath">
 \begin{equation*}
 [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]

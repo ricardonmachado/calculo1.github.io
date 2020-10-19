@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-04T15:24:30-03:00       *-->
+<!--*       on 2020-10-19T16:57:41-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -148,25 +148,25 @@ MathJax.Hub.Config({
 </h2>
 <article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
 <ol class="decimal">
-<li id="li-40">Definir combinação completa.</li>
-<li id="li-41">Mostrar como obter a lista com todas as permutações com repetições de \(n\) elementos.</li>
-<li id="li-42">Mostrar como calcular o número de permutações com repetições de \(n\) elementos.</li>
-<li id="li-43">Resolver exemplos.</li>
-</ol></article><p id="p-140">Vamos começar com um exemplo que ilustra bem a noção de <em class="emphasis">Combinação Completa</em>.</p>
+<li id="li-41">Definir combinação completa.</li>
+<li id="li-42">Mostrar como obter a lista com todas as permutações com repetições de \(n\) elementos.</li>
+<li id="li-43">Mostrar como calcular o número de permutações com repetições de \(n\) elementos.</li>
+<li id="li-44">Resolver exemplos.</li>
+</ol></article><p id="p-143">Vamos começar com um exemplo que ilustra bem a noção de <em class="emphasis">Combinação Completa</em>.</p>
 <article class="fact theorem-like" id="exem-com-completa"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.7.1</span><span class="period">.</span>
 </h6>
-<p id="p-141">De quantos modos é possível comprar 3 sorvetes em uma loja que oferece 6 sabores? Obs. Supondo que de cada sabor estejam disponíveis pelo menos 3 unidades.</p>
+<p id="p-144">De quantos modos é possível comprar 3 sorvetes em uma loja que oferece 6 sabores? Obs. Supondo que de cada sabor estejam disponíveis pelo menos 3 unidades.</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like">
-<p id="p-142">Resolver este problema é o mesmo que encontrar o número de soluções da equação:</p>
+<p id="p-145">Resolver este problema é o mesmo que encontrar o número de soluções da equação:</p>
 <div class="displaymath">
 \begin{equation*}
 x_1 + x_2 + x_3 + x_4 + x_5 + x_6  = 3, ~~~ \text{ com }  x_i \geq 0 ~~~~(\blacklozenge)
 \end{equation*}
 </div>
 <p data-braille="continuation">na qual, cada \(x_i, i\in\{1, 2, 3, 4, 5, 6\}\) representa a quantidade de sorvetes do sabor \(i\text{.}\) Claramente, temos a restrição \(x_i\geq 0\text{,}\) pois não podemos pegar uma quantidade negativa de sorvetes.</p>
-<p id="p-143">A equação \((\blacklozenge)\) pode ser interpretada de tal forma que, encontrar o número de soluções será o mesmo que calcular o número de permutações com repetições de uma sequência de dois tipos de elementos. Vamos explicar esta interpretação:</p>
-<p id="p-144">Coloque um traço separando uma incógnita da outra. Para representar a quantidade de sorvetes de um tipo \(i\text{,}\) coloque a quantidade de bolas entre os traços que representam o sabor \(i\text{.}\) Assim a solução</p>
+<p id="p-146">A equação \((\blacklozenge)\) pode ser interpretada de tal forma que, encontrar o número de soluções será o mesmo que calcular o número de permutações com repetições de uma sequência de dois tipos de elementos. Vamos explicar esta interpretação:</p>
+<p id="p-147">Coloque um traço separando uma incógnita da outra. Para representar a quantidade de sorvetes de um tipo \(i\text{,}\) coloque a quantidade de bolas entre os traços que representam o sabor \(i\text{.}\) Assim a solução</p>
 <div class="displaymath">
 \begin{equation*}
 x_1=1, x_5=2, x_i=0, ~~ i\in \{2, 3, 4, 6\} 
@@ -201,8 +201,8 @@ x_1=1, x_5=2, x_i=0, ~~ i\in \{2, 3, 4, 6\}
 <td class="c m b0 r0 l0 t0 lines" data-braille="last-cell">\(\)</td>
 </tr>
 </table>
-<p id="p-145">Observe que cada permutação dessa representação de traços e bolas é uma solução da Equação \((\blacklozenge)\) e que cada solução da Equação \((\blacklozenge)\) pode ser representada com traços de bolas (Existe uma bijeção entre as duas coisas).</p>
-<p id="p-146">Portanto para encontrar o número de soluções da Equação \((\blacklozenge)\text{,}\) basta calcular</p>
+<p id="p-148">Observe que cada permutação dessa representação de traços e bolas é uma solução da Equação \((\blacklozenge)\) e que cada solução da Equação \((\blacklozenge)\) pode ser representada com traços de bolas (Existe uma bijeção entre as duas coisas).</p>
+<p id="p-149">Portanto para encontrar o número de soluções da Equação \((\blacklozenge)\text{,}\) basta calcular</p>
 <div class="displaymath">
 \begin{equation*}
 PR_8^{5, 3} = 56 
@@ -212,8 +212,8 @@ PR_8^{5, 3} = 56
 </div></div></article><article class="definition definition-like" id="definition-7"><h6 class="heading">
 <span class="type">Definição</span><span class="space"> </span><span class="codenumber">1.7.2</span><span class="period">.</span>
 </h6>
-<p id="p-147">O número de <em class="emphasis">combinações completas</em> de \(n\) elementos, tomados \(p\) a \(p\) é o número de formas de escolher \(p\) elementos dentre \(n\) disponíveis, podendo escolher repetidamente os objetos, até obter a quantidade \(p\text{.}\)</p>
-<p id="p-148">O número de combinações completas de \(n\) elementos, tomados \(p\) a \(p\) é denotado por:</p>
+<p id="p-150">O número de <em class="emphasis">combinações completas</em> de \(n\) elementos, tomados \(p\) a \(p\) é o número de formas de escolher \(p\) elementos dentre \(n\) disponíveis, podendo escolher repetidamente os objetos, até obter a quantidade \(p\text{.}\)</p>
+<p id="p-151">O número de combinações completas de \(n\) elementos, tomados \(p\) a \(p\) é denotado por:</p>
 <div class="displaymath">
 \begin{equation*}
 CR_n^{p} 
@@ -224,7 +224,7 @@ CR_n^{p}
 </script></div></article><article class="theorem theorem-like" id="theorem-7"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">1.7.4</span><span class="period">.</span>
 </h6>
-<div class="displaymath" id="p-149">
+<div class="displaymath" id="p-152">
 \begin{equation*}
 CR_n^p = PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p
 \end{equation*}
@@ -240,20 +240,20 @@ PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p
 <article class="technology computation-like" id="technology-9"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">1.7.5</span><span class="period">.</span>
 </h6>
-<p id="p-150">Para obter o número de combinações completas de \(n\text{,}\)tomados \(p\) a \(p\text{,}\) usamos o código binomial(p+n-1, p).</p>
+<p id="p-153">Para obter o número de combinações completas de \(n\text{,}\)tomados \(p\) a \(p\text{,}\) usamos o código binomial(p+n-1, p).</p>
 <div class="sagecell-sage" id="sage-19"><script type="text/x-sage">CR(n, p) = binomial(p+n-1, p)
 CR(6, 3)
 </script></div></article><article class="fact theorem-like" id="fact-19"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.7.6</span><span class="period">.</span>
 </h6>
-<p id="p-151">Quantas são as soluções inteiras e não negativas de</p>
+<p id="p-154">Quantas são as soluções inteiras e não negativas de</p>
 <div class="displaymath">
 \begin{equation*}
 x_1 + x_2 + x_3 + \ldots + x_{10}  = 20?
 \end{equation*}
 </div>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like">
-<p id="p-152">O número de soluções desta equação, com \(x_i\in \mathbb{Z} \text{ e } x_i\geq 0, i\in\{1, 2, \ldots, 10\}\)  é o  número de combinações completas de 10 elementos, tomandos 20 a 20:</p>
+<p id="p-155">O número de soluções desta equação, com \(x_i\in \mathbb{Z} \text{ e } x_i\geq 0, i\in\{1, 2, \ldots, 10\}\)  é o  número de combinações completas de 10 elementos, tomandos 20 a 20:</p>
 <div class="displaymath">
 \begin{equation*}
 CR_{10}^{20}
@@ -265,7 +265,7 @@ CR(10, 20)
 </div></div></article><article class="fact theorem-like" id="fact-20"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.7.7</span><span class="period">.</span>
 </h6>
-<p id="p-153">Quantas são as soluções inteiras da equação</p>
+<p id="p-156">Quantas são as soluções inteiras da equação</p>
 <div class="displaymath">
 \begin{equation*}
 x_1 + x_2 + x_3 = 15
@@ -273,7 +273,7 @@ x_1 + x_2 + x_3 = 15
 </div>
 <p data-braille="continuation">com \(x_1&gt;0\text{,}\) \(x_2\geq 2\) e \(x_3 \geq 4\text{?}\)</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-20" id="solution-20"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-20"><div class="solution solution-like">
-<p id="p-154">Defina</p>
+<p id="p-157">Defina</p>
 <div class="displaymath">
 \begin{equation*}
 x_1 = x+1, 
@@ -310,18 +310,18 @@ CR_3^{8} = 45.
 </div></div></article><article class="fact theorem-like" id="fact-21"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">1.7.8</span><span class="period">.</span>
 </h6>
-<dfn class="terminology">(VESTIBULAR UFPE – UFRPE / 1998 2ª ETAPA)</dfn><p id="p-155">Semelhante ao dominó, mas feito de pedras triangulares equiláteras, o jogo de trominó apresenta na face triangular superior um certo número de pontos com repetições, escolhidos de 1 a n, dispostos ao longo de cada aresta (ver figura).</p>
+<dfn class="terminology">(VESTIBULAR UFPE – UFRPE / 1998 2ª ETAPA)</dfn><p id="p-158">Semelhante ao dominó, mas feito de pedras triangulares equiláteras, o jogo de trominó apresenta na face triangular superior um certo número de pontos com repetições, escolhidos de 1 a n, dispostos ao longo de cada aresta (ver figura).</p>
 <figure class="figure figure-like" id="tro"><div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="images/tro.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.7.9<span class="period">.</span></span><span class="space"> </span>Uma peça do jogo trominó.</figcaption></figure><p id="p-156">Quantas peças há no trominó, supondo n = 6?</p>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">1.7.9<span class="period">.</span></span><span class="space"> </span>Uma peça do jogo trominó.</figcaption></figure><p id="p-159">Quantas peças há no trominó, supondo n = 6?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-21" id="solution-21"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like">
-<p id="p-157">Vamos contar, como se os números não estivessem organizados de forma circular. Depois vamos adicionar as peças que ficam faltando.</p>
-<p id="p-158">Temos que escolher os valores de cada um dos 3 lados de cada peça do trominó. Como os valores vão de 1 até 6 e são 3 lados, o número de peças do trominó (sem contar as permutações circulares) para \(n=6\) é o número de soluções inteiras não negativas da equação:</p>
+<p id="p-160">Vamos contar, como se os números não estivessem organizados de forma circular. Depois vamos adicionar as peças que ficam faltando.</p>
+<p id="p-161">Temos que escolher os valores de cada um dos 3 lados de cada peça do trominó. Como os valores vão de 1 até 6 e são 3 lados, o número de peças do trominó (sem contar as permutações circulares) para \(n=6\) é o número de soluções inteiras não negativas da equação:</p>
 <div class="displaymath">
 \begin{equation*}
 x_1 + x_2 + x_3 + x_4 + x_ 5 + x_ 6 = 3. 
 \end{equation*}
 </div>
-<p id="p-159">Agora precisamos contar as peças que estão faltando. As peças com três números diferentes, podem ser feitas de duas formas, pois o número de permutações circulares com 3 elementos distintos é 2. Assim, temos</p>
+<p id="p-162">Agora precisamos contar as peças que estão faltando. As peças com três números diferentes, podem ser feitas de duas formas, pois o número de permutações circulares com 3 elementos distintos é 2. Assim, temos</p>
 <div class="displaymath">
 \begin{equation*}
 2\times C_6^3 =40 
