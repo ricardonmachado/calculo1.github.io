@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-19T16:57:44-03:00       *-->
+<!--*       on 2020-10-28T14:23:01-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,34 +14,14 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Demonstração</span></h6>
-<p>Considere \((A\cup B)\) como um conjunto, usando o (<a class="xref" data-knowl="./knowl/teo-inclusao-exclusao-2.html" title="Teorema 2.1.1">Teorema 2.1.1</a>) temos:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-\#[A\cup B\cup C] = \amp~\#[(A\cup B)\cup C] \\
-= \amp ~\#(A\cup B)+\#C-\#[(A\cup B)\cap C] \\
-= \amp ~ \#A+\#B-\#(A\cap B)+\#C-\#[(A\cup B)\cap C]. 
-\end{align*}
-</div>
-<p data-braille="continuation">Usando a igualdade:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Demonstração</span></h6>Calcular \(CR_n^p\) é o mesmo que encontrar o número de soluções da equação:<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-(A\cup B)\cap C = (A\cap C)\cup (B\cap C), 
+x_1 + x_2 + x_3 + \ldots + x_n  = p, ~~~ \text{ com }  x_i \geq 0 
 \end{equation*}
-</div>
-<p data-braille="continuation">temos</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+</div>Usando a ideia da representação de "bolas e traços" da Solução do (<a class="xref" data-knowl="./knowl/exem-com-completa.html" title="Exemplo 2.7.1">Exemplo 2.7.1</a>) vamos ficar com \(p\) bolas e \(n-1\) traços. O cálculo do número de permutações destes \(p+n-1\) objetos com \(p\) objetos de um tipo e \(n-1\) objetos de outro tipo é dado por:<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\#[A\cup B\cup C] = \#A+\#B-\#(A\cap B)+\#C-\#[(A\cap C)\cup (B\cap C)]. 
+PR_{p+n-1}^{p, n-1} = C_{p+n-1}^p 
 \end{equation*}
-</div>
-<p data-braille="continuation">Aplicando o (<a class="xref" data-knowl="./knowl/teo-inclusao-exclusao-2.html" title="Teorema 2.1.1">Teorema 2.1.1</a>) na união \([(A\cap C)\cup (B\cap C)]\text{,}\) concluímos a demonstração:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-\#(A\cup B\cup C) = \amp ~\#A+\#B-\#(A\cap B)+\#C \\
-\amp ~ -\#(A\cap C)-\#(B\cap C) \\
-\amp ~ +\#(A\cap B\cap C). 
-\end{align*}
-</div></article><span class="incontext"><a href="section-inclusao-exclusao.html#proof-10">[incontext]</a></span>
+</div></article><span class="incontext"><a href="section-combinacoes-completas.html#proof-10">[incontext]</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-19T16:57:44-03:00       *-->
+<!--*       on 2020-10-28T14:23:01-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,33 +13,36 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><article class="hiddenproof"><p xmlns:svg="http://www.w3.org/2000/svg">O problema será dividido em dois casos:</p>
-<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">1º Caso:</dfn> O elemento 1 pertencendo ao subconjunto composto por \(p\) elementos. Neste caso, será feito a análise de quantos formas poderá serão escolhidos os outros \(p-1\) elementos do conjunto \(\{3,4,5,\cdots,n-1\}\text{,}\) pois os elementos 1 e \(n\) não podem pertencer ao conjunto. Dessa forma, utilizando o 1º lema de Kaplansky, o número de maneiras que isso pode ocorrer é:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-K(n-3,p-1)=C^{p-1}_{n-p-1}=\dfrac{(n-p-1)!}{(n-2p)!\cdot(p-1)!}.
-\end{equation*}
-</div>
-<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">2º Caso:</dfn> O elemento 1 não pertencendo ao subconjunto composto por \(p\) elementos. Nesse caso a escolha de \(p\) elementos será realizado entre os elementos do conjunto \(\{2,3,4,...n\}\text{.}\) No entanto pelo primeiro lema de Kaplansky a escolha será determinada por</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-K(n-1,p)=C^p_{n-p}=\dfrac{(n-p)!}{(n-2p)!\cdot p!}
-\end{equation*}
-</div>
-<p>Pelo Princípio Aditivo, somando os resultados do 1º e do 2º caso, a solução do problema será dado por:</p>
+<body><article class="hiddenproof"><p>Considere todas as permutações dos elementos \(a_1 , a_2 , \ldots , a_n\text{.}\) Indicando por \(A_i\) todas as permutações formadas pelos elementos \(a_1 , a_2 , \ldots , a_n\) com \(a_i\) no \(i\)-ésimo lugar, calcularemos \(D_n\text{,}\) usando a ideia do exemplo (<a class="xref" data-knowl="./knowl/exem-antes-permut-cao.html" title="Exemplo 3.2.3">Exemplo 3.2.3</a>):</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{align*}
-KC(n,p) = \amp ~\dfrac{(n-p-1)!}{(n-2p)!\cdot(p-1)!}+\dfrac{(n-p)!}{(n-2p)!\cdot p!} \\
-=\amp ~ \dfrac{p\cdot (n-p-1)!+(n-p)\cdot(n-p-1)!}{{(n-2p)!\cdot p!}} \\
-=\amp ~ \dfrac{(n-p-1)!n}{{(n-2p)!\cdot p!}} \\
-=\amp ~ \dfrac{n-p}{n-p}\cdot\dfrac{(n-p-1)!n}{(n-2p)!\cdot p!} \\
-=\amp ~ \dfrac{n}{n-p}\cdot\dfrac{(n-p)!}{(n-2p)!\cdot p!} 
+D_n = \amp ~  n! - \sum_{i=1}^{n}\#A_i + \sum_{0\lt i\lt j\leq n}\#(A_i\cap A_j)+\cdots \\
+\amp ~  \cdots  +(-1)^{n-1}\#(A_1\cap A_2\cap \cdots\cap A_n). 
 \end{align*}
 </div>
-<p data-braille="continuation">finalmente,</p>
+<p data-braille="continuation">Visto que existem \(n\) termos no primeiro somatório, \(C_n^2\) termos no segundo, \(C_n^3\) termos no terceiro,\(\cdots\text{,}\) \(C_n^n=1\) no último e</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-KC(n,p)=\dfrac{n}{n-p}\cdot C^p_{n-p}.
-\end{equation*}
+\begin{align*}
+\#(A_i) \amp =  (n-1)! \\
+\#(A_i\cap A_j) \amp =  (n-2)! \\
+\#(A_i\cap A_j\cap A_k) \amp =  (n-3)! \\
+\vdots ~~~~~ \amp = ~~ \vdots \\
+\#(A_1\cap A_2\cap\cdots\cap A_n) \amp =  1 
+\end{align*}
+</div>
+<p data-braille="continuation">temos</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+D_n \amp = ~ n!-n\cdot(n-1)!+C_n^2\cdot(n-2)!-C_n^3\cdot(n-3)!+\cdots +(-1)^n\cdot 1 \\
+\amp = ~ n!-\dfrac{n!}{1!}+\dfrac{n!}{2!}-\dfrac{n!}{3!}+\cdots
++(-1)^n\cdot \dfrac{n!}{n!} 
+\end{align*}
+</div>
+<p data-braille="continuation">evidenciando \(n!\text{,}\) obtém-se:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+D_n \amp = ~ n!\cdot\left(1-\dfrac{1}{1!}+\dfrac{1}{2!}-\dfrac{1}{3!}+\cdots+(-1)^n\cdot \dfrac{1}{n!}\right) \\
+\amp = ~ n!\cdot\sum_{i=0}^{n}\dfrac{(-1)^i}{i!} 
+\end{align*}
 </div></article></body>
 </html>

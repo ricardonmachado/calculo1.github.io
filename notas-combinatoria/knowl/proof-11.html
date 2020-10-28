@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-19T16:57:44-03:00       *-->
+<!--*       on 2020-10-28T14:23:01-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,26 +15,13 @@
 </head>
 <body>
 <article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Demonstração</span></h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Vamos verificar que a fórmula é verdadeira mostrando que um elemento da união \((\blacklozenge)\) é contada exatamente uma vez pelo lado direito da Expressão \((\bigstar)\text{.}\)</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Suponha que o elemento \(a\) pertence a exatamente \(r\) (\(1\leq r\leq n\)) dos conjuntos \(A_1, A_2, \ldots, A_n\text{.}\)</p>
-<p>O elemento \(a\) é contado \(C_r^1\) vezes por \(\sum_{i=1}^{n}\#A_i, C_r^2\) vezes por \(\sum_{0\lt i \lt j\leq n}\#(A_i\cap A_j)\text{,}\) e de forma geral \(C_r^m\) vezes, pelo somatório envolvendo \(m\) dos conjuntos \(A_i\text{.}\) Assim, este elemento será contado exatamente</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Sejam \(A\) e \(B\) conjuntos finitos, \(T_1\) a tarefa de selecionar um elemento de \(A\) e \(T_2\) a tarefa de selecionar um elemento de \(B\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Existem \(\#A\) maneiras de realizar \(T_1\) e \(\#B\) maneiras de realizar \(T_2\text{.}\) O número de maneiras de executar \(T_1\) ou \(T_2\) é a soma do número de maneiras de executar \(T_1\) com o número de maneiras de executar \(T_2\) menos o número  de maneiras de  executar ambos \(T_1\) e \(T_2\text{,}\) pois esta quantidade já foi contada duas vezes.</p>
+<p>Como existem \(\#(A\cup B)\) maneiras de realizar \(T_1\) ou \(T_2\) e \(\#(A\cap B)\) maneiras de realizar \(T_1\) e \(T_2\text{,}\) temos:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r
+\#(A\cup B)=\#A+\#B-\#(A\cap B).
 \end{equation*}
-</div>
-<p data-braille="continuation">vezes pelo lado direito de \((\bigstar)\text{.}\) Usando a Expansão do Binômio de Newton, temos</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-0 = (1-1)^p = C_r^0 -(C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r). 
-\end{equation*}
-</div>
-<p data-braille="continuation">Portanto</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-C_r^1-C_r^2+C_r^3-\cdots+(-1)^{r+1}C_r^r = C_r^0 = 1. 
-\end{equation*}
-</div>
-<p data-braille="continuation">Isto mostra que o elemento \(a\) é contado exatamente uma vez pelo lado direito de \((\bigstar)\text{.}\)</p></article><span class="incontext"><a href="section-inclusao-exclusao.html#proof-11">[incontext]</a></span>
+</div></article><span class="incontext"><a href="section-inclusao-exclusao.html#proof-11">[incontext]</a></span>
 </body>
 </html>
