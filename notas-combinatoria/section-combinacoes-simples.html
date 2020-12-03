@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-10-31T11:46:59-03:00       *-->
+<!--*       on 2020-12-03T15:00:19-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -156,9 +156,9 @@ MathJax.Hub.Config({
 <article class="fact theorem-like" id="fact-10"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.3.1</span><span class="period">.</span>
 </h6>
-<p id="p-113">Quantas saladas contendo exatamente 7 frutas podemos formar se dispomos de 12 frutas diferentes?</p>
+<p id="p-122">Quantas saladas contendo exatamente 7 frutas podemos formar se dispomos de 12 frutas diferentes?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like">
-<p id="p-114">Para a 1ª fruta, temos 12 opções de escolha, para a 2ª fruta, temos 11 opções de escolha, \(\dots\) para a 7ª fruta temos, 6 opções de escolha. Como a ordem não importa, precisamos dividir pelo número de maneiras de ordenar estas frutas. Portanto a resposta é</p>
+<p id="p-123">Para a 1ª fruta, temos 12 opções de escolha, para a 2ª fruta, temos 11 opções de escolha, \(\dots\) para a 7ª fruta temos, 6 opções de escolha. Como a ordem não importa, precisamos dividir pelo número de maneiras de ordenar estas frutas. Portanto a resposta é</p>
 <div class="displaymath">
 \begin{equation*}
 \frac{12\times 11\times 10\times \cdots \times 6}{P(7)}.
@@ -169,8 +169,8 @@ MathJax.Hub.Config({
 </div></div></article><article class="definition definition-like" id="definition-8"><h6 class="heading">
 <span class="type">Definição</span><span class="space"> </span><span class="codenumber">2.3.2</span><span class="period">.</span>
 </h6>
-<p id="p-115">O número de <em class="emphasis">combinações simples</em> de \(n\) objetos, tomados \(p\) a \(p\) é o número de modos de escolher \(p\) objetos distintos entre \(n\) objetos distintos dados.</p>
-<p id="p-116">Outra forma de definir <em class="emphasis">combinações simples</em> de \(n\text{,}\) \(p\) a \(p\) é como o número de subconjuntos com \(p\) elementos de um conjunto com \(n\) elementos. A notação para combinação simples é dada por</p>
+<p id="p-124">O número de <em class="emphasis">combinações simples</em> de \(n\) objetos, tomados \(p\) a \(p\) é o número de modos de escolher \(p\) objetos distintos entre \(n\) objetos distintos dados.</p>
+<p id="p-125">Outra forma de definir <em class="emphasis">combinações simples</em> de \(n\text{,}\) \(p\) a \(p\) é como o número de subconjuntos com \(p\) elementos de um conjunto com \(n\) elementos. A notação para combinação simples é dada por</p>
 <div class="displaymath">
 \begin{equation*}
 C_n^p, C_{n, p} ~~\text{ ou }~~ C(n, p).
@@ -178,7 +178,7 @@ C_n^p, C_{n, p} ~~\text{ ou }~~ C(n, p).
 </div></article><article class="technology computation-like" id="technology-4"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.3.3</span><span class="period">.</span>
 </h6>
-<p id="p-117">No Sage, podemos obter uma lista com todos os subconjuntos de {1, 2, 3, 4, 5}, tomados 3 a 3. Basta usar o seguinte código:</p>
+<p id="p-126">No Sage, podemos obter uma lista com todos os subconjuntos de {1, 2, 3, 4, 5}, tomados 3 a 3. Basta usar o seguinte código:</p>
 <div class="sagecell-sage" id="sage-8"><script type="text/x-sage">Combinations([1, 2, 3, 4, 5], 3).list()
 </script></div></article><article class="theorem theorem-like" id="theorem-6"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">2.3.4</span><span class="period">.</span>
@@ -186,14 +186,14 @@ C_n^p, C_{n, p} ~~\text{ ou }~~ C(n, p).
 \begin{equation*}
 C_n^p = \frac{n!}{p!\times(n-p)!}. 
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-6"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-6"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-118">Temos \(n\) modos de escolher o primeiro elemento, \(n-1\) modos de escolher o segundo elemento, e assim sucessivamente, até \(n-p+1\) modos de escolher o \(p\)-ésimo elemento.</p>
-<p id="p-119">Agora observe que contamos muito mais agrupamentos do que deveríamos, pois para conjuntos, a ordem não importa, portanto precisamos dividir pelo número de formas de ordenar estes \(p\) elementos que escolhemos de forma ordenada, ou seja, por \(p!\text{.}\) Assim:</p>
-<div class="displaymath" id="p-120">
+</div></article><article class="hiddenproof" id="proof-6"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-6"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-6"><article class="hiddenproof"><p id="p-127">Temos \(n\) modos de escolher o primeiro elemento, \(n-1\) modos de escolher o segundo elemento, e assim sucessivamente, até \(n-p+1\) modos de escolher o \(p\)-ésimo elemento.</p>
+<p id="p-128">Agora observe que contamos muito mais agrupamentos do que deveríamos, pois para conjuntos, a ordem não importa, portanto precisamos dividir pelo número de formas de ordenar estes \(p\) elementos que escolhemos de forma ordenada, ou seja, por \(p!\text{.}\) Assim:</p>
+<div class="displaymath" id="p-129">
 \begin{equation*}
 C(n,p)  = \frac{n(n-1)\cdots(n-p+1)}{p!} = \frac{n(n-1)\cdots(n-p+1)}{p!} \cdot \frac{(n-p)!}{(n-p)!}
 \end{equation*}
 </div>
-<p id="p-121">Fazendo as contas concluímos que</p>
+<p id="p-130">Fazendo as contas concluímos que</p>
 <div class="displaymath">
 \begin{equation*}
 C(n,p) = \frac{n!}{p!(n-p)!}.
@@ -202,27 +202,27 @@ C(n,p) = \frac{n!}{p!(n-p)!}.
 <article class="technology computation-like" id="technology-5"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.3.5</span><span class="period">.</span>
 </h6>
-<p id="p-122">Para obter o número de <em class="emphasis">combinações simples</em> de \(n\text{,}\) tomados \(p\) a \(p\text{,}\)usamos o código binomial(n, p). Teste o código abaixo, para o caso \(n=8\text{,}\) \(p=3\text{.}\)</p>
+<p id="p-131">Para obter o número de <em class="emphasis">combinações simples</em> de \(n\text{,}\) tomados \(p\) a \(p\text{,}\)usamos o código binomial(n, p). Teste o código abaixo, para o caso \(n=8\text{,}\) \(p=3\text{.}\)</p>
 <div class="sagecell-sage" id="sage-9"><script type="text/x-sage">binomial(8,3)
 </script></div></article><article class="fact theorem-like" id="fact-11"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.3.6</span><span class="period">.</span>
 </h6>
-<p id="p-123">Sobre uma reta, marcam-se 10 pontos e sobre outra reta paralela a primeira marcam-se 15 pontos. Quantos triângulos podemos obter unindo 3 desses 25 pontos?</p>
+<p id="p-132">Sobre uma reta, marcam-se 10 pontos e sobre outra reta paralela a primeira marcam-se 15 pontos. Quantos triângulos podemos obter unindo 3 desses 25 pontos?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like">
-<p id="p-124">Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
-<p id="p-125">O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é:</p>
+<p id="p-133">Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
+<p id="p-134">O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é:</p>
 <div class="displaymath">
 \begin{equation*}
 15\times C(10, 2). 
 \end{equation*}
 </div>
-<p id="p-126">Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é</p>
+<p id="p-135">Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é</p>
 <div class="displaymath">
 \begin{equation*}
 10\times C(15, 2). 
 \end{equation*}
 </div>
-<p id="p-127">Portanto, pelo princípio aditivo, o número total de soluções é:</p>
+<p id="p-136">Portanto, pelo princípio aditivo, o número total de soluções é:</p>
 <div class="displaymath">
 \begin{equation*}
 15\times C(10, 2) + 10\times C(15, 2). 
@@ -234,18 +234,18 @@ C(n,p) = \frac{n!}{p!(n-p)!}.
 </div></div></article><article class="fact theorem-like" id="fact-12"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.3.7</span><span class="period">.</span>
 </h6>
-<p id="p-128">Um Juiz dispõe de 11 pessoas, das quais somente 4 são advogados.</p>
-<p id="p-129">a) Para formar um único júri com 9 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
-<p id="p-130">b) Para formar um único júri com 6 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
+<p id="p-137">Um Juiz dispõe de 11 pessoas, das quais somente 4 são advogados.</p>
+<p id="p-138">a) Para formar um único júri com 9 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
+<p id="p-139">b) Para formar um único júri com 6 jurados. Qual é o número de formas de compor o júri, com pelo menos 2 advogados?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like">
-<p id="p-131"><dfn class="terminology">a)</dfn> Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de</p>
+<p id="p-140"><dfn class="terminology">a)</dfn> Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de</p>
 <div class="displaymath">
 \begin{equation*}
 C(11,9)=55. 
 \end{equation*}
 </div>
-<p id="p-132"><dfn class="terminology">b)</dfn> Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, pode aconteder de não termos pelo menos dois advogados. Precisamos contornar este problema.</p>
-<p id="p-133">Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de</p>
+<p id="p-141"><dfn class="terminology">b)</dfn> Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, pode aconteder de não termos pelo menos dois advogados. Precisamos contornar este problema.</p>
+<p id="p-142">Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de</p>
 <div class="displaymath">
 \begin{equation*}
 C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2). 
@@ -258,9 +258,9 @@ C(4,2)*C(7, 4) + C(4,3)*C(7, 3) + C(4,4)*C(7, 2)
 </div></div></article><article class="fact theorem-like" id="fact-13"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.3.8</span><span class="period">.</span>
 </h6>
-<p id="p-134">De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
+<p id="p-143">De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like">
-<p id="p-135">Para o primeiro grupo, temos um total de</p>
+<p id="p-144">Para o primeiro grupo, temos um total de</p>
 <div class="displaymath">
 \begin{equation*}
 C(12, 4) 
@@ -291,32 +291,32 @@ C(12, 4)*C(8,4)*C(4, 4)/P(3)
 </div></div></article></section><section class="exercises" id="exercises-3"><h3 class="heading hide-type">
 <span class="type">Exercícios</span> <span class="codenumber">2.3.2</span> <span class="title">Exercícios</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-10"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-136">Quantas diagonais possuem um polígono de \(n\) lados?</p>
+<article class="exercise exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-145">Quantas diagonais possuem um polígono de \(n\) lados?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><p id="p-137">\(\frac{n(n-3)}{2} \)</p></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-138">De quantos modos 20 jogados podem ser divididos em 4 times de futsal de 5 jogadores cada, denomidados Sport, Náutico, Santa Cruz e Salgueiro?</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-11" id="answer-11"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like"><p id="p-146">\(\frac{n(n-3)}{2} \)</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-147">De quantos modos 20 jogados podem ser divididos em 4 times de futsal de 5 jogadores cada, denomidados Sport, Náutico, Santa Cruz e Salgueiro?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-11" id="answer-11"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like"><p id="p-139">\(C_{20}^5\times C_{15}^5\times C_{10}^5\times 1 = 11732745024 \)</p></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-140">De uma turma formada por 12 homens e 8 mulheres, dentre eles Ana e Bruno, deseja-se formar uma comissão de 10 membros. Quantas são as opções que temos de escolher os membros para formar esta comissão:</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><p id="p-148">\(C_{20}^5\times C_{15}^5\times C_{10}^5\times 1 = 11732745024 \)</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-13"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-149">De uma turma formada por 12 homens e 8 mulheres, dentre eles Ana e Bruno, deseja-se formar uma comissão de 10 membros. Quantas são as opções que temos de escolher os membros para formar esta comissão:</p>
 <ol class="lower-alpha ">
-<li id="li-38"><p id="p-141">sem restrições?</p></li>
-<li id="li-39"><p id="p-142">de modo que sejam escolhidas 5 pessoas de cada sexo?</p></li>
-<li id="li-40"><p id="p-143">de modo que sejam escolhidas 5 pessoas de escolhidas?</p></li>
-<li id="li-41"><p id="p-144">escolhendo-se 5 pessoas de cada sexo, dentre elas Ana e Bruno?</p></li>
-<li id="li-42"><p id="p-145">de modo que sejam escolhidas 5 pessoas de cada sexo, sendo que Ana e Bruno não sejam escolhidos?</p></li>
-<li id="li-43"><p id="p-146">de modo que sejam escolhidas 5 pessoas de cada sexo, sendo que se Ana for escolhida, então Bruno não deverá participar?</p></li>
+<li id="li-38"><p id="p-150">sem restrições?</p></li>
+<li id="li-39"><p id="p-151">de modo que sejam escolhidas 5 pessoas de cada sexo?</p></li>
+<li id="li-40"><p id="p-152">de modo que sejam escolhidas 5 pessoas de escolhidas?</p></li>
+<li id="li-41"><p id="p-153">escolhendo-se 5 pessoas de cada sexo, dentre elas Ana e Bruno?</p></li>
+<li id="li-42"><p id="p-154">de modo que sejam escolhidas 5 pessoas de cada sexo, sendo que Ana e Bruno não sejam escolhidos?</p></li>
+<li id="li-43"><p id="p-155">de modo que sejam escolhidas 5 pessoas de cada sexo, sendo que se Ana for escolhida, então Bruno não deverá participar?</p></li>
 </ol>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><ol class="lower-alpha ">
-<li id="li-44"><p id="p-147">\(\displaystyle C_{20}^{10} = 184756\)</p></li>
-<li id="li-45"><p id="p-148">\(\displaystyle C_8^5\times C_{12}^5 = 44352 \)</p></li>
-<li id="li-46"><p id="p-149">\(\displaystyle C_1^1\times C_7^4\times C_12^5 = 27720 \)</p></li>
-<li id="li-47"><p id="p-150">\(\displaystyle 1\times 25\times 1\times 330 = 11550 \)</p></li>
-<li id="li-48"><p id="p-151">\(\displaystyle C_7^5\times C_11^5 = 21\times 462 = 9702 \)</p></li>
-<li id="li-49"><p id="p-152">\(\displaystyle 32802 \)</p></li>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-13" id="answer-13"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like"><ol class="lower-alpha ">
+<li id="li-44"><p id="p-156">\(\displaystyle C_{20}^{10} = 184756\)</p></li>
+<li id="li-45"><p id="p-157">\(\displaystyle C_8^5\times C_{12}^5 = 44352 \)</p></li>
+<li id="li-46"><p id="p-158">\(\displaystyle C_1^1\times C_7^4\times C_12^5 = 27720 \)</p></li>
+<li id="li-47"><p id="p-159">\(\displaystyle 1\times 25\times 1\times 330 = 11550 \)</p></li>
+<li id="li-48"><p id="p-160">\(\displaystyle C_7^5\times C_11^5 = 21\times 462 = 9702 \)</p></li>
+<li id="li-49"><p id="p-161">\(\displaystyle 32802 \)</p></li>
 </ol></div></div>
 </div></article></section></section></div></main>
 </div>
