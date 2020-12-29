@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-12-04T10:38:52-03:00       *-->
+<!--*       on 2020-12-29T16:21:03-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -23,27 +23,13 @@
 </script>
 </head>
 <body><div class="solution solution-like">
-<p xmlns:svg="http://www.w3.org/2000/svg">Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
-<p>O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é:</p>
+<p>Para a 1ª fruta, temos 12 opções de escolha, para a 2ª fruta, temos 11 opções de escolha, \(\dots\) para a 7ª fruta temos, 6 opções de escolha. Como a ordem não importa, precisamos dividir pelo número de maneiras de ordenar estas frutas. Portanto a resposta é</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-15\times C(10, 2). 
+\frac{12\times 11\times 10\times \cdots \times 6}{P(7)}.
 \end{equation*}
 </div>
-<p>Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-10\times C(15, 2). 
-\end{equation*}
-</div>
-<p>Portanto, pelo princípio aditivo, o número total de soluções é:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-15\times C(10, 2) + 10\times C(15, 2). 
-\end{equation*}
-</div>
-<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">C(n, p) = binomial(n, p)
-15*C(10, 2) + 10*C(15, 2)
+<div class="sagecell-sage" id="sage-7"><script type="text/x-sage">(12*11*10*9*8*7*6)/factorial(7)
 </script></div>
 </div></body>
 </html>

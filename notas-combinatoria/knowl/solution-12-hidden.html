@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-12-04T10:38:52-03:00       *-->
+<!--*       on 2020-12-29T16:21:03-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -23,22 +23,27 @@
 </script>
 </head>
 <body><div class="solution solution-like">
-<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">a)</dfn> Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
+<p>O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-C(11,9)=55. 
+15\times C(10, 2). 
 \end{equation*}
 </div>
-<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">b)</dfn> Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, pode aconteder de não termos pelo menos dois advogados. Precisamos contornar este problema.</p>
-<p>Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de</p>
+<p>Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2). 
+10\times C(15, 2). 
 \end{equation*}
 </div>
-<p data-braille="continuation">maneiras.</p>
-<div class="sagecell-sage" id="sage-11"><script type="text/x-sage">C(n, p) = binomial(n, p)
-C(4,2)*C(7, 4) + C(4,3)*C(7, 3) + C(4,4)*C(7, 2)
+<p>Portanto, pelo princípio aditivo, o número total de soluções é:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+15\times C(10, 2) + 10\times C(15, 2). 
+\end{equation*}
+</div>
+<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">C(n, p) = binomial(n, p)
+15*C(10, 2) + 10*C(15, 2)
 </script></div>
 </div></body>
 </html>
