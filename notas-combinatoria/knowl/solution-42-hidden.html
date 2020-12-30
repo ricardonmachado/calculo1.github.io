@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2020-12-29T16:21:05-03:00       *-->
+<!--*       on 2020-12-30T12:02:49-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -13,15 +13,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-S = \amp \sum_{k=1}^n \frac{1}{k+1}C_n^k  \\
-= \amp \sum_{k=1}^n \frac{1}{k+1}\cdot \frac{n!}{k!(n-k)!}  \\
-= \amp \sum_{k=1}^n \frac{1}{k+1}\cdot \frac{n!}{k!(n-k)!}\cdot \frac{n+1}{n+1}  \\
-= \amp \frac{1}{n+1}\sum_{k=1}^n \frac{(n+1)!}{(k+1)!(n-k)!}  \\
-= \amp \frac{1}{n+1}\sum_{k=1}^n C_{n+1}^{k+1}  \\
-= \amp \frac{1}{n+1}\left( -C_{n+1}^0 - C_{n+1}^1 +\underbrace{C_{n+1}^0 + C_{n+1}^1 + \cdots+C_{n+1}^{n+1}}_{=2^{n+1}} \right)  \\
-= \amp \frac{1}{n+1}\left( 2^{n+1} - n -2 \right).  
-\end{align*}
-</div></div></body>
+<body><div class="solution solution-like">
+<p xmlns:svg="http://www.w3.org/2000/svg">Seja \(S\) um conjunto com 10 números naturais distintos de dois dígitos. A soma de todos os elementos de \(S\) pode ser no máximo 945, no caso em que \(S=\{90, 91, \ldots, 99\}\text{.}\)</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Considere o conjunto das partes de \(S\text{,}\) ou seja, o conjunto formado por todos os subconjuntos de \(S\text{.}\) Este conjunto possui \(2^{10}\) elementos, sendo um deles o conjunto vazio, pois para formar um subconjunto de \(S\text{,}\) precisamos decidir se cada elemento de \(S\) vai pertencer ou não a este subconjunto.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Defina \(\mathcal{C} = \{ 1, 2, \ldots, 945 \}\) e \(\mathcal{P}\) como o conjunto das partes de \(S\text{,}\) menos o conjunto vazio. Desta forma \(\mathcal{P}\) possui \(2^{10}-1 = 1023\) elementos.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Observe que um elemento de \(\mathcal{P}\) é um subconjunto de \(S\) e que a soma dos elementos de um elemento de \(\mathcal{P}\) será um número que pertence a \(\mathcal{C}\text{.}\) Pelo princípio da casa dos pombos, como temos mais elementos em \(\mathcal{P}\) do que em \(\mathcal{C}\text{,}\) pelo menos dois elementos \(A, B \in \mathcal{P}\) possuem a mesma soma.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg">Se \(A\) e \(B\) forem disjuntos, acabou. Se não, considere \(A' = A- A\cap B\) e \(B' = B - A \cap B\text{.}\) Logo, os conjuntos \(A'\) e \(B'\) são disjuntos e a soma dos seus elementos é a mesma.</p>
+</div></body>
 </html>
