@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-01T15:30:20-03:00       *-->
+<!--*       on 2021-01-02T15:50:53-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -146,37 +146,37 @@ MathJax.Hub.Config({
 </h2>
 <article class="objectives goal-like" id="dEf"><h6 class="heading"><span class="type">Objetivos</span></h6>
 <ol class="decimal">
-<li id="li-24">Nota histórica</li>
-<li id="li-25">Definir Permutação Simples.</li>
-<li id="li-26">Mostrar como obter a lista com todas as permutações de \(n\) elementos distintos no Sage.</li>
-<li id="li-27">Mostrar como calcular o número de permutações com \(n\) elementos distintos.</li>
-<li id="li-28">Exemplificar.</li>
+<li id="li-25">Nota histórica</li>
+<li id="li-26">Definir Permutação Simples.</li>
+<li id="li-27">Mostrar como obter a lista com todas as permutações de \(n\) elementos distintos no Sage.</li>
+<li id="li-28">Mostrar como calcular o número de permutações com \(n\) elementos distintos.</li>
+<li id="li-29">Exemplificar.</li>
 </ol></article><section class="subsection" id="subsection-3"><h3 class="heading hide-type">
 <span class="type">Subseção</span> <span class="codenumber">2.2.1</span> <span class="title">Nota Histórica</span>
 </h3>
-<p id="p-80">Al-Khalil (717-786), um matemático e criptógrafo árabe, escreveu o Livro de Mensagens Criptográficas. Ele contém o primeiro uso de permutações e combinações, para listar todas as palavras árabes possíveis com e sem vogais.</p>
-<p id="p-81">A regra para determinar o número de permutações de \(n\) objetos era conhecida na cultura indiana por volta de 1150. O Lilavati, do matemático indiano Bhaskara II, contém uma passagem que se traduz em:</p>
+<p id="p-83">Al-Khalil (717-786), um matemático e criptógrafo árabe, escreveu o Livro de Mensagens Criptográficas. Ele contém o primeiro uso de permutações e combinações, para listar todas as palavras árabes possíveis com e sem vogais.</p>
+<p id="p-84">A regra para determinar o número de permutações de \(n\) objetos era conhecida na cultura indiana por volta de 1150. O Lilavati, do matemático indiano Bhaskara II, contém uma passagem que se traduz em:</p>
 <blockquote class="blockquote" id="blockquote-1"><em class="emphasis">O produto da multiplicação da série aritmética começando e aumentando pela unidade e continuando até o número de casas, serão as variações do número com algarismos específicos.</em></blockquote>
-<p id="p-82">Fonte: <a class="external" href="https://en.wikipedia.org/wiki/Permutation" target="_blank"><dfn class="terminology">en.wikipedia.org/wiki/Permutation</dfn></a>.</p></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
+<p id="p-85">Fonte: <a class="external" href="https://en.wikipedia.org/wiki/Permutation" target="_blank"><dfn class="terminology">en.wikipedia.org/wiki/Permutation</dfn></a>.</p></section><section class="subsection" id="subsection-4"><h3 class="heading hide-type">
 <span class="type">Subseção</span> <span class="codenumber">2.2.2</span> <span class="title">Permutações</span>
 </h3>
-<p id="p-83">Permutar uma lista de objetos é mudar a ordem em que os objetos da lista aparecem originalmente. Quando se trata do número de permutações de \(n\) objetos distintos, estamos contanto o número total de formas de ordenar estes \(n\) objetos.</p>
-<p id="p-84">Abaixo, temos uma lista com todas as permutações dos elementos: 1, 2, 3.</p>
-<p id="p-85">[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]</p>
+<p id="p-86">Permutar uma lista de objetos é mudar a ordem em que os objetos da lista aparecem originalmente. Quando se trata do número de permutações de \(n\) objetos distintos, estamos contanto o número total de formas de ordenar estes \(n\) objetos.</p>
+<p id="p-87">Abaixo, temos uma lista com todas as permutações dos elementos: 1, 2, 3.</p>
+<p id="p-88">[[1, 2, 3], [1, 3, 2], [2, 1, 3], [2, 3, 1], [3, 1, 2], [3, 2, 1]]</p>
 <article class="technology computation-like" id="technology-3"><h6 class="heading">
 <span class="type">Tecnologia</span><span class="space"> </span><span class="codenumber">2.2.1</span><span class="period">.</span>
 </h6>
-<p id="p-86">Abaixo, clique em "Evaluate (Sage)" para obter a lista com todas as permutações dos elementos: 1, 2, 3, 4.</p>
+<p id="p-89">Abaixo, clique em "Evaluate (Sage)" para obter a lista com todas as permutações dos elementos: 1, 2, 3, 4.</p>
 <div class="sagecell-sage" id="sage-3"><script type="text/x-sage">Permutations([1, 2, 3, 4]).list()
 </script></div>
-<p id="p-87">Os números podem ser alterados, ao executar o código, a lista das permutações será atualizada.</p></article><p id="p-88">Para descrever o <em class="emphasis">número de permutações</em> de \(n\) objetos distintos usamos a notação: \(P_n\) ou \(P(n)\text{.}\)</p>
+<p id="p-90">Os números podem ser alterados, ao executar o código, a lista das permutações será atualizada.</p></article><p id="p-91">Para descrever o <em class="emphasis">número de permutações</em> de \(n\) objetos distintos usamos a notação: \(P_n\) ou \(P(n)\text{.}\)</p>
 <article class="theorem theorem-like" id="theorem-5"><h6 class="heading">
 <span class="type">Teorema</span><span class="space"> </span><span class="codenumber">2.2.2</span><span class="period">.</span>
 </h6>O número de permutações de \(n \) objetos distintos é<div class="displaymath">
 \begin{equation*}
 P_n = P(n) = n\times (n-1) \times (n-2)\times \cdots \times 1. 
 \end{equation*}
-</div></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><p id="p-89">Pelo princípio multiplicativo, temos \(n\) modos de escolher o elemento que ocupará o primeiro lugar, uma vez tomada essa decisão, teremos \(n-1\) modos de  escolher o elemento que ocupará o segundo lugar, e assim por diante, até que haja apenas um único modo de escolher o elemento que ocupará o último lugar. Portanto</p>
+</div></article><article class="hiddenproof" id="proof-5"><a data-knowl="" class="id-ref proof-knowl original" data-refid="hk-proof-5"><h6 class="heading"><span class="type">Demonstração<span class="period">.</span></span></h6></a></article><div class="hidden-content tex2jax_ignore" id="hk-proof-5"><article class="hiddenproof"><p id="p-92">Pelo princípio multiplicativo, temos \(n\) modos de escolher o elemento que ocupará o primeiro lugar, uma vez tomada essa decisão, teremos \(n-1\) modos de  escolher o elemento que ocupará o segundo lugar, e assim por diante, até que haja apenas um único modo de escolher o elemento que ocupará o último lugar. Portanto</p>
 <div class="displaymath">
 \begin{equation*}
 P(n) = n\times (n-1) \times \cdots \times 1. 
@@ -185,9 +185,9 @@ P(n) = n\times (n-1) \times \cdots \times 1.
 <article class="example example-like" id="example-6"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.3</span><span class="period">.</span>
 </h6>
-<p id="p-90">Quantos são os anagramas da palavra SAGE?</p>
+<p id="p-93">Quantos são os anagramas da palavra SAGE?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like">
-<p id="p-91">A palavra SAGE possui quatro letras distintas, potanto o número de anagramas é</p>
+<p id="p-94">A palavra SAGE possui quatro letras distintas, potanto o número de anagramas é</p>
 <div class="displaymath">
 \begin{equation*}
 P(4) = 24. 
@@ -196,9 +196,9 @@ P(4) = 24.
 </div></div></article><article class="example example-like" id="example-7"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.4</span><span class="period">.</span>
 </h6>
-<p id="p-92">Quantos são os anagramas da palavra XADREZ que começam e terminam por consoante?</p>
+<p id="p-95">Quantos são os anagramas da palavra XADREZ que começam e terminam por consoante?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like">
-<p id="p-93">A consoante inicial pode ser escolhida de 4 maneiras e a consoante final de 3 maneiras e as 4 letras restantes podem ser escolhidas de \(P(4)\) maneiras. A resposta é</p>
+<p id="p-96">A consoante inicial pode ser escolhida de 4 maneiras e a consoante final de 3 maneiras e as 4 letras restantes podem ser escolhidas de \(P(4)\) maneiras. A resposta é</p>
 <div class="displaymath">
 \begin{equation*}
 4\times 3\times P(4). 
@@ -209,9 +209,9 @@ P(4) = 24.
 </div></div></article><article class="example example-like" id="example-8"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.5</span><span class="period">.</span>
 </h6>
-<p id="p-94">De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
+<p id="p-97">De quantos modos podemos dividir 12 pessoas em três grupos de quatro pessoas cada?</p>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like">
-<p id="p-95">Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é P(12). Como a separação em grupos</p>
+<p id="p-98">Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é P(12). Como a separação em grupos</p>
 <div class="displaymath">
 \begin{equation*}
 [1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]
@@ -235,77 +235,77 @@ P(12)/(P(3)*P(4)*P(4)*P(4))
 </div></div></article><article class="example example-like" id="example-9"><h6 class="heading">
 <span class="type">Exemplo</span><span class="space"> </span><span class="codenumber">2.2.6</span><span class="period">.</span>
 </h6>
-<p id="p-96">Permutam-se de todos os modos possíveis os algarismos 2, 3, 5, 6, 8, 9 e escrevem-se os números assim formados em ordem crescente.</p>
+<p id="p-99">Permutam-se de todos os modos possíveis os algarismos 2, 3, 5, 6, 8, 9 e escrevem-se os números assim formados em ordem crescente.</p>
 <ol class="decimal">
-<li id="li-29">Que lugar ocupa o número 653289?</li>
-<li id="li-30">Qual o número que ocupa o 500º lugar?</li>
+<li id="li-30">Que lugar ocupa o número 653289?</li>
+<li id="li-31">Qual o número que ocupa o 500º lugar?</li>
 </ol>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-9" id="solution-9"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-9"><div class="solution solution-like">
-<p id="p-97"><dfn class="terminology">item 1.</dfn></p>
-<p id="p-98">Os números que começam com 2, 3 e 5 aparecem antes do número 653289. Existem \(5!\) números que começam com cada um destes algarismos, ou seja \(3\times 5!\) números.</p>
-<p id="p-99">Existem \(4!\) números que começam com 62 e a mesma quantidade que começam com 63, ou seja \(2\times 4!\) números.</p>
-<p id="p-100">Existem \(3!\) números que começam com 652.</p>
-<p id="p-101">O próximo números já que o que queremos. Portanto a resposta é</p>
+<p id="p-100"><dfn class="terminology">item 1.</dfn></p>
+<p id="p-101">Os números que começam com 2, 3 e 5 aparecem antes do número 653289. Existem \(5!\) números que começam com cada um destes algarismos, ou seja \(3\times 5!\) números.</p>
+<p id="p-102">Existem \(4!\) números que começam com 62 e a mesma quantidade que começam com 63, ou seja \(2\times 4!\) números.</p>
+<p id="p-103">Existem \(3!\) números que começam com 652.</p>
+<p id="p-104">O próximo números já que o que queremos. Portanto a resposta é</p>
 <div class="displaymath">
 \begin{equation*}
 3\times 5! + 2\times 4! +3! +1 = 415.
 \end{equation*}
 </div>
-<p id="p-102"><dfn class="terminology">item 2.</dfn></p>
-<p id="p-103">Os números que começam com 2, 3, 5 e 6 dão um total de \(4\times 5! = 480\) números. Se considerarmos também, todos que começam com 8, teremos mais 120 números, ultrapassando a posição 500.</p>
-<p id="p-104">Já sabemos que o número que ocupa a posição 500 começa com o algarismo 8 e que o primeiro número com o algarismo 8 ocupa a posição 481. Precisamos encontrar o número que começa com o algarismo 8 e está na posição 20, dentre estes números que começam com 8.</p>
-<p id="p-105">Começando com 823, 825 e 826, temos \(3\times 3! = 6\) números. Dessa forma o número seguinte está na posição 19, começando com o algarismo 8. Então o número 829356 está na posição 499 e o número 829365 está na posição 500.</p>
-<p id="p-106"><dfn class="terminology">(Usando o Sage)</dfn></p>
-<p id="p-107">Quando calculamos todas as permutações no Sage, a saída é exibida em ordem crescente. Como as listas no Sage/Python começam a ser contadas a partir do zero, podemos consultar a permutação de posição 500 com o comando abaixo:</p>
+<p id="p-105"><dfn class="terminology">item 2.</dfn></p>
+<p id="p-106">Os números que começam com 2, 3, 5 e 6 dão um total de \(4\times 5! = 480\) números. Se considerarmos também, todos que começam com 8, teremos mais 120 números, ultrapassando a posição 500.</p>
+<p id="p-107">Já sabemos que o número que ocupa a posição 500 começa com o algarismo 8 e que o primeiro número com o algarismo 8 ocupa a posição 481. Precisamos encontrar o número que começa com o algarismo 8 e está na posição 20, dentre estes números que começam com 8.</p>
+<p id="p-108">Começando com 823, 825 e 826, temos \(3\times 3! = 6\) números. Dessa forma o número seguinte está na posição 19, começando com o algarismo 8. Então o número 829356 está na posição 499 e o número 829365 está na posição 500.</p>
+<p id="p-109"><dfn class="terminology">(Usando o Sage)</dfn></p>
+<p id="p-110">Quando calculamos todas as permutações no Sage, a saída é exibida em ordem crescente. Como as listas no Sage/Python começam a ser contadas a partir do zero, podemos consultar a permutação de posição 500 com o comando abaixo:</p>
 <div class="hidden-sagecell-sage" id="sage-6"><script type="text/x-sage">Permutations([2, 3, 5, 6, 8, 9]).list()[499]
 </script></div>
-</div></div></article></section><section class="exercises" id="exercises-2"><h3 class="heading hide-type">
+</div></div></article></section><section class="exercises" id="exercises-3"><h3 class="heading hide-type">
 <span class="type">Exercícios</span> <span class="codenumber">2.2.3</span> <span class="title">Exercícios</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-9"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-108">Quantos são os anagramas da palavra SINGULAR:</p>
+<article class="exercise exercise-like" id="exercise-10"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-111">Quantos são os anagramas da palavra SINGULAR:</p>
 <ol class="lower-alpha ">
-<li id="li-31"><p id="p-109">Que começam por consoante e terminam por vogal?</p></li>
-<li id="li-32"><p id="p-110">Que têm as letras S,I,N juntas em qualquer ordem?</p></li>
-<li id="li-33"><p id="p-111">Que têm as vogais e as consoantes intercaladas?</p></li>
+<li id="li-32"><p id="p-112">Que começam por consoante e terminam por vogal?</p></li>
+<li id="li-33"><p id="p-113">Que têm as letras S,I,N juntas em qualquer ordem?</p></li>
+<li id="li-34"><p id="p-114">Que têm as vogais e as consoantes intercaladas?</p></li>
 </ol>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-9" id="answer-9"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-9"><div class="answer solution-like"><p id="p-112">a) 5×3×6!=10800, b) \(3!\times 6!=4320\text{,}\) c) 0</p></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-10"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-113">De quantos modos é possível sentar 12 pessoas em cadeiras em fila de modo que três determinadas pessoas dessas 12 não fiquem juntas?</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><p id="p-115">a) 5×3×6!=10800, b) \(3!\times 6!=4320\text{,}\) c) 0</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-116">De quantos modos é possível sentar 12 pessoas em cadeiras em fila de modo que três determinadas pessoas dessas 12 não fiquem juntas?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-10" id="answer-10"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-10"><div class="answer solution-like"><p id="p-114">12!−3!×10!</p></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-11"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-115">Quantos dados diferentes podemos formar gravando números de 1 a 6 sobre as faces indistinguíveis de um cubo?</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-11" id="answer-11"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like"><p id="p-117">12!−3!×10!</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-118">Quantos dados diferentes podemos formar gravando números de 1 a 6 sobre as faces indistinguíveis de um cubo?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-11" id="answer-11"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-11"><div class="answer solution-like"><p id="p-116">\(\frac{6!}{6\times 4} = 30 \)</p></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-12"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-117">Permutam-se de todos os modos possíveis os algarismos 1, 2, 3, 5, 6, 8 e escrevem-se os números assim formados em ordem crescente.</p>
-<p id="p-118">a) Que lugar ocupa o número 653812?</p>
-<p id="p-119">b) Qual o número que ocupa o 110º lugar?</p>
-<p id="p-120">c) Qual a soma dos números assim formados?</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><p id="p-119">\(\frac{6!}{6\times 4} = 30 \)</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-13"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-120">Permutam-se de todos os modos possíveis os algarismos 1, 2, 3, 5, 6, 8 e escrevem-se os números assim formados em ordem crescente.</p>
+<p id="p-121">a) Que lugar ocupa o número 653812?</p>
+<p id="p-122">b) Qual o número que ocupa o 110º lugar?</p>
+<p id="p-123">c) Qual a soma dos números assim formados?</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-12" id="answer-12"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-12"><div class="answer solution-like"><p id="p-121">a) 569, b) 185263, c) 356000040</p></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-13"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-122">(OPEMAT 2019 - nível 1) Em uma viagem a Recife, o grupo formado pelos números 1, 2, 3, 4 e 5, resolveu tirar fotos próximo ao monumento do Parque das Esculturas do artista Pernambucano Francisco Brennand. Indecisos pela escolha da disposição na foto, eles concordaram em tirar várias fotos em todas as disposições possíveis, permutando os lugares entre si conforme as imagens abaixo (<a class="xref" data-knowl="./knowl/Brennand.html" title="Figura 2.2.7">Figura 2.2.7</a>):</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-13" id="answer-13"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like"><p id="p-124">a) 569, b) 185263, c) 356000040</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-14"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-125">(OPEMAT 2019 - nível 1) Em uma viagem a Recife, o grupo formado pelos números 1, 2, 3, 4 e 5, resolveu tirar fotos próximo ao monumento do Parque das Esculturas do artista Pernambucano Francisco Brennand. Indecisos pela escolha da disposição na foto, eles concordaram em tirar várias fotos em todas as disposições possíveis, permutando os lugares entre si conforme as imagens abaixo (<a class="xref" data-knowl="./knowl/Brennand.html" title="Figura 2.2.7">Figura 2.2.7</a>):</p>
 <figure class="figure figure-like" id="Brennand"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/Brennand.svg" role="img" style="width: 100%; height: auto;" alt=""></div>
-<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">2.2.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure><p id="p-123">Por fim, eles colocaram as fotos em ordem crescente de numeração formando a seguinte lista:</p>
+<figcaption><span class="type">Figura</span><span class="space"> </span><span class="codenumber">2.2.7<span class="period">.</span></span><span class="space"> </span></figcaption></figure><p id="p-126">Por fim, eles colocaram as fotos em ordem crescente de numeração formando a seguinte lista:</p>
 <div class="displaymath">
 \begin{equation*}
 1 2 3 4 5 , 1 2 3 5 4 , 1 2 4 3 5 , \ldots , 5 4 3 1 2 , 5 4 3 2 1
 \end{equation*}
 </div>
-<p id="p-124">Julgue as afirmações a seguir atribuindo (V) se a afirmação for verdadeira e (F) se a afirmação for falsa.</p>
-<p id="p-125"><dfn class="terminology">A</dfn> – (V) (F) Quem ocupa a última posição da vigésima foto é o 3.</p>
-<p id="p-126"><dfn class="terminology">B</dfn> – (V) (F) A foto em que os números aparecem na disposição 32541, ocupa o 59º lugar desta lista.</p>
-<p id="p-127"><dfn class="terminology">C</dfn> – (V) (F) A quantidade de fotos em que os números 1 e 2 aparecem separados é 96.</p>
-<p id="p-128"><dfn class="terminology">D</dfn> – (V) (F) A quantidade de fotos em que a disposição dos números é maior do que a foto com disposição 25413 é 73.</p>
-<p id="p-129"><dfn class="terminology">E</dfn> – (V) (F) A soma de todos os números de cinco dígitos representados pelas fotos é 3999960.</p>
+<p id="p-127">Julgue as afirmações a seguir atribuindo (V) se a afirmação for verdadeira e (F) se a afirmação for falsa.</p>
+<p id="p-128"><dfn class="terminology">A</dfn> – (V) (F) Quem ocupa a última posição da vigésima foto é o 3.</p>
+<p id="p-129"><dfn class="terminology">B</dfn> – (V) (F) A foto em que os números aparecem na disposição 32541, ocupa o 59º lugar desta lista.</p>
+<p id="p-130"><dfn class="terminology">C</dfn> – (V) (F) A quantidade de fotos em que os números 1 e 2 aparecem separados é 96.</p>
+<p id="p-131"><dfn class="terminology">D</dfn> – (V) (F) A quantidade de fotos em que a disposição dos números é maior do que a foto com disposição 25413 é 73.</p>
+<p id="p-132"><dfn class="terminology">E</dfn> – (V) (F) A soma de todos os números de cinco dígitos representados pelas fotos é 3999960.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-13" id="answer-13"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-13"><div class="answer solution-like"><p id="p-130">A) V, B) F, C) F, D) V, E) V</p></div></div>
-</div></article><article class="exercise exercise-like" id="exercise-14"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>(OBM 2008 - 2ª fase do nível 3) <p id="p-131">Quantas permutações de \(1, 2, 3,\ldots, 9\) há com a propriedade de que, para todo \(1 \leq i \lt 9\text{,}\) os números que aparecem entre \(i\) e \(i+1\) (onde \(i\) pode aparecer tanto antes como depois de \(i+1\)) são todos menores do que \(i\text{?}\) Por exemplo, \(976412358\) é uma permutação com esta propriedade.</p>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-14" id="answer-14"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like"><p id="p-133">A) V, B) F, C) F, D) V, E) V</p></div></div>
+</div></article><article class="exercise exercise-like" id="exercise-15"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>(OBM 2008 - 2ª fase do nível 3) <p id="p-134">Quantas permutações de \(1, 2, 3,\ldots, 9\) há com a propriedade de que, para todo \(1 \leq i \lt 9\text{,}\) os números que aparecem entre \(i\) e \(i+1\) (onde \(i\) pode aparecer tanto antes como depois de \(i+1\)) são todos menores do que \(i\text{?}\) Por exemplo, \(976412358\) é uma permutação com esta propriedade.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-14" id="answer-14"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-14"><div class="answer solution-like"><p id="p-132">256</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-15" id="answer-15"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-15"><div class="answer solution-like"><p id="p-135">256</p></div></div>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like">Da propriedade, decorre que \(9\) só pode aparecer ou como primeiro ou como último elemento da permutação e que os elementos de \(1\) a \(8\) formam uma permutação com a mesma propriedade. Assim, o número pedido é o dobro do número de permutações de \(1, 2,\ldots,8\) com a mesma propriedade. Da mesma forma, o número de permutações de \(1, 2,\ldots,8\) com a propriedade é o dobro do número de permutações de \(1, 2,\ldots,7\) com a propriedade. Repetindo o raciocínio, concluímos que o número pedido é portanto \(2^8 = 256\text{.}\)</div></div>
 </div></article></section></section></div></main>
 </div>
