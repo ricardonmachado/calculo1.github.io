@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-05T16:44:31-03:00       *-->
+<!--*       on 2021-01-12T14:52:36-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,37 +14,68 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">item a)</dfn> Como \(C\subset B\text{,}\) temos \(B\cap C = C\text{,}\) logo \(\#(B\cap C) = \#C\) e \(\#(B\setminus C) = \#B - \#C\text{.}\) Logo</p>
+<p>Sejam</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\#B - \#C = \overbrace{\#(B\setminus C) = 3\times \#(B\cap C)}^{\text{por hipótese}} = 3\times\#C. 
+\bullet A_1 \text{o conjunto dos anagramas de COMPLEXA que tem C em 1º lugar}
 \end{equation*}
 </div>
-<p data-braille="continuation">Ou seja, \(\#B = 4\times\#C.\)</p>
-<p>\(\bullet\) Usando que \((\#C, \#A, \#B)\) é uma PG, obtemos</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\left( \#A \right)^2 = \#C\times \#B = \#C\times 4\times\#C \Rightarrow \#A = 2\times \#C.
+\bullet A_2 \text{o conjunto dos anagramas de COMPLEXA que tem O em 2º lugar}
 \end{equation*}
 </div>
-<p>\(\bullet\) Por hipótese, \(3\times\#(B\cap C) = 6\times\#(A\cap B)\text{,}\) mas \(\#(B\cap C) = \#C\text{,}\) logo</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\#C = 2\#(A\cap B) \Rightarrow \#(A\cap B) = \frac{\#C}{2}. 
+\bullet A_3 \text{o conjunto dos anagramas de COMPLEXA que tem M em 3º lugar}
 \end{equation*}
 </div>
-<p>\(\bullet\) Finalmente, usando o  (<a class="xref" data-knowl="./knowl/teo-inclusao-exclusao-2.html" title="Teorema 3.1.1">Teorema 3.1.1</a>) obtemos</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\underbrace{\#(A\cup B)}_{22} = \underbrace{\#A}_{2\times \#C} + \underbrace{\#B}_{4\times \#C} -\underbrace{\#(A\cap B)}_{\#C/2}.
+\bullet A_4 \text{o conjunto dos anagramas de COMPLEXA que tem P em 4º lugar}
 \end{equation*}
 </div>
-<p data-braille="continuation">Efetuando o calculo obtemos \(\#C = 4\text{.}\)</p>
-<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">item b)</dfn>  Como \(\#(B\setminus C) = 3\times \#C = 12\text{,}\) temos</p>
+<p data-braille="continuation">Assim, \(\#A_i = 7!,\) para  \(i\in \{1, 2, 3, 4\}\text{.}\)</p>
+<p>Observe que \(\#(A_i\cap A_j), 1\leq i\lt j\leq 4\) é o número de anagramas da palavra COMPLEXA que estão em dois dos conjuntos \(A_i's, i\in\{1, 2, 3, 4\}\text{,}\) logo</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\#\mathcal{P}(B\setminus C) = 2^{\#(B\setminus C)} = 2^{12} = 4096.
+\#(A_i\cap A_j) = 6!
 \end{equation*}
+</div>
+<p>Observe que \(\#(A_i\cap A_j\cap A_k), 1\leq i\lt j\leq 4\) é o número de anagramas da palavra COMPLEXA que estão em três dos conjuntos \(A_i's, i\in\{1, 2, 3, 4\}\text{,}\) logo</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\#(A_i\cap A_j\cap A_k) = 5!
+\end{equation*}
+</div>
+<p>Observe que \(\#(A_1\cap A_2\cap A_3\cap A_4)\) é o número de anagramas da palavra COMPLEXA que tem as letras C, O, M e P  nas posições \(1, 2, 3, 4\) fixas, logo</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\#(A_1\cap A_2\cap A_3\cap A_4) = 4!
+\end{equation*}
+</div>
+<p data-braille="continuation">Pelo Princípio da Inclusão-Exclusão (<a class="xref" data-knowl="./knowl/teo-inclusao-exclusao-n.html" title="Teorema 3.1.6">Teorema 3.1.6</a>),</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\#(A_1\cup A_2\cup A_3\cup A_4) = \amp ~\sum_{i=1}^{4} \#A_i - \sum_{1\leq i\lt j\leq 4} \#(A_i\cap A_j) \\
+\amp ~ +\sum_{1\leq i\lt j\lt k \leq 4} \#(A_i\cap A_j\cap A_k) \\
+\amp ~ -\#(A_1\cap A_2\cap A_3\cap A_4). 
+\end{align*}
+</div>
+<p data-braille="continuation">Organizando, temos</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\#(A_1\cup A_2\cup A_3\cup A_4) = \amp ~ 4\times\#A_1 - C_4^2\times\#(A_1\cap A_2) \\
+\amp ~ +C_4^3\times\#(A_1\cap A_2\cap A_3) \\
+\amp ~ -\#(A_1\cap A_2\cap A_3\cap A_4). 
+\end{align*}
+</div>
+<p data-braille="continuation">Substituindo, temos</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+\#(A_1\cup A_2\cup A_3\cup A_4) = \amp ~ 4\times 7! - C_4^2\times 6! +C_4^3\times 5! -4! \\
+=\amp ~ 16296. 
+\end{align*}
 </div>
 </div></body>
 </html>

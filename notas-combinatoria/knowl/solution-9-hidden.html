@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-05T16:44:29-03:00       *-->
+<!--*       on 2021-01-12T14:52:34-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -23,23 +23,26 @@
 </script>
 </head>
 <body><div class="solution solution-like">
-<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">item 1.</dfn></p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Os números que começam com 2, 3 e 5 aparecem antes do número 653289. Existem \(5!\) números que começam com cada um destes algarismos, ou seja \(3\times 5!\) números.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Existem \(4!\) números que começam com 62 e a mesma quantidade que começam com 63, ou seja \(2\times 4!\) números.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Existem \(3!\) números que começam com 652.</p>
-<p>O próximo números já que o que queremos. Portanto a resposta é</p>
+<p>Podemos colocar as 12 pessoas em uma fila. O primeiro grupo será formado pelas 4 primeiras pessoas, o segundo grupo, pelas 4 pessoas seguintes e o terceiro grupo pelas quatro últimas pessoas. O número total de formas de ordenar as 12 pessoas é P(12). Como a separação em grupos</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-3\times 5! + 2\times 4! +3! +1 = 415.
+[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12]
 \end{equation*}
 </div>
-<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">item 2.</dfn></p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Os números que começam com 2, 3, 5 e 6 dão um total de \(4\times 5! = 480\) números. Se considerarmos também, todos que começam com 8, teremos mais 120 números, ultrapassando a posição 500.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Já sabemos que o número que ocupa a posição 500 começa com o algarismo 8 e que o primeiro número com o algarismo 8 ocupa a posição 481. Precisamos encontrar o número que começa com o algarismo 8 e está na posição 20, dentre estes números que começam com 8.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Começando com 823, 825 e 826, temos \(3\times 3! = 6\) números. Dessa forma o número seguinte está na posição 19, começando com o algarismo 8. Então o número 829356 está na posição 499 e o número 829365 está na posição 500.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">(Usando o Sage)</dfn></p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Quando calculamos todas as permutações no Sage, a saída é exibida em ordem crescente. Como as listas no Sage/Python começam a ser contadas a partir do zero, podemos consultar a permutação de posição 500 com o comando abaixo:</p>
-<div class="sagecell-sage" id="sage-6"><script type="text/x-sage">Permutations([2, 3, 5, 6, 8, 9]).list()[499]
+<p data-braille="continuation">é idêntica a separação</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+[9, 10, 11, 12], [1, 2, 3, 4], [5, 6, 7, 8]
+\end{equation*}
+</div>
+<p data-braille="continuation">A contagem P(12) foi contada como se fossem distintas, precismos dividir pelo número de formas de ordenar os três grupos e precisamos dividir também pelo número de formas de ordenar cada grupo. Portanto a resposta é</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\frac{P(12)}{P(3)\times P(4)\times P(4)\times P(4)}.
+\end{equation*}
+</div>
+<div class="sagecell-sage" id="sage-5"><script type="text/x-sage">P(n) = factorial(n)
+P(12)/(P(3)*P(4)*P(4)*P(4))
 </script></div>
 </div></body>
 </html>

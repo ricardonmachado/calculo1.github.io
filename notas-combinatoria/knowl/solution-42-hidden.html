@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-05T16:44:32-03:00       *-->
+<!--*       on 2021-01-12T14:52:37-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,19 +14,28 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p xmlns:svg="http://www.w3.org/2000/svg">Inicialmente observe que, qualquer número inteiro que não possui divisor primo maior que cinco, se escreve na forma \(2^a3^b5^c\text{,}\) com \(a, b\) e \(c \in \mathbb{N}\text{.}\)</p>
-<p>Defina um conjunto com 9 números arbitrários, que satisfaça as hipóteses do enunciado:</p>
+<p>São 3 questões de Matemática e 7 questões de outras áreas \((Q_1, Q_2,\cdots, Q_7)\text{.}\) Inicialmente, iremos dispor as provas que não sofrem restrições.</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\mathcal{P} = \{ 2^{a_1}3^{b_1}5^{c_1}, 2^{a_2}3^{b_2}5^{c_2}, \ldots, 2^{a_9}3^{b_9}5^{c_9} \}.
+\large\bigcirc \ Q_1\ \bigcirc \ Q_2 \ \bigcirc \ Q_3 \ \bigcirc \ Q_4 \ \bigcirc \ Q_5 \ \bigcirc \ Q_6 \  \bigcirc \ Q_7 \ \bigcirc
 \end{equation*}
 </div>
-<p data-braille="continuation">Como os expoentes \(a_i, b_i\) e \(c_i\) só podem ser pares ou ímpares, seja \(\mathcal{C}\) um conjunto que represente todas as paridades possíveis para os expoentes de 2, 3 e 5 em \(2^a3^b5^c\text{.}\) Este conjunto possui 8 elementos, pois temos duas possibilidades para a paridade de cada um dos 3 expoentes.</p>
-<p xmlns:svg="http://www.w3.org/2000/svg">Como o conjunto \(\mathcal{P}\) é formado por nove elementos, pelo princípio da casa dos pombos, teremos dois elementos em \(\mathcal{P}\text{,}\) cujos expoentes possuem a mesma paridade, digamos que \(2^{a_i}3^{b_i}5^{c_i}\) e \(2^{a_j}3^{b_j}5^{c_j}\text{.}\)</p>
-<p>O produto entre eles é da forma \(2^{a_i+a_j}3^{b_i+b_j}5^{c_i+c_j}=2^{2x}3^{2y}5^{2z}\text{,}\) com \(x, y, z \in \mathbb{N}\text{,}\) que é um quadrado, pois pode ser escrito na forma</p>
+<p>Temos 8 lugares \(\bigcirc\) para colocar as 3 provas de Matemática e o número de formas de calcular isso, pode ser feito utilizando o 1º Lema de Kaplansky:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-(2^{x}3^{y}5^{z})^2\text{.}
+K(10,3).
+\end{equation*}
+</div>
+<p data-braille="continuation">Devemos, agora, permutar a ordem das 7 provas das outras áreas e as 3 de Matemática. Assim, temos</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+7! \times 3! \text{ possibilidades.}
+\end{equation*}
+</div>
+<p data-braille="continuation">E o total de formas de programar a sequência dessas 10 provas é:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+K(10, 3)\times 7! \times 3! = 1693440. 
 \end{equation*}
 </div>
 </div></body>
