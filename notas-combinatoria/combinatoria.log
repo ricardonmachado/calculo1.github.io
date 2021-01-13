@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.19)  16 SEP 2020 21:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.10.19)  29 DEC 2020 14:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -930,7 +930,6 @@ File: block.tss 2016/03/15
 \c@tcb@cnt@block=\count290
 \c@tcb@cnt@project-distinct=\count291
 \c@tcb@cnt@subdisplay=\count292
-\Oldarrayrulewidth=\skip57
 
 (/usr/share/texlive/texmf-dist/tex/latex/qrcode/qrcode.sty
 Package: qrcode 2015/01/08 v1.51 QR code generation
@@ -946,9 +945,9 @@ Package: qrcode 2015/01/08 v1.51 QR code generation
 \qr@for@step=\count302
 \qr@newforcount=\count303
 \qr@newforcount=\count304
-\qr@desiredheight=\skip58
-\qr@modulesize=\skip59
-\qr@minipagewidth=\skip60
+\qr@desiredheight=\skip57
+\qr@modulesize=\skip58
+\qr@minipagewidth=\skip59
 \c@maski=\count305
 \c@maskj=\count306
 \c@totalones=\count307
@@ -960,8 +959,8 @@ Package: qrcode 2015/01/08 v1.51 QR code generation
 \qr@newforcount=\count313
 \c@qr@divisionsremaining=\count314
 )
-\qrsize=\skip61
-\previewwidth=\skip62
+\qrsize=\skip60
+\previewwidth=\skip61
 
 (/usr/share/texlive/texmf-dist/tex/latex/tcolorbox/tcblistingsutf8.code.tex
 Library (tcolorbox): 'tcblistingsutf8.code.tex' version '4.15'
@@ -1041,8 +1040,8 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 \page@free=\dimen273
 \premulticols=\dimen274
 \postmulticols=\dimen275
-\multicolsep=\skip63
-\multicolbaselineskip=\skip64
+\multicolsep=\skip62
+\multicolbaselineskip=\skip63
 \partial@page=\box76
 \last@line=\box77
 \maxbalancingoverflow=\dimen276
@@ -1078,7 +1077,7 @@ Package: multicol 2018/12/27 v1.8v multicolumn formatting (FMi)
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2019/02/04 v3.8 Customized lists
-\labelindent=\skip65
+\labelindent=\skip64
 \enit@outerparindent=\dimen280
 \enit@toks=\toks45
 \enit@inbox=\box101
@@ -1185,9 +1184,9 @@ Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
-\Hy@SectionHShift=\skip66
+\Hy@SectionHShift=\skip65
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 603.
+Package hyperref Info: Option `colorlinks' set `true' on input line 575.
 
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarybackgrounds.code.tex
@@ -1256,12 +1255,12 @@ Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Bcount=\count347
 \calc@Adimen=\dimen293
 \calc@Bdimen=\dimen294
-\calc@Askip=\skip67
-\calc@Bskip=\skip68
+\calc@Askip=\skip66
+\calc@Bskip=\skip67
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
 \calc@Ccount=\count348
-\calc@Cskip=\skip69
+\calc@Cskip=\skip68
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
 Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
@@ -1272,7 +1271,7 @@ LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 \g_MT_multlinerow_int=\count349
 \l_MT_multwidth_dim=\dimen295
-\origjot=\skip70
+\origjot=\skip69
 \l_MT_shortvdotswithinadjustabove_dim=\dimen296
 \l_MT_shortvdotswithinadjustbelow_dim=\dimen297
 \l_MT_above_intertext_sep=\dimen298
@@ -1292,9 +1291,7 @@ LaTeX Warning: Label `x:objectives:objetivos-aditivo-multiplicativo' multiply d
 efined.
 
 
-<Reading QR code for "/interactive-caotica.html" at level 2-M from aux file.>
-
-<Reading QR code for "/interactive-caotica-x.html" at level 3-Q from aux file.>
+<Reading QR code for "/interactive-caotica-r.html" at level 3-Q from aux file.>
 
 
 LaTeX Warning: Label `x:objectives:objetivos-permutacao-caotica' multiply defin
@@ -1318,28 +1315,28 @@ le.>
 )
 \openout1 = `combinatoria.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 646.
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 646.
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 646.
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 646.
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 646.
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 646.
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 646.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 646.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 618.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 618.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 618.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 618.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 618.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 618.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 618.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 618.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 646.
-LaTeX Font Info:    ... okay on input line 646.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 646.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 618.
+LaTeX Font Info:    ... okay on input line 618.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 618.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1415,7 +1412,7 @@ tim
 )
 \c@lstlisting=\count356
 \AtBeginShipoutBox=\box106
-Package hyperref Info: Link coloring ON on input line 646.
+Package hyperref Info: Link coloring ON on input line 618.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -1425,9 +1422,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count357
 )
-LaTeX Info: Redefining \ref on input line 646.
-LaTeX Info: Redefining \pageref on input line 646.
-LaTeX Info: Redefining \nameref on input line 646.
+LaTeX Info: Redefining \ref on input line 618.
+LaTeX Info: Redefining \pageref on input line 618.
+LaTeX Info: Redefining \nameref on input line 618.
 
 (./combinatoria.out) (./combinatoria.out)
 \@outlinefile=\write6
@@ -1446,92 +1443,229 @@ LaTeX Info: Redefining \nameref on input line 646.
 ************************************************
 Pref\IeC {\'a}cio Pref\IeC {\'a}cio
 ************************************************
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 713.
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 685.
 
 (/usr/share/texmf/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 719.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 691.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 719.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 691.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 719
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 691
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 719
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 691
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 719.
+(Font)              <10> on input line 691.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 719.
+(Font)              <7> on input line 691.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 719.
-LaTeX Font Info:    Try loading font information for U+msa on input line 719.
+(Font)              <5> on input line 691.
+LaTeX Font Info:    Try loading font information for U+msa on input line 691.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 719.
+LaTeX Font Info:    Try loading font information for U+msb on input line 691.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+stmry on input line 719.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 691.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 719--723
+Underfull \hbox (badness 10000) in paragraph at lines 691--695
 
  []
 
 [5
 
 
-] (./combinatoria.toc [6
-
-])
+] (./combinatoria.toc)
 \tf@toc=\write7
 \openout7 = `combinatoria.toc'.
 
- [7]
+ [6
+
+]
 ************************************************
-Cap\IeC {\'\i }tulo 1 Princ\IeC {\'\i }pios de Contagem
+Cap\IeC {\'\i }tulo 1 O b\IeC {\'a}sico de Conjuntos
 ************************************************
 Cap\IeC {\'\i }tulo 1.
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.1 Princ\IeC {\'\i }pio Aditivo e Princ\IeC {\'\i }pi
-o Multiplicativo
+Se\IeC {\c c}\IeC {\~a}o 1.1 Conjuntos
 ************************************************
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 1.1.1 Princ\IeC {\'\i }pio Aditivo
-************************************************
+
+Package multicol Warning: Using `1' columns doesn't seem a good idea.
+ I therefore use two columns instead on input line 732.
+
 [1
 
 
 ]
+<images/conjA.pdf, id=198, 148.11307pt x 130.49274pt>
+File: images/conjA.pdf Graphic file (type pdf)
+<use images/conjA.pdf>
+Package pdftex.def Info: images/conjA.pdf  used on input line 777.
+(pdftex.def)             Requested size: 102.96104pt x 90.71309pt.
+<images/subconj.pdf, id=199, 148.11307pt x 130.49274pt>
+File: images/subconj.pdf Graphic file (type pdf)
+<use images/subconj.pdf>
+Package pdftex.def Info: images/subconj.pdf  used on input line 783.
+(pdftex.def)             Requested size: 102.96104pt x 90.71309pt.
+
+Overfull \hbox (2.42831pt too wide) in paragraph at lines 781--786
+[]\T1/lmr/m/n/10 e re-laÁıes de con-tinÍn-cia (in-clus„o) en-tre os con-jun-tos
+ (por ex-em-plo, $\OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 1\OML/lmm/m/it/10 ; \OT1/lm
+r/m/n/10 3\OMS/lmsy/m/n/10 g ^^Z
+ []
+
+
+Package multicol Warning: Using `1' columns doesn't seem a good idea.
+ I therefore use two columns instead on input line 792.
+
+
+Overfull \hbox (24.06017pt too wide) detected at line 797
+\OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10 [ \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = 
+\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 
+\OMS/lmsy/m/n/10 j\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][]!
+ \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[]\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 :
+ []
+
+
+Overfull \hbox (163.32733pt too wide) detected at line 801
+[] \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10
+ [ [] [ \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = \OMS/lmsy/m/n/10 f\OML/lmm/m/it/
+10 ! \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 
+\OMS/lmsy/m/n/10 j\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][]!
+ \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][] [] []! \OMS/lmsy/m/n/10 2 \OML/lmm/m
+/it/10 A[]\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 :
+ []
+
+
+Overfull \hbox (17.94917pt too wide) detected at line 806
+\OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10 \ \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = 
+\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 
+\OMS/lmsy/m/n/10 j\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][]!
+ \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[]\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 :
+ []
+
+
+Overfull \hbox (144.99435pt too wide) detected at line 810
+[] \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = \OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10
+ \ [] \ \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = \OMS/lmsy/m/n/10 f\OML/lmm/m/it/
+10 ! \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 
+\OMS/lmsy/m/n/10 j\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][]!
+ \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][] [] []! \OMS/lmsy/m/n/10 2 \OML/lmm/m
+/it/10 A[]\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 :
+ []
+
+
+Overfull \hbox (111.29414pt too wide) detected at line 815
+\OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10 \ \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = 
+\U/msb/m/n/10 ?\OML/lmm/m/it/10 ; []i; j \OMS/lmsy/m/n/10 2 f\OT1/lmr/m/n/10 1\
+OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 2\OML/lmm/m/it/10 ; [] n\OMS/lmsy/m/n/10 g\OM
+L/lmm/m/it/10 ; []i \OMS/lmsy/m/n/10 6\OT1/lmr/m/n/10 = \OML/lmm/m/it/10 j:
+ []
+
+
+Overfull \hbox (60.25461pt too wide) detected at line 825
+\OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10 n \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = 
+\OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10 \ \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 = 
+\OMS/lmsy/m/n/10 f\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OT1/lmr/m/n/10 
+\OMS/lmsy/m/n/10 j\OML/lmm/m/it/10 ! \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][]!
+ [] A[]\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 :
+ []
+
+
+Overfull \hbox (31.1762pt too wide) detected at line 830
+\OML/lmm/m/it/10 A[] \OMS/lmsy/m/n/10 ^^B \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 
+= \OMS/lmsy/m/n/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 a[]; a[]\OT1/lmr/m/n/10 )
+\OMS/lmsy/m/n/10 j\OML/lmm/m/it/10 a[] \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[][
+]a[] \OMS/lmsy/m/n/10 2 \OML/lmm/m/it/10 A[]\OMS/lmsy/m/n/10 g\OML/lmm/m/it/10 
+:
+ []
+
+[2 <./images/conjA.pdf> <./images/subconj.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/subconj.pdf): PDF inclusion: m
+ultiple pdfs with page group included in a single page
+>] [3]
+************************************************
+Cap\IeC {\'\i }tulo 2 Princ\IeC {\'\i }pios de Contagem
+************************************************
+[4]
+Cap\IeC {\'\i }tulo 2.
+************************************************
+Se\IeC {\c c}\IeC {\~a}o 2.1 Princ\IeC {\'\i }pio Aditivo e Princ\IeC {\'\i }pi
+o Multiplicativo
+************************************************
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.902 \begin{remark}{}{g:remark:idp8}
+                                     %
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 2.1.1 Princ\IeC {\'\i }pio Aditivo
+************************************************
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.915 \begin{example}{}{g:example:idp10}
+                                        %
+Overfull \hbox (6.25563pt too wide) in paragraph at lines 918--919
+[]\T1/lmr/bx/n/10 SoluÁ„o\T1/lmr/m/n/10 . O es-tu-dante tÍm 15 opÁıes para es-c
+ol-her um ex-er-cÌ-cio da primeira
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.923 \begin{definition}{}{g:definition:idp11}
+                                              %pdfTeX warning (ext4): destinati
+on with the same identifier (name{tcb@cnt@block.4}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.926 \begin{theorem}{}{}{g:theorem:idp12}
+                                          % [5
+
+]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@bloc
+k.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.940 \begin{technology}{}{g:technology:idp14}
+                                              %
 \openout4 = `combinatoria.listing'.
 
-LaTeX Font Info:    Try loading font information for T1+zi4 on input line 800.
- (/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
+LaTeX Font Info:    Try loading font information for T1+zi4 on input line 944.
+
+(/usr/share/texlive/texmf-dist/tex/latex/inconsolata/t1zi4.fd
 File: t1zi4.fd 2018/01/14 T1/zi4 (Inconsolata)
 )
 LaTeX Font Info:    Font shape `T1/zi4/m/n' will be
-(Font)              scaled to size 9.0pt on input line 800.
+(Font)              scaled to size 9.0pt on input line 944.
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -1550,11 +1684,35 @@ LaTeX Font Info:    Font shape `TS1/zi4/m/n' will be
 
 (./combinatoria.listing)
 ************************************************
-Subse\IeC {\c c}\IeC {\~a}o 1.1.2 Princ\IeC {\'\i }pio Multiplicativo
+Subse\IeC {\c c}\IeC {\~a}o 2.1.2 Princ\IeC {\'\i }pio Multiplicativo
 ************************************************
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.957 \begin{fact}{}{}{g:fact:idp16}
+                                    %pdfTeX warning (ext4): destination with th
+e same identifier (name{tcb@cnt@block.7}) has been already used, duplicate igno
+red
+<to be read again> 
+                   \relax 
+l.971 \begin{definition}{}{g:definition:idp17}
+                                              %pdfTeX warning (ext4): destinati
+on with the same identifier (name{tcb@cnt@block.8}) has been already used, dupl
+icate ignored
+<to be read again> 
+                   \relax 
+l.974 \begin{theorem}{}{}{g:theorem:idp18}
+                                          %pdfTeX warning (ext4): destination w
+ith the same identifier (name{tcb@cnt@block.9}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.988 \begin{technology}{}{g:technology:idp20}
+                                              %
 \openout4 = `combinatoria.listing'.
 
-(./combinatoria.listing
+ (./combinatoria.listing
 LaTeX Font Info:    Font shape `T1/zi4/bx/n' in size <9> not available
 (Font)              Font shape `T1/zi4/b/n' tried instead on input line 1.
 LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
@@ -1562,20 +1720,45 @@ LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
 )
 \openout4 = `combinatoria.listing'.
 
- (./combinatoria.listing) [2]
+
+(./combinatoria.listing) [6]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.2 Permuta\IeC {\c c}\IeC {\~o}es Simples
+Exerc\IeC {\'\i }cios 2.1.3 Exerc\IeC {\'\i }cios
 ************************************************
-[3]
+[7]
+
+! Package inputenc Error: Unicode character ‚àí (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1069 ...rget{g:answer:idp32}{}\quad{}8√ó5√ó16‚àí
+                                                  1=639%
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
 ************************************************
-Subse\IeC {\c c}\IeC {\~a}o 1.2.1 Permuta\IeC {\c c}\IeC {\~o}es
+Se\IeC {\c c}\IeC {\~a}o 2.2 Permuta\IeC {\c c}\IeC {\~o}es Simples
 ************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
+
+Underfull \hbox (badness 10000) in paragraph at lines 1075--1084
+
+ []
+
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 2.2.1 Nota Hist\IeC {\'o}rica
+************************************************
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 2.2.2 Permuta\IeC {\c c}\IeC {\~o}es
+************************************************
+[8]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@bl
+ock.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.929 \begin{technology}{}{g:technology:idp18}
-                                              %
+l.1121 \begin{technology}{}{g:technology:idp37}
+                                               %
 \openout4 = `combinatoria.listing'.
 
  (./combinatoria.listing)
@@ -1586,57 +1769,118 @@ l.929 \begin{technology}{}{g:technology:idp18}
 fier (name{tcb@cnt@block.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.963 \begin{theorem}{}{}{g:theorem:idp19}
-                                          % [4]pdfTeX warning (ext4): destinati
-on with the same identifier (name{tcb@cnt@block.3}) has been already used, dupl
-icate ignored
+l.1155 \begin{theorem}{}{}{g:theorem:idp38}
+                                           %pdfTeX warning (ext4): destination 
+with the same identifier (name{tcb@cnt@block.3}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.976 \begin{fact}{}{}{g:fact:idp21}
-                                    %pdfTeX warning (ext4): destination with th
-e same identifier (name{tcb@cnt@block.4}) has been already used, duplicate igno
-red
+l.1168 \begin{fact}{}{}{g:fact:idp40}
+                                     %pdfTeX warning (ext4): destination with t
+he same identifier (name{tcb@cnt@block.4}) has been already used, duplicate ign
+ored
 <to be read again> 
                    \relax 
-l.984 \begin{fact}{}{}{g:fact:idp22}
-                                    %
+l.1176 \begin{fact}{}{}{g:fact:idp41}
+                                     %
 \openout4 = `combinatoria.listing'.
 
 
 
 LaTeX Font Warning: Font shape `T1/zi4/m/it' undefined
-(Font)              using `T1/zi4/m/n' instead on input line 993.
+(Font)              using `T1/zi4/m/n' instead on input line 1185.
 
 (./combinatoria.listing)
 \openout4 = `combinatoria.listing'.
 
 LaTeX Font Info:    Font shape `T1/zi4/m/it' will be
-(Font)              scaled to size 9.0pt on input line 996.
- (./combinatoria.listing)pdfTeX warning (ext4): destination with the same ident
-ifier (name{tcb@cnt@block.5}) has been already used, duplicate ignored
+(Font)              scaled to size 9.0pt on input line 1188.
+ (./combinatoria.listing) [9]pdfTeX warning (ext4): destination with the same i
+dentifier (name{tcb@cnt@block.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.998 \begin{fact}{}{}{g:fact:idp23}
-                                    %
+l.1190 \begin{fact}{}{}{g:fact:idp42}
+                                     %
 \openout4 = `combinatoria.listing'.
 
  (./combinatoria.listing)
 \openout4 = `combinatoria.listing'.
 
 
-(./combinatoria.listing)
+(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
+fier (name{tcb@cnt@block.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1213 \begin{fact}{}{}{g:fact:idp43}
+                                     %
+Overfull \hbox (5.5059pt too wide) in paragraph at lines 1224--1225
+[]\T1/lmr/m/it/10 Existem $\OT1/lmr/m/n/10 4!$ \T1/lmr/m/it/10 n˙meros que come
+Áam com 62 e a mesma quan-ti-dade que comeÁam
+ []
+
+\openout4 = `combinatoria.listing'.
+
+(./combinatoria.listing
+
+LaTeX Font Warning: Font shape `T1/zi4/bx/it' undefined
+(Font)              using `T1/zi4/bx/n' instead on input line 1.
+
+)
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing) [10]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.3 Combina\IeC {\c c}\IeC {\~o}es Simples
+Exerc\IeC {\'\i }cios 2.2.3 Exerc\IeC {\'\i }cios
 ************************************************
-[5]
+
+Package multicol Warning: Using `1' columns doesn't seem a good idea.
+ I therefore use two columns instead on input line 1263.
+
+
+! Package inputenc Error: Unicode character ‚àí (U+2212)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1276 ...pertarget{g:answer:idp48}{}\quad{}12!‚àí
+                                                  3!√ó10!%
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1296 \begin{figureptx}{}{x:figure:Brennand}{}
+                                               %
+
+! LaTeX Error: File `images/Brennand' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1298 ...phics[width=\linewidth]{images/Brennand}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[11]
 ************************************************
-Subse\IeC {\c c}\IeC {\~a}o 1.3.1 Combina\IeC {\c c}\IeC {\~o}es
+Se\IeC {\c c}\IeC {\~a}o 2.3 Combina\IeC {\c c}\IeC {\~o}es Simples
+************************************************
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 2.3.1 Combina\IeC {\c c}\IeC {\~o}es
 ************************************************
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1046 \begin{fact}{}{}{g:fact:idp25}
+l.1346 \begin{fact}{}{}{g:fact:idp56}
                                      %
 \openout4 = `combinatoria.listing'.
 
@@ -1648,13 +1892,13 @@ l.1046 \begin{fact}{}{}{g:fact:idp25}
 fier (name{tcb@cnt@block.2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1060 \begin{definition}{}{g:definition:idp26}
+l.1360 \begin{definition}{}{g:definition:idp57}
                                                %pdfTeX warning (ext4): destinat
 ion with the same identifier (name{tcb@cnt@block.3}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.1069 \begin{technology}{}{g:technology:idp27}
+l.1369 \begin{technology}{}{g:technology:idp58}
                                                %
 \openout4 = `combinatoria.listing'.
 
@@ -1662,17 +1906,17 @@ l.1069 \begin{technology}{}{g:technology:idp27}
 \openout4 = `combinatoria.listing'.
 
 
-(./combinatoria.listing) [6]pdfTeX warning (ext4): destination with the same id
-entifier (name{tcb@cnt@block.4}) has been already used, duplicate ignored
+(./combinatoria.listing) [12]pdfTeX warning (ext4): destination with the same i
+dentifier (name{tcb@cnt@block.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1089 \begin{theorem}{}{}{g:theorem:idp28}
+l.1387 \begin{theorem}{}{}{g:theorem:idp59}
                                            %pdfTeX warning (ext4): destination 
 with the same identifier (name{tcb@cnt@block.5}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.1112 \begin{technology}{}{g:technology:idp30}
+l.1410 \begin{technology}{}{g:technology:idp61}
                                                %
 \openout4 = `combinatoria.listing'.
 
@@ -1684,7 +1928,7 @@ l.1112 \begin{technology}{}{g:technology:idp30}
 fier (name{tcb@cnt@block.6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1121 \begin{fact}{}{}{g:fact:idp31}
+l.1419 \begin{fact}{}{}{g:fact:idp62}
                                      %
 \openout4 = `combinatoria.listing'.
 
@@ -1692,11 +1936,11 @@ l.1121 \begin{fact}{}{}{g:fact:idp31}
 \openout4 = `combinatoria.listing'.
 
 
-(./combinatoria.listing) [7]pdfTeX warning (ext4): destination with the same id
-entifier (name{tcb@cnt@block.7}) has been already used, duplicate ignored
+(./combinatoria.listing) [13]pdfTeX warning (ext4): destination with the same i
+dentifier (name{tcb@cnt@block.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1150 \begin{fact}{}{}{g:fact:idp32}
+l.1448 \begin{fact}{}{}{g:fact:idp63}
                                      %
 \openout4 = `combinatoria.listing'.
 
@@ -1708,7 +1952,7 @@ l.1150 \begin{fact}{}{}{g:fact:idp32}
 fier (name{tcb@cnt@block.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1177 \begin{fact}{}{}{g:fact:idp33}
+l.1475 \begin{fact}{}{}{g:fact:idp64}
                                      %
 \openout4 = `combinatoria.listing'.
 
@@ -1716,74 +1960,23 @@ l.1177 \begin{fact}{}{}{g:fact:idp33}
 \openout4 = `combinatoria.listing'.
 
 
-(./combinatoria.listing) [8]
+(./combinatoria.listing) [14]
 ************************************************
-Exerc\IeC {\'\i }cios 1.4 Exerc\IeC {\'\i }cios
-************************************************
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.4.1 Princ\IeC {\'\i }pio Aditivo e Princ\IeC {\'\i }
-pio Multiplicativo
+Exerc\IeC {\'\i }cios 2.3.2 Exerc\IeC {\'\i }cios
 ************************************************
 
-! Package inputenc Error: Unicode character ‚àí (U+2212)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1239 ...rget{g:answer:idp42}{}\quad{}8√ó5√ó16‚àí
-                                                  1=639%
-You may provide a definition with
-\DeclareUnicodeCharacter 
-
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.4.2 Permuta\IeC {\c c}\IeC {\~o}es Simples
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 1245--1253
-
- []
+Package multicol Warning: Using `1' columns doesn't seem a good idea.
+ I therefore use two columns instead on input line 1524.
 
 
 Package multicol Warning: Using `1' columns doesn't seem a good idea.
- I therefore use two columns instead on input line 1257.
-
-
-! Package inputenc Error: Unicode character ‚àí (U+2212)
-(inputenc)                not set up for use with LaTeX.
-
-See the inputenc package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.1270 ...pertarget{g:answer:idp49}{}\quad{}12!‚àí
-                                                  3!√ó10!%
-You may provide a definition with
-\DeclareUnicodeCharacter 
+ I therefore use two columns instead on input line 1536.
 
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.4.3 Combina\IeC {\c c}\IeC {\~o}es Simples
+Se\IeC {\c c}\IeC {\~a}o 2.4 Permuta\IeC {\c c}\IeC {\~o}es Circulares
 ************************************************
 
-Underfull \hbox (badness 10000) in paragraph at lines 1287--1295
-
- []
-
-[9]
-
-Package multicol Warning: Using `1' columns doesn't seem a good idea.
- I therefore use two columns instead on input line 1309.
-
-
-Package multicol Warning: Using `1' columns doesn't seem a good idea.
- I therefore use two columns instead on input line 1321.
-
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.5 Permuta\IeC {\c c}\IeC {\~o}es Circulares
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 1331--1340
+Underfull \hbox (badness 10000) in paragraph at lines 1546--1555
 
  []
 
@@ -1791,53 +1984,57 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1350 \begin{definition}{}{g:definition:idp61}
-                                               %pdfTeX warning (ext4): destinat
-ion with the same identifier (name{tcb@cnt@block.2}) has been already used, dup
-licate ignored
+l.1565 \begin{definition}{}{g:definition:idp72}
+                                               % [15]pdfTeX warning (ext4): des
+tination with the same identifier (name{tcb@cnt@block.2}) has been already used
+, duplicate ignored
 <to be read again> 
                    \relax 
-l.1357 \begin{remark}{}{g:remark:idp62}
+l.1572 \begin{remark}{}{g:remark:idp73}
                                        %pdfTeX warning (ext4): destination with
  the same identifier (name{tcb@cnt@block.3}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.1359 ...a√ß√£o circular.}{x:figure:circ-equiv}{}
+l.1574 ...a√ß√£o circular.}{x:figure:circ-equiv}{}
                                                   %
-<images/circequiv.pdf, id=545, 426.39299pt x 150.681pt>
+<images/circequiv.pdf, id=516, 426.39299pt x 150.681pt>
 File: images/circequiv.pdf Graphic file (type pdf)
 <use images/circequiv.pdf>
-Package pdftex.def Info: images/circequiv.pdf  used on input line 1361.
+Package pdftex.def Info: images/circequiv.pdf  used on input line 1576.
 (pdftex.def)             Requested size: 341.80002pt x 120.79095pt.
- [10]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@
-block.4}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1366 \begin{claim}{}{}{g:claim:idp63}
+l.1581 \begin{claim}{}{}{g:claim:idp74}
                                        %pdfTeX warning (ext4): destination with
  the same identifier (name{tcb@cnt@block.5}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.1373 ...√ß√£o circular.}{x:figure:circ-equiv2}{}
+l.1588 ...√ß√£o circular.}{x:figure:circ-equiv2}{}
                                                   %
-<images/circequiv2.pdf, id=580, 426.39299pt x 150.681pt>
+<images/circequiv2.pdf, id=521, 426.39299pt x 150.681pt>
 File: images/circequiv2.pdf Graphic file (type pdf)
 <use images/circequiv2.pdf>
-Package pdftex.def Info: images/circequiv2.pdf  used on input line 1375.
+Package pdftex.def Info: images/circequiv2.pdf  used on input line 1590.
 (pdftex.def)             Requested size: 341.80002pt x 120.79095pt.
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1380 \begin{theorem}{}{}{g:theorem:idp65}
-                                           %pdfTeX warning (ext4): destination 
-with the same identifier (name{tcb@cnt@block.7}) has been already used, duplica
-te ignored
+l.1595 \begin{theorem}{}{}{g:theorem:idp76}
+                                           % [16 <./images/circequiv.pdf> <./im
+ages/circequiv2.pdf
+
+pdfTeX warning: /usr/bin/pdflatex (file ./images/circequiv2.pdf): PDF inclusion
+: multiple pdfs with page group included in a single page
+>]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@blo
+ck.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1396 \begin{technology}{}{g:technology:idp67}
+l.1611 \begin{technology}{}{g:technology:idp78}
                                                %
 \openout4 = `combinatoria.listing'.
 
@@ -1851,16 +2048,11 @@ l.1396 \begin{technology}{}{g:technology:idp67}
  (./combinatoria.listing)
 \openout4 = `combinatoria.listing'.
 
- (./combinatoria.listing)
-[11 <./images/circequiv.pdf> <./images/circequiv2.pdf
-
-pdfTeX warning: /usr/bin/pdflatex (file ./images/circequiv2.pdf): PDF inclusion
-: multiple pdfs with page group included in a single page
->]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@blo
-ck.8}) has been already used, duplicate ignored
+ (./combinatoria.listing)pdfTeX warning (ext4): destination with the same ident
+ifier (name{tcb@cnt@block.8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1421 \begin{fact}{}{}{g:fact:idp68}
+l.1636 \begin{fact}{}{}{g:fact:idp79}
                                      %
 \openout4 = `combinatoria.listing'.
 
@@ -1872,47 +2064,64 @@ l.1421 \begin{fact}{}{}{g:fact:idp68}
 fier (name{tcb@cnt@block.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1435 \begin{fact}{}{}{g:fact:idp69}
+l.1650 \begin{fact}{}{}{g:fact:idp80}
                                      %pdfTeX warning (ext4): destination with t
 he same identifier (name{tcb@cnt@block.10}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.1438 ...elementos 1 e 2.}{x:figure:circequiv3}{}
+l.1653 ...elementos 1 e 2.}{x:figure:circequiv3}{}
                                                   %
-<images/circequiv3.pdf, id=666, 426.39299pt x 230.19829pt>
-File: images/circequiv3.pdf Graphic file (type pdf)
-<use images/circequiv3.pdf>
-Package pdftex.def Info: images/circequiv3.pdf  used on input line 1440.
-(pdftex.def)             Requested size: 273.56105pt x 147.6917pt.
+
+! LaTeX Error: File `images/circ-equiv3' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1655 ...cs[width=\linewidth]{images/circ-equiv3}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+\openout4 = `combinatoria.listing'.
+
+(./combinatoria.listing)
 \openout4 = `combinatoria.listing'.
 
  (./combinatoria.listing)
-\openout4 = `combinatoria.listing'.
-
-
-(./combinatoria.listing) [12 <./images/circequiv3.pdf>]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.6 Permuta\IeC {\c c}\IeC {\~o}es com Repeti\IeC {\c 
+Exerc\IeC {\'\i }cios 2.4.1 Exerc\IeC {\'\i }cios
+************************************************
+[17]
+************************************************
+Se\IeC {\c c}\IeC {\~a}o 2.5 Permuta\IeC {\c c}\IeC {\~o}es com Repeti\IeC {\c 
 c}\IeC {\~o}es
 ************************************************
+
+Underfull \hbox (badness 10000) in paragraph at lines 1688--1697
+
+ []
+
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1474 \begin{fact}{}{}{g:fact:idp70}
+l.1707 \begin{fact}{}{}{g:fact:idp86}
                                      %pdfTeX warning (ext4): destination with t
 he same identifier (name{tcb@cnt@block.2}) has been already used, duplicate ign
 ored
 <to be read again> 
                    \relax 
-l.1492 \begin{definition}{}{g:definition:idp71}
+l.1725 \begin{definition}{}{g:definition:idp87}
                                                %pdfTeX warning (ext4): destinat
 ion with the same identifier (name{tcb@cnt@block.3}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.1495 \begin{technology}{}{g:technology:idp72}
+l.1728 \begin{technology}{}{g:technology:idp88}
                                                %
 \openout4 = `combinatoria.listing'.
 
@@ -1920,23 +2129,23 @@ l.1495 \begin{technology}{}{g:technology:idp72}
 \openout4 = `combinatoria.listing'.
 
 
-(./combinatoria.listing) [13]pdfTeX warning (ext4): destination with the same i
+(./combinatoria.listing) [18]pdfTeX warning (ext4): destination with the same i
 dentifier (name{tcb@cnt@block.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1512 \begin{definition}{}{g:definition:idp73}
+l.1745 \begin{definition}{}{g:definition:idp89}
                                                %pdfTeX warning (ext4): destinat
 ion with the same identifier (name{tcb@cnt@block.5}) has been already used, dup
 licate ignored
 <to be read again> 
                    \relax 
-l.1522 \begin{theorem}{}{}{g:theorem:idp74}
+l.1755 \begin{theorem}{}{}{g:theorem:idp90}
                                            %pdfTeX warning (ext4): destination 
 with the same identifier (name{tcb@cnt@block.6}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.1547 \begin{technology}{}{g:technology:idp76}
+l.1780 \begin{technology}{}{g:technology:idp92}
                                                %
 \openout4 = `combinatoria.listing'.
 
@@ -1944,14 +2153,14 @@ l.1547 \begin{technology}{}{g:technology:idp76}
 \openout4 = `combinatoria.listing'.
 
 
-(./combinatoria.listing) [14]pdfTeX warning (ext4): destination with the same i
+(./combinatoria.listing) [19]pdfTeX warning (ext4): destination with the same i
 dentifier (name{tcb@cnt@block.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1560 \begin{fact}{}{}{g:fact:idp77}
+l.1793 \begin{fact}{}{}{g:fact:idp93}
                                      %
-Overfull \hbox (11.87239pt too wide) in paragraph at lines 1560--1563
-[]\T1/lmr/bx/n/10 Exemplo 1.9.7 []\T1/lmr/m/it/10 Quan-tos s„o os ana-gra-mas d
+Overfull \hbox (11.87239pt too wide) in paragraph at lines 1793--1796
+[]\T1/lmr/bx/n/10 Exemplo 2.5.7 []\T1/lmr/m/it/10 Quan-tos s„o os ana-gra-mas d
 a palavra MATEM-AT-ICA?\T1/lmr/bx/it/10 SoluÁ„o\T1/lmr/m/it/10 .
  []
 
@@ -1959,426 +2168,76 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.1568 \begin{fact}{}{}{g:fact:idp78}
+l.1801 \begin{fact}{}{}{g:fact:idp94}
                                      %
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.7 Combina\IeC {\c c}\IeC {\~o}es Completas
+Exerc\IeC {\'\i }cios 2.5.1 Exerc\IeC {\'\i }cios
 ************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1596 \begin{fact}{}{}{x:fact:exem-com-completa}
-                                                 %
-Overfull \hbox (1.94052pt too wide) in paragraph at lines 1609--1618
-\T1/lmr/m/it/10 È rep-re-sen-tada por:[] Ob-serve que
- []
-
-
-Overfull \hbox (2.74738pt too wide) in paragraph at lines 1609--1618
-\T1/lmr/m/it/10 cada per-mu-taÁ„o dessa rep-re-sen-taÁ„o de traÁos e bo-las È u
-ma soluÁ„o da EquaÁ„o
- []
-
-[15]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
-lock.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1625 \begin{definition}{}{g:definition:idp79}
-                                               %pdfTeX warning (ext4): destinat
-ion with the same identifier (name{tcb@cnt@block.3}) has been already used, dup
-licate ignored
-<to be read again> 
-                   \relax 
-l.1634 \begin{remark}{}{g:remark:idp80}
-                                       %
-\openout4 = `combinatoria.listing'.
-
- (./combinatoria.listing)
-\openout4 = `combinatoria.listing'.
-
-
-(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
-fier (name{tcb@cnt@block.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1661 \begin{theorem}{}{}{g:theorem:idp81}
-                                           % [16]pdfTeX warning (ext4): destina
-tion with the same identifier (name{tcb@cnt@block.5}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.1678 \begin{technology}{}{g:technology:idp83}
-                                               %
-\openout4 = `combinatoria.listing'.
-
- (./combinatoria.listing)
-Overfull \hbox (8.88739pt too wide) in paragraph at lines 1678--1683
-[]\T1/lmr/bx/n/10 Tecnologia 1.10.5 []\T1/lmr/m/n/10 Para obter o n˙mero de com
--bi-naÁıes com-ple-tas de $\OML/lmm/m/it/10 n$\T1/lmr/m/n/10 ,tomados
- []
-
-\openout4 = `combinatoria.listing'.
-
-(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
-fier (name{tcb@cnt@block.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1688 \begin{fact}{}{}{g:fact:idp84}
-                                     %
-\openout4 = `combinatoria.listing'.
-
- (./combinatoria.listing)
-\openout4 = `combinatoria.listing'.
-
-
-(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
-fier (name{tcb@cnt@block.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1707 \begin{fact}{}{}{g:fact:idp85}
-                                     %pdfTeX warning (ext4): destination with t
-he same identifier (name{tcb@cnt@block.8}) has been already used, duplicate ign
-ored
-<to be read again> 
-                   \relax 
-l.1739 \begin{fact}{}{}{g:fact:idp86}
-                                     %pdfTeX warning (ext4): destination with t
-he same identifier (name{tcb@cnt@block.9}) has been already used, duplicate ign
-ored
-<to be read again> 
-                   \relax 
-l.1741 ...pe√ßa do jogo tromin√≥.}{x:figure:tro}{}
-                                                  %
-<images/tro.pdf, id=855, 246.96967pt x 281.85298pt>
-File: images/tro.pdf Graphic file (type pdf)
-<use images/tro.pdf>
-Package pdftex.def Info: images/tro.pdf  used on input line 1743.
-(pdftex.def)             Requested size: 85.90001pt x 98.03072pt.
-
-Overfull \hbox (51.2541pt too wide) in paragraph at lines 1739--1746
-[]\T1/lmr/bx/n/10 Exemplo 1.10.8 []\T1/lmr/bx/it/10 (VESTIBU-LAR UFPE ^^U UFRPE
- / 1998 2\TS1/lmr/bx/it/10 ™ \T1/lmr/bx/it/10 ETAPA)\T1/lmr/m/it/10 Semelhante
- []
-
-[17]
-************************************************
-Exerc\IeC {\'\i }cios 1.8 Exerc\IeC {\'\i }cios
-************************************************
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.8.1 Permuta\IeC {\c c}\IeC {\~o}es Circulares
-************************************************
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.8.2 Permuta\IeC {\c c}\IeC {\~o}es com Repeti\IeC {\
-c c}\IeC {\~o}es
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 1790--1798
-
- []
-
-[18 <./images/tro.pdf>]
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 1.8.3 Combina\IeC {\c c}\IeC {\~o}es Completas
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 1818--1826
-
- []
-
-************************************************
-Cap\IeC {\'\i }tulo 2 Outros M\IeC {\'e}todos de Contagem
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 1851--1861
-
- []
-
-[19]
-Cap\IeC {\'\i }tulo 2.
-
-Overfull \hbox (20.03735pt too wide) in paragraph at lines 1861--1861
-|\T1/lmr/bx/n/24.88 Outros MÈto-dos de Con-tagem| 
- []
-
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.1 Princ\IeC {\'\i }pio da Inclus\IeC {\~a}o-Exclus\I
-eC {\~a}o
-************************************************
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.1.1 O Princ\IeC {\'\i }pio da Inclus\IeC {\~a}o-E
-xclus\IeC {\~a}o para 2 e 3 conjuntos
-************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1887 ...}{}{}{x:theorem:teo-inclusao-exclusao-2}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{tcb@cnt@block.2}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.1893 ...p B)\).}{x:figure:inclusao-exclusao-2}{}
-                                                  %
-<images/inclusaoexclusao2.pdf, id=933, 412.03937pt x 281.85298pt>
-File: images/inclusaoexclusao2.pdf Graphic file (type pdf)
-<use images/inclusaoexclusao2.pdf>
-Package pdftex.def Info: images/inclusaoexclusao2.pdf  used on input line 1895.
-
-(pdftex.def)             Requested size: 102.96104pt x 70.42867pt.
- [20
-
- <./images/inclusaoexclusao2.pdf>]pdfTeX warning (ext4): destination with the s
-ame identifier (name{tcb@cnt@block.3}) has been already used, duplicate ignored
-
-<to be read again> 
-                   \relax 
-l.1912 \begin{fact}{}{}{g:fact:idp114}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.4}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.1924 \begin{theorem}{}{}{g:theorem:idp115}
-                                            %pdfTeX warning (ext4): destination
- with the same identifier (name{tcb@cnt@block.5}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.1932 ...p C)\).}{x:figure:inclusao-exclusao-3}{}
-                                                  %
-<images/inclusaoexclusao3.pdf, id=955, 295.12566pt x 281.85298pt>
-File: images/inclusaoexclusao3.pdf Graphic file (type pdf)
-<use images/inclusaoexclusao3.pdf>
-Package pdftex.def Info: images/inclusaoexclusao3.pdf  used on input line 1934.
-
-(pdftex.def)             Requested size: 102.96104pt x 98.33176pt.
- [21 <./images/inclusaoexclusao3.pdf>]
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.1.2 O Princ\IeC {\'\i }pio da Inclus\IeC {\~a}o-E
-xclus\IeC {\~a}o para \(n\) conjuntos
-************************************************
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1969.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1969.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 1969.
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.6}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1970 ...}{}{}{x:theorem:teo-inclusao-exclusao-n}
-                                                  %
-Overfull \hbox (13.82819pt too wide) in paragraph at lines 1987--1988
-[]\T1/lmr/m/n/10 O el-e-mento $\OML/lmm/m/it/10 a$ \T1/lmr/m/n/10 È con-tado $\
-OML/lmm/m/it/10 C[]$ \T1/lmr/m/n/10 vezes por $[][] \OT1/lmr/m/n/10 #\OML/lmm/m
-/it/10 A[]; C[]$ \T1/lmr/m/n/10 vezes por $[][] \OT1/lmr/m/n/10 #(\OML/lmm/m/it
-/10 A[] \OMS/lmsy/m/n/10 \
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2001 \begin{fact}{}{}{g:fact:idp119}
-                                      % [22]pdfTeX warning (ext4): destination 
-with the same identifier (name{tcb@cnt@block.8}) has been already used, duplica
-te ignored
-<to be read again> 
-                   \relax 
-l.2056 \begin{fact}{}{}{g:fact:idp120}
-                                      %
-\openout4 = `combinatoria.listing'.
-
- (./combinatoria.listing
-
-LaTeX Font Warning: Font shape `T1/zi4/bx/it' undefined
-(Font)              using `T1/zi4/bx/n' instead on input line 1.
-
-LaTeX Font Info:    Font shape `T1/zi4/bx/it' in size <9> not available
-(Font)              Font shape `T1/zi4/b/n' tried instead on input line 3.
-LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
-(Font)              scaled to size 9.0pt on input line 3.
-)
-\openout4 = `combinatoria.listing'.
-
- (./combinatoria.listing) [23]
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.2 Permuta\IeC {\c c}\IeC {\~o}es Ca\IeC {\'o}ticas
-************************************************
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.2.1 Nota Hist\IeC {\'o}rica
-************************************************
-
-Overfull \hbox (9.10944pt too wide) in paragraph at lines 2157--2158
-\T1/lmr/m/n/10 O cÈle-bre matem·tico e fÌsico suiÁo, Leon-hard Paul Eu-ler (170
-7-1783), empenhou-
- []
-
-[24]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
-lock.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2160 ...www.phylos.net}{x:figure:figura-euler}{}
-                                                  %
-<images/Euler.jpg, id=1016, 141.52875pt x 177.66376pt>
-File: images/Euler.jpg Graphic file (type jpg)
-<use images/Euler.jpg>
-Package pdftex.def Info: images/Euler.jpg  used on input line 2162.
-(pdftex.def)             Requested size: 102.78104pt x 129.02657pt.
-
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.2.2 Exemplos introdut\IeC {\'o}rios
-************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2175 \begin{fact}{}{}{g:fact:idp123}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.3}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.2196 ...{fact}{}{}{x:fact:exem-antes-permut-cao}
-                                                  % [25 <./images/Euler.jpg>]
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.2.3 Permuta\IeC {\c c}\IeC {\~o}es Ca\IeC {\'o}ti
-cas
-************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.4}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2227 \begin{definition}{}{g:definition:idp125}
-                                                %pdfTeX warning (ext4): destina
-tion with the same identifier (name{tcb@cnt@block.5}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.2236 ...Fa√ßa voc√™ mesmo.}{g:technology:idp126}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{tcb@cnt@block.6}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.2237 ...,n\}\).}{x:figure:interactive-caotica}{}
-                                                  %
-
-
-<QR code requested for "/interactive-caotica.html" in version 0-M.>
-
-<Copying the QR code for "/interactive-caotica.html" in version 2-M as previous
-ly calculated.>
-
-Overfull \hbox (0.39977pt too wide) in paragraph at lines 2243--2252
- [][] 
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.7}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2256 ...Fa√ßa voc√™ mesmo.}{g:technology:idp127}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{tcb@cnt@block.8}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.2257 ...inal.}{x:figure:interactive-caotica-x}{}
-                                                  %
-
-
-<QR code requested for "/interactive-caotica-x.html" in version 0-M.>
-<Error-correction level increased from M to Q at no cost.>
-
-<Copying the QR code for "/interactive-caotica-x.html" in version 3-Q as previo
-usly calculated.>
-
-Overfull \hbox (0.39973pt too wide) in paragraph at lines 2263--2272
- [][] 
- []
-
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2276 \begin{theorem}{}{}{g:theorem:idp128}
-                                            % [26]pdfTeX warning (ext4): destin
-ation with the same identifier (name{tcb@cnt@block.10}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.2310 \begin{remark}{}{g:remark:idp130}
-                                        %
-\openout4 = `combinatoria.listing'.
+l.1820 ...reptx}{Mapa da cidade.}{x:figure:mapa}{}
+                                                  %
 
- (./combinatoria.listing)
-\openout4 = `combinatoria.listing'.
+! LaTeX Error: File `images/permut' not found.
 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1822 ...raphics[width=\linewidth]{images/permut}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
-(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
-fier (name{tcb@cnt@block.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2324 \begin{fact}{}{}{g:fact:idp131}
-                                      % [27]pdfTeX warning (ext4): destination 
-with the same identifier (name{tcb@cnt@block.12}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.2336 \begin{fact}{}{}{g:fact:idp132}
-                                      %
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.3 Os Lemas de Kaplansky
-************************************************
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.3.1 Nota Hist\IeC {\'o}rica
+Se\IeC {\c c}\IeC {\~a}o 2.6 Combina\IeC {\c c}\IeC {\~o}es Completas
 ************************************************
 
-Overfull \hbox (1.05502pt too wide) in paragraph at lines 2373--2374
-\T1/lmr/m/n/10 Matem·tica Apli-cada fazendo tra-bal-hos de guerra na Uni-ver-si
--dade de Columbia
+Underfull \hbox (badness 10000) in paragraph at lines 1848--1857
+
  []
 
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
+[20]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+lock.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2376 ...ww.ams.org}{x:figure:figura-kaplansky}{}
+l.1868 \begin{fact}{}{}{x:fact:exem-com-completa}
+                                                 %pdfTeX warning (ext4): destin
+ation with the same identifier (name{tcb@cnt@block.2}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.1883 ...√ß√µes.}{x:figure:combinacao-completa}{}
                                                   %
-<images/Kaplansky.jpg, id=1059, 202.7575pt x 250.9375pt>
-File: images/Kaplansky.jpg Graphic file (type jpg)
-<use images/Kaplansky.jpg>
-Package pdftex.def Info: images/Kaplansky.jpg  used on input line 2378.
-(pdftex.def)             Requested size: 102.78104pt x 127.20679pt.
 
-************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.3.2 O 1\IeC {\textordmasculine } Lema de Kaplansk
-y
-************************************************
-[28]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
-lock.2}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.2393 \begin{fact}{}{}{g:fact:idp135}
-                                      %
+! LaTeX Error: File `images/combinacaocompleta' not found.
 
-LaTeX Font Warning: Command \LARGE invalid in math mode on input line 2415.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1885 ...h=\linewidth]{images/combinacaocompleta}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
 
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2427 \begin{theorem}{}{}{g:theorem:idp136}
-                                            % [29 <./images/Kaplansky.jpg>]pdfT
-eX warning (ext4): destination with the same identifier (name{tcb@cnt@block.4})
- has been already used, duplicate ignored
+l.1897 \begin{definition}{}{g:definition:idp106}
+                                                % [21]pdfTeX warning (ext4): de
+stination with the same identifier (name{tcb@cnt@block.4}) has been already use
+d, duplicate ignored
 <to be read again> 
                    \relax 
-l.2443 \begin{remark}{}{g:remark:idp138}
+l.1906 \begin{remark}{}{g:remark:idp107}
                                         %
 \openout4 = `combinatoria.listing'.
 
@@ -2390,13 +2249,501 @@ l.2443 \begin{remark}{}{g:remark:idp138}
 fier (name{tcb@cnt@block.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2453 ...Fa√ßa voc√™ mesmo.}{g:technology:idp139}
+l.1933 \begin{theorem}{}{}{g:theorem:idp108}
+                                            %pdfTeX warning (ext4): destination
+ with the same identifier (name{tcb@cnt@block.6}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.1950 \begin{technology}{}{g:technology:idp110}
+                                                %
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing)
+Overfull \hbox (3.1374pt too wide) in paragraph at lines 1950--1955
+[]\T1/lmr/bx/n/10 Tecnologia 2.6.6 []\T1/lmr/m/n/10 Para obter o n˙mero de com-
+bi-naÁıes com-ple-tas de $\OML/lmm/m/it/10 n$\T1/lmr/m/n/10 ,tomados
+ []
+
+\openout4 = `combinatoria.listing'.
+
+(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
+fier (name{tcb@cnt@block.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1960 \begin{fact}{}{}{g:fact:idp111}
+                                      %
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing)
+\openout4 = `combinatoria.listing'.
+
+
+(./combinatoria.listing) [22]pdfTeX warning (ext4): destination with the same i
+dentifier (name{tcb@cnt@block.8}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.1979 \begin{fact}{}{}{g:fact:idp112}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.9}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.2011 \begin{fact}{}{}{g:fact:idp113}
+                                      %
+Overfull \hbox (2.59596pt too wide) in paragraph at lines 2030--2033
+\T1/lmr/m/it/10 Para en-ten-der a bi-jeÁ„o, ob-serve o seguinte. So-mando $\OT1
+/lmr/m/n/10 50 \OMS/lmsy/m/n/10 ^^@ \OML/lmm/m/it/10 i; i \OMS/lmsy/m/n/10 2 f\
+OT1/lmr/m/n/10 0\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 1\OML/lmm/m/it/10 ; \OT1/lmr
+/m/n/10 2\OML/lmm/m/it/10 ; [] ; \OT1/lmr/m/n/10 50\OMS/lmsy/m/n/10 g$\T1/lmr/m
+/it/10 ,
+ []
+
+[23]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+lock.10}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2047 \begin{fact}{}{}{g:fact:idp115}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.11}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.2049 ...om os valores 1, 2 e 4.}{x:figure:tro}{}
+                                                  %
+<images/tro.pdf, id=802, 246.96967pt x 281.85298pt>
+File: images/tro.pdf Graphic file (type pdf)
+<use images/tro.pdf>
+Package pdftex.def Info: images/tro.pdf  used on input line 2051.
+(pdftex.def)             Requested size: 85.90001pt x 98.03072pt.
+
+Overfull \hbox (51.2541pt too wide) in paragraph at lines 2047--2054
+[]\T1/lmr/bx/n/10 Exemplo 2.6.10 []\T1/lmr/bx/it/10 (VESTIBU-LAR UFPE ^^U UFRPE
+ / 1998 2\TS1/lmr/bx/it/10 ™ \T1/lmr/bx/it/10 ETAPA)\T1/lmr/m/it/10 Semelhante
+ []
+
+************************************************
+Exerc\IeC {\'\i }cios 2.6.1 Exerc\IeC {\'\i }cios
+************************************************
+[24 <./images/tro.pdf>]
+************************************************
+Cap\IeC {\'\i }tulo 3 Outros M\IeC {\'e}todos de Contagem
+************************************************
+
+Underfull \hbox (badness 10000) in paragraph at lines 2112--2122
+
+ []
+
+[25]
+Cap\IeC {\'\i }tulo 3.
+
+Overfull \hbox (20.03735pt too wide) in paragraph at lines 2122--2122
+|\T1/lmr/bx/n/24.88 Outros MÈto-dos de Con-tagem| 
+ []
+
+************************************************
+Se\IeC {\c c}\IeC {\~a}o 3.1 Princ\IeC {\'\i }pio da Inclus\IeC {\~a}o-Exclus\I
+eC {\~a}o
+************************************************
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.1.1 O Princ\IeC {\'\i }pio da Inclus\IeC {\~a}o-E
+xclus\IeC {\~a}o para 2 e 3 conjuntos
+************************************************
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2150 ...}{}{}{x:theorem:teo-inclusao-exclusao-2}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.2}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.2156 ...p B)\).}{x:figure:inclusao-exclusao-2}{}
+                                                  %
+<images/inclusaoexclusao2.pdf, id=857, 412.03937pt x 281.85298pt>
+File: images/inclusaoexclusao2.pdf Graphic file (type pdf)
+<use images/inclusaoexclusao2.pdf>
+Package pdftex.def Info: images/inclusaoexclusao2.pdf  used on input line 2158.
+
+(pdftex.def)             Requested size: 102.96104pt x 70.42867pt.
+ [26
+
+ <./images/inclusaoexclusao2.pdf>]pdfTeX warning (ext4): destination with the s
+ame identifier (name{tcb@cnt@block.3}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.2175 \begin{fact}{}{}{g:fact:idp129}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.4}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.2187 \begin{theorem}{}{}{g:theorem:idp130}
+                                            %pdfTeX warning (ext4): destination
+ with the same identifier (name{tcb@cnt@block.5}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.2195 ...p C)\).}{x:figure:inclusao-exclusao-3}{}
+                                                  %
+
+! LaTeX Error: File `images/inclusaoexclusao3novo' not found.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2197 ...linewidth]{images/inclusaoexclusao3novo}
+                                                  
+I could not locate the file with any of these extensions:
+.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.1.2 O Princ\IeC {\'\i }pio da Inclus\IeC {\~a}o-E
+xclus\IeC {\~a}o para \(n\) conjuntos
+************************************************
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <12> on input line 2232.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 2232.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 2232.
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2233 ...}{}{}{x:theorem:teo-inclusao-exclusao-n}
+                                                  % [27]
+Overfull \hbox (13.82819pt too wide) in paragraph at lines 2250--2251
+[]\T1/lmr/m/n/10 O el-e-mento $\OML/lmm/m/it/10 a$ \T1/lmr/m/n/10 È con-tado $\
+OML/lmm/m/it/10 C[]$ \T1/lmr/m/n/10 vezes por $[][] \OT1/lmr/m/n/10 #\OML/lmm/m
+/it/10 A[]; C[]$ \T1/lmr/m/n/10 vezes por $[][] \OT1/lmr/m/n/10 #(\OML/lmm/m/it
+/10 A[] \OMS/lmsy/m/n/10 \
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2264 \begin{fact}{}{}{g:fact:idp134}
+                                      % [28]pdfTeX warning (ext4): destination 
+with the same identifier (name{tcb@cnt@block.8}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.2319 \begin{fact}{}{}{g:fact:idp135}
+                                      %
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing
+LaTeX Font Info:    Font shape `T1/zi4/bx/it' in size <9> not available
+(Font)              Font shape `T1/zi4/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/zi4/b/n' will be
+(Font)              scaled to size 9.0pt on input line 1.
+)
+\openout4 = `combinatoria.listing'.
+
+
+(./combinatoria.listing) [29]
+************************************************
+Exerc\IeC {\'\i }cios 3.1.3 Exerc\IeC {\'\i }cios
+************************************************
+
+! Package inputenc Error: Unicode character ÃÅ (U+0301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2404 \terminology{(OBM)} Tr√™s polƒ±ÃÅ
+                                        gonos regulares, de 8, 12 e 18 lados...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ÃÅ (U+0301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2404 ...em comum. Os v√©rtices dos tr√™s polƒ±ÃÅ
+                                                  gonos s√£o marcados na cir...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ÃÅ (U+0301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2406 ...(A_k\) a quantidade de pontos do polƒ±ÃÅ
+                                                  gono de \(k\) v√©rtices, q...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ÃÅ (U+0301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2426 ...oncorrem numa competi√ß√£o automobilƒ±ÃÅ
+                                                  stica, em que cada equipe ...
+
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+
+! Package inputenc Error: Unicode character ÃÅ (U+0301)
+(inputenc)                not set up for use with LaTeX.
+
+See the inputenc package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2426 ...ermine o n√∫mero de forma√ß√µes possƒ±ÃÅ
+                                                  veis para a largada.%
+You may provide a definition with
+\DeclareUnicodeCharacter 
+
+[30]
+************************************************
+Se\IeC {\c c}\IeC {\~a}o 3.2 Permuta\IeC {\c c}\IeC {\~o}es Ca\IeC {\'o}ticas
+************************************************
+
+Underfull \hbox (badness 10000) in paragraph at lines 2445--2454
+
+ []
+
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.2.1 Nota Hist\IeC {\'o}rica
+************************************************
+
+Overfull \hbox (9.10944pt too wide) in paragraph at lines 2471--2472
+\T1/lmr/m/n/10 O cÈle-bre matem·tico e fÌsico suiÁo, Leon-hard Paul Eu-ler (170
+7-1783), empenhou-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2474 ...www.phylos.net}{x:figure:figura-euler}{}
+                                                  %
+<images/Euler.jpg, id=933, 141.52875pt x 177.66376pt>
+File: images/Euler.jpg Graphic file (type jpg)
+<use images/Euler.jpg>
+Package pdftex.def Info: images/Euler.jpg  used on input line 2476.
+(pdftex.def)             Requested size: 102.78104pt x 129.02657pt.
+
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.2.2 Exemplos introdut\IeC {\'o}rios
+************************************************
+[31]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+lock.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2489 \begin{fact}{}{}{g:fact:idp151}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.3}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.2510 ...{fact}{}{}{x:fact:exem-antes-permut-cao}
+                                                  % [32 <./images/Euler.jpg>]
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.2.3 Permuta\IeC {\c c}\IeC {\~o}es Ca\IeC {\'o}ti
+cas
+************************************************
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2541 \begin{definition}{}{g:definition:idp153}
+                                                %pdfTeX warning (ext4): destina
+tion with the same identifier (name{tcb@cnt@block.5}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.2550 \begin{technology}{}{g:technology:idp154}
+                                                %
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing)
+\openout4 = `combinatoria.listing'.
+
+
+(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
+fier (name{tcb@cnt@block.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2566 ...logy}{}{x:technology:tec-caotica-r-sage}
+                                                  %
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing)
+\openout4 = `combinatoria.listing'.
+
+
+(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
+fier (name{tcb@cnt@block.7}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2588 \begin{theorem}{}{}{g:theorem:idp155}
+                                            % [33]pdfTeX warning (ext4): destin
+ation with the same identifier (name{tcb@cnt@block.8}) has been already used, d
+uplicate ignored
+<to be read again> 
+                   \relax 
+l.2622 \begin{remark}{}{g:remark:idp157}
+                                        %
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing)
+\openout4 = `combinatoria.listing'.
+
+
+(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
+fier (name{tcb@cnt@block.9}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2636 \begin{fact}{}{}{g:fact:idp158}
+                                      % [34]pdfTeX warning (ext4): destination 
+with the same identifier (name{tcb@cnt@block.10}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.2648 \begin{fact}{}{}{g:fact:idp159}
+                                      %
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.2.4 Permuta\IeC {\c c}\IeC {\~o}es Ca\IeC {\'o}ti
+cas com Repeti\IeC {\c c}\IeC {\~o}es
+************************************************
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2669 ...oc√™ mesmo.}{x:technology:tec-caotica-r}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.12}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.2670 ...idos.}{x:figure:interactive-caotica-r}{}
+                                                  %
+
+
+<QR code requested for "/interactive-caotica-r.html" in version 0-M.>
+<Error-correction level increased from M to Q at no cost.>
+
+<Copying the QR code for "/interactive-caotica-r.html" in version 3-Q as previo
+usly calculated.>
+
+Overfull \hbox (0.39973pt too wide) in paragraph at lines 2676--2685
+ [][] 
+ []
+
+************************************************
+Exerc\IeC {\'\i }cios 3.2.5 Exerc\IeC {\'\i }cios
+************************************************
+
+Overfull \hbox (20.42705pt too wide) in paragraph at lines 2707--2709
+[] [][]\T1/lmr/m/n/10 Determine o n˙mero de per-mu-taÁıes caÛti-cas de $\OT1/lm
+r/m/n/10 (1\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 2\OML/lmm/m/it/10 ; \OT1/lmr/m/n/
+10 3\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 4\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 5\OM
+L/lmm/m/it/10 ; \OT1/lmr/m/n/10 6\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 7\OML/lmm/m
+/it/10 ; \OT1/lmr/m/n/10 8\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 9\OML/lmm/m/it/10 
+; \OT1/lmr/m/n/10 10\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 11\OML/lmm/m/it/10 ; \OT
+1/lmr/m/n/10 12)$
+ []
+
+[35]
+************************************************
+Se\IeC {\c c}\IeC {\~a}o 3.3 Os Lemas de Kaplansky
+************************************************
+
+Underfull \hbox (badness 10000) in paragraph at lines 2716--2725
+
+ []
+
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.3.1 Nota Hist\IeC {\'o}rica
+************************************************
+
+Overfull \hbox (1.05502pt too wide) in paragraph at lines 2744--2745
+\T1/lmr/m/n/10 Matem·tica Apli-cada fazendo tra-bal-hos de guerra na Uni-ver-si
+-dade de Columbia
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2747 ...ww.ams.org}{x:figure:figura-kaplansky}{}
+                                                  %
+<images/Kaplansky.jpg, id=1033, 202.7575pt x 250.9375pt>
+File: images/Kaplansky.jpg Graphic file (type jpg)
+<use images/Kaplansky.jpg>
+Package pdftex.def Info: images/Kaplansky.jpg  used on input line 2749.
+(pdftex.def)             Requested size: 102.78104pt x 127.20679pt.
+
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.3.2 O 1\IeC {\textordmasculine } Lema de Kaplansk
+y
+************************************************
+[36]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+lock.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2764 \begin{fact}{}{}{g:fact:idp172}
+                                      %
+
+LaTeX Font Warning: Command \LARGE invalid in math mode on input line 2786.
+
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2798 \begin{theorem}{}{}{g:theorem:idp173}
+                                            % [37 <./images/Kaplansky.jpg>]pdfT
+eX warning (ext4): destination with the same identifier (name{tcb@cnt@block.4})
+ has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2814 \begin{remark}{}{g:remark:idp175}
+                                        %
+\openout4 = `combinatoria.listing'.
+
+ (./combinatoria.listing)
+\openout4 = `combinatoria.listing'.
+
+
+(./combinatoria.listing)pdfTeX warning (ext4): destination with the same identi
+fier (name{tcb@cnt@block.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.2824 ...Fa√ßa voc√™ mesmo.}{g:technology:idp176}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.6}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.2454 ...tos.}{x:figure:interactive-kaplansky2}{}
+l.2825 ...tos.}{x:figure:interactive-kaplansky2}{}
                                                   %
 
 
@@ -2406,7 +2753,7 @@ l.2454 ...tos.}{x:figure:interactive-kaplansky2}{}
 <Copying the QR code for "/interactive-kaplansky2.html" in version 3-Q as previ
 ously calculated.>
 
-Overfull \hbox (0.39973pt too wide) in paragraph at lines 2460--2469
+Overfull \hbox (0.39973pt too wide) in paragraph at lines 2831--2840
  [][] 
  []
 
@@ -2414,55 +2761,55 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2473 \begin{fact}{}{}{g:fact:idp140}
+l.2844 \begin{fact}{}{}{g:fact:idp177}
                                       %
 
-LaTeX Font Warning: Command \large invalid in math mode on input line 2477.
+LaTeX Font Warning: Command \large invalid in math mode on input line 2848.
 
 ************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.3.3 O 2\IeC {\textordmasculine } Lema de Kaplansk
+Subse\IeC {\c c}\IeC {\~a}o 3.3.3 O 2\IeC {\textordmasculine } Lema de Kaplansk
 y
 ************************************************
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .8}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2503 \begin{theorem}{}{}{g:theorem:idp142}
-                                            % [30]pdfTeX warning (ext4): destin
+l.2874 \begin{theorem}{}{}{g:theorem:idp179}
+                                            % [38]pdfTeX warning (ext4): destin
 ation with the same identifier (name{tcb@cnt@block.9}) has been already used, d
 uplicate ignored
 <to be read again> 
                    \relax 
-l.2539 \begin{fact}{}{}{g:fact:idp144}
+l.2910 \begin{fact}{}{}{g:fact:idp181}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.10}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.2542 ...ptx}{Dias da semana.}{x:figure:semana}{}
+l.2913 ...ptx}{Dias da semana.}{x:figure:semana}{}
                                                   %
-<images/semana.pdf, id=1097, 212.11852pt x 205.47757pt>
+<images/semana.pdf, id=1073, 212.11852pt x 205.47757pt>
 File: images/semana.pdf Graphic file (type pdf)
 <use images/semana.pdf>
-Package pdftex.def Info: images/semana.pdf  used on input line 2544.
+Package pdftex.def Info: images/semana.pdf  used on input line 2915.
 (pdftex.def)             Requested size: 137.07793pt x 132.79066pt.
 
-Overfull \hbox (0.81725pt too wide) in paragraph at lines 2539--2547
-[]\T1/lmr/bx/n/10 Exemplo 2.3.9 []\T1/lmr/m/it/10 DÈb-ora de-seja cor-rer 3 vez
+Overfull \hbox (0.81725pt too wide) in paragraph at lines 2910--2918
+[]\T1/lmr/bx/n/10 Exemplo 3.3.9 []\T1/lmr/m/it/10 DÈb-ora de-seja cor-rer 3 vez
 es por se-m-ana du-rante esse bimestre.
  []
 
-[31]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+[39]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
 lock.11}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2554 \begin{fact}{}{}{g:fact:idp145}
+l.2925 \begin{fact}{}{}{g:fact:idp182}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.12}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.2562 \begin{remark}{}{g:remark:idp146}
+l.2933 \begin{remark}{}{g:remark:idp183}
                                         %
 \openout4 = `combinatoria.listing'.
 
@@ -2479,63 +2826,71 @@ l.2562 \begin{remark}{}{g:remark:idp146}
 <Copying the QR code for "/interactive-kaplansky4.html" in version 3-Q as previ
 ously calculated.>
 
-Overfull \hbox (0.39973pt too wide) in paragraph at lines 2579--2588
+Overfull \hbox (0.39973pt too wide) in paragraph at lines 2950--2959
  [][] 
  []
 
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.4 Princ\IeC {\'\i }pio da Casa dos Pombos
+Exerc\IeC {\'\i }cios 3.3.4 Exerc\IeC {\'\i }cios
 ************************************************
-[32 <./images/semana.pdf>]
+[40 <./images/semana.pdf>]
 ************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.4.1 Nota Hist\IeC {\'o}rica
+Se\IeC {\c c}\IeC {\~a}o 3.4 Princ\IeC {\'\i }pio da Casa dos Pombos
+************************************************
+
+Underfull \hbox (badness 10000) in paragraph at lines 2990--2999
+
+ []
+
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 3.4.1 Nota Hist\IeC {\'o}rica
 ************************************************
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2617 ...om\slash{}}{x:figure:figura-dirichlet}{}
+l.3016 ...om\slash{}}{x:figure:figura-dirichlet}{}
                                                   %
-<images/Dirichlet.jpg, id=1149, 204.765pt x 248.93pt>
+<images/Dirichlet.jpg, id=1129, 204.765pt x 248.93pt>
 File: images/Dirichlet.jpg Graphic file (type jpg)
 <use images/Dirichlet.jpg>
-Package pdftex.def Info: images/Dirichlet.jpg  used on input line 2619.
+Package pdftex.def Info: images/Dirichlet.jpg  used on input line 3018.
 (pdftex.def)             Requested size: 102.78104pt x 124.95087pt.
 
-Overfull \hbox (0.33716pt too wide) in paragraph at lines 2621--2622
-\T1/lmr/bx/n/10 Figura 2.4.1 \T1/lmr/m/n/10 Jo-hann Pe-ter Gus-tav Leje-une Dir
+Overfull \hbox (0.33716pt too wide) in paragraph at lines 3020--3021
+\T1/lmr/bx/n/10 Figura 3.4.1 \T1/lmr/m/n/10 Jo-hann Pe-ter Gus-tav Leje-une Dir
 ich-let, fonte: gi-gan-tes-da-matem-
  []
 
 ************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.4.2 1\IeC {\textordfeminine } vers\IeC {\~a}o do 
+Subse\IeC {\c c}\IeC {\~a}o 3.4.2 1\IeC {\textordfeminine } vers\IeC {\~a}o do 
 Princ\IeC {\'\i }pio da Casa dos Pombos
 ************************************************
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .2}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2631 \begin{theorem}{}{}{g:theorem:idp150}
-                                            %pdfTeX warning (ext4): destination
- with the same identifier (name{tcb@cnt@block.3}) has been already used, duplic
-ate ignored
+l.3030 \begin{theorem}{}{}{g:theorem:idp196}
+                                            % [41 <./images/Dirichlet.jpg>]pdfT
+eX warning (ext4): destination with the same identifier (name{tcb@cnt@block.3})
+ has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2636 \begin{remark}{}{g:remark:idp152}
+l.3035 \begin{remark}{}{g:remark:idp198}
                                         %pdfTeX warning (ext4): destination wit
 h the same identifier (name{tcb@cnt@block.4}) has been already used, duplicate 
 ignored
 <to be read again> 
                    \relax 
-l.2641 \begin{fact}{}{}{g:fact:idp153}
-                                      % [33 <./images/Dirichlet.jpg>]pdfTeX war
-ning (ext4): destination with the same identifier (name{tcb@cnt@block.5}) has b
-een already used, duplicate ignored
+l.3040 \begin{fact}{}{}{g:fact:idp199}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.5}) has been already used, duplicate ig
+nored
 <to be read again> 
                    \relax 
-l.2645 \begin{fact}{}{}{g:fact:idp154}
+l.3044 \begin{fact}{}{}{g:fact:idp200}
                                       %
-Overfull \hbox (3.86691pt too wide) in paragraph at lines 2657--2658
+Overfull \hbox (3.86691pt too wide) in paragraph at lines 3056--3057
 []\T1/lmr/m/it/10 O pro-duto en-tre eles È da forma $\OT1/lmr/m/n/10 2[]3[]5[] 
 = 2[]3[]5[]$\T1/lmr/m/it/10 , com $\OML/lmm/m/it/10 x; y; z \OMS/lmsy/m/n/10 2
  []
@@ -2544,98 +2899,56 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .6}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2663 \begin{fact}{}{}{g:fact:idp155}
-                                      %
+l.3062 \begin{fact}{}{}{g:fact:idp201}
+                                      % [42]
 ************************************************
-Subse\IeC {\c c}\IeC {\~a}o 2.4.3 2\IeC {\textordfeminine } vers\IeC {\~a}o do 
+Subse\IeC {\c c}\IeC {\~a}o 3.4.3 2\IeC {\textordfeminine } vers\IeC {\~a}o do 
 Princ\IeC {\'\i }pio da Casa dos Pombos
 ************************************************
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2683 \begin{remark}{}{g:remark:idp157}
+l.3082 \begin{remark}{}{g:remark:idp203}
                                         %pdfTeX warning (ext4): destination wit
 h the same identifier (name{tcb@cnt@block.8}) has been already used, duplicate 
 ignored
 <to be read again> 
                    \relax 
-l.2694 \begin{fact}{}{}{g:fact:idp158}
-                                      % [34]pdfTeX warning (ext4): destination 
-with the same identifier (name{tcb@cnt@block.9}) has been already used, duplica
-te ignored
+l.3093 \begin{fact}{}{}{g:fact:idp204}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.9}) has been already used, duplicate ig
+nored
 <to be read again> 
                    \relax 
-l.2701 \begin{theorem}{}{}{g:theorem:idp159}
+l.3100 \begin{theorem}{}{}{g:theorem:idp205}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{tcb@cnt@block.10}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.2715 \begin{fact}{}{}{g:fact:idp161}
+l.3114 \begin{fact}{}{}{g:fact:idp207}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.11}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.2720 ...√¢ngulo subdividido.}{x:figure:triang}{}
+l.3119 ...√¢ngulo subdividido.}{x:figure:triang}{}
                                                   %
-<images/triang.pdf, id=1173, 155.88878pt x 139.49399pt>
+<images/triang.pdf, id=1157, 155.88878pt x 139.49399pt>
 File: images/triang.pdf Graphic file (type pdf)
 <use images/triang.pdf>
-Package pdftex.def Info: images/triang.pdf  used on input line 2722.
+Package pdftex.def Info: images/triang.pdf  used on input line 3121.
 (pdftex.def)             Requested size: 102.96104pt x 92.1344pt.
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.12}) has been already used, duplicate ignored
+ [43]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@
+block.12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2728 \begin{fact}{}{}{g:fact:idp162}
+l.3127 \begin{fact}{}{}{g:fact:idp208}
                                       %
 ************************************************
-Exerc\IeC {\'\i }cios 2.5 Exerc\IeC {\'\i }cios
+Exerc\IeC {\'\i }cios 3.4.4 Exerc\IeC {\'\i }cios
 ************************************************
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.5.1 Princ\IeC {\'\i }pio da Inclus\IeC {\~a}o-Exclus
-\IeC {\~a}o
-************************************************
-[35 <./images/triang.pdf>]
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.5.2 Permuta\IeC {\c c}\IeC {\~o}es Ca\IeC {\'o}ticas
-
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 2771--2779
-
- []
-
-
-Overfull \hbox (20.42705pt too wide) in paragraph at lines 2790--2792
-[] [][]\T1/lmr/m/n/10 Determine o n˙mero de per-mu-taÁıes caÛti-cas de $\OT1/lm
-r/m/n/10 (1\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 2\OML/lmm/m/it/10 ; \OT1/lmr/m/n/
-10 3\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 4\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 5\OM
-L/lmm/m/it/10 ; \OT1/lmr/m/n/10 6\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 7\OML/lmm/m
-/it/10 ; \OT1/lmr/m/n/10 8\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 9\OML/lmm/m/it/10 
-; \OT1/lmr/m/n/10 10\OML/lmm/m/it/10 ; \OT1/lmr/m/n/10 11\OML/lmm/m/it/10 ; \OT
-1/lmr/m/n/10 12)$
- []
-
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.5.3 Os Lemas de Kaplansky
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 2799--2807
-
- []
-
-[36]
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 2.5.4 O Princ\IeC {\'\i }pio da Casa dos Pombos
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 2827--2835
-
- []
-
 
 ! Package inputenc Error: Unicode character ÃÅ (U+0301)
 (inputenc)                not set up for use with LaTeX.
@@ -2644,122 +2957,130 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.2842 ...haver√° pelo menos um grupo com no mƒ±ÃÅ
+l.3149 ...haver√° pelo menos um grupo com no mƒ±ÃÅ
                                                   nimo 10 professores.%
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 ************************************************
-Cap\IeC {\'\i }tulo 3 N\IeC {\'u}meros Binomiais
+Cap\IeC {\'\i }tulo 4 N\IeC {\'u}meros Binomiais
 ************************************************
 
-Underfull \hbox (badness 10000) in paragraph at lines 2852--2862
+Underfull \hbox (badness 10000) in paragraph at lines 3159--3169
 
  []
 
-[37]
-Cap\IeC {\'\i }tulo 3.
+[44 <./images/triang.pdf>]
+Cap\IeC {\'\i }tulo 4.
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 3.1 Tri\IeC {\^a}ngulo de Pascal
+Se\IeC {\c c}\IeC {\~a}o 4.1 Tri\IeC {\^a}ngulo de Pascal
 ************************************************
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2882 \begin{definition}{}{g:definition:idp197}
+l.3188 \begin{definition}{}{g:definition:idp216}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{tcb@cnt@block.2}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.2884 ...l.}{x:figure:inclusao-triangulopascal}{}
+l.3190 ...l.}{x:figure:inclusao-triangulopascal}{}
                                                   %
-<images/triangulopascal.pdf, id=1226, 425.14856pt x 227.6345pt>
+<images/triangulopascal.pdf, id=1184, 425.14856pt x 227.6345pt>
 File: images/triangulopascal.pdf Graphic file (type pdf)
 <use images/triangulopascal.pdf>
-Package pdftex.def Info: images/triangulopascal.pdf  used on input line 2886.
+Package pdftex.def Info: images/triangulopascal.pdf  used on input line 3192.
 (pdftex.def)             Requested size: 273.56105pt x 146.47751pt.
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .3}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2891 \begin{theorem}{}{}{g:theorem:idp198}
-                                            % [38
+l.3197 \begin{theorem}{}{}{g:theorem:idp217}
+                                            % [45
 
  <./images/triangulopascal.pdf>]pdfTeX warning (ext4): destination with the sam
 e identifier (name{tcb@cnt@block.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.2908 \begin{theorem}{}{}{g:theorem:idp200}
+l.3214 \begin{theorem}{}{}{g:theorem:idp219}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{tcb@cnt@block.5}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.2920 \begin{theorem}{}{}{g:theorem:idp202}
+l.3226 \begin{theorem}{}{}{g:theorem:idp221}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{tcb@cnt@block.6}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.2944 \begin{fact}{}{}{g:fact:idp204}
-                                      % [39]pdfTeX warning (ext4): destination 
+l.3250 \begin{fact}{}{}{g:fact:idp223}
+                                      % [46]pdfTeX warning (ext4): destination 
 with the same identifier (name{tcb@cnt@block.7}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.2961 \begin{theorem}{}{}{g:theorem:idp205}
+l.3267 \begin{theorem}{}{}{g:theorem:idp224}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{tcb@cnt@block.8}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.2986 \begin{fact}{}{}{g:fact:idp207}
-                                      % [40]pdfTeX warning (ext4): destination 
+l.3292 \begin{fact}{}{}{g:fact:idp226}
+                                      % [47]pdfTeX warning (ext4): destination 
 with the same identifier (name{tcb@cnt@block.9}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.3024 \begin{theorem}{}{}{g:theorem:idp208}
+l.3330 \begin{theorem}{}{}{g:theorem:idp227}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{tcb@cnt@block.10}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.3045 \begin{theorem}{}{}{g:theorem:idp210}
-                                            % [41]
+l.3351 \begin{theorem}{}{}{g:theorem:idp229}
+                                            % [48]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 3.2 Bin\IeC {\^o}mio de Newton
+Exerc\IeC {\'\i }cios 4.1.1 Exerc\IeC {\'\i }cios
 ************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
+************************************************
+Se\IeC {\c c}\IeC {\~a}o 4.2 Bin\IeC {\^o}mio de Newton
+************************************************
+
+Underfull \hbox (badness 10000) in paragraph at lines 3421--3430
+
+ []
+
+[49]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+lock.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3093 \begin{theorem}{}{}{g:theorem:idp212}
+l.3439 \begin{theorem}{}{}{g:theorem:idp240}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{tcb@cnt@block.2}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.3113 \begin{remark}{}{g:remark:idp214}
-                                        % [42]pdfTeX warning (ext4): destinatio
-n with the same identifier (name{tcb@cnt@block.3}) has been already used, dupli
-cate ignored
+l.3459 \begin{remark}{}{g:remark:idp242}
+                                        %pdfTeX warning (ext4): destination wit
+h the same identifier (name{tcb@cnt@block.3}) has been already used, duplicate 
+ignored
 <to be read again> 
                    \relax 
-l.3134 \begin{fact}{}{}{g:fact:idp215}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.4}) has been already used, duplicate ig
-nored
+l.3480 \begin{fact}{}{}{g:fact:idp243}
+                                      % [50]pdfTeX warning (ext4): destination 
+with the same identifier (name{tcb@cnt@block.4}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.3167 \begin{technology}{}{g:technology:idp216}
+l.3513 \begin{technology}{}{g:technology:idp244}
                                                 %
 \openout4 = `combinatoria.listing'.
 
  (./combinatoria.listing)
-Overfull \hbox (2.6633pt too wide) in paragraph at lines 3167--3171
-[]\T1/lmr/bx/n/10 Tecnologia 3.2.4 []\T1/lmr/m/n/10 No Sage, pode-mos obter a e
+Overfull \hbox (2.6633pt too wide) in paragraph at lines 3513--3517
+[]\T1/lmr/bx/n/10 Tecnologia 4.2.4 []\T1/lmr/m/n/10 No Sage, pode-mos obter a e
 x-panÁ„o do polinÙmio da seguinte
  []
 
@@ -2771,30 +3092,29 @@ x-panÁ„o do polinÙmio da seguinte
  (./combinatoria.listing)
 \openout4 = `combinatoria.listing'.
 
- (./combinatoria.listing)
-[43]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
-lock.5}) has been already used, duplicate ignored
+ (./combinatoria.listing)pdfTeX warning (ext4): destination with the same ident
+ifier (name{tcb@cnt@block.5}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3194 \begin{fact}{}{}{g:fact:idp217}
+l.3540 \begin{fact}{}{}{g:fact:idp245}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.6}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.3210 \begin{fact}{}{}{g:fact:idp218}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.7}) has been already used, duplicate ig
-nored
+l.3556 \begin{fact}{}{}{g:fact:idp246}
+                                      % [51]pdfTeX warning (ext4): destination 
+with the same identifier (name{tcb@cnt@block.7}) has been already used, duplica
+te ignored
 <to be read again> 
                    \relax 
-l.3244 ...Fa√ßa voc√™ mesmo.}{g:technology:idp219}
+l.3590 ...Fa√ßa voc√™ mesmo.}{g:technology:idp247}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.8}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.3245 ...√≠nimo.}{x:figure:interactive-binomio}{}
+l.3591 ...√≠nimo.}{x:figure:interactive-binomio}{}
                                                   %
 
 
@@ -2803,48 +3123,56 @@ l.3245 ...√≠nimo.}{x:figure:interactive-binomio}{}
 <Copying the QR code for "/interactive-binomio.html" in version 2-M as previous
 ly calculated.>
 
-Overfull \hbox (0.39977pt too wide) in paragraph at lines 3259--3268
+Overfull \hbox (0.39977pt too wide) in paragraph at lines 3605--3614
  [][] 
  []
 
-[44]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
-lock.9}) has been already used, duplicate ignored
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.9}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3272 \begin{fact}{}{}{g:fact:idp220}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.10}) has been already used, duplicate i
-gnored
+l.3618 \begin{fact}{}{}{g:fact:idp248}
+                                      % [52]pdfTeX warning (ext4): destination 
+with the same identifier (name{tcb@cnt@block.10}) has been already used, duplic
+ate ignored
 <to be read again> 
                    \relax 
-l.3288 \begin{theorem}{}{}{g:theorem:idp221}
+l.3634 \begin{theorem}{}{}{g:theorem:idp249}
                                             %
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 3.3 Polin\IeC {\^o}mio de Leibniz
+Exerc\IeC {\'\i }cios 4.2.1 Exerc\IeC {\'\i }cios
 ************************************************
-[45]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+************************************************
+Se\IeC {\c c}\IeC {\~a}o 4.3 Polin\IeC {\^o}mio de Leibniz
+************************************************
+
+Underfull \hbox (badness 10000) in paragraph at lines 3698--3707
+
+ []
+
+[53]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
 lock.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3326 \begin{theorem}{}{}{g:theorem:idp223}
+l.3716 \begin{theorem}{}{}{g:theorem:idp260}
                                             %pdfTeX warning (ext4): destination
  with the same identifier (name{tcb@cnt@block.2}) has been already used, duplic
 ate ignored
 <to be read again> 
                    \relax 
-l.3350 \begin{fact}{}{}{g:fact:idp225}
-                                      % [46]pdfTeX warning (ext4): destination 
+l.3740 \begin{fact}{}{}{g:fact:idp262}
+                                      % [54]pdfTeX warning (ext4): destination 
 with the same identifier (name{tcb@cnt@block.3}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.3395 \begin{technology}{}{g:technology:idp226}
+l.3785 \begin{technology}{}{g:technology:idp263}
                                                 %
 \openout4 = `combinatoria.listing'.
 
  (./combinatoria.listing)
-Overfull \hbox (2.6633pt too wide) in paragraph at lines 3395--3399
-[]\T1/lmr/bx/n/10 Tecnologia 3.3.3 []\T1/lmr/m/n/10 No Sage, pode-mos obter a e
+Overfull \hbox (2.6633pt too wide) in paragraph at lines 3785--3789
+[]\T1/lmr/bx/n/10 Tecnologia 4.3.3 []\T1/lmr/m/n/10 No Sage, pode-mos obter a e
 x-panÁ„o do polinÙmio da seguinte
  []
 
@@ -2858,108 +3186,88 @@ x-panÁ„o do polinÙmio da seguinte
 
  (./combinatoria.listing)
 ************************************************
-Exerc\IeC {\'\i }cios 3.4 Exerc\IeC {\'\i }cios
+Exerc\IeC {\'\i }cios 4.3.1 Exerc\IeC {\'\i }cios
 ************************************************
+[55]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 3.4.1 Tri\IeC {\^a}ngulo de Pascal
-************************************************
-[47]
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 3.4.2 Bin\IeC {\^o}mio de Newton
+Cap\IeC {\'\i }tulo 5 Probabilidade
 ************************************************
 
-Underfull \hbox (badness 10000) in paragraph at lines 3485--3493
+Underfull \hbox (badness 10000) in paragraph at lines 3839--3849
 
  []
 
+[56]
+Cap\IeC {\'\i }tulo 5.
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 3.4.3 Polin\IeC {\^o}mio de Leibniz
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 3529--3537
-
- []
-
-[48]
-************************************************
-Cap\IeC {\'\i }tulo 4 Probabilidade
-************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 3546--3556
-
- []
-
-[49]
-Cap\IeC {\'\i }tulo 4.
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.1 Espa\IeC {\c c}os de Probabilidade
+Se\IeC {\c c}\IeC {\~a}o 5.1 Espa\IeC {\c c}os de Probabilidade
 ************************************************
 pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3576 \begin{definition}{}{g:definition:idp250}
+l.3869 \begin{definition}{}{g:definition:idp267}
                                                 %pdfTeX warning (ext4): destina
 tion with the same identifier (name{tcb@cnt@block.2}) has been already used, du
 plicate ignored
 <to be read again> 
                    \relax 
-l.3581 \begin{definition}{}{g:definition:idp251}
-                                                %pdfTeX warning (ext4): destina
-tion with the same identifier (name{tcb@cnt@block.3}) has been already used, du
-plicate ignored
+l.3874 ...ition}{}{x:definition:def-probabilidade}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.3}) has been already used, 
+duplicate ignored
 <to be read again> 
                    \relax 
-l.3590 \begin{fact}{}{}{g:fact:idp252}
-                                      % [50
+l.3883 \begin{fact}{}{}{g:fact:idp268}
+                                      % [57
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@bloc
 k.4}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3607 \begin{fact}{}{}{g:fact:idp253}
+l.3900 \begin{fact}{}{}{g:fact:idp269}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.5}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.3626 \begin{fact}{}{}{g:fact:idp254}
+l.3919 \begin{fact}{}{}{g:fact:idp270}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.6}) has been already used, duplicate ig
 nored
 <to be read again> 
                    \relax 
-l.3659 \begin{remark}{}{g:remark:idp255}
-                                        % [51]pdfTeX warning (ext4): destinatio
+l.3952 \begin{remark}{}{g:remark:idp271}
+                                        % [58]pdfTeX warning (ext4): destinatio
 n with the same identifier (name{tcb@cnt@block.7}) has been already used, dupli
 cate ignored
 <to be read again> 
                    \relax 
-l.3674 ...heorem}{}{}{x:theorem:teo-probabilidade}
+l.3967 ...heorem}{}{}{x:theorem:teo-probabilidade}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.8}) has been already used, 
 duplicate ignored
 <to be read again> 
                    \relax 
-l.3728 \begin{fact}{}{}{g:fact:idp257}
-                                      % [52]pdfTeX warning (ext4): destination 
+l.4021 \begin{fact}{}{}{g:fact:idp273}
+                                      % [59]pdfTeX warning (ext4): destination 
 with the same identifier (name{tcb@cnt@block.9}) has been already used, duplica
 te ignored
 <to be read again> 
                    \relax 
-l.3746 \begin{fact}{}{}{g:fact:idp258}
+l.4039 \begin{fact}{}{}{g:fact:idp274}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.10}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.3764 ...Fa√ßa voc√™ mesmo.}{g:technology:idp259}
+l.4057 ...Fa√ßa voc√™ mesmo.}{g:technology:idp275}
                                                   %pdfTeX warning (ext4): desti
 nation with the same identifier (name{tcb@cnt@block.11}) has been already used,
  duplicate ignored
 <to be read again> 
                    \relax 
-l.3765 ...ia.}{x:figure:interactive-aniversario}{}
+l.4058 ...ia.}{x:figure:interactive-aniversario}{}
                                                   %
 
 
@@ -2969,7 +3277,7 @@ l.3765 ...ia.}{x:figure:interactive-aniversario}{}
 <Copying the QR code for "/interactive-probabilidade.html" in version 3-Q as pr
 eviously calculated.>
 
-Overfull \hbox (0.39973pt too wide) in paragraph at lines 3771--3780
+Overfull \hbox (0.39973pt too wide) in paragraph at lines 4064--4073
  [][] 
  []
 
@@ -2977,152 +3285,22 @@ pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
 .12}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.3784 \begin{fact}{}{}{g:fact:idp260}
+l.4077 \begin{fact}{}{}{g:fact:idp276}
                                       %pdfTeX warning (ext4): destination with 
 the same identifier (name{tcb@cnt@block.13}) has been already used, duplicate i
 gnored
 <to be read again> 
                    \relax 
-l.3788 \begin{fact}{}{}{g:fact:idp261}
+l.4081 \begin{fact}{}{}{g:fact:idp277}
                                       %
-Overfull \hbox (0.52904pt too wide) in paragraph at lines 3788--3791
+Overfull \hbox (0.52904pt too wide) in paragraph at lines 4081--4084
 \T1/lmr/m/it/10 caixas. Qual a prob-a-bil-i-dade de que ex-ata-mente uma caixa 
 fique vazia?\T1/lmr/bx/it/10 SoluÁ„o\T1/lmr/m/it/10 .
  []
 
-[53]
+[60]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.2 Probabilidade Condicional
-************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3823 ...{fact}{}{}{x:fact:exem-prob-condicional}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{tcb@cnt@block.2}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.3838 ...on}{}{x:definition:def-prob-condicional}
-                                                  %pdfTeX warning (ext4): desti
-nation with the same identifier (name{tcb@cnt@block.3}) has been already used, 
-duplicate ignored
-<to be read again> 
-                   \relax 
-l.3845 ...ark}{}{x:remark:def-prob-condicional-p2}
-                                                  % [54]pdfTeX warning (ext4): 
-destination with the same identifier (name{tcb@cnt@block.4}) has been already u
-sed, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3855 \begin{fact}{}{}{g:fact:idp262}
-                                      %
-Overfull \hbox (5.8476pt too wide) in paragraph at lines 3855--3857
-[]\T1/lmr/bx/n/10 Exemplo 4.2.4 []\T1/lmr/m/it/10 Re-faÁa a 2\TS1/lmr/m/it/10 ™
- \T1/lmr/m/it/10 parte do Ex-em-plo [][]Ex-em-plo [][]4.2.1[][][][], us-ando a 
-definiÁ„o
- []
-
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.5}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3869 \begin{theorem}{}{}{g:theorem:idp263}
-                                            %pdfTeX warning (ext4): destination
- with the same identifier (name{tcb@cnt@block.6}) has been already used, duplic
-ate ignored
-<to be read again> 
-                   \relax 
-l.3904 \begin{fact}{}{}{g:fact:idp265}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.7}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.3913 ...idades.}{x:figure:fig-probabilidade-1}{}
-                                                  %
-<images/pcondicional1.pdf, id=1463, 417.08377pt x 109.36487pt>
-File: images/pcondicional1.pdf Graphic file (type pdf)
-<use images/pcondicional1.pdf>
-Package pdftex.def Info: images/pcondicional1.pdf  used on input line 3915.
-(pdftex.def)             Requested size: 273.56105pt x 71.7338pt.
- [55]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@
-block.8}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3925 ...n{proposition}{}{}{g:proposition:idp266}
-                                                  % [56 <./images/pcondicional1
-.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt
-@block.9}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.3957 \begin{fact}{}{}{g:fact:idp268}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.10}) has been already used, duplicate i
-gnored
-<to be read again> 
-                   \relax 
-l.4020 ...idades.}{x:figure:fig-probabilidade-2}{}
-                                                  %
-<images/pcondicionalb.pdf, id=1495, 231.3694pt x 204.59473pt>
-File: images/pcondicionalb.pdf Graphic file (type pdf)
-<use images/pcondicionalb.pdf>
-Package pdftex.def Info: images/pcondicionalb.pdf  used on input line 4022.
-(pdftex.def)             Requested size: 205.32208pt x 181.56738pt.
- [57]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@
-block.11}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4040 ...}{}{}{x:theorem:teo-probabilidade-total}
-                                                  % [58 <./images/pcondicionalb
-.pdf>]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt
-@block.12}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4071 \begin{theorem}{}{}{x:theorem:teo-bayes}
-                                               %
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.3 Eventos Independentes
-************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4113 \begin{definition}{}{g:definition:idp271}
-                                                %pdfTeX warning (ext4): destina
-tion with the same identifier (name{tcb@cnt@block.2}) has been already used, du
-plicate ignored
-<to be read again> 
-                   \relax 
-l.4120 \begin{fact}{}{}{g:fact:idp272}
-                                      %
-Overfull \hbox (50.9149pt too wide) detected at line 4127
-\OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 : [][] \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/1
-0 : [][] \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 : [][] 
- []
-
-[59]
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.4 Distribui\IeC {\c c}\IeC {\~a}o Binomial
-************************************************
-pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
-.1}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.4153 \begin{fact}{}{}{g:fact:idp273}
-                                      %pdfTeX warning (ext4): destination with 
-the same identifier (name{tcb@cnt@block.2}) has been already used, duplicate ig
-nored
-<to be read again> 
-                   \relax 
-l.4173 \begin{theorem}{}{}{g:theorem:idp274}
-                                            % [60]
-************************************************
-Exerc\IeC {\'\i }cios 4.5 Exerc\IeC {\'\i }cios
-************************************************
-************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.5.1 Espa\IeC {\c c}os de Probabilidade
+Exerc\IeC {\'\i }cios 5.1.1 Exerc\IeC {\'\i }cios
 ************************************************
 
 ! Package inputenc Error: Unicode character ÃÅ (U+0301)
@@ -3132,21 +3310,109 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4219 ... de 1 a 6. Uma a uma elas s√£o extraƒ±ÃÅ
+l.4119 ... de 1 a 6. Uma a uma elas s√£o extraƒ±ÃÅ
                                                   das, sem reposi√ß√£o. Qual...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
+[61]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.5.2 Probabilidade Condicional
+Se\IeC {\c c}\IeC {\~a}o 5.2 Probabilidade Condicional
 ************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 4242--4250
-
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4161 ...{fact}{}{}{x:fact:exem-prob-condicional}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.2}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.4176 ...on}{}{x:definition:def-prob-condicional}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.3}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.4183 ...ark}{}{x:remark:def-prob-condicional-p2}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.4}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.4193 \begin{fact}{}{}{g:fact:idp289}
+                                      %
+Overfull \hbox (5.8476pt too wide) in paragraph at lines 4193--4195
+[]\T1/lmr/bx/n/10 Exemplo 5.2.4 []\T1/lmr/m/it/10 Re-faÁa a 2\TS1/lmr/m/it/10 ™
+ \T1/lmr/m/it/10 parte do Ex-em-plo [][]Ex-em-plo [][]5.2.1[][][][], us-ando a 
+definiÁ„o
  []
 
-[61]
+[62]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+lock.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4207 \begin{theorem}{}{}{g:theorem:idp290}
+                                            %pdfTeX warning (ext4): destination
+ with the same identifier (name{tcb@cnt@block.6}) has been already used, duplic
+ate ignored
+<to be read again> 
+                   \relax 
+l.4242 \begin{fact}{}{}{g:fact:idp292}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.4251 ...idades.}{x:figure:fig-probabilidade-1}{}
+                                                  %
+<images/pcondicional1.pdf, id=1447, 417.08377pt x 109.36487pt>
+File: images/pcondicional1.pdf Graphic file (type pdf)
+<use images/pcondicional1.pdf>
+Package pdftex.def Info: images/pcondicional1.pdf  used on input line 4253.
+(pdftex.def)             Requested size: 273.56105pt x 71.7338pt.
+ [63 <./images/pcondicional1.pdf>]pdfTeX warning (ext4): destination with the s
+ame identifier (name{tcb@cnt@block.8}) has been already used, duplicate ignored
+
+<to be read again> 
+                   \relax 
+l.4263 ...n{proposition}{}{}{g:proposition:idp293}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.9}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.4295 \begin{fact}{}{}{g:fact:idp295}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.10}) has been already used, duplicate i
+gnored
+<to be read again> 
+                   \relax 
+l.4358 ...idades.}{x:figure:fig-probabilidade-2}{}
+                                                  %
+<images/pcondicionalb.pdf, id=1470, 231.3694pt x 204.59473pt>
+File: images/pcondicionalb.pdf Graphic file (type pdf)
+<use images/pcondicionalb.pdf>
+Package pdftex.def Info: images/pcondicionalb.pdf  used on input line 4360.
+(pdftex.def)             Requested size: 205.32208pt x 181.56738pt.
+ [64] [65]pdfTeX warning (ext4): destination with the same identifier (name{tcb
+@cnt@block.11}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4378 ...}{}{}{x:theorem:teo-probabilidade-total}
+                                                  %pdfTeX warning (ext4): desti
+nation with the same identifier (name{tcb@cnt@block.12}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.4409 \begin{theorem}{}{}{x:theorem:teo-bayes}
+                                               % [66 <./images/pcondicionalb.pd
+f>]
+************************************************
+Exerc\IeC {\'\i }cios 5.2.1 Exerc\IeC {\'\i }cios
+************************************************
 
 ! Package inputenc Error: Unicode character ÃÅ (U+0301)
 (inputenc)                not set up for use with LaTeX.
@@ -3155,37 +3421,87 @@ See the inputenc package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4255 \item{}Qual a probabilidade de ter saƒ±ÃÅ
+l.4447 \item{}Qual a probabilidade de ter saƒ±ÃÅ
                                                 do 2 em \(D_1\) , se a soma ...
 
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
 
-Overfull \hbox (0.39899pt too wide) in paragraph at lines 4256--4257
+Overfull \hbox (0.39899pt too wide) in paragraph at lines 4448--4449
 []\T1/lmr/m/n/10 Qual a prob-a-bl-i-dade da soma dos pon-tos ser menor do que 7
 , sabendo
  []
 
+[67]
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.5.3 Eventos Independentes
+Se\IeC {\c c}\IeC {\~a}o 5.3 Distribui\IeC {\c c}\IeC {\~a}o Binomial
 ************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 4278--4286
-
+************************************************
+Subse\IeC {\c c}\IeC {\~a}o 5.3.1 Eventos Independentes
+************************************************
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4495 \begin{definition}{}{g:definition:idp306}
+                                                %pdfTeX warning (ext4): destina
+tion with the same identifier (name{tcb@cnt@block.2}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.4508 \begin{fact}{}{}{g:fact:idp307}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.3}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.4525 \begin{definition}{}{g:definition:idp308}
+                                                %pdfTeX warning (ext4): destina
+tion with the same identifier (name{tcb@cnt@block.4}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.4537 \begin{fact}{}{}{g:fact:idp309}
+                                      %
+Overfull \hbox (50.9149pt too wide) detected at line 4544
+\OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 : [][] \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/1
+0 : [][] \OML/lmm/m/it/10 A[] \OT1/lmr/m/n/10 : [][] 
  []
 
+[68]pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@b
+lock.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4555 \begin{fact}{}{}{g:fact:idp310}
+                                      %
 ************************************************
-Se\IeC {\c c}\IeC {\~a}o 4.5.4 Distribui\IeC {\c c}\IeC {\~a}o Binomial
+Subse\IeC {\c c}\IeC {\~a}o 5.3.2 Distribui\IeC {\c c}\IeC {\~a}o Binomial
 ************************************************
-
-Underfull \hbox (badness 10000) in paragraph at lines 4297--4305
-
- []
-
-[62]
+pdfTeX warning (ext4): destination with the same identifier (name{tcb@cnt@block
+.6}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4577 \begin{fact}{}{}{g:fact:idp312}
+                                      %pdfTeX warning (ext4): destination with 
+the same identifier (name{tcb@cnt@block.7}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.4595 ...heorem}{}{}{x:theorem:teo-dist-binomial}
+                                                  % [69]pdfTeX warning (ext4): 
+destination with the same identifier (name{tcb@cnt@block.8}) has been already u
+sed, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4615 \begin{fact}{}{}{g:fact:idp314}
+                                      %
 ************************************************
-Refer\IeC {\^e}cias 5 Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas
+Exerc\IeC {\'\i }cios 5.3.3 Exerc\IeC {\'\i }cios
+************************************************
+[70]
+************************************************
+Refer\IeC {\^e}cias 6 Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas
 ************************************************
 
 ! LaTeX Error: Environment references- undefined.
@@ -3194,7 +3510,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4326 \begin{references-}
+l.4684 \begin{references-}
                           {Refer√™ncias Bibliogr√°ficas}{}{Refer√™ncias Bibl...
 
 Your command was ignored.
@@ -3202,9 +3518,15 @@ Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (4.11572pt too wide) in paragraph at lines 4334--4335
-[]\T1/lmr/m/n/10 Machado J. R. N., \T1/lmr/m/it/10 O PrincÌ-pio da Casa dos Pom
--bos\T1/lmr/m/n/10 , Jor-nal de Matem·tica
+Overfull \hbox (13.70273pt too wide) in paragraph at lines 4674--4689
+\T1/lmr/m/n/10 Refer-Ín-cias Bib-li-ogr·-fi-cas-Refer-Ín-cias Bib-li-ogr·-fi-ca
+sx:references:referencias \T1/lmr/bx/n/10 Livros 
+ []
+
+
+Overfull \hbox (2.7487pt too wide) in paragraph at lines 4697--4699
+[]\T1/lmr/m/n/10 Machado J. R. N., [][]O PrincÌ-pio da Casa dos Pom-bos[][], Jo
+r-nal de Matem·tica
  []
 
 
@@ -3214,19 +3536,17 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4340 \end{references-}
+l.4701 \end{references-}
                         
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-[63]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4341.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 4341.
+[71]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 4702.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 4702.
  (./combinatoria.aux
-<Reading QR code for "/interactive-caotica.html" at level 2-M from aux file.>
-
-<Reading QR code for "/interactive-caotica-x.html" at level 3-Q from aux file.>
+<Reading QR code for "/interactive-caotica-r.html" at level 3-Q from aux file.>
 
 
 <Reading QR code for "/interactive-kaplansky2.html" at level 3-Q from aux file.
@@ -3240,11 +3560,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 4341.
 <Reading QR code for "/interactive-probabilidade.html" at level 3-Q from aux fi
 le.>
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4341.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4341.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 4702.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 4702.
 
 Package rerunfilecheck Info: File `combinatoria.out' has not changed.
-(rerunfilecheck)             Checksum: 72E33B9DEECE125F8AE5D835C7160B06;3131.
+(rerunfilecheck)             Checksum: 63797AF701F4431E5CB8BF8B4C58254F;1595.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -3254,19 +3574,19 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 39510 strings out of 492615
- 761872 string characters out of 6131389
- 1058648 words of memory out of 5000000
- 41878 multiletter control sequences out of 15000+600000
+ 39788 strings out of 492615
+ 766282 string characters out of 6131389
+ 1055139 words of memory out of 5000000
+ 42042 multiletter control sequences out of 15000+600000
  637916 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 54i,17n,83p,1853b,2702s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,17n,83p,1853b,2706s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/shar
 e/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/l
-m-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/share/texlive
-/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc}{/usr/share/texlive/texmf-d
-ist/fonts/enc/dvips/inconsolata/i4-ts1.enc}</usr/share/texlive/texmf-dist/fonts
+m-rm.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-t1-5.enc
+}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/inconsolata/i4-ts1.enc}{/usr/sh
+are/texmf/fonts/enc/dvips/lm/lm-mathex.enc}</usr/share/texlive/texmf-dist/fonts
 /type1/public/inconsolata/Inconsolata-zi4b.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/public/inconsolata/Inconsolata-zi4r.pfb></usr/share/texmf/fonts/type
 1/public/lm/lmbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmbx12.pfb></usr
@@ -3285,10 +3605,10 @@ onts/type1/public/lm/lmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/amsfonts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
 /amsfonts/symbols/msam7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
 msfonts/symbols/msbm10.pfb>
-Output written on combinatoria.pdf (70 pages, 825460 bytes).
+Output written on combinatoria.pdf (77 pages, 834295 bytes).
 PDF statistics:
- 1874 PDF objects out of 2073 (max. 8388607)
- 1633 compressed objects within 17 object streams
- 822 named destinations out of 1000 (max. 500000)
- 435 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1875 PDF objects out of 2073 (max. 8388607)
+ 1671 compressed objects within 17 object streams
+ 909 named destinations out of 1000 (max. 500000)
+ 267 words of extra memory for PDF output out of 10000 (max. 10000000)
 
