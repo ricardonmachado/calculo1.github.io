@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-12T15:40:50-03:00       *-->
+<!--*       on 2021-01-13T16:07:36-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -14,6 +14,31 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body>
-<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Demonstração</span></h6>Suponha que nenhuma das \(k\) casas contém mais de um pombo. Então o número total de pombos seria no máximo \(k\text{.}\) Isto é uma contradição, já que existem pelo menos \(k+1\) pombos.</article><span class="incontext"><a href="section-casa-pombos.html#proof-17">[incontext]</a></span>
+<article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Demonstração</span></h6>
+<p xmlns:svg="http://www.w3.org/2000/svg">Representando os \(p\) elementos que pertencerão a este subconjunto com o sinal de \((+)\) e os \(n-p\) elementos não selecionados com o sinal de \((-)\text{,}\) precisamos organizá-los de forma que entre dois sinais de \((+)\) haja pelo menos \(r\) sinais de \((-)\text{.}\)  Formando uma fila com os sinais de \((+)\) ficamos com \(p+1\) espaços para colocar os sinais de \((-)\text{,}\) contando com os lugares: antes do primeiro \((+)\) e depois do último \((+)\text{.}\)</p>
+<p>Precisamos contar quantos sinais de \((-)\) vão ficar entre os sinais de \((+)\text{,}\) satisfazendo que antes do primeiro ou do último \((+)\) haja qualquer quantidade de sinais de \((-)\) e entre dois sinais de \((+)\text{,}\) haja pelo menos \(r\) sinais de \((-)\text{.}\) Como a quantidade de sinais \((-)\) disponíveis é \(n-p\text{,}\) o  número de soluções desse problema é o mesmo que o número de soluções em números inteiros, da equação:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x_1+x_2+\cdots+x_{p+1} = n-p, \text{ com } x_1\geq 0, x_{p+1}\geq 0 \text{ e } x_2, \ldots, x_p\geq r. 
+\end{equation*}
+</div>
+<p>Definindo \(x_2 = r+y_2, \ldots, x_p = r+y_p\text{,}\) e substituindo na equação anterior, ficamos com</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x_1 + r+y_2 + r+y_3 + \cdots + r+y_p + y_{p+1} = n-p. 
+\end{equation*}
+</div>
+<p data-braille="continuation">Ou seja,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+x_1 + y_2 + y_3 + \cdots + y_p + y_{p+1} = n-p - (p-1)\times r. 
+\end{equation*}
+</div>
+<p data-braille="continuation">O número de soluções desta equação é</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+CR_{p+1}^{n-p-(p-1)r} = C_{n-(p-1)r}^p.
+\end{equation*}
+</div></article><span class="incontext"><a href="section-lemas-kaplansky.html#proof-17">[incontext]</a></span>
 </body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-12T15:40:52-03:00       *-->
+<!--*       on 2021-01-13T16:07:37-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -15,26 +15,54 @@
 </head>
 <body>
 <article class="hiddenproof"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Demonstração</span></h6>
-<p>Para dois conjuntos a fórmula é verdadeira, pois coincide com a definição de probabilidade condicional. Vamos usar o Princípio de Indução Completa para mostrar que o resultado é verdadeiro. Suponha o resultado válido para \(n-1\) eventos. Então</p>
+<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">item a)</dfn></p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-\overbrace{P(A_1\cap A_2\cap \cdots \cap A_{n-1})}^{(\blacklozenge)} = \amp ~  P(A_1)\cdot P(A_2|A_1)\cdot P(A_3|(A_1\cap A_2))\cdots \\
-\amp ~~~~ ~ \cdots P(A_{n-1}|(A_1\cap A_2\cap \cdots \cap A_{n-2})). 
-\end{align*}
+\begin{equation*}
+1 = P(\Omega) = P(A\cup A^c) = P(A) + P(A^c), \text{ logo } P(A^c) = 1-P(A).
+\end{equation*}
 </div>
-<p data-braille="continuation">Defina \(B = A_1\cap A_2\cap \cdots \cap A_{n-1}\text{.}\) Queremos a probabilidade \(P(B\cap A_n)\) e vamos usar que o resultado é válido para \(B\cap A_n\) e para \(n-1\) eventos. Logo</p>
+<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">item b)</dfn> Como \(\Omega\cap \emptyset = \emptyset\text{,}\) temos \(P(\Omega\cup \emptyset) = P(\Omega) + P(\emptyset)\text{.}\) Portanto</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-P(B\cap A_n) = \amp ~  P(B)\cdot P(A_n|B) \\
-= \amp  ~ \underbrace{P(A_1\cap A_2\cap \cdots \cap A_{n-1})}_{(\blacklozenge)}\cdot P(A_n|B). 
-\end{align*}
+\begin{equation*}
+1 = P(\Omega) = P(\Omega\cup \emptyset) = \underbrace{P(\Omega)}_{=1} + P(\emptyset)\Rightarrow P(\emptyset) = 0. 
+\end{equation*}
 </div>
-<p data-braille="continuation">Substituindo \((\blacklozenge)\) e \(B\) chegamos no resultado:</p>
+<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">item c)</dfn> Escrevendo \(A\) como a união disjunta:</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{align*}
-P(A_1\cap A_2\cap \cdots \cap A_n) = \amp ~ P(A_1)\cdot P(A_2|A_1)\cdot P(A_3|(A_1\cap A_2))\cdots \\
-\amp ~~~~ \cdots P(A_n|(A_1\cap A_2\cap \cdots \cap A_{n-1})). 
-\end{align*}
-</div></article><span class="incontext"><a href="section-probabilidade-condicional.html#proof-30">[incontext]</a></span>
+\begin{equation*}
+A = (A\setminus B) \cup (A\cap B)
+\end{equation*}
+</div>
+<p data-braille="continuation">temos</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+P(A) =  P(A\setminus B) + P(A\cap B)~~ \Rightarrow ~~ P(A\setminus B) = P(A) - P(A\cap B). 
+\end{equation*}
+</div>
+<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">item d)</dfn> Escrevendo \(A\cup B\) como a união disjunta:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+A\cup B = (A\setminus B)\cup B, 
+\end{equation*}
+</div>
+<p data-braille="continuation">temos</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+P(A\cup B) = \underbrace{P(A\setminus B)}_{\underset{\text{pelo item c)}}{= P(A) - P(A\cap B)}} + P(B) = P(A) - P(A\cap B) + P(B). 
+\end{equation*}
+</div>
+<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">item e)</dfn> Pelo item c) temos</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+P(A\setminus B) = P(A) - P(A\cap B)
+\end{equation*}
+</div>
+<p data-braille="continuation">se \(A\supset B\text{,}\) ficamos com</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+P(A\setminus B) = P(A) - P(B)\Rightarrow P(A) \geq P(B),
+\end{equation*}
+</div>
+<p data-braille="continuation">pois \(P(A\setminus B)\geq 0\text{.}\)</p></article><span class="incontext"><a href="section-espacos-probabilidade.html#proof-30">[incontext]</a></span>
 </body>
 </html>
