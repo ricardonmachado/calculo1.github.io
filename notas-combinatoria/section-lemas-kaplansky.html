@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-16T10:25:52-03:00       *-->
+<!--*       on 2021-01-16T10:59:03-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -473,18 +473,18 @@ KCG(12, 2, 4) = 18.
 <a data-knowl="" class="id-ref hint-knowl original" data-refid="hk-hint-8" id="hint-8"><span class="type">Dica</span></a><div class="hidden-content tex2jax_ignore" id="hk-hint-8"><div class="hint solution-like"><p id="p-435">O número de formas de Diamantino jogar futebol \(p\) dias sem ter dores musculares é  \(K(10, p)\text{,}\) com \(p\in \{0, 1, \ldots, 5\}\text{.}\)</p></div></div>
 <a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-53" id="answer-53"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-53"><div class="answer solution-like"><p id="p-436">144</p></div></div>
 </div></article><article class="exercise exercise-like" id="exercise-54"><h6 class="heading"><span class="codenumber">6<span class="period">.</span></span></h6>
-<p id="p-437">Irving gosta de jogar futebol, mas precisa ficar dois dias consecutivos sem jogar, para evitar dores musculares. De quantas maneiras Irving pode escolher em quais de 20 dias seguidos ele vai jogar bola sem ter dores musculares? Uma maneira é não jogar futebol em nenhum dos dias.</p>
+<p id="p-437">Irving gosta de jogar futebol, mas precisa ficar dois dias consecutivos sem jogar para evitar dores musculares. De quantas maneiras Irving pode escolher em quais de 20 dias seguidos ele vai jogar bola sem ter dores musculares? Uma maneira é não jogar futebol em nenhum dos dias.</p>
 <div class="solutions">
-<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-54" id="answer-54"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-54"><div class="answer solution-like"><p id="p-438">2090</p></div></div>
+<a data-knowl="" class="id-ref answer-knowl original" data-refid="hk-answer-54" id="answer-54"><span class="type">Resposta</span></a><div class="hidden-content tex2jax_ignore" id="hk-answer-54"><div class="answer solution-like"><p id="p-438">2737</p></div></div>
 <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-47" id="solution-47"><span class="type">Solução</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-47"><div class="solution solution-like">
 <p id="p-439">O número de formas de Irving jogar futebol sem ter dores musculares é</p>
 <div class="displaymath">
 \begin{equation*}
-\sum_{i=0}^{6}KCG(20, i, 2) .
+\sum_{i=0}^{6}KG(20, i, 2) .
 \end{equation*}
 </div>
-<div class="hidden-sagecell-sage" id="sage-31"><script type="text/x-sage">KCG(n, p, r) = (n/(n-p*r))*binomial(n-p*r, p) 
-KCG(20, 0, 2) + KCG(20, 1, 2) + KCG(20, 2, 2) + KCG(20, 3, 2) + KCG(20, 4, 2) + KCG(20, 5, 2) + KCG(20, 6, 2)
+<div class="hidden-sagecell-sage" id="sage-31"><script type="text/x-sage">KG(n, p, r) = binomial(n-(p-1)*r, p) 
+KG(20, 0, 2) + KG(20, 1, 2) + KG(20, 2, 2) + KG(20, 3, 2) + KG(20, 4, 2) + KG(20, 5, 2) + KG(20, 6, 2)
 </script></div>
 </div></div>
 </div></article><article class="exercise exercise-like" id="exercise-55"><h6 class="heading"><span class="codenumber">7<span class="period">.</span></span></h6>
