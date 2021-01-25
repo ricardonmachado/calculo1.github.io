@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-20T16:42:34-03:00       *-->
+<!--*       on 2021-01-25T16:32:42-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -23,22 +23,17 @@
 </script>
 </head>
 <body><div class="solution solution-like">
-<p><dfn xmlns:svg="http://www.w3.org/2000/svg" class="terminology">a)</dfn> Basta escolher 9 jurados, pois pelo menos duas serão advogados. O que pode ser feito de</p>
+<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">item a)</dfn> Basta escolher 9 juradas, pois pelo menos duas serão advogadas. Isto pode ser feito de \(C_{11}^9=55 \) maneiras.</p>
+<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">item b)</dfn> Se escolhermos diretamente 6 juradas, dentre as 11 mulheres disponíveis, estaremos contando os casos em que não temos pelo menos duas advogadas. Precisamos contornar este problema.</p>
+<p>Para garantir que estamos contando todos os casos em que pelo menos duas advogadas foram selecionadas, vamos separar em três casos. 1º vamos contar o número de maneiras de selecionar 2 advogadas e 4 não advogadas. 2º vamos contar o número de maneiras de selecionar 3 advogadas e 3 não advogadas. 3º vamos contar o número de maneiras de selecionar 4 advogadas e 2 não advogadas. Como os casos são disjuntos, pelo Princípio aditivo a resposta é</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-C(11,9)=55. 
+C_4^2\times C_7^4 + C_4^3\times C_7^3 + C_4^4\times C_7^2 = 371. 
 \end{equation*}
 </div>
-<p xmlns:svg="http://www.w3.org/2000/svg"><dfn class="terminology">b)</dfn> Se escolhermos diretamente 6 jurados, dentre as 11 pessoas disponíveis, pode aconteder de não termos pelo menos dois advogados. Precisamos contornar este problema.</p>
-<p>Precisamos escolher 2 advogados e 4 não advogados, depois 3 advogados e 3 não advogados e por último, precisamos escolher 4 advogados e 2 não advogados. O que pode ser feito de</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-C(4,2)\times C(7, 4) + C(4,3)\times C(7, 3) + C(4,4)\times C(7, 2). 
-\end{equation*}
-</div>
-<p data-braille="continuation">maneiras.</p>
-<div class="sagecell-sage" id="sage-11"><script type="text/x-sage">C(n, p) = binomial(n, p)
-C(4,2)*C(7, 4) + C(4,3)*C(7, 3) + C(4,4)*C(7, 2)
+<p xmlns:svg="http://www.w3.org/2000/svg">No Sage, esse cálculo pode ser feito da seguinte maneira:</p>
+<div class="sagecell-sage" id="sage-12"><script type="text/x-sage">C(n, p) = binomial(n, p)
+C(4,2)*C(7,4) + C(4,3)*C(7,3) + C(4,4)*C(7,2)
 </script></div>
 </div></body>
 </html>

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-20T16:42:34-03:00       *-->
+<!--*       on 2021-01-25T16:32:42-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -12,43 +12,18 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
-<script>$(function () {
-    // Make *any* div with class 'sagecell-sage' an executable Sage cell
-    // Their results will be linked, only within language type
-    sagecell.makeSagecell({inputLocation: 'div.sagecell-sage',
-                           linked: true,
-                           languages: ['sage'],
-                           evalButtonText: 'Evaluate (Sage)'});
-});
-</script>
 </head>
 <body>
 <div class="solution solution-like">
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solução</span><span class="space"> </span><span class="codenumber">2.3.6.1</span><span class="period">.</span>
 </h6>
-<p xmlns:svg="http://www.w3.org/2000/svg">Para formar um triângulo precisamos escolher dois vértices em uma das retas e um vértice na outra reta.</p>
-<p>O número de formas de escolher dois vértices na primeira reta é \(C(10, 2)\) uma vez tomada esta decisão precisamos escolher um vértice na segunda reta, isto pode ser feito de 15 maneiras. O total de formas de formar um triângulo com dois vértices na primeira reta é:</p>
+<p>A primeira criança pode escolher suas 4 figurinhas de \(C_5^4\) maneiras e a segunda criança pode escolher suas 4 figurinhas de \(C_7^4\) maneiras. Portanto, o número de maneiras de realizar a troca é</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-15\times C(10, 2). 
+C_5^4 \times C_7^4 = 175.
 \end{equation*}
 </div>
-<p>Com a mesma ideia, o número de formas de formar um triângulo com dois vértices na segunda reta é</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-10\times C(15, 2). 
-\end{equation*}
-</div>
-<p>Portanto, pelo princípio aditivo, o número total de soluções é:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-15\times C(10, 2) + 10\times C(15, 2). 
-\end{equation*}
-</div>
-<div class="sagecell-sage" id="sage-10"><script type="text/x-sage">C(n, p) = binomial(n, p)
-15*C(10, 2) + 10*C(15, 2)
-</script></div>
 </div>
 <span class="incontext"><a href="section-combinacoes-simples.html#solution-13">[incontext]</a></span>
 </body>

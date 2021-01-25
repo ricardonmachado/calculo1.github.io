@@ -2,7 +2,7 @@
 <html lang="pt-BR">
 <!--********************************************-->
 <!--*       Generated from PreTeXt source      *-->
-<!--*       on 2021-01-20T16:42:34-03:00       *-->
+<!--*       on 2021-01-25T16:32:42-03:00       *-->
 <!--*   A recent stable commit (2020-08-09):   *-->
 <!--* 98f21740783f166a773df4dc83cab5293ab63a4a *-->
 <!--*                                          *-->
@@ -23,13 +23,14 @@
 </script>
 </head>
 <body><div class="solution solution-like">
-<p>Para a 1ª fruta, temos 12 opções de escolha, para a 2ª fruta, temos 11 opções de escolha, \(\dots\) para a 7ª fruta temos, 6 opções de escolha. Como a ordem não importa, precisamos dividir pelo número de maneiras de ordenar estas frutas. Portanto a resposta é</p>
+<p>Para a 1ª cor, são 12 opções de escolha, para a 2ª cor, são 11 opções de escolha, e assim por diante, até chegar na 7ª cor, com 6 opções de escolha. Como a ordem não importa, precisamos dividir pelo número de maneiras de ordenar essas cores. Portanto a resposta é</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\frac{12\times 11\times 10\times \cdots \times 6}{P(7)}.
+\frac{12\times 11\times 10\times \cdots \times 6}{7!}= 792.
 \end{equation*}
 </div>
-<div class="sagecell-sage" id="sage-7"><script type="text/x-sage">(12*11*10*9*8*7*6)/factorial(7)
+<p xmlns:svg="http://www.w3.org/2000/svg">No Sage, esse cálculo pode ser feito da seguinte maneira:</p>
+<div class="sagecell-sage" id="sage-9"><script type="text/x-sage">(12*11*10*9*8*7*6)/factorial(7)
 </script></div>
 </div></body>
 </html>
